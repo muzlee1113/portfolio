@@ -40,6 +40,7 @@ class Work extends Component {
             <>
             <main>
                 <LeadingForWork developer={this.state.developer} designer={this.state.designer} changePanel={this.changePanel} panel={this.state.panel}/>
+                <div className="divider"></div>
                 {this.state.panel==="designer"?
                 <DesignerPanel/>:
                 <DeveloperPanel/>}

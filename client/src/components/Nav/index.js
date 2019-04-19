@@ -8,10 +8,6 @@ function Nav() {
         <header>
             <NavLink to="/" exact><img id="logo" src={process.env.PUBLIC_URL + '/images/lywLogo.png'}/></NavLink>
                 <div className="topnav" id="myTopnav">
-                    <a 
-                    className="link"
-                    id="resume" 
-                    href="https://drive.google.com/file/d/1As4-SrNYvTY9cL-v37R0IOLrn9pBt2rm/view">Résumé</a>
                     <NavLink 
                     // id="aboutpage" 
                     activeClassName="link active_link"
