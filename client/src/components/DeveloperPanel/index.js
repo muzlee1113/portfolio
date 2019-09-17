@@ -9,7 +9,7 @@ function DeveloperPanel(){
             <article>
                 <a href="http://www.whats-in-store.net/">
                     <div className="cardcontainer">
-                        <img className="article-img" src={process.env.PUBLIC_URL + "/images/D00WIS.png"} alt=" "/>
+                        <img alt='' className="article-img" src={process.env.PUBLIC_URL + "/images/D00WIS.png"} alt=" "/>
                         <div className="overlay" id="imgWIS">
                             <div className="article-title">
                                 <h5>What's In Store</h5>
@@ -20,13 +20,13 @@ function DeveloperPanel(){
                     </div>
                 </a>
                 <a href="https://github.com/jakescheele/whats-in-store">
-                    <img className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                    <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
             <article>
                 <a href="https://pet-park.herokuapp.com/">
                     <div className="cardcontainer">
-                        <img className="article-img" src={process.env.PUBLIC_URL+"/images/D00Petpark.png"} alt=" "/>
+                        <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Petpark.png"} alt=" "/>
                         <div className="overlay" id="imgPetPark">
                             <div className="article-title">
                                 <h5>Pet Park</h5>
@@ -37,13 +37,13 @@ function DeveloperPanel(){
                     </div>
                 </a>
                 <a href="https://github.com/JoshVanOverbeke/Project2">
-                    <img className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                    <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
             <article>
                 <a href="https://digestnewsbyyuwen.herokuapp.com/">
                     <div className="cardcontainer">
-                        <img className="article-img" src={process.env.PUBLIC_URL+"/images/D00Newsdigest.png"} alt=" "/>
+                        <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Newsdigest.png"} alt=" "/>
                         <div className="overlay" id="imgNews">
                             <div className="article-title">
                                 <h5>News Digest</h5>
@@ -54,13 +54,13 @@ function DeveloperPanel(){
                     </div>
                 </a>
                 <a href="https://github.com/muzlee1113/newsdigest">
-                    <img className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                    <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
             <article>
                 <a href="https://googlebooksbyyuwen.herokuapp.com/">
                     <div className="cardcontainer">
-                        <img className="article-img" src={process.env.PUBLIC_URL+"/images/D00GoogleBook.png"} alt=" "/>
+                        <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00GoogleBook.png"} alt=" "/>
                         <div className="overlay" id="imgGoogleBook">
                             <div className="article-title" style={{"color":"black"}}>
                                 <h5>Google Book</h5>
@@ -71,13 +71,13 @@ function DeveloperPanel(){
                     </div>
                 </a>
                 <a href="https://github.com/muzlee1113/googlebooks">
-                    <img className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                    <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
             <article>
                 <a href="https://findfriendbyyuwen.herokuapp.com/">
                     <div className="cardcontainer">
-                        <img className="article-img" src={process.env.PUBLIC_URL+"/images/D00FriendFinder.png"} alt=" "/>
+                        <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00FriendFinder.png"} alt=" "/>
                         <div className="overlay" id="imgFriendFinder">
                             <div className="article-title" style={{"color":"black"}}>
                                 <h5>Friend Finder</h5>
@@ -88,13 +88,13 @@ function DeveloperPanel(){
                     </div>
                 </a>
                 <a href="https://github.com/muzlee1113/friendFinder">
-                    <img className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                    <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
             <article>
                 <a href="https://giphy-to-me.herokuapp.com/index.html">
                     <div className="cardcontainer">
-                        <img className="article-img" src={process.env.PUBLIC_URL+"/images/D00Giphytome.png"} alt=" "/>
+                        <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Giphytome.png"} alt=" "/>
                         <div className="overlay" id="imgGiphy">
                             <div className="article-title">
                                 <h5>GiphyToMe</h5>
@@ -106,13 +106,13 @@ function DeveloperPanel(){
                     </div>
                 </a>
                 <a href="https://github.com/cvanglee/House-Martell">
-                    <img className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                    <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
             <article>
                 <a href="https://giftasticpage.herokuapp.com/index.html">
                     <div className="cardcontainer">
-                        <img className="article-img" src={process.env.PUBLIC_URL+"/images/D00Giftastic.png"} alt=" "/>
+                        <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Giftastic.png"} alt=" "/>
                         <div className="overlay" id="imgGifTastic">
                             <div className="article-title">
                                 <h5>GifTastic</h5>
@@ -123,13 +123,13 @@ function DeveloperPanel(){
                     </div>
                 </a>
                 <a href="https://github.com/muzlee1113/GifTastic">
-                    <img className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                    <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
             <article>
                 <a href="https://drive.google.com/open?id=1PDLzrk75R6gNyPMB3-_W_WywX-euxVJa">
                     <div className="cardcontainer">
-                        <img className="article-img" src={process.env.PUBLIC_URL+"/images/D00Bamazon.png"} alt=" "/>
+                        <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Bamazon.png"} alt=" "/>
                         <div className="overlay" id="imgBamazon">
                             <div className="article-title" style={{"color":"black"}}>
                                 <h5>Bamazon</h5>
@@ -141,7 +141,7 @@ function DeveloperPanel(){
                     </div>
                 </a>
                 <a href="https://github.com/muzlee1113/bamazon">
-                    <img className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                    <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
         </section>

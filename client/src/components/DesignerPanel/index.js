@@ -15,7 +15,7 @@ function DesignerPanel (props) {
             <article>
                     <Link to="/work/readwithme">
                         <div className="cardcontainer">
-                            <img className="article-img" src={process.env.PUBLIC_URL + "/images/D00ReadwithMe.png"} alt=" "/>
+                            <img alt='' className="article-img" src={process.env.PUBLIC_URL + "/images/D00ReadwithMe.png"} alt=" "/>
                             <div className="overlay" id="imgReadwithMe">
                                 <div className="article-title" style={{"color":"black"}}>
                                     <h5>ReadwithMe</h5>
@@ -29,7 +29,7 @@ function DesignerPanel (props) {
                 <article>
                     <Link to="/work/photome">
                         <div className="cardcontainer">
-                            <img className="article-img" src={process.env.PUBLIC_URL+"/images/D00Photome.jpg"} alt=" "/>
+                            <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Photome.jpg"} alt=" "/>
                             <div className="overlay" id="imgPhotome">
                                 <div className="article-title" style={{"color":"black"}}>
                                     <h5>PhotoMe</h5>
@@ -43,7 +43,7 @@ function DesignerPanel (props) {
                 <article>
                     <Link to="/work/weather">
                         <div className="cardcontainer">
-                            <img className="article-img" src={process.env.PUBLIC_URL+"/images/D00Weather.png"} alt=" "/>
+                            <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Weather.png"} alt=" "/>
                             <div className="overlay" id="imgWeather">
                                 <div className="article-title">
                                     <h5>Weather</h5>
@@ -57,7 +57,7 @@ function DesignerPanel (props) {
                 <article>
                     <Link to="/work/lightup">
                         <div className="cardcontainer">
-                            <img className="article-img" src={process.env.PUBLIC_URL+"/images/D00Lightup.png"} alt=" "/>
+                            <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Lightup.png"} alt=" "/>
                             <div className="overlay" id="imgLightup">
                                 <div className="article-title">
                                     <h5>Light Up</h5>
@@ -71,7 +71,7 @@ function DesignerPanel (props) {
                 <article>
                     <Link to="/work/boardingpass">
                         <div className="cardcontainer">
-                            <img className="article-img" src={process.env.PUBLIC_URL+"/images/D00BoardingPass.png"} alt=" "/>
+                            <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00BoardingPass.png"} alt=" "/>
                             <div className="overlay" id="imgBoardingPass">
                                 <div className="article-title">
                                     <h5>The Boarding Pass</h5>

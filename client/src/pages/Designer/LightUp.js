@@ -15,7 +15,7 @@ function LightUp() {
             <section className="project_body">
                 <h2>Intro</h2>
                 <p>The lighting system of a hotel room is sometimes confusing and inconvenient: complicated control panel, perplexing matching between lights and switches, inaccessible switches in darkness, etc. In a UX workshop, my team tried to figure out a way to redesign the system an improve the experience.</p>
-                <img className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/LightUp/intro.jpg"} />
+                <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/LightUp/intro.jpg"} />
             </section>
             <section className="project_body">
                 <h2>Challenge Background</h2>
@@ -28,17 +28,17 @@ function LightUp() {
             <section className="project_body">
                 <h2>Research</h2>
                 <p>The typical layout and lighting system of a business hotel room is as follow.</p>
-                <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/layout.png"} />
+                <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/layout.png"} />
                 <ul>
                     <p>There are 8 different lights in the room. The lights fall into 2 kinds:</p>
                     <li className="p"><b>Ambient Lighting</b>: welcome light, central light, bathroom light</li>
                     <li className="p"><b>Task Lighting</b>: work lamp, floor lamp, bed lamp, mirror light, cabinet light</li>
                 </ul>
-                <img className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/LightUp/light_switches.png"} />
+                <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/LightUp/light_switches.png"} />
             </section>
             <section className="project_body">
                 <h2>Problem Space</h2>
-                <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/problem_space.png"} />
+                <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/problem_space.png"} />
 
                 <p>Based on research, the problem space can be located as follow:</p>
                 <p><b>① Unclear on/off condition</b></p>
@@ -54,22 +54,22 @@ function LightUp() {
             <section className="project_body">
                 <h2>The Solution</h2>
                 <p><b>Problematic Experience</b></p>
-                <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/LightUp/storyboard.png"} />
+                <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/LightUp/storyboard.png"} />
                 <p><b>Improved Experience</b></p>
-                <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/LightUp/storyboard_improved.png"} />
+                <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/LightUp/storyboard_improved.png"} />
                 <div className="divider"></div>
                 <ul>
                 <li className="p"><b>The Knob</b></li>
                 <br/>
                 <p>In order to reduce the learning curve, we found a way to cut down the number of switches, inspired by radio/climate control knob on cars.</p>
-                <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/knob_intro.jpg"} />
+                <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/knob_intro.jpg"} />
                 <p>The knob can either be controlled by pressing or turning. It turns continuously: clockwise scales up, counterclockwise scales down, with a feeling of detents to produce discrete selections. A backlit will be activated when the user touches the knob or the panel.</p>
-                <img className="project_illustration_extrasmall" src={process.env.PUBLIC_URL + "/images/LightUp/knob.png"} />
+                <img alt='' className="project_illustration_extrasmall" src={process.env.PUBLIC_URL + "/images/LightUp/knob.png"} />
                 <p>There are two knobs in the room: one at the entrance and one beside the bed. The settings of the two knobs are slightly different:</p>
                 <Container>
                     <Row className="align-items-center">
                         <Col xs={12} sm={12} md={6} lg={8}>
-                        <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/LightUp/knob_scales.gif"} />
+                        <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/LightUp/knob_scales.gif"} />
                         </Col>
                         <Col xs={12} sm={12} md={6} lg={4}>
                         <p className="project_caption" style={{"margin":"0.5em", "marginTop": "1em"}}><b>At the Entrance</b></p>
@@ -93,19 +93,19 @@ function LightUp() {
                 <li className="p"><b>The Welcome Light</b></li>
                 <br/>
                 <p>The welcome light will be lit when a guest swiped the keycard and will turn off when the keycard is inserted into the power wall slot</p>
-                <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/LightUp/welcome_light.png"} />
+                <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/LightUp/welcome_light.png"} />
                 <div className="divider"></div>
                 
                 <li className="p"><b>The Navigational Light</b></li>
                 <br/>
                 <p>Anti-stumble nightlight was added under the bed and at the edge of the wall to lead the guest in darkness.</p>
-                <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/navigational_light.jpg"} />
+                <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/navigational_light.jpg"} />
 
                 <div className="divider"></div>
                 <li className="p"><b>Individual Touch Switches</b></li>
                 <br/>
                 <p>Each of the lamps and mirror light can be controlled individually by touch switches beside. To better indicate the on/off condition, a light ring will show up when the light is on.</p>
-                <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/individual_light.png"} />
+                <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/individual_light.png"} />
                 <p className="project_info">* The demands of the knob is prioritized, i.e., once the guest press the knob to turn off all the light, then all lights will turn off including lamps and bathroom lights.</p>
                 </ul>
             </section>

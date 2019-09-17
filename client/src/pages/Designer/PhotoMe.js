@@ -12,14 +12,14 @@ function PhotoMe() {
                     <h1>PhotoMe</h1>
                     <h3>A mobile app that empowers others to create satisfactory portraits for you.</h3>
                     <div className="project_info">May to August 2018 (4 months), Bootcamp Individual Project</div>
-                    <img className="project_headerImg" src={process.env.PUBLIC_URL + "/images/PhotoMe/headerImg.png"} />
+                    <img alt='' className="project_headerImg" src={process.env.PUBLIC_URL + "/images/PhotoMe/headerImg.png"} />
                 </section>
                 <section className="project_body">
                     <h2>Intro</h2>
                     <p>I always felt frustrated when I asked my boyfriend to take a picture of me. Describing what I want, posing awkwardly in front of a bunch of strangers, the whole experience always ended up with piles of unsatisfactory portraits, lying in my phone. And I found that I was not alone.</p>
                     <br/>
                     <p><b>“Me in My Boyfriend's Camera”</b> became a hot discussion topic on the Internet in China. Many girls complained that their boyfriends made them look three times fatter and ungainly in the photo. A decent portrait by boyfriend has become a luxury.</p>
-                    <img className="project_headerImg" src={process.env.PUBLIC_URL + "/images/PhotoMe/intro.png"} />
+                    <img alt='' className="project_headerImg" src={process.env.PUBLIC_URL + "/images/PhotoMe/intro.png"} />
                     <p className="project_caption">The pictures a girl post online. The left is her expectation and the right is the actual photo taken by her boyfriend. She commented that: “I really don’t want to admit that it’s me.”</p>
                     <p>In the U.S., a new word, <b>“Instagram Husband”</b>, was coined, referring to dudes who are responsible for taking photos for their Instagram famous girls but more often than not fail the job. In fact, it is not the only husband that screws up. Parents and friends all do. Something is certainly not working.</p>
                 </section>
@@ -29,19 +29,19 @@ function PhotoMe() {
                     <p>Twelve respondents were interviewed to gain an understanding of the current process of photo shooting. Meanwhile, I also conducted passive observations in a gallery and park to find out how people take pictures for each other.</p>
                     <br/>
                     <p>A typical unsatisfactory portrait shooting experience can be divided in to seven steps as below, some of which are reversible:</p>
-                    <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/storyboard_vertical.png"} />
+                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/storyboard_vertical.png"} />
                     <p>Therefore, the reasons why people fail to take satisfactory portraits can be summarized as follow:</p>
-                    <img className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/PhotoMe/insight.png"} />
+                    <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/PhotoMe/insight.png"} />
                     <p>And indeed, most of the existing solutions are targeting some of these problem areas, except the one related to <b>communication</b>:</p>
-                    <img className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/PhotoMe/competition_analysis.png"} />
+                    <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/PhotoMe/competition_analysis.png"} />
 
                 </section>
                 <section className="project_body">
                     <h2>Key Insights</h2>
                     <p>According to these stories, we synthesizes the key insights:</p>
-                    <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/insight.png"} />
+                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/insight.png"} />
                     <p>From the journey map, it is clear that communication takes a large part in the process. So I sifted through the scripts from the lens of communication, and two particular quotes coming from a couple attracted my attention:</p>
-                    <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/quote.png"} />
+                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/quote.png"} />
                     <p>I realized that the key issue was not the nature of the scene nor the photographer's skill. The photographer knew exactly the angle, the light and the composition that he wanted for his "good" picture, but he didn't know or understand what she wanted for her good picture, because she failed to convey her expectation or he failed to grasp it.</p>
                     <br/>
                     <p>The biggest design opportunity I discovered lies in <b>communication</b>. So I reframed the problem as <b>why do people fail to convey or decode information in the photo-taking process? </b></p>
@@ -51,13 +51,13 @@ function PhotoMe() {
                     <p><b>1. People have no place to start the talk without a clear expectation.</b></p>
                     <br />
                     <p>The starting point of the photo-taking process, as well as the communication, is the subject's expectation of the picture, what it will look like. However, some subjects don't have a clear expectation.</p>
-                    <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/quote_2.png"} />
+                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/quote_2.png"} />
                     <p>Even if the subject holds a clear envision, it is often different from the photographer's. That's why communication becomes so essential a step in this process.</p>
                     <div className="divider"></div>
                     <p><b>2. People lack the common ground on which they can quickly and explicitly communicate.</b></p>
                     <br />
                     <p>Photography is complicated. Conveying one's expectation or instructing other how to take the picture involves a lot of detailed and subtle information, such as light, angle, composition, and so on. The subject often fails to give such detailed instruction all in once. So the photo taking process becomes frustrating:</p>
-                    <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/quote_3.png"} />
+                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/quote_3.png"} />
                     <p>Even if the subject manages to give some concrete instructions, for the photographer, to understand what those mean and apply them into the photo-taking process still <b>involves a lot of translations</b>. People use different words to refer to the same thing. When talking about 'Don't take the picture from a low angle' or 'Stand closer to me', the terms 'low angle' or 'closer' actually requires a clear and explicit definition. But when people talk before taking the picture, there is no time for them to clarify all the languages they use.</p>
                 </section>
                 <section className="project_body">
@@ -65,16 +65,16 @@ function PhotoMe() {
                     <p>To prevent the ambiguity of translation, people actually figured out some ways:</p>
                     <div className="divider"></div>
                     <p><b>1. Sample Picture</b></p>
-                    <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/sample_photo.png"} />
+                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/sample_photo.png"} />
                     <div className="divider"></div>
                     <p><b>2. Use the photographer as a selfie pole</b></p>
-                    <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/selfie.png"} />
+                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/selfie.png"} />
                     <p>These two workarounds inspired me to adopt the design principle: <b>What You See Is What You Get, show rather than tell.</b></p>
                 </section>
                 <section className="project_body">
                     <h2>Final Design</h2>
                     <h3><b>How might we help people better communicate in the photo taking process?</b></h3>
-                    <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/wireframe.png"} />
+                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/wireframe.png"} />
                     
                     <p><b>1. Manage Expectation</b></p>
                     <br />
@@ -82,7 +82,7 @@ function PhotoMe() {
                     <Container>
                     <Row className="align-items-center">
                         <Col xs={12} sm={12} md={6} lg={6}>
-                        <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/scan.gif"} />
+                        <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/scan.gif"} />
                         </Col>
                         <Col xs={12} sm={12} md={6} lg={6}>
                         <ul>
@@ -98,16 +98,16 @@ function PhotoMe() {
                     <Container>
                     <Row className="align-items-center justify-content-center">
                         <Col xs={12} sm={12} md={6} lg={6}>
-                        <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/scrapbook_save.gif"} />
+                        <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/scrapbook_save.gif"} />
                         <p className="project_caption">· Users can select and save pictures as sample in 'scrapbook' for future use.</p>
                         </Col>
                     </Row>
                     <Row className="align-items-center justify-content-center">
                         <Col xs={12} sm={12} md={6} lg={6}>
-                        <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/scrapbook_inner.gif"} />
+                        <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/scrapbook_inner.gif"} />
                         </Col>
                         <Col xs={12} sm={12} md={6} lg={6}>
-                        <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/scrapbook_select.gif"} />
+                        <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/scrapbook_select.gif"} />
                         </Col>
                         <Col xs={10} sm={10} md={10} lg={10}>
                         <p className="project_caption">· The saved samples can easily be retrieved in 'scrapbook' or by a bottom in photo-taking mode. Also, when taking photos, users can swipe to display related samples in the same folder.</p>
@@ -127,7 +127,7 @@ function PhotoMe() {
                     <Container>
                         <Row className="align-items-center">
                             <Col xs={12} sm={12} md={8} lg={8}>
-                            <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/layer.png"} />
+                            <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/layer.png"} />
                             </Col>
                             <Col xs={12} sm={12} md={4} lg={4}>
                             <ul>
@@ -140,10 +140,10 @@ function PhotoMe() {
                         </Row>
                         <Row className="align-items-center justify-content-around">
                             <Col xs={12} sm={12} md={6} lg={6}>
-                            <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/tag.png"} />
+                            <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/tag.png"} />
                             </Col>
                             <Col xs={12} sm={12} md={6} lg={6}>
-                            <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/tag_2.png"} />
+                            <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/tag_2.png"} />
                             </Col>
                             <Col xs={10} sm={10} md={5} lg={5}>
                             <p className="project_caption">· When shooting, users can easily add, edit, delete tags on screen; frequently-used tags can be saved deliberately or automatically for easy access</p>
@@ -162,10 +162,10 @@ function PhotoMe() {
                     </ul>
                     <Row className="align-items-center justify-content-around">
                         <Col xs={12} sm={12} md={6} lg={6}>
-                        <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/pencil.png"} />
+                        <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/pencil.png"} />
                         </Col>
                         <Col xs={12} sm={12} md={6} lg={6}>
-                        <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/pose.png"} />
+                        <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/pose.png"} />
                         </Col>
                         <Col xs={10} sm={10} md={5} lg={5}>
                         <p className="project_caption">· 'Pencil' can be used to jot down anything on the screen as a reference to communicate</p>
