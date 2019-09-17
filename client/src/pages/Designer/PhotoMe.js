@@ -39,7 +39,7 @@ function PhotoMe() {
                 <section className="project_body">
                     <h2>Key Insights</h2>
                     <p>According to these stories, we synthesizes the key insights:</p>
-                    <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/ReadwithMe/insight.png"} />
+                    <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/insight.png"} />
                     <p>From the journey map, it is clear that communication takes a large part in the process. So I sifted through the scripts from the lens of communication, and two particular quotes coming from a couple attracted my attention:</p>
                     <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/quote.png"} />
                     <p>I realized that the key issue was not the nature of the scene nor the photographer's skill. The photographer knew exactly the angle, the light and the composition that he wanted for his "good" picture, but he didn't know or understand what she wanted for her good picture, because she failed to convey her expectation or he failed to grasp it.</p>

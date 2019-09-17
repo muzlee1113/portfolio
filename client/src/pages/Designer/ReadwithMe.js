@@ -30,7 +30,6 @@ function ReadwithMe() {
                     <h2>Ideation and Design</h2>
                     <p>In order to better meet the needs of both parent and student, my team decided to modify the afterschool reading experience through three steps: <b>book matching</b>, <b>guided reading</b>, and <b>progress recording</b>.</p>
                     <br />
-                    <br />
                     <p><b>1. Book Matching</b></p>
                     <br />
                     <ul>
@@ -41,18 +40,18 @@ function ReadwithMe() {
                     <p><b>2. Guided Reading</b></p>
                     <br />
                     <ul>
-                        <li className="p" style={{ "marginBottom": "0.5em", "marginTop": "1em" }}><b>Active Learning</b></li>
+                        <li className="p"><b>Active Learning</b></li>
                         <p>The whole learning experience was designed according to E-learning design and language teaching principles. We divided the experience into 4 parts: Independent Reading, Challenge, Guided Reading and Exercise. The exercise part aims at leading students to turn the receptive language skills and knowledge into active use.</p>
                         <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/ReadwithMe/loop.png"} />
-                        <li className="p" style={{ "marginBottom": "0.5em", "marginTop": "4em" }}><b>Gamification</b></li>
+                        <li className="p p-list"><b>Gamification</b></li>
                         <p>The content of the product should be interesting to students. The learning process is gamified by adding challenge, ranking, and awarding trophies. The words they read and the points they gain from the practice will also work to grow the avatar so as to boost students' motivation.</p>
                         <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/ReadwithMe/gamification.png"} />
-                        <li className="p" style={{ "marginBottom": "0.5em", "marginTop": "4em" }}><b>Fitting into Fragmented Time</b></li>
+                        <li className="p p-list"><b>Fitting into Fragmented Time</b></li>
                         <p>We limited the duration of the instruction to 30 minutes. The lessons were also segmented into different parts (aforementioned 4 guided reading steps) so that students can check out between the sections and pick up whenever they want. The courses are offered on HTML-5 pages which are light-weighted and can easily be shared by link or QR code on SNSs. The instructions are given in audio format which is more accessible in situations, such as commuting to school or having a meal.</p>
-                        <li className="p" style={{ "marginBottom": "0.5em", "marginTop": "4em" }}><b>Audio Instructions + Paper Book</b></li>
+                        <li className="p p-list"><b>Audio Instructions + Paper Book</b></li>
                         <p>The instructions are given in audio format with paper books (bought by students themselves). Audio instructions are more accessible in various contexts. Moreover, it can activate students’ verbal channel and retain their visual attention on the text material when they are annotating. Plus, paper book and audio can also cut down students’ screen time.</p>
                         <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/ReadwithMe/audio.png"} />
-                        <li className="p" style={{ "marginBottom": "0.5em", "marginTop": "4em" }}><b>Parents’ Engagement</b></li>
+                        <li className="p p-list"><b>Parents’ Engagement</b></li>
                         <p>Parents’ involvement is important for the students, the products request parents’ participation in reading by asking them to film the final presentation project or take part in a family discussion of the reading.</p>
                         <img className="project_illustration_extrasmall" src={process.env.PUBLIC_URL + "/images/ReadwithMe/parentsEngagement.png"} />
                     </ul>
