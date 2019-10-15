@@ -18,7 +18,7 @@ function DesignerPanel (props) {
                             <img alt='' className="article-img" src={process.env.PUBLIC_URL + "/images/IoT/mockup_multiscreens.png"} alt=" "/>
                             <div className="overlay" id="imgReadwithMe">
                                 <div className="article-title" style={{"color":"black"}}>
-                                    <div>An IoT-based smart device management tool</div>
+                                    <div>An IoT-based smart city infrastructure management tool</div>
                                     <div className="article-subtitle">Improve the usability of IoT network in real-world contexts.</div>
                                     <div className="article-subtitle">UX Design | Usability Testing</div>
                                 </div>

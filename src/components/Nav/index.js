@@ -13,12 +13,12 @@ function Nav() {
                     activeClassName="link active_link"
                     className="link"
                     to="/about" exact>About</NavLink>
-                    <NavLink 
+                    {/* <NavLink 
                     // id="ptfpage" 
                     activeClassName="link active_link"
                     className="link"
                     to="/play" 
-                    exact>Play</NavLink>
+                    exact>Play</NavLink> */}
                     <NavLink 
                     // id="ptfpage" 
                     activeClassName="link active_link"

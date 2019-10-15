@@ -43,7 +43,7 @@ class IoT extends React.Component{
         <ScrollToTopOnMount />
             <div className="project_container">
                 <section id="list-item-0" className="project_head">
-                    <h1>IoT-based city infrastructure management tool</h1>
+                    <h1>An IoT-based smart city infrastructure management tool</h1>
                     <h3>Improve the usability of the IoT network in real-world contexts.</h3>
                     <div className="project_info">May - July, 2019, Work Project, shipped in August.</div>
                     </section>

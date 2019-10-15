@@ -336,7 +336,7 @@ h1{
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 48px;
   color: rgba(0, 0, 0, 0.8)
 
 }
@@ -405,7 +405,7 @@ p, .p{
 li, ol{
   /* list-style-type: disc; */
   list-style-position: inside;
-  margin-top: 1.05em 0 -0.46em!important;
+  margin-top: 1.05em 0 -0.46em;
   line-height: 1.58;
   list-style-type: circle
 }
