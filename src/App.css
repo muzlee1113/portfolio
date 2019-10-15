@@ -434,7 +434,13 @@ li, ol{
 }
 
 
-
+.project_bracket_title{
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 21px;
+  line-height: 1.58;
+  font-weight: 300;
+  margin: 2.95em 0 -2.95em;
+}
 
 .project_caption{
   /* margin-top: 21px;

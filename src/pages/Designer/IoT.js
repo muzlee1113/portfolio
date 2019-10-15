@@ -65,38 +65,40 @@ class IoT extends React.Component{
     
                 </section>
                 <section id="list-item-2" className="project_body">
-                    <h2>Research</h2>
+                    <h2>Preliminary Research</h2>
                     <h5>Who are our users and what are the constraints?</h5>
                     <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/deliver.jpg"} />
                     <p className="project_caption" style={{ "textAlign": "center" }}>I was delivering my findings to the project team.</p>
-                    <p>To better understand our end users, I interviewed managers and officers in a office park and also administrators from the department in charge of city sewage and light infrastructure. Combining with the knowledge from previous research, I was able to see the overall structure of the organization and how people actually work there.</p>
-                    <h6>Complex User Roles and Various Unmet Needs</h6>
+                    <h6>Methods</h6>
+                    <p>Field Trips and User Interviews</p>
+                    <h6>Participants</h6>
+                    <p>Managers and officers in a office park + Administrators from the department in charge of city sewage and light infrastructure. </p>
+                    <h6>Finding 1: Complex User Roles and Various Unmet Needs</h6>
                     <p>The biggest challenge we face when trying to define the users is that we are so far away from them. We worked for the client who worked for cities or parks. And they are the ones who will eventually implement the system. And normally, the organizations who are interested in IoT are big and complicated. After research, we defined that our users are people in these five different roles with various needs and goals.</p>
                     
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/user_role_need.png"} />   
-                    <p>Then we prioritized the jobs to be done (JTBD) and decided that, for this version, we were going to focus on helping the <b>system administrator</b> of the departments related to infrastructure, especially those taking care of the street light, sewage and environmental issues (air & water).</p>
+                    <p>Then, I asked my PM to prioritize the jobs to be done (JTBD) and we finally decided that, for this version, we were going to focus on helping the <b>system administrator</b> of the departments related to infrastructure, especially those taking care of the street light, sewage and environmental issues (air & water).</p>
                     
-                    <h6>Mismatch of System Models and User Mental Models</h6>
-                    <p>IoT system consists of various hardwares, softwares, communication channels, the cloud platform and cloud applications. It is complex and daunting. To create a better cloud application, I spent a lot of time talking with engineers and developers, to understand the purposes, functionalities and limitations of the devices.</p>
+                    <h6>Finding 2: Mismatch of System Models and User Mental Models</h6>
+                    <p>IoT system consists of various hardwares, softwares, communication channels, the cloud platform and cloud applications. It is complex and daunting. I spent a lot of time talking with engineers and developers, to understand the purposes, functionalities and limitations of the devices.</p>
                     
-                    <p>To my surprise, I found that many devices were not working in the ways as I thought it would be.</p>
+                    <p>To my surprise, I found that many devices were not working in the ways that as the users thought it would be.</p>
                     
                     <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/IoT/limitation.png"} />   
                     <p className="project_caption">For example, I thought that the smart street lights could adjust to changing ambient lights and for other cases, they followed a local schedule 'downloading' from the cloud. However, the truth is that the street lights themselves do not contain light sensors. The light sensors work independently, sending data to the cloud. It depends on the cloud application to process sensor data, calculate and send commands to the street lights to control them according to the changes of ambient light. Moreover, the street light works according to ‘a 24-hour clock’. Once the application sends a command, for example, asking it to turn on at 6:00 am, the street light will maintain its status (on or off) at the moment until the time of the internal clock reaches the first 6:00 am.</p>
-                    <p>The mysterious system images of the devices are so different from user mental models and thus created huge obstacles in their use. Also, they created a lot of technical challenges in implementation. </p>
+                    <p>The mysterious system images of the devices were so different from user mental models and thus created huge obstacles in their use. Also, they created a lot of technical challenges in implementation. </p>
                     </section>
                     
                     
                     <section>
-                        <h2>Design Problems</h2>
-                        <h5>What are the actionable problems?</h5>
-                        <p>To move from general knowledge to actionable items, I led a testing on existing website by inviting colleagues from different teams to play the role of a system administrator of the Nanshan District, and complete tasks we assigned according to the users’ daily tasks we learned from research. You can read <a href="https://docs.google.com/document/d/1Wzhgqrxo7YtJaYprwnFdA7flDMVM8VVzVDO9i_Pwb1Y/edit?usp=sharing">the English version of the script here.</a></p>
-                        <p>After several role-playing walkthroughs, I finally located the following problems that I can take actions to:</p>
+                        <h2>From General Knowledge to Design Problems</h2>
+                        <h5>Used usability testing to pivot on actionable items</h5> 
+                        <p>To bridge the preliminary research and design phase, I led a <b>role playing</b> session on existing website by inviting colleagues from different teams to play the role of a system administrator of the Nanshan District, and complete tasks we assigned according to the users’ daily tasks we learned from previous research. You can read <a href="https://docs.google.com/document/d/1Wzhgqrxo7YtJaYprwnFdA7flDMVM8VVzVDO9i_Pwb1Y/edit?usp=sharing">the English version of the script here.</a></p>
+                        <p>After several role-playing walkthroughs, I finally located the following problems that I could take actions to:</p>
                         <ul>
-                            <li><b>#1</b> Users cannot grasp the information of the dashboards at a glance;</li>
-                            <li><b>#2</b> Users are not satisfied with a single-page notification center when they want to keep track of anomalies and take actions;</li>
-                            <li><b>#3</b> Users are unable to navigate, zoom in and out the map view easily for both the overview and details;</li>
-                            <li><b>#4</b> Single-light real time control does not fit with the user working habits and the system’s end goal;</li>
+                            <li><b>#1</b> Users could not grasp system status at a glance and move from what they know to what they can do;</li>
+                            <li><b>#2</b> Users were unable to navigate, zoom in and out the map view easily for both a overview and details;</li>
+                            <li><b>#3</b> Single-light real time control did not not fit with the users' working habits;</li>
                         </ul>
                         
                     </section>     
@@ -109,46 +111,41 @@ class IoT extends React.Component{
        
                 <section id="list-item-3" className="project_body">
                     <h2>#1 Design Problem | Data visualization</h2>
-                    <h5>How can we help users to grasp the status of the system at a glance?</h5>
-                    <p>In the interview, I noticed that administrator's daily workflow involves three kinds of data</p>
+                    <h5>How can we help users to grasp and use the information they need?</h5>
+                    <p>In the interview, I noticed that administrator's daily workflow can be depicted as follow:</p>
                         <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/3_types_of_data.png"} />  
-              
+                        <p className="project_caption" style={{ "textAlign": "center" }}>A Day of an Administrator</p>
                     <h6>① Overview</h6>
-                    <p>As shown in the quotes, people often walked around the areas they in charge or checked the monitors, went through the history of data, and compared with others or some benchmarks to evaluate whether the system is healthy or not. Similarly, providing <b>real-time snapshot</b> of the system status, <b>historical records</b> and <b>comparisons</b> on the dashboards can help users to quickly grasp the overview. Thus, I tried to include all these three perspectives in the data visualization.</p>
-                    <p>So I started with low-fidelity prototypes and test them with my colleagues from administrative team as an alternative to real users since they have the most similiar mindset. I asked them to sort the graphs according to importance, and point out the ones they could not understand.</p>
+                    
+                    <p>I started with low-fidelity prototypes and test them with my colleagues from administrative team as an alternative to real users, since they share similiar mindset. I asked them to sort the graphs according to importance, and point out the ones they could not understand.</p>
                     <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/testing_vis.gif"} />
-                    <p className="project_caption">This is a clickable testing page I created with Axure. The tree maps on the left are the categories these graphs belong to including energy consumption data, quantity data and device type data. The graphs are drafted from all the three perspectives I mentioned above.</p>
-                    <p>Based on people’s reaction. I delivered four dashboards: one for all devices, which is at the homepage of the application; and others are for smart street lights, smart manhole covers and environment sensors. </p>
+                    <p className="project_caption">This is a clickable testing page I created with Axure. The graphs are drafted from all the three perspectives I mentioned above.</p>
+                    <p>I found that: </p>
+                    <div className="project_quote">
+                        <div className="project_quote_wrapper">
+                        <p className="project_quote_text">People make sense of data only in comparison.</p>
+                        </div>
+                    </div>
+                    
+                    <p><b>Real-time snapshots</b> of the system can reveal to them the status quo, but more importantly, comparing data with <b>historical records</b> and <b>others</b>  can help them interpret the data in contexts.</p>
+                   
+                    <p>Based on the insight. I delivered four dashboards: one for all devices, which is at the homepage of the application; and others are for smart street lights, smart manhole covers and environment sensors. </p>
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/street_light_dashboard.png"} />   
                     <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/street_light_dashboard_move.gif")}>Click to watch it move.</Button></div>
-                    <p className="project_caption">This is the dashboard for street lights. I created seven different variations and finally settled down on this one since it puts emphasis on snapshot of lighting in the area and allows users to compare among areas and across time.</p>
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/homepage_dashboard.png"} /> 
                     <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/homepage_dashboard_move.gif")}>Click to watch it move.</Button></div>
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/env_sensor_dashboard.png"} /> 
                     <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/env_sensor_dashboard_move.gif")}>Click to watch it move.</Button></div>
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/manhole_cover_dashboard.png"} /> 
                     <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/manhole_cover_dashboard_move.gif")}>Click to watch it move.</Button></div>
-                    <p className="project_caption">These are the other dashboards. The first one is on homepage. The visualization here focuses on showing the general status of the system. The second is dashboard for environmental sensors and the last for smart manhole covers.</p>
-    
-                    <p>To sum up, to show real-time status, I used big numbers, pie charts (especially for those numbers which are too big to make sense) and heatmaps, and put emphasis on abnormal areas on the map. For history, I used run charts. For comparison among areas, heatmap and ranking are useful. </p>
-
-                    <h6>② Anomalies</h6>
-                    <p>In the interview, participants kept mentioning how they checked on device breakdown or abnormal data in their daily work. They wanted to know what is going wrong, and they sought for more information, and guidance on how to bring them back to normal. So to feed this need, creating a better notification system is with high priority (this is described in the latter part). Moreover, we need to improve the dashboards to highlight abnormal data. So I worked with PM and engineers to define anomalies for different data and worked with visual designers on how they should be displayed.</p>
+                    <p> Moreover, we need to improve the dashboards to highlight abnormal data. So I worked with PM and engineers to define anomalies for different data and worked with visual designers on how they should be displayed.</p>
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/color_legend_icon.png"} />
                     <p className="project_caption" style={{ "textAlign": "center" }}>Icons credited to visual and graphic designer Shiguang Yang.</p>
                     <p>On the left are the color legends I created based on devices' data set and national standards; On the right are the icons indicating various device status.</p>
 
-                    <h6>③ Details</h6>
-                    <p>Sometimes users did go out to check on a specific device, mostly when something went wrong. Therefore, I linked alerts and abnormal area on heatmap with the related device’s detailed information. </p>
-                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/anomaly_to_detail.gif"} /> 
-                    <p className="project_caption">Here is an example of how users are able to navigate to detailed page of a specific device from dashboard map. The detailed page provides general information of the device, real-time data and also logs in forms of table and graph.</p>
+                    <h6>② Anomalies</h6>
+                    <p>In the interview, participants kept mentioning how they checked on device breakdown or abnormal data in their daily work. They wanted to know what is going wrong, and they sought for more information, and guidance on how to bring them back to normal.</p>
                     
-                </section>
-
-                <section id="list-item-4" className="project_body">
-                    <h2>#2 Design Problem | Interaction Design</h2>
-                    <h5>How can we alert users to the abnormal data and help them fix them?</h5>
-                    <p>As I mentioned before, users care about anomalies, since they indicate problems to be fixed. However, only noticing the problem is not enough. Users want ways to actually solve the problem. </p>
                     <p>I divided the process of alert into <b>three phases</b>: <b>notice</b>, <b>understand</b>, <b>act</b>. The biggest gap doesn’t lie between the anomaly and the user’s perception, but between perception and action.</p>
                     <img alt='three phases of alert design' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/three_phases.png"} />
                     <p className="project_caption">A sketch of the three phases of alert design and the wireframes of their application in the website.</p>
@@ -167,9 +164,21 @@ class IoT extends React.Component{
                     <p>In the previous phase, users can easily find an button that leads them to the page where they can kick off the procedure to deal with the problem.</p>
                     <img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/alert_3.gif"} />
                     
+                    
+            
+                    
+                    
+
+                    <h6>③ Detailed View</h6>
+                    <p>Sometimes users did go out to check on a specific device, mostly when something went wrong. Therefore, I linked alerts and abnormal area on heatmap with the related device’s detailed information. </p>
+                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/anomaly_to_detail.gif"} /> 
+                    <p className="project_caption">Here is an example of how users are able to navigate to detailed page of a specific device from dashboard map. The detailed page provides general information of the device, real-time data and also logs in forms of table and graph.</p>
+                    
                 </section>
+
+     
                 <section id="list-item-5" className="project_body">
-                    <h2>#3 Design Problem | Information Navigation & Findibility</h2>
+                    <h2>#2 Design Problem | Information Navigation & Findibility</h2>
                     <h5>How can we help users to navigate information at various scales?</h5>
                     <p>There are three important components in the map view of monitor and control hub: a map showing devices with icons, a list of devices in the right drawer, filters of areas and device types on the top. During the role-play walkthroughs, I found that: </p>
                     <Container>
@@ -215,7 +224,7 @@ class IoT extends React.Component{
                     
                 </section>
                 <section id="list-item-6" className="project_body">
-                    <h2>#4 Design Problem | Match System Image with User Mental Model</h2>
+                    <h2>#3 Design Problem | Match System Image with User Mental Model</h2>
                     <h5>How can we improve the way how users control the street lights to be simple and intuitive?</h5>
                     <h6>How do users actually work in real life?</h6>
                     <p>In the user interview, I found that how users set the working time of street lights was different from what I had thought. </p>
@@ -281,16 +290,15 @@ class IoT extends React.Component{
               onHide={() => this.setState({modalShow:false})} 
               url={this.state.url}
             />
-            <div className="scrollby" style={{position: "fixed", right: "3vw", bottom: "5vh"}}>
+            <div className="scrollby" style={{position: "fixed", right: "2vw", bottom: "5vh"}}>
                 <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
                     className="uk-nav uk-nav-default tm-nav uk-nav-parent-icon">
                     <li className="uk-l"><a href="#list-item-0">Top</a></li>
                     <li className="uk-l"><a href="#list-item-1">Background</a></li>
-                    <li className="uk-l"><a href="#list-item-2">Research</a></li>
-                    <li className="uk-l"><a href="#list-item-3">#1 Data Visualization: dashboards</a></li>
-                    <li className="uk-l"><a href="#list-item-4">#2 Interaction Design: notification</a></li>
-                    <li className="uk-l"><a href="#list-item-5">#3 Information Navigation: map</a></li>
-                    <li className="uk-l"><a href="#list-item-6">#4 System Image: street light control</a></li>
+                    <li className="uk-l"><a href="#list-item-2">Preliminary Research</a></li>
+                    <li className="uk-l"><a href="#list-item-3">#1 Make Data Glanceable and Usable</a></li>
+                    <li className="uk-l"><a href="#list-item-5">#2 Improve Information Navigation</a></li>
+                    <li className="uk-l"><a href="#list-item-6">#3 Improve System Image</a></li>
                     <li className="uk-l"><a href="#list-item-7">To Dos</a></li>
                     <li className="uk-l"><a href="#list-item-8">Takeaways</a></li>
                 </ul>
