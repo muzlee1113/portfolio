@@ -205,7 +205,7 @@ class IoT extends React.Component{
                             </Col>
                         </Row>
                     </Container>
-                    <h6>🙂1&2 Align interactions with users' expectations</h6>
+                    <h6>🙂1&2 Align interactions with users' expectations: WYSIWYG</h6>
                     <p>When users apply filters, they expect to see the results. When they drag or scroll the map, they are looking for devices outside the viewport. They map and list should work according to users' expectations. So I redesigned the logics as follow:</p>
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/logics.png"} />
                     <p className="project_caption" style={{ "textAlign": "center" }}>The New Logics</p>
