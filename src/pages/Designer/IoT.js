@@ -138,7 +138,7 @@ class IoT extends React.Component{
                     <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/env_sensor_dashboard_move.gif")}>Click to watch it move.</Button></div>
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/manhole_cover_dashboard.png"} /> 
                     <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/manhole_cover_dashboard_move.gif")}>Click to watch it move.</Button></div>
-                    <p> Moreover, we need to improve the dashboards to highlight abnormal data. So I worked with PM and engineers to define anomalies for different data and worked with visual designers on how they should be displayed.</p>
+                    <p> Moreover, we needed how we highlight abnormal data on the dashboards so that the indicators will be coherent throughout the system. So I worked with PM and engineers to define anomalies for different data and worked with visual designers on how they should be displayed.</p>
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/color_legend_icon.png"} />
                     <p className="project_caption" style={{ "textAlign": "center" }}>Icons credited to visual and graphic designer Shiguang Yang.</p>
                     <p>On the left are the color legends I created based on devices' data set and national standards; On the right are the icons indicating various device status.</p>
