@@ -1,0 +1,36 @@
+
+.scroll {
+    opacity: 0.6;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    background-color: white!important
+}
+
+.scroll:hover {
+    opacity: 1;
+}
+
+.arrow-up {
+    margin-right: 0!important;
+    margin-left: 0!important;
+    margin-top: 0rem!important;
+    margin-left: 0rem!important;
+}
+
+
+@media (max-width: 680px) {
+    
+    .scroll {
+        width: 2rem;
+        height: 2rem;
+        bottom: 0.5rem;
+        right: 0.8rem;
+        padding-left: 6px;
+        padding-right: 6px;
+
+    }
+  
+}

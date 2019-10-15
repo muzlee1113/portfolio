@@ -17,8 +17,20 @@ function Nav() {
                     // id="ptfpage" 
                     activeClassName="link active_link"
                     className="link"
+                    to="/play" 
+                    exact>Play</NavLink>
+                    <NavLink 
+                    // id="ptfpage" 
+                    activeClassName="link active_link"
+                    className="link"
+                    to="/code" 
+                    exact>Code</NavLink>
+                    <NavLink 
+                    // id="ptfpage" 
+                    activeClassName="link active_link"
+                    className="link"
                     to="/" 
-                    exact>Work</NavLink>
+                    exact>Design</NavLink>
                 </div>
         </header>
         </>)

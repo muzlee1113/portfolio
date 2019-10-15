@@ -1,22 +1,29 @@
 import React from "react";
 import '../index.css';
+import { NavLink } from "react-router-dom";
+import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
+
 
 
 function About() {
 
     return (<>
+    <ScrollToTopOnMount />
         <main className="about_content">
-            <section className="leading">
-                <p className="leading-bigtext">About<span className="leading-bigtext" style={{"color": "#9D2721"}}>.</span></p>
-                <p className="leading-text">Something more about me.</p>
-            </section>
-            <section className="text">
+            <section className="about_wrapper">
+                <h1 className="leading-bigtext">Something more about me<span className="leading-bigtext" style={{ "color": "#9D2721" }}>.</span></h1>
+                <h3 className="leading-text"></h3>
                 <div className="textcontainer">
-                    <p><b>Hi, I'm Yuwen</b>, a user-focused Designer and Front-End Developer motivated to integrate technologies and design thinking to solve problems and improve user’s experience. I'm now a student of Human Centered Design & Engineering (HCDE) Program at the University of Washington, Seattle. I was professionally trained in the Full-stack Web Development Boot Camp at Univerisity of Minnesota, learning HTML/CSS, React, Javascript, Node.js, MySQL, MongoDB, etc.</p>
-                    <br/>
-                    <p>I enjoy leveraging my academic background in Social Science, knowledge in human-centered design, and skills in programming to implement the user’s needs and wants, translate research insights into user-friendly product features. </p>
-                    <br/>
-                    <p>I was passionate about approaching challenges of the real world from the angles of both a designer and a developer, so as to speak for the users, drive cross-functional collaboration and create desirable, feasible, and viable products that can help people thrive in a digital environment.</p>
+                    <p><b>Hi, I'm Yuwen.</b> If you found your tongue twisted, just say ‘yuan’. It’s pretty close 😝. </p>
+                    <p>I’m now a student at the University of Washitong (Go Hustkies 🐾 !), </p>
+                    <p>studying human-centered design and engineering 🎨 📐 💻 📱.</p>
+                    <p>Before HCDE, I worked in education industry for 3 years as an <NavLink className="text_link" to="/teacher" exact>instructional designer</NavLink> 👩‍🏫 .</p>
+                    <p>Last year, I obtained a full-stack web development certificate at the University of Minnesota 👩‍💻.</p>
+                    <p>Even before that, I completed <NavLink className="text_link" to="/researcher" exact>MA (Communication, Media & Information Literacy)</NavLink> 👩‍🎓</p>
+                    <p>and BA (English Language and Literature) at Communication University of China 🇨🇳 .</p>
+                    <p>I had a minor in <NavLink className="text_link" to="/journalist" exact>TV directing</NavLink> 🎬.</p>
+                    <p>I’m a night owl 🦉 and dog person 🐶. </p>
+                    <p>When I’m not sitting in front of my computer screen, sketching or coding, I’m probably at the gym 🏋️‍, in the kitchen 👩‍🍳 or on a trip ✈️.</p>
                 </div>
             </section>
         </main>

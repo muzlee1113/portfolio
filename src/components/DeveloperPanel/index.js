@@ -1,5 +1,8 @@
 
 import React from "react";
+import {
+    Link 
+} from "react-router-dom";
 
 
 function DeveloperPanel(){
@@ -7,20 +10,22 @@ function DeveloperPanel(){
     return(
         <section className="cards" id="developer_panel">
             <article>
-                <a href="http://www.whats-in-store.net/">
+            <Link to="/work/WIS">
+                {/* <a href="http://www.whats-in-store.net/"> */}
                     <div className="cardcontainer">
-                        <img alt='' className="article-img" src={process.env.PUBLIC_URL + "/images/D00WIS.png"} alt=" "/>
+                        <img className="article-img" src={process.env.PUBLIC_URL + "/images/D00WIS.png"} alt=" "/>
                         <div className="overlay" id="imgWIS">
                             <div className="article-title">
                                 <h5>What's In Store</h5>
-                                <h6>A tool for business owner to manage their inventories online.</h6>
+                                <h6>A helpful tool for people to set up online shop and manage their inventories.</h6>
                                 <h6>React | Express | MongoDB</h6>
                             </div>
                         </div>
                     </div>
-                </a>
+                {/* </a> */}
+            </Link>
                 <a href="https://github.com/jakescheele/whats-in-store">
-                    <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                    <img className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
             <article>
@@ -29,9 +34,9 @@ function DeveloperPanel(){
                         <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Petpark.png"} alt=" "/>
                         <div className="overlay" id="imgPetPark">
                             <div className="article-title">
-                                <h5>Pet Park</h5>
-                                <h6>A web tamagotchi game that kids love.</h6>
-                                <h6>Handlebars | SQL | Express </h6>
+                                <div>Pet Park</div>
+                                <div className="article-subtitle">A web tamagotchi game that kids love.</div>
+                                <div className="article-subtitle">Handlebars | SQL | Express </div>
                             </div>
                         </div>
                     </div>
@@ -46,9 +51,9 @@ function DeveloperPanel(){
                         <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Newsdigest.png"} alt=" "/>
                         <div className="overlay" id="imgNews">
                             <div className="article-title">
-                                <h5>News Digest</h5>
-                                <h6>A web application that allows users to read, save and note NYT News.</h6>
-                                <h6>Handlebars | Express | MongoDB </h6>
+                                <div>News Digest</div>
+                                <div className="article-subtitle">A web application that allows users to read, save and note NYT News.</div>
+                                <div className="article-subtitle">Handlebars | Express | MongoDB </div>
                             </div>
                         </div>
                     </div>
@@ -58,37 +63,20 @@ function DeveloperPanel(){
                 </a>
             </article>
             <article>
-                <a href="https://googlebooksbyyuwen.herokuapp.com/">
-                    <div className="cardcontainer">
-                        <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00GoogleBook.png"} alt=" "/>
-                        <div className="overlay" id="imgGoogleBook">
-                            <div className="article-title" style={{"color":"black"}}>
-                                <h5>Google Book</h5>
-                                <h6>A web application that allow users to search and save books.</h6>
-                                <h6>React| MongoDB | Express</h6>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://github.com/muzlee1113/googlebooks">
-                    <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
-                </a>
-            </article>
-            <article>
                 <a href="https://findfriendbyyuwen.herokuapp.com/">
                     <div className="cardcontainer">
                         <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00FriendFinder.png"} alt=" "/>
                         <div className="overlay" id="imgFriendFinder">
                             <div className="article-title" style={{"color":"black"}}>
-                                <h5>Friend Finder</h5>
-                                <h6>A website to match users with their soul mate by a survey.</h6>
-                                <h6>Node.js | MySQL | Express</h6>
+                                <div>Friend Finder</div>
+                                <div className="article-subtitle">A website to match users with their soul mate by a survey.</div>
+                                <div className="article-subtitle">Node.js | MySQL | Express</div>
                             </div>
                         </div>
                     </div>
                 </a>
                 <a href="https://github.com/muzlee1113/friendFinder">
-                    <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                    <img alt='' className="code invert" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
             <article>
@@ -97,10 +85,10 @@ function DeveloperPanel(){
                         <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Giphytome.png"} alt=" "/>
                         <div className="overlay" id="imgGiphy">
                             <div className="article-title">
-                                <h5>GiphyToMe</h5>
-                                <h6>A facial recognition application that generates gifs and text according to the
-                                    physical attributes of the uploaded image.</h6>
-                                <h6>HTML/CSS | JQuery | APIs</h6>
+                                <div>GiphyToMe</div>
+                                <div className="article-subtitle">A facial recognition application that generates gifs and text according to the
+                                    physical attributes of the uploaded image.</div>
+                                <div className="article-subtitle">HTML/CSS | JQuery | APIs</div>
                             </div>
                         </div>
                     </div>
@@ -115,32 +103,14 @@ function DeveloperPanel(){
                         <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Giftastic.png"} alt=" "/>
                         <div className="overlay" id="imgGifTastic">
                             <div className="article-title">
-                                <h5>GifTastic</h5>
-                                <h6>A website that allows users search trendy gifs of their favorite characters.</h6>
-                                <h6>HTML/CSS | JQuery | APIs</h6>
+                                <div>GifTastic</div>
+                                <div className="article-subtitle">A website that allows users search trendy gifs of their favorite characters.</div>
+                                <div className="article-subtitle">HTML/CSS | JQuery | APIs</div>
                             </div>
                         </div>
                     </div>
                 </a>
                 <a href="https://github.com/muzlee1113/GifTastic">
-                    <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
-                </a>
-            </article>
-            <article>
-                <a href="https://drive.google.com/open?id=1PDLzrk75R6gNyPMB3-_W_WywX-euxVJa">
-                    <div className="cardcontainer">
-                        <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Bamazon.png"} alt=" "/>
-                        <div className="overlay" id="imgBamazon">
-                            <div className="article-title" style={{"color":"black"}}>
-                                <h5>Bamazon</h5>
-                                <h6>A node.js application that run to simulate Amazon with customer, manager and
-                                    supervisor mode.</h6>
-                                <h6>Node.js | MySQL</h6>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://github.com/muzlee1113/bamazon">
                     <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>

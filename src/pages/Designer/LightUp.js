@@ -1,11 +1,14 @@
 import React from "react";
 import { Container, Col, Row } from 'react-bootstrap';
+import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
+import BackToTopBtn from "../../components/BackToTopBtn"
 
 
 
 function LightUp() {
 
     return (<>
+        <ScrollToTopOnMount />
         <div className="project_container">
             <section className="project_head">
                 <h1>Light Up</h1>
@@ -13,54 +16,54 @@ function LightUp() {
                 <div className="project_info">June 23, 2018 (1 day), Workshop Project</div>
             </section>
             <section className="project_body">
-                <h2>Intro</h2>
+                <h2>INTRO</h2>
                 <p>The lighting system of a hotel room is sometimes confusing and inconvenient: complicated control panel, perplexing matching between lights and switches, inaccessible switches in darkness, etc. In a UX workshop, my team tried to figure out a way to redesign the system an improve the experience.</p>
                 <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/LightUp/intro.jpg"} />
             </section>
             <section className="project_body">
-                <h2>Challenge Background</h2>
+                <h2>BACKGROUND</h2>
+                <h5>Redesign Hotel Room Light Control System</h5>
                 <ul>
-                    <p className="p"><b>Redesign Hotel Room Light Control System</b></p>
-                    <li className="p">Hotel Type: A typical business hotel</li>
-                    <li className="p">Guests: Business travelers, tour couples, individual tourists</li>
+                    <li >Hotel Type: A typical business hotel</li>
+                    <li >Guests: Business travelers, tour couples, individual tourists</li>
                 </ul>
             </section>
             <section className="project_body">
-                <h2>Research</h2>
+                <h2>SECONDARY RESEARCH</h2>
+                <h5>Classify the artifacts</h5>
                 <p>The typical layout and lighting system of a business hotel room is as follow.</p>
                 <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/layout.png"} />
                 <ul>
                     <p>There are 8 different lights in the room. The lights fall into 2 kinds:</p>
-                    <li className="p"><b>Ambient Lighting</b>: welcome light, central light, bathroom light</li>
-                    <li className="p"><b>Task Lighting</b>: work lamp, floor lamp, bed lamp, mirror light, cabinet light</li>
+                    <li ><b>Ambient Lighting</b>: welcome light, central light, bathroom light</li>
+                    <li ><b>Task Lighting</b>: work lamp, floor lamp, bed lamp, mirror light, cabinet light</li>
                 </ul>
                 <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/LightUp/light_switches.png"} />
             </section>
             <section className="project_body">
-                <h2>Problem Space</h2>
+                <h2>USER RESEARCH</h2>
+                <h5>What makes light system of your hotel room annoying?</h5>
                 <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/problem_space.png"} />
 
                 <p>Based on research, the problem space can be located as follow:</p>
-                <p><b>① Unclear on/off condition</b></p>
-                <li className="p">There are more than two central light switches in the room, one set near the door, one near the bed, connected in a parallel circuit. In this case, the control is complex and confusing sometimes.</li>
-                <br />
-                <p><b>② Inaccessible controls</b></p>
-                <li className="p">Individual switches are located near the light. Guests have to approach them and control them separately;</li>
-                <li className="p">It is hard to reach out for the switches in darkness.</li>
-                <br />
-                <p><b>③ Unclear matching between lights and controls</b></p>
-                <li className="p">There are too many switches or button on the panels, which results in a steep learning curve for the guests.</li>
+                <h6>① Unclear on/off condition</h6>
+                <li >There are more than two central light switches in the room, one set near the door, one near the bed, connected in a parallel circuit. In this case, the control is complex and confusing sometimes.</li>
+                <h6>② Inaccessible controls</h6>
+                <li>Individual switches are located near the lights. Guests have to approach them and control them separately;</li>
+                <li>It is hard to reach out for the switches in darkness.</li>
+                <h6>③ Unclear matching between lights and controls</h6>
+                <li >There are too many switches or button on the panels, which results in a steep learning curve for the guests.</li>
             </section>
             <section className="project_body">
-                <h2>The Solution</h2>
-                <p><b>Problematic Experience</b></p>
+                <h2>THE SOLUTION</h2>
+                <h5>How might we make light control an intuitive and foolproof experience?</h5>
+                <h6>Problematic Experience</h6>
                 <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/LightUp/storyboard.png"} />
-                <p><b>Improved Experience</b></p>
+                <h6>Improved Experience</h6>
                 <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/LightUp/storyboard_improved.png"} />
                 <div className="divider"></div>
                 <ul>
-                <li className="p"><b>The Knob</b></li>
-                <br/>
+                <li class="p-list">The Knob</li>
                 <p>In order to reduce the learning curve, we found a way to cut down the number of switches, inspired by radio/climate control knob on cars.</p>
                 <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/knob_intro.jpg"} />
                 <p>The knob can either be controlled by pressing or turning. It turns continuously: clockwise scales up, counterclockwise scales down, with a feeling of detents to produce discrete selections. A backlit will be activated when the user touches the knob or the panel.</p>
@@ -90,20 +93,17 @@ function LightUp() {
                 </Container>
                 <div className="divider"></div>
                 
-                <li className="p"><b>The Welcome Light</b></li>
-                <br/>
+                <li class="p-list">The Welcome Light</li>
                 <p>The welcome light will be lit when a guest swiped the keycard and will turn off when the keycard is inserted into the power wall slot</p>
                 <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/LightUp/welcome_light.png"} />
                 <div className="divider"></div>
                 
-                <li className="p"><b>The Navigational Light</b></li>
-                <br/>
+                <li class="p-list">The Navigational Light</li>
                 <p>Anti-stumble nightlight was added under the bed and at the edge of the wall to lead the guest in darkness.</p>
                 <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/navigational_light.jpg"} />
 
                 <div className="divider"></div>
-                <li className="p"><b>Individual Touch Switches</b></li>
-                <br/>
+                <li class="p-list">Individual Touch Switches</li>
                 <p>Each of the lamps and mirror light can be controlled individually by touch switches beside. To better indicate the on/off condition, a light ring will show up when the light is on.</p>
                 <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/LightUp/individual_light.png"} />
                 <p className="project_info">* The demands of the knob is prioritized, i.e., once the guest press the knob to turn off all the light, then all lights will turn off including lamps and bathroom lights.</p>
@@ -111,12 +111,13 @@ function LightUp() {
             </section>
         
             <section className="project_body">
-                <h2>Takeaways</h2>
-                <p><b>Put myself in users' shoes</b></p>
+                <h2>TAKEAWAYS</h2>
+                <h6>Put myself in users' shoes</h6>
                 <p>When I played a role as a customer, dragging a suitcase, trying to open the light in a hotel room, and getting up from the bed and trying to open a dim light in pitch-dark, I found that empathy asked one to feeling with others, to experience and, therefore, understand what others experienced.</p>
             </section>
             
         </div>
+        <BackToTopBtn />
         </>)
 }
 
