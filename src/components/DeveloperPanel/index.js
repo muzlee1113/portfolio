@@ -16,9 +16,9 @@ function DeveloperPanel(){
                         <img className="article-img" src={process.env.PUBLIC_URL + "/images/D00WIS.png"} alt=" "/>
                         <div className="overlay" id="imgWIS">
                             <div className="article-title">
-                                <h5>What's In Store</h5>
-                                <h6>A helpful tool for people to set up online shop and manage their inventories.</h6>
-                                <h6>React | Express | MongoDB</h6>
+                                <div>What's In Store</div>
+                                <div className="article-subtitle">A helpful tool for people to set up online shop and manage their inventories.</div>
+                                <div className="article-subtitle">React | Express | MongoDB</div>
                             </div>
                         </div>
                     </div>

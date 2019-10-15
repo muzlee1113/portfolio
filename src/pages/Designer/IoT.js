@@ -55,11 +55,11 @@ class IoT extends React.Component{
                 <section className="project_body">  
                     <h2>BACKGROUND</h2>
                     <h6>Client Name</h6>
-                    <p><a href="h6tp://www.szxylg.com">新阳蓝光 | Xingyang Languang</a> is a smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial and office parks.</p>
+                    <p><a href="h6tp://www.szxylg.com">新阳蓝光 | Xingyang Languang</a> is a smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</p>
                     <h6>Project End Goal</h6>
-                    <p>To improve the usability of the back-stage management tool of the client’s products which serve the IoT-based city infrastructure.</p>
+                    <p>To improve the usability of the back-stage management tool for the client’s products which serve the IoT-based city infrastructure.</p>
                     <h6>My Role</h6>
-                    <p>I was the only UX designer in the team. I pitched in at about midway of the research phase. I worked with the product manager in an iterative cycle of user interviews, rapid prototyping and heuristics evaluation. Eventually, I worked alongside two visual designers to deliver the interactive high-fidelity prototypes to the development team. I stopped working on the project as the websites started to be built.</p>
+                    <p>I was the only UX designer in the team. I pitched in at about midway of the research phase. I worked with the product manager in an iterative cycle of user interviews, rapid prototyping and usability testing. Moreover, I worked alongside two visual designers to deliver the interactive high-fidelity prototypes to the development team. I stopped working on the project as the websites started to be built.</p>
                     <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/team.jpg"} />
                     <p className="project_caption" style={{ "textAlign": "center" }}>Me & My Teammates</p>
     
@@ -69,20 +69,20 @@ class IoT extends React.Component{
                     <h5>Who are our users and what are the constraints?</h5>
                     <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/deliver.jpg"} />
                     <p className="project_caption" style={{ "textAlign": "center" }}>I was delivering my findings to the project team.</p>
-                    <p>To better understand our end users, I talked with managers and officers in a office park and also administrators from the department in charge of city sewage and light infrastructure. Combining with the knowledge from previous research, I was able to see the overall structure of the organization and how people actually work there.</p>
-                    <h6>Complex User Groups and Various Unmet Needs</h6>
-                    <p>The biggest challenge we face when trying to define the users is that we are so far away from them. We worked for the client who worked for the city or park which will eventually implement the system. And normally, the organizations who are interested in IoT are big and complicated. After research, we defined that our users are people in these five different roles with various needs and goals.</p>
+                    <p>To better understand our end users, I interviewed managers and officers in a office park and also administrators from the department in charge of city sewage and light infrastructure. Combining with the knowledge from previous research, I was able to see the overall structure of the organization and how people actually work there.</p>
+                    <h6>Complex User Roles and Various Unmet Needs</h6>
+                    <p>The biggest challenge we face when trying to define the users is that we are so far away from them. We worked for the client who worked for cities or parks. And they are the ones who will eventually implement the system. And normally, the organizations who are interested in IoT are big and complicated. After research, we defined that our users are people in these five different roles with various needs and goals.</p>
                     
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/user_role_need.png"} />   
-                    <p>Then we prioritized the jobs to be done (JTBD) and decided that, for this version, we were going to focus on helping the <b>system administrator</b> of the department related to infrastructure, especially those taking care of the light system and environmental issues (air & water).</p>
+                    <p>Then we prioritized the jobs to be done (JTBD) and decided that, for this version, we were going to focus on helping the <b>system administrator</b> of the departments related to infrastructure, especially those taking care of the street light, sewage and environmental issues (air & water).</p>
                     
                     <h6>Mismatch of System Models and User Mental Models</h6>
                     <p>IoT system consists of various hardwares, softwares, communication channels, the cloud platform and cloud applications. It is complex and daunting. To create a better cloud application, I spent a lot of time talking with engineers and developers, to understand the purposes, functionalities and limitations of the devices.</p>
                     
                     <p>To my surprise, I found that many devices were not working in the ways as I thought it would be.</p>
                     
-                    <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/limitation.png"} />   
-                    <p className="project_caption">For example, the street light itself does not contain a light sensor. The light sensors work independently, sending data to the cloud. It depends on the cloud application to process  sensor data, calculate and send commands to the street lights to control them according to the changes of ambient light. Moreover, the street light works according to ‘a 24-hour clock’. Once the application sends a command, for example, asking it to turn on at 6:00 am, the street light will maintain its status (on or off) now until the time of the internal clock reaches the first 6:00 am.</p>
+                    <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/IoT/limitation.png"} />   
+                    <p className="project_caption">For example, I thought that the smart street lights could adjust to changing ambient lights and for other cases, they followed a local schedule 'downloading' from the cloud. However, the truth is that the street lights themselves do not contain light sensors. The light sensors work independently, sending data to the cloud. It depends on the cloud application to process sensor data, calculate and send commands to the street lights to control them according to the changes of ambient light. Moreover, the street light works according to ‘a 24-hour clock’. Once the application sends a command, for example, asking it to turn on at 6:00 am, the street light will maintain its status (on or off) at the moment until the time of the internal clock reaches the first 6:00 am.</p>
                     <p>The mysterious system images of the devices are so different from user mental models and thus created huge obstacles in their use. Also, they created a lot of technical challenges in implementation. </p>
                     </section>
                     
