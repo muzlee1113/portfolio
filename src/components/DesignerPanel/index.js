@@ -16,11 +16,43 @@ function DesignerPanel (props) {
                     <Link to="/work/IoT">
                         <div className="cardcontainer">
                             <img alt='' className="article-img" src={process.env.PUBLIC_URL + "/images/IoT/mockup_multiscreens.png"} alt=" "/>
-                            <div className="overlay" id="imgReadwithMe">
-                                <div className="article-title" style={{"color":"black"}}>
+                            <div className="overlay" id="imgIoT">
+                                <div className="article-title">
                                     <div>An IoT-based smart city infrastructure management tool</div>
                                     <div className="article-subtitle">Improve the usability of IoT network in real-world contexts.</div>
-                                    <div className="article-subtitle">UX Design | Usability Testing</div>
+                                    <div className="article-subtitle">User Research | UX Design | Usability Testing</div>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+            </article>
+            <article>
+                    <Link to="/work/materialbank">
+                        <div className="cardcontainer" >
+                            <img alt=''  className="article-img" src={process.env.PUBLIC_URL + "/images/MaterialBank/Mockup.png"} alt=" "/>
+                            <div className="shade"></div>
+                            <p className="tbdOverlay">Coming Soon</p>
+                            <div className="overlay" id="imgMB">
+                                <div className="article-title">
+                                    <div>Material Bank</div>
+                                    <div className="article-subtitle">A website that helps designers search, learn, collect and choose CMF.</div>
+                                    <div className="article-subtitle">User Research | UX Design</div>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+            </article>
+            <article>
+                    <Link to="/work/Kit">
+                        <div className="cardcontainer" >
+                            <img alt='' className="article-img" src={process.env.PUBLIC_URL + "/images/D00Kit.png"} alt=" "/>
+                            <div className="shade"></div>
+                            <p className="tbdOverlay">Coming Soon</p>
+                            <div className="overlay" id="imgKit">
+                                <div className="article-title" style={{"color":"black"}}>
+                                    <div>A Design-to-dev Handoff Kit</div>
+                                    <div className="article-subtitle">Translate high-fidelity design into machine language</div>
+                                    <div className="article-subtitle">Documentation | Cross-functional Collaboration</div>
                                 </div>
                             </div>
                         </div>

@@ -218,6 +218,26 @@ article {
   z-index:2;
 }
 
+.tbdOverlay{
+    color: white;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.shade {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
 #imgGoogleBook {
   background-color: #F8E4B0;
 }
@@ -263,7 +283,7 @@ article {
 }
 
 #imgPhotome{
-  background-color: #F7E5D9
+  background-color: #FED9DD
 }
 
 #imgWeather{
@@ -278,7 +298,17 @@ article {
   background-color: #6D98E8
 }
 
+#imgIoT{
+  background-color: #848484
+}
 
+#imgKit{
+  background-color: #F1EFED
+}
+
+#imgMB{
+  background-color: #A5A1A0;
+}
 
 .cardcontainer:hover .overlay{
   opacity: 1;

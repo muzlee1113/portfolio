@@ -95,12 +95,15 @@ class IoT extends React.Component{
                         <h5>Used usability testing to pivot on actionable items</h5> 
                         <p>To bridge the preliminary research and design phase, I led a <b>role playing</b> session on existing website by inviting colleagues from different teams to play the role of a system administrator of the Nanshan District, and complete tasks we assigned according to the users’ daily tasks we learned from previous research. You can read <a href="https://docs.google.com/document/d/1Wzhgqrxo7YtJaYprwnFdA7flDMVM8VVzVDO9i_Pwb1Y/edit?usp=sharing">the English version of the script here.</a></p>
                         <p>After several role-playing walkthroughs, I finally located the following problems that I could take actions to:</p>
-                        <ul>
-                            <li><b>#1</b> Users could not grasp system status at a glance and move from what they know to what they can do;</li>
-                            <li><b>#2</b> Users were unable to navigate, zoom in and out the map view easily for both a overview and details;</li>
-                            <li><b>#3</b> Single-light real time control did not not fit with the users' working habits;</li>
+                        <div className="scrollby">
+                        <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+
+                            <br/>
+                            <li><a href="#list-item-3"><b style={{textDecorationLine:"underline"}}>#1</b> Users could not grasp system status at a glance and move from what they know to what they can do;</a></li>
+                            <li ><a href="#list-item-5"><b style={{textDecorationLine:"underline"}}>#2</b> Users were unable to navigate, zoom in and out the map view easily for both a overview and details;</a></li>
+                            <li><a href="#list-item-6"><b style={{textDecorationLine:"underline"}}>#3</b> Single-light real time control did not not fit with the users' working habits;</a></li>
                         </ul>
-                        
+                        </div>
                     </section>     
                     
              
