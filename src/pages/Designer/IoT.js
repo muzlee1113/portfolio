@@ -60,14 +60,14 @@ class IoT extends React.Component{
                     <p>To improve the usability of the back-stage management tool for the client’s products which serve the IoT-based city infrastructure.</p>
                     <h6>My Role</h6>
                     <p>I was the only UX designer in the team. I pitched in at about midway of the research phase. I worked with the product manager in an iterative cycle of user interviews, rapid prototyping and usability testing. Moreover, I worked alongside two visual designers to deliver the interactive high-fidelity prototypes to the development team. I stopped working on the project as the websites started to be built.</p>
-                    <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/team.jpg"} />
+                    <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/team.png"} />
                     <p className="project_caption" style={{ "textAlign": "center" }}>Me & My Teammates</p>
     
                 </section>
                 <section id="list-item-2" className="project_body">
                     <h2>Preliminary Research</h2>
                     <h5>Who are our users and what are the constraints?</h5>
-                    <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/deliver.jpg"} />
+                    <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/deliver.png"} />
                     <p className="project_caption" style={{ "textAlign": "center" }}>I was delivering my findings to the project team.</p>
                     <h6>Methods</h6>
                     <p>Field Trips and User Interviews</p>
