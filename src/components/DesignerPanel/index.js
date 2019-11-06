@@ -6,73 +6,32 @@ import {
     Route
 } from "react-router-dom";
 
+import Fade from 'react-reveal/Fade';
+import WorkCard from '../WorkCard'
+import WorkCardWithSub from '../WorkCardWithSub'
+
+
 
 
 function DesignerPanel (props) {
     
     return (<>
-        <section className="cards show" id="designer_panel">
+                {/* <div className="divider"></div> */}
+                <WorkCardWithSub url='/work/IoT' imgUrl='/images/IoT/mockup_multiscreens.png' name='An IoT-based smart city infrastructure management tool' tagline='Improve the usability of IoT network in real-world contexts.' description='User Research + UX Design' labels={['IoT', 'SaaS', 'Web Design', 'Management Tool','Data Visualization', 'information navigation', 'contextual inquiries', 'usability testing']} bgColor="#f8f8f8" tColor="#0f0f0f"/>
+                
+                <WorkCard url='/work/materialbank' imgUrl='/images/MaterialBank/mockup_transparent.png' name='Material Bank' tagline='A website that helps designers find the materials they need, learn CMF and get inspired.' description='User Research + UX Design' labels={['web design', 'information findability', 'data visualization', 'usability testing']} bgColor="#f8f8f8" tColor="#0f0f0f"/>
+
+                <WorkCard url='/work/readwithme' imgUrl='/images/D00ReadwithMe.png' name='ReadwithMe' tagline='A web application that provides afterschool English reading guidance and instructions to middle school students.' description='User Research + Product Design + Instructional Design' labels={['mobile', 'web application', 'gamification', 'design for behavior change']} bgColor="#f8f8f8" tColor="#0f0f0f"/>
+    
+       
+                <Fade bottom>
+        <div className="work_wrapper">
+            <div className="section-title-container">
+                <h6>Other projects I do for learning.</h6>
+            </div>
+            
+            <div className="cards show">
             <article>
-                    <Link to="/work/IoT">
-                        <div className="cardcontainer">
-                            <img alt='' className="article-img" src={process.env.PUBLIC_URL + "/images/IoT/mockup_multiscreens.png"} alt=" "/>
-                            <div className="overlay" id="imgIoT">
-                                <div className="article-title">
-                                    <div>An IoT-based smart city infrastructure management tool</div>
-                                    <div className="article-subtitle">Improve the usability of IoT network in real-world contexts.</div>
-                                    <div className="article-subtitle">User Research | UX Design | Usability Testing</div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-            </article>
-            <article>
-                    <Link to="/work/materialbank">
-                        <div className="cardcontainer" >
-                            <img alt=''  className="article-img" src={process.env.PUBLIC_URL + "/images/MaterialBank/Mockup.png"} alt=" "/>
-                            <div className="shade"></div>
-                            <p className="tbdOverlay">Coming Soon</p>
-                            <div className="overlay" id="imgMB">
-                                <div className="article-title">
-                                    <div>Material Bank</div>
-                                    <div className="article-subtitle">A website that helps designers search, learn, collect and choose CMF.</div>
-                                    <div className="article-subtitle">User Research | UX Design</div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-            </article>
-            <article>
-                    <Link to="/work/Kit">
-                        <div className="cardcontainer" >
-                            <img alt='' className="article-img" src={process.env.PUBLIC_URL + "/images/D00Kit.png"} alt=" "/>
-                            <div className="shade"></div>
-                            <p className="tbdOverlay">Coming Soon</p>
-                            <div className="overlay" id="imgKit">
-                                <div className="article-title" style={{"color":"black"}}>
-                                    <div>A Design-to-dev Handoff Kit</div>
-                                    <div className="article-subtitle">Translate high-fidelity design into machine language</div>
-                                    <div className="article-subtitle">Documentation | Cross-functional Collaboration</div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-            </article>
-            <article>
-                    <Link to="/work/readwithme">
-                        <div className="cardcontainer">
-                            <img alt='' className="article-img" src={process.env.PUBLIC_URL + "/images/D00ReadwithMe.png"} alt=" "/>
-                            <div className="overlay" id="imgReadwithMe">
-                                <div className="article-title" style={{"color":"black"}}>
-                                    <div>ReadwithMe</div>
-                                    <div className="article-subtitle">A web application that provides afterschool English reading guidance and instructions to middle school students.</div>
-                                    <div className="article-subtitle">User Research | UX/UI Design </div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-            </article>
-                <article>
                     <Link to="/work/photome">
                         <div className="cardcontainer">
                             <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Photome.png"} alt=" "/>
@@ -128,7 +87,12 @@ function DesignerPanel (props) {
                         </div>
                     </Link>
                 </article>
-        </section>
+
+            </div>
+        </div>
+        </Fade>
+                
+、
     </>)}
 
 

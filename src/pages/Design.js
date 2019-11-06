@@ -45,7 +45,7 @@ class Work extends Component {
                 // changePanel={this.changePanel} 
                 // panel={this.state.panel}
                 />
-                <div className="divider"></div>
+                {/* <div className="divider"></div> */}
                 <DesignerPanel />
                 {/* <div className="divider"></div>
                 {this.state.panel==="designer"?

@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Col, Row } from 'react-bootstrap';
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import BackToTopBtn from "../../components/BackToTopBtn"
+import ProjectPagination from '../../components/ProjectPagination'
 
 
 
@@ -10,7 +11,7 @@ function PhotoMe() {
     return (
         <>
         <ScrollToTopOnMount />
-            <div className="project_container">
+            <div className="project_head_container">
                 <section className="project_head">
                     <h1>PhotoMe</h1>
                     <h3>A mobile app that empowers others to create satisfactory portraits for you.</h3>
@@ -19,10 +20,38 @@ function PhotoMe() {
             </div>
             <div className="project_separator_transparent">
                 <img alt='' className="project_headerImg" src={process.env.PUBLIC_URL + "/images/PhotoMe/headerImg.png"} />
-        
             </div>
-            <div className="project_container">
-                <section className="project_body">
+
+            
+            <div className="project_overall_container">
+            <Row>
+            <Col md={12} lg={3}>
+                        <div className="left_bar_wrapper">
+
+                            {/* <div className="project_brief_container">
+                                <div className="project_brief_title">Background</div>
+                                <div className="project_brief_content">This is a individual project I did in a UX Boot Camp.</div>
+                            </div> */}
+                            <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;"
+                            // style={{position: "fixed", right: "2vw", bottom: "5vh"}}
+                            >
+                                <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
+                                // className="uk-nav uk-nav-default tm-nav uk-nav-parent-icon"
+                                >
+                                    <li className="uk-l project_brief_content"><a href="#list-item-0">Intro</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#list-item-1">Demo Video</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#list-item-2">User Research</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#list-item-3">Key Insights</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#list-item-4">Inspiration & Design Principle</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#list-item-5">Final sign</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#list-item-6">Takeaways</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col md={12} lg={9}>
+                    <div className="project_container">
+                    <section className="project_body" id="list-item-0">
                     <h2>Intro</h2>
                     <p>I always felt frustrated when I asked my boyfriend to take a picture of me. Describing what I want, posing awkwardly in front of a bunch of strangers, the whole experience always ended up with piles of unsatisfactory portraits, lying in my phone. And I found that I was not alone.</p>
                     <p><b>“Me in My Boyfriend's Camera”</b> became a hot discussion topic on the Internet in China. Many girls complained that their boyfriends made them look three times fatter and ungainly in the photo. A decent portrait by boyfriend has become a luxury.</p>
@@ -31,17 +60,17 @@ function PhotoMe() {
                     <p>In the U.S., a new word, <b>“Instagram Husband”</b>, was coined, referring to dudes who are responsible for taking photos for their Instagram famous girls but more often than not fail the job. In fact, it is not the only husband that screws up. Parents and friends all do. Something is certainly not working.</p>
                 </section>
             </div>
-            <div className="project_separator">
-                <div className="project_separator_inner_wrapper">
-                    <h5 style={{textAlign: "center"}}>DEMO VIDEO</h5>
-                    <div className="d-flex justify-content-center">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nIvh_a4-Oq8" align="middle" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <section className="project_body" id="list-item-1">
+                    <h2>Demo Video</h2>
+                    <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
+                        <iframe style={{width:'100%',minHeight:'540px'}} src="https://www.youtube.com/embed/nIvh_a4-Oq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </div>
-            </div>
-            <div className="project_container">
+            </section>
+            
+            <div className="project_container" id="list-item-2">
                 <section className="project_body">
-                    <h2>Research</h2>
+                    <h2>User Research</h2>
                     <h5>Why do people fail to take satisfactory portraits?</h5>
                     <p>Twelve respondents were interviewed to gain an understanding of the current process of photo shooting. Meanwhile, I also conducted passive observations in a gallery and park to find out how people take pictures for each other.</p>
                     <p>A typical unsatisfactory portrait shooting experience can be divided in to seven steps as below, some of which are reversible:</p>
@@ -55,7 +84,7 @@ function PhotoMe() {
                     <p>I realized that the key issue was not the nature of the scene nor the photographer's skill. The photographer knew exactly the angle, the light and the composition that he wanted for his "good" picture, but he didn't know or understand what she wanted for her good picture, because she failed to convey her expectation or he failed to grasp it.</p>
                     <p>The biggest design opportunity I discovered lies in <b>communication</b>. So I reframed the problem as <b>why do people fail to convey or decode information in the photo-taking process? </b></p>
                 </section>
-                <section className="project_body">
+                <section className="project_body" id="list-item-3">
                     <h2>Key Insights</h2>
                     <h5>Why do people fail to convey or decode information in the photo-taking process?</h5>
                     <h6>1. People have no place to start the talk without a clear expectation.</h6>
@@ -69,7 +98,7 @@ function PhotoMe() {
                     <p>Even if the subject manages to give some concrete instructions, for the photographer, to understand what those mean and apply them into the photo-taking process still <b>involves a lot of translations</b>. People use different words to refer to the same thing. When talking about 'Don't take the picture from a low angle' or 'Stand closer to me', the terms 'low angle' or 'closer' actually requires a clear and explicit definition. But when people talk before taking the picture, there is no time for them to clarify all the languages they use.</p>
                 </section>
 
-                <section className="project_body">
+                <section className="project_body" id="list-item-4">
                     <h2>Inspiration & Design Principle</h2>
                     <h5>What I learned from workarounds</h5>
                     <p>To prevent the ambiguity of translation, people actually figured out some ways:</p>
@@ -81,7 +110,7 @@ function PhotoMe() {
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/selfie.png"} />
                     <p>These two workarounds inspired me to adopt the design principle: <b>What You See Is What You Get, show rather than tell.</b></p>
                 </section>
-                <section className="project_body">
+                <section className="project_body" id="list-item-5">
                     <h2>Final Design</h2>
                     <h5>How might we help people better communicate in the photo taking process?</h5>
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/wireframe.png"} />
@@ -183,7 +212,7 @@ function PhotoMe() {
                         </Col>
                     </Row> 
                 </section>
-                <section className="project_body">
+                <section className="project_body" id="list-item-6">
                     <h2>Takeaways</h2>
                     <h5>Computers are not to replace human factors, but to facilitate them.</h5>
                     <h6>We cannot replace humans with machines.</h6>
@@ -191,7 +220,17 @@ function PhotoMe() {
                     <h6>We should empower people with technology.</h6>
                     <p>The final design tries to help people better communicate their thoughts by providing common grounds. It doesn't look forward to saving people from verbose talks about how to take that pictures. On the contrary, it serves a prompt to make people talk and talk better.</p>
                 </section>
+                        
+                    </div>
+                    
+                    </Col>
+
+            </Row>
+
+                
             </div>
+            <ProjectPagination prevUrl="/work/readwithme" prevName="ReadwithMe" nextUrl="/work/weather" nextName="Weather"/>
+
             <BackToTopBtn />
         </>)
 }

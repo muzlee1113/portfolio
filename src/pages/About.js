@@ -9,7 +9,7 @@ function About() {
 
     return (<>
     <ScrollToTopOnMount />
-        <main className="about_content">
+        <main className="leading">
             {/* <section className="about_wrapper">
                 <h1 className="leading-bigtext">Something more about me<span className="leading-bigtext" style={{ "color": "#9D2721" }}>.</span></h1>
                 <h3 className="leading-text"></h3>

@@ -9,6 +9,44 @@ function DeveloperPanel(){
 
     return(
         <section className="cards" id="developer_panel">
+            {/* <article>
+                    <Link to="#">
+                        <div className="cardcontainer" >
+                            <img alt=''  className="article-img" src={process.env.PUBLIC_URL + "/images/placeholder_smartEdu.png"} alt=" "/>
+                            <div className="shade"></div>
+                            <p className="tbdOverlay">In Progress</p>
+                            <div className="overlay" id="imgTeacher">
+                                <div className="article-title">
+                                    <div>GoodTeacher</div>
+                                    <div className="article-subtitle">A native app that helps middle school teachers to share just-in-time & meaningful performance-based assessment to students and parents.</div>
+                                    <div className="article-subtitle">User Research | UX Design | React Native | Serverless | MongoDB Stitches</div>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+                    <a className="code_link" href="https://github.com/muzlee1113/edu">
+                        <img className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                    </a>
+            </article>
+            <article>
+                    <Link to="#">
+                        <div className="cardcontainer" >
+                            <img alt=''  className="article-img" src={process.env.PUBLIC_URL + "/images/Movie_Hunter_Card.png"} alt=" "/>
+                            <div className="shade"></div>
+                            <p className="tbdOverlay">In Progress</p>
+                            <div className="overlay" id="imgMovie" >
+                                <div className="article-title" style={{"color":"black"}}>
+                                    <div>Movie Hunter</div>
+                                    <div className="article-subtitle">A movie recomendation web application that boosting by machine learning.</div>
+                                    <div className="article-subtitle">UI Design | React | Node.js | APIs</div>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+                    <a className="code_link" href="https://github.com/muzlee1113/moviehunter">
+                        <img className="code invert" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                    </a>
+            </article> */}
             <article>
             <Link to="/work/WIS">
                 {/* <a href="http://www.whats-in-store.net/"> */}
@@ -24,7 +62,7 @@ function DeveloperPanel(){
                     </div>
                 {/* </a> */}
             </Link>
-                <a href="https://github.com/jakescheele/whats-in-store">
+                <a className="code_link" href="https://github.com/jakescheele/whats-in-store">
                     <img className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
@@ -41,7 +79,7 @@ function DeveloperPanel(){
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/JoshVanOverbeke/Project2">
+                <a className="code_link" href="https://github.com/JoshVanOverbeke/Project2">
                     <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
@@ -58,7 +96,7 @@ function DeveloperPanel(){
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/muzlee1113/newsdigest">
+                <a className="code_link" href="https://github.com/muzlee1113/newsdigest">
                     <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
@@ -75,7 +113,7 @@ function DeveloperPanel(){
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/muzlee1113/friendFinder">
+                <a className="code_link" href="https://github.com/muzlee1113/friendFinder">
                     <img alt='' className="code invert" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
@@ -93,7 +131,7 @@ function DeveloperPanel(){
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/cvanglee/House-Martell">
+                <a className="code_link" href="https://github.com/cvanglee/House-Martell">
                     <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
@@ -110,7 +148,7 @@ function DeveloperPanel(){
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/muzlee1113/GifTastic">
+                <a className="code_link" href="https://github.com/muzlee1113/GifTastic">
                     <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>

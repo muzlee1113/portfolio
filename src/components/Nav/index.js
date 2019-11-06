@@ -12,7 +12,7 @@ function Nav() {
                     // id="aboutpage" 
                     activeClassName="link active_link"
                     className="link"
-                    to="/about" exact>About</NavLink>
+                    to="/about" exact><span className="mr-2 align-text-top" uk-icon="happy"></span>About</NavLink>
                     {/* <NavLink 
                     // id="ptfpage" 
                     activeClassName="link active_link"
@@ -24,13 +24,13 @@ function Nav() {
                     activeClassName="link active_link"
                     className="link"
                     to="/code" 
-                    exact>Code</NavLink>
+                    exact><span className="mr-2 align-text-top" uk-icon="code"></span>Code</NavLink>
                     <NavLink 
                     // id="ptfpage" 
                     activeClassName="link active_link"
                     className="link"
                     to="/" 
-                    exact>Design</NavLink>
+                    exact><span className="mr-2 align-text-top" uk-icon="pencil"></span>Design</NavLink>
                 </div>
         </header>
         </>)

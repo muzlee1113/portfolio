@@ -26,9 +26,16 @@ import Weather from "./pages/Designer/Weather"
 import LightUp from "./pages/Designer/LightUp"
 import BoardingPass from "./pages/Designer/BoardingPass"
 import IoT from "./pages/Designer/IoT"
-
+import IoTOne from "./pages/Designer/IoTOne"
+import IoTTwo from "./pages/Designer/IoTTwo"
+import IoTThree from "./pages/Designer/IoTThree"
+import MaterialBank from './pages/Designer/MaterialBank';
 
 import WIS from "./pages/Developer/WIS"
+
+
+import DesignSystem from "./pages/DesignSystem"
+
 
 
 
@@ -40,7 +47,9 @@ class App extends Component {
   render() {
     return (<>
       <Router>
-        <Nav />
+        <div uk-sticky="show-on-up: true">
+          <Nav />
+        </div>
         <Switch>
           <Route exact path="/"
             render={props => <Design {...props} />}
@@ -75,10 +84,15 @@ class App extends Component {
           <Route exact path="/work/lightup" component={LightUp} />
           <Route exact path="/work/boardingpass" component={BoardingPass} />
           <Route exact path="/work/IoT" component={IoT}/>
+          <Route exact path="/work/IoT/datavis" component={IoTOne}/>
+          <Route exact path="/work/IoT/infonav" component={IoTTwo}/>
+          <Route exact path="/work/IoT/sysimg" component={IoTThree}/>
+          <Route exact path="/work/materialbank" component={MaterialBank} />
           {/* code */}
           <Route exact path="/work/WIS" component={WIS} />
-
+          <Route exact path="/designsystem" component={DesignSystem}/>
           <Route component={NoMatch} />
+
         </Switch>
         <Footer />
       </Router>
