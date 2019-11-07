@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Col, Row, Button } from 'react-bootstrap';
 import {
     BrowserRouter as Router,
-    Link ,
+    Link,
     Switch,
     Route
 } from "react-router-dom";
@@ -104,128 +104,128 @@ class IoTTwo extends React.Component {
                     </Col>
                     <Col md={12} lg={9}>
                         <div className="project_container">
-                            <section id="list-item-1" className="project_body">
-                                <h2>Usability Testing & Results</h2>
-                                <h5>What get in the way of seamless and happy navigation?</h5>
-                                <p>There are three important components in the map view of monitor and control hub: a map showing devices with icons, a list of devices in the right sidebar, filters of areas and device types on the top. During the role-play walkthroughs, I found that: </p>
-                                <Container>
-                                    <Row style={{ alignItems: "center" }}>
-                                        <Col md="12" lg="6"><img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/testing_problems_1.PNG"} /></Col>
-                                        <Col md="12" lg="6">
+                            <LazyLoad height={200} offset={100} once>
+
+                                <section id="list-item-1" className="project_body">
+                                    <h2>Usability Testing & Results</h2>
+                                    <h5>What get in the way of seamless and happy navigation?</h5>
+                                    <p>There are three important components in the map view of monitor and control hub: a map showing devices with icons, a list of devices in the right sidebar, filters of areas and device types on the top. During the role-play walkthroughs, I found that: </p>
+                                    <Container>
+                                        <Row style={{ alignItems: "center" }}>
+                                            <Col md="12" lg="6"><img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/testing_problems_1.PNG"} /></Col>
+                                            <Col md="12" lg="6">
 
 
-                                            <p><small>😟1 When users zoomed in and out, scrolled up and down the map, the device list on the right changed accordingly, showing only the devices they could see on the screen. However, it didn’t change the filters on top of the page, so users easily <b>felt lost</b>.</small></p>
-                                        </Col>
-                                    </Row>
-                                    <Row style={{ alignItems: "center" }}>
-                                        <Col md="12" lg="6"><img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/testing_problems_2.PNG"} /></Col>
-                                        <Col md="12" lg="6">
+                                                <p><small>😟1 When users zoomed in and out, scrolled up and down the map, the device list on the right changed accordingly, showing only the devices they could see on the screen. However, it didn’t change the filters on top of the page, so users easily <b>felt lost</b>.</small></p>
+                                            </Col>
+                                        </Row>
+                                        <Row style={{ alignItems: "center" }}>
+                                            <Col md="12" lg="6"><img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/testing_problems_2.PNG"} /></Col>
+                                            <Col md="12" lg="6">
 
-                                            <p><small>😟2 When users applied filters, the map this time <b>didn’t move accordingly</b> to where they can see all devices. So sometimes suddenly nothing was on the map.</small></p>
-                                        </Col>
-                                    </Row>
-                                    <Row style={{ alignItems: "center" }}>
-                                        <Col md="12" lg="6"><img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/testing_problems_3.PNG"} /></Col>
-                                        <Col md="12" lg="6">
+                                                <p><small>😟2 When users applied filters, the map this time <b>didn’t move accordingly</b> to where they can see all devices. So sometimes suddenly nothing was on the map.</small></p>
+                                            </Col>
+                                        </Row>
+                                        <Row style={{ alignItems: "center" }}>
+                                            <Col md="12" lg="6"><img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/testing_problems_3.PNG"} /></Col>
+                                            <Col md="12" lg="6">
 
-                                            <p><small>😟3 Once they found a device they were interested in, they clicked to see the details, but unexpectedly <b>the website</b> sent them to another page, and when they go back, all <b>the filters they had set disappeared.</b></small></p>
-                                        </Col>
-                                    </Row>
-                                </Container>
-                            </section>
+                                                <p><small>😟3 Once they found a device they were interested in, they clicked to see the details, but unexpectedly <b>the website</b> sent them to another page, and when they go back, all <b>the filters they had set disappeared.</b></small></p>
+                                            </Col>
+                                        </Row>
+                                    </Container>
+                                </section>
+                            </LazyLoad>
+                            <LazyLoad height={200} offset={100} once>
 
-                            <section id="list-item-3" className="project_body">
+                                <section id="list-item-3" className="project_body">
 
-                                <h2>Deliverable 1</h2>
-                                <h5>🙂1&2 Align interactions with users' expectations: WYSIWYG</h5>
-                                <p>When users apply filters, they expect to see the results. When they drag or scroll the map, they are looking for devices outside the viewport. The map and list should work according to users' expectations. So I redesigned the logics as follow:</p>
-                                <LazyLoad height={200} offset={100} once>
+                                    <h2>Deliverable 1</h2>
+                                    <h5>🙂1&2 Align interactions with users' expectations: WYSIWYG</h5>
+                                    <p>When users apply filters, they expect to see the results. When they drag or scroll the map, they are looking for devices outside the viewport. The map and list should work according to users' expectations. So I redesigned the logics as follow:</p>
                                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/logics.png"} />
-                                </LazyLoad>
-                                <p className="project_caption" style={{ "textAlign": "center" }}>The New Logics</p>
+                                    <p className="project_caption" style={{ "textAlign": "center" }}>The New Logics</p>
 
-                                <p>Since users have less freedom selecting filters compared with controlling the viewport of the map (zooming, scrolling, dragging), it is actually good for the users to specify the range or group of devices they want to control or view.</p>
+                                    <p>Since users have less freedom selecting filters compared with controlling the viewport of the map (zooming, scrolling, dragging), it is actually good for the users to specify the range or group of devices they want to control or view.</p>
 
-                                
-                            </section>
-                            <section id="list-item-4" className="project_body">
 
-                                <h2>Deliverable 2</h2>
-                                <h5>🙂3 Use the sidebar to provide a seamless and linear experience</h5>
+                                </section>
+                            </LazyLoad>
+                            <LazyLoad height={200} offset={100} once>
 
-                                <p>In the new design, device detailed views are moved to the sidebar on the right of the page to contextualize the in-depth navigation on the map. Therefore, users can view the map and the device information at the same time.</p>
-                                <LazyLoad height={200} offset={100} once>
+                                <section id="list-item-4" className="project_body">
+
+                                    <h2>Deliverable 2</h2>
+                                    <h5>🙂3 Use the sidebar to provide a seamless and linear experience</h5>
+
+                                    <p>In the new design, device detailed views are moved to the sidebar on the right of the page to contextualize the in-depth navigation on the map. Therefore, users can view the map and the device information at the same time.</p>
                                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/sketch_map.png"} />
-                                </LazyLoad>
-                                <p className="project_caption" style={{ "textAlign": "center" }}>My sketches on how to display information on the sidebar.</p>
-                                <LazyLoad height={200} offset={100} once>
+                                    <p className="project_caption" style={{ "textAlign": "center" }}>My sketches on how to display information on the sidebar.</p>
                                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/scale.gif"} />
-                                </LazyLoad>
-                                <p className="project_caption" style={{ "textAlign": "center" }}>This is a screen record of the alpha version. There were still some bugs here on the transition.</p>
-                                <p>Moreover, I spent a lot of time figuring out the affiliations between different devices and provided links to help users better navigate to and fro from list to detailed view, and from one detailed view to another.</p>
-                                <LazyLoad height={200} offset={100} once>
+                                    <p className="project_caption" style={{ "textAlign": "center" }}>This is a screen record of the alpha version. There were still some bugs here on the transition.</p>
+                                    <p>Moreover, I spent a lot of time figuring out the affiliations between different devices and provided links to help users better navigate to and fro from list to detailed view, and from one detailed view to another.</p>
                                     <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/scale2.png"} />
-                                </LazyLoad>
-                                <p className="project_caption" style={{ "textAlign": "center" }}>Users can zoom in to details and zoom out for overview; they can also move parallelly to other related devices.</p>
-                            </section>
+                                    <p className="project_caption" style={{ "textAlign": "center" }}>Users can zoom in to details and zoom out for overview; they can also move parallelly to other related devices.</p>
+                                </section>
+                            </LazyLoad>
                         </div>
-                        <hr className="end-nav-divider"/>
-                
-               
-                <div className="end-nav-container">
-                    <div className="end-nav-title">
-                        <h2>Related Research & Case Studies</h2>
-                    </div>
-                <Row>
-                
-                    <Col className="card_hover" md={12} lg={4}>
-                        <Link to={'/work/IoT'}>
-                            <div>
-                                <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector0.png'} alt="" className='card-img' />
-                            </div>
-                            <div className="workCard_text_container_sub">
-                            <div className="sub_card_tagline">User Research</div>
-                                            <div className="sub_card_name">Learn From Users</div>
-                                            <div className="sub_card_description">Inform design with contextual inquiries & usability testing</div>
-                            </div>
-                        </Link>
-                    </Col>
-                    <Col className="card_hover" md={12} lg={4}>
-                        <Link to={'/work/IoT/datavis'}>
-                            <div>
-                                <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector1.png'} alt="" className='card-img' />
-                            </div>
-                            <div className="workCard_text_container_sub">
-                            <div className="sub_card_tagline ">Case Study #1</div>
-                                            <div className="sub_card_name ">Data visualization</div>
-                                            <div className="sub_card_description">Improve glanceablity and usability of the data dashboards and notification system</div>
-                            </div>
-                        </Link>
-                    </Col>
+                        <hr className="end-nav-divider" />
+
+                        <LazyLoad height={200} offset={100} once>
+                            <div className="end-nav-container">
+                                <div className="end-nav-title">
+                                    <h2>Related Research & Case Studies</h2>
+                                </div>
+                                <Row>
+
+                                    <Col className="card_hover" md={12} lg={4}>
+                                        <Link to={'/work/IoT'}>
+                                            <div>
+                                                <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector0.png'} alt="" className='card-img' />
+                                            </div>
+                                            <div className="workCard_text_container_sub">
+                                                <div className="sub_card_tagline">User Research</div>
+                                                <div className="sub_card_name">Learn From Users</div>
+                                                <div className="sub_card_description">Inform design with contextual inquiries & usability testing</div>
+                                            </div>
+                                        </Link>
+                                    </Col>
+                                    <Col className="card_hover" md={12} lg={4}>
+                                        <Link to={'/work/IoT/datavis'}>
+                                            <div>
+                                                <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector1.png'} alt="" className='card-img' />
+                                            </div>
+                                            <div className="workCard_text_container_sub">
+                                                <div className="sub_card_tagline ">Case Study #1</div>
+                                                <div className="sub_card_name ">Data visualization</div>
+                                                <div className="sub_card_description">Improve glanceablity and usability of the data dashboards and notification system</div>
+                                            </div>
+                                        </Link>
+                                    </Col>
 
 
-                    <Col className="card_hover" md={12} lg={4}>
-                        <Link to={'/work/IoT/sysimg'}>
-                            <div>
-                                <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector3.png'} alt="" className='card-img' />
+                                    <Col className="card_hover" md={12} lg={4}>
+                                        <Link to={'/work/IoT/sysimg'}>
+                                            <div>
+                                                <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector3.png'} alt="" className='card-img' />
+                                            </div>
+                                            <div className="workCard_text_container_sub">
+                                                <div className="sub_card_tagline">Case Study #3 </div>
+                                                <div className="sub_card_name">System Image</div>
+                                                <div className="sub_card_description">Redesign interfaces of the street light control system according to user habits and behaviors</div>
+                                            </div>
+                                        </Link>
+                                    </Col>
+
+
+                                </Row>
                             </div>
-                            <div className="workCard_text_container_sub">
-                            <div className="sub_card_tagline">Case Study #3 </div>
-                                            <div className="sub_card_name">System Image</div>
-                                            <div className="sub_card_description">Redesign interfaces of the street light control system according to user habits and behaviors</div>
-                            </div>
-                        </Link>
-                    </Col>
-
-
-            </Row>
-            </div>
-
+                        </LazyLoad>
                     </Col>
                 </Row>
 
             </div>
-            <ProjectPagination prevUrl="" prevName="" nextUrl="/work/materialbank" nextName="Material Bank"/>
+            <ProjectPagination prevUrl="" prevName="" nextUrl="/work/materialbank" nextName="Material Bank" />
 
             <BackToTopBtn />
 

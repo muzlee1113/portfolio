@@ -99,22 +99,22 @@ class IoT extends React.Component {
                     </Col>
                     <Col md={12} lg={9}>
                         <div className="project_container">
+                        <LazyLoad height={200} offset={100} once>
+
                                 <section id="list-item-0" className="project_body">
                                 <h2>Intro</h2>
                                 <h5>Internet of Things and Smart Cities</h5>
                                 <p>Internet of Things has become a hot topic these years. Powered by the faster cellular network and the smarter devices, the promising future seems to be around the corner, where computing is  anytime and everywhere, all devices are intelligent and interconnected and all decisions are made based on data streaming to the cloud.</p>
-                                <LazyLoad height={200} offset={100} once>
                                     <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/smart_city.jpg"} />
-                                </LazyLoad>
                                 <p className="project_caption" style={{ "textAlign": "center" }}>Longgang Operation Centre | photo from <a href = 'https://mytechdecisions.com/video/worlds-largest-curved-video-wall-installed-at-longgang-operation-centre/'>my tech decisions </a></p>
                                 <p>With the growing maturity of the technologies, many cities in China have launched projects to bring innovations into city management. Shenzhen, among one of the leading smart cities in China, has implemented smart solutions in different sectors. However, considering the scale and complexity of the city, and different stakeholders and participants in the game, an efficient and cohesive IoT system is never easy to build.</p>
                                 <p>In summer 2019, my first task in Shenzhen Institute for Innovative Design (SIID) as a UX designer was to redesign the city infrastructure management tool offered by Xingyang Languang, a smart device manufacturer.</p>
-                                <LazyLoad height={200} offset={100} once>
                                     <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/deliver.png"} />
-                                </LazyLoad>
                                 <p className="project_caption" style={{ "textAlign": "center" }}>I was delivering my findings to the project team.</p>
                                 <p>I was the only UX designer in the team working with a product manager, visual designers, and developers. I worked in an iterative cycle of user interviews, rapid prototyping and usability studies to redefine various features and interactions. I stopped working on the project as the websites started to be built.</p>
                                 </section>
+                                </LazyLoad>
+                                <LazyLoad height={200} offset={100} once>
                             <section id="list-item-1" className="project_body">
                                 <h2>Research Questions & Hypotheses</h2>
                                 <h5>What do we want to know?</h5>
@@ -127,10 +127,10 @@ class IoT extends React.Component {
                                     <li>What problems do they face when working on the tasks? How do they solve them?</li>
                                 </ul>
                                 <p>Then, I hosted a brainstorm session with the product manager and engineers, and finally, we postulated that people in the following roles were the stakeholders, and they had their own different goals and needs: </p>
-                                <LazyLoad height={200} offset={100} once>
                                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/hypothesis.png"} />
-                                </LazyLoad>
                             </section>
+                            </LazyLoad>
+                            <LazyLoad height={200} offset={100} once>
                             <section id="list-item-2" className="project_body">
                                 <h2>From Research Questions to Design Requirements</h2>
                                 <h5>Learned From the Users in User Research</h5>
@@ -148,9 +148,7 @@ class IoT extends React.Component {
                                 </div>
                                 <p>This was a tool designed specifically for controlling highway lights. The administrator needed to go down 6 layers and many steps to control an individual light or lights on specific segments of the highway.. When they walked us through, one administrator told us that they found it difficult to find the light they wanted to control, but they gradually got used to it.</p>
                                 <p>Even though they used a complex system to control lights, the tasks were assigned by paper and they talked to the head of the on-site group by text messages and updated a sheet of tasks manually first thing in a day. Technicians who worked on the tasks simply reported to them by checking a box and signing.</p>
-                                <LazyLoad height={200} offset={100} once>
                                     <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/papersheet.png"} />
-                                </LazyLoad>
                                 <div className="project_caption" style={{ "textAlign": "center" }}>These are images I downloaded online but they are very similar to what the administrators used.</div>
                                 <h6>Finding 2: Administrators were not able to know the status of the system in real-time with the tools they have in the office.</h6>
                                 <p>The administrators of highway lights relied on the daily report from the on-site technicians to learn about the status of the system. The manager of the office park used CCTV monitors or just simply walked around the park to keep track of the lights.</p>
@@ -169,8 +167,9 @@ class IoT extends React.Component {
                                     <li>The tool should not be constrained in office but extend to on-site contexts.</li>
                                 </ul>
                             </section>
+                            </LazyLoad>
 
-
+                            <LazyLoad height={200} offset={100} once>
                             <section id="list-item-3" className="project_body">
                                 <h2>From General Knowledge to Design Problems</h2>
                                 <h5>Used usability studies to pivot on actionable items</h5>
@@ -184,6 +183,8 @@ class IoT extends React.Component {
                                     </ul>
                                 </div>
                             </section>
+                            </LazyLoad>
+                            <LazyLoad height={200} offset={100} once>
                             <section id="list-item-4" className="project_body">
                                 <h2>Solutions</h2>
                                 <h5>View how I solved these problems in three case studies</h5>
@@ -235,6 +236,7 @@ class IoT extends React.Component {
 
                                 </Row>
                             </section>
+                            </LazyLoad>
                         </div>
                     </Col>
                 </Row>
