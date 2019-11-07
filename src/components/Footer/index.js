@@ -13,7 +13,8 @@ function Footer() {
                 <a href="https://github.com/muzlee1113"><i className="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/yuwen-li-176a43105/"><i className="fab fa-linkedin"></i></a>
                 <a href="https://medium.com/@muzlee1113"><i className="fab fa-medium"></i></a>
-                <a id="resume" href="https://drive.google.com/file/d/1nXglcwTAw3jznGSs5hWaHtLsF7PzRPdW/view?usp=sharing"><img alt='' id="resumeBtn" src={process.env.PUBLIC_URL + "/images/resumeBtn.png"} /></a>
+                <a href="mailto:liyuwen@uw.com"><i class="fas fa-envelope"></i></a>
+                <a id="resume" href="https://drive.google.com/file/d/1PaNEuH9lKhypcMjscnrgsMVocck_Vobz/view?usp=sharing"><img alt='' id="resumeBtn" src={process.env.PUBLIC_URL + "/images/resumeBtn.png"} /></a>
                 </div>
             </div>
         </footer>
