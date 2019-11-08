@@ -74,7 +74,7 @@ class IoTOne extends React.Component {
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;"
                             // style={{position: "fixed", right: "2vw", bottom: "5vh"}}
                             >
-                                <div className="project_brief_content"><Link className="text_link" to={'/work/IoT'}>User Research</Link></div>
+                                <div className="project_brief_content"><Link className="text_link" to={'/work/IoT/research'}>User Research</Link></div>
                                 <div className="project_brief_content">Inform Design With Research</div>
                                 <div className="project_brief_content"><Link className="text_link" to={'/work/IoT/datavis'}>Case Study #1</Link></div>
                                 <div className="project_brief_content">Make Data Glanceable & Usable</div>
@@ -103,9 +103,9 @@ class IoTOne extends React.Component {
 
                                 <h2>Problem Space & Research Insights</h2>
                                 <h5>What data do the users want and how do they get and use them?</h5>
-                                <p>In the <Link className="text_link" to={'/work/IoT'}>contextual inquiries</Link>, we found that the users could not easily figure out the system status, even though the system used in the office park offered dashboards and the highway light system had overall data panels. </p>
+                                <p>In the <Link className="text_link" to={'/work/IoT/research'}>contextual inquiries</Link>, we found that the users could not easily figure out the system status, even though the system used in the office park offered dashboards and the highway light system had overall data panels. </p>
                                     
-                                <p>The finding in <Link className="text_link" to={'/work/IoT'}>usability studies</Link> confirmed our findings in the field, it is not easy for the users to grasp system status at a glance and move from what they know to what they can do;</p>
+                                <p>The finding in <Link className="text_link" to={'/work/IoT/research'}>usability studies</Link> confirmed our findings in the field, it is not easy for the users to grasp system status at a glance and move from what they know to what they can do;</p>
                                 <p>To better figure our what helped users to capture the overall picture of the system, I went back to the data I collected, I synthesized that administrator's daily workflow can be depicted as follow:</p>
                                 <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/3_types_of_data.png"} />
                                 <p className="project_caption" style={{ "textAlign": "center" }}>A Day of an Administrator</p>
@@ -156,11 +156,11 @@ class IoTOne extends React.Component {
                                 <h2>Deliverable 2</h2>
                                 <h5>Design notification system that guides the users to tackle abnormal data</h5>
 
-                                <p>In the interview, participants kept mentioning how they checked on device breakdown or abnormal data in their daily work. They wanted to know what is going wrong, and they sought for more information, and guidance on how to bring them back to normal.</p>
+                                <p>We found in contextual inquiries that people pay much attention to what is going wrong, and they sought for more information and guidance on how to bring them back to normal.</p>
 
-                                <p>I divided the process of alert into <b>three phases</b>: <b>notice</b>, <b>understand</b>, <b>act</b>. The biggest gap doesn’t lie between the anomaly and the user’s perception, but between perception and action.</p>
+                                <p>Therefore, I divided the process of alert into <b>three phases</b>: <b>notice</b>, <b>understand</b>, <b>act</b>. The biggest gap doesn’t lie between the anomaly and the user’s perception, but between perception and action.</p>
                                     <img alt='three phases of alert design' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/three_phases.png"} />
-                                <p className="project_caption">A sketch of the three phases of alert design and the wireframes of their application on the website.</p>
+                                <p className="project_caption" style={{textAlign: "center"}}>A sketch of the three phases of alert design and the wireframes of their application on the website.</p>
 
                                 <p>Therefore, when designing the notification system, I put a lot of efforts into facilitating people to move step by step from problems to solutions: </p>
                                 <h6>1. Notice Phase: Proactively Alert Users to Problems</h6>

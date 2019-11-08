@@ -37,67 +37,7 @@ export default function WorkCardWithSub(props) {
                                 <img src={process.env.PUBLIC_URL + props.imgUrl} alt="" className='card-img' />
                             </Col>
                         </Row>
-                        <div className="subCards_container">
-
-                            <Row>
-
-                                <Col className="card_hover" md={12} lg={3}>
-                                    <Link to={'/work/IoT'}>
-                                        <div>
-                                            <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector0.png'} alt="" className='card-img' />
-                                        </div>
-                                        <div className="workCard_text_container_sub">
-                                            <div className="sub_card_tagline">User Research</div>
-                                            <div className="sub_card_name">Learn From Users</div>
-                                            <div className="sub_card_description">Inform design with contextual inquiries & usability testing</div>
-                                        </div>
-                                    </Link>
-                                </Col>
-                                <Col className="card_hover" md={12} lg={3}>
-                                    <Link to={'/work/IoT/datavis'}>
-                                        <div>
-                                            <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector1.png'} alt="" className='card-img' />
-                                        </div>
-                                        <div className="workCard_text_container_sub">
-                                            <div className="sub_card_tagline ">Case Study #1</div>
-                                            <div className="sub_card_name ">Data visualization</div>
-                                            <div className="sub_card_description">Improve glanceablity and usability of the data dashboards and notification system</div>
-                                        </div>
-                                    </Link>
-                                </Col>
-
-
-                                <Col className="card_hover" md={12} lg={3}>
-                                    <Link to={'/work/IoT/infonav'}>
-                                        <div>
-                                            <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector2.png'} alt="" className='card-img' />
-                                        </div>
-                                        <div className="workCard_text_container_sub">
-                                            <div className="sub_card_tagline ">Case Study #2 </div>
-                                            <div className="sub_card_name">Information Navigation</div>
-                                            <div className="sub_card_description">Redesign the data map to provide seamless information navigation at various scales</div>
-                                        </div>
-                                    </Link>
-                                </Col>
-
-
-
-                                <Col className="card_hover" md={12} lg={3}>
-                                    <Link to={'/work/IoT/sysimg'}>
-                                        <div>
-                                            <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector3.png'} alt="" className='card-img' />
-                                        </div>
-                                        <div className="workCard_text_container_sub">
-                                            <div className="sub_card_tagline">Case Study #3 </div>
-                                            <div className="sub_card_name">System Image</div>
-                                            <div className="sub_card_description">Redesign interfaces of the street light control system according to user habits and behaviors</div>
-                                        </div>
-                                    </Link>
-                                </Col>
-
-
-                            </Row>
-                        </div>
+                       
 
                     </Fade>
 

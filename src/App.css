@@ -280,7 +280,7 @@ a:not(.code_link):hover {
 }
 .sub_card_name{
   font-family: proxima-nova, sans-serif; 
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 48px;
   color: rgba(0, 0, 0, 0.8);
@@ -289,8 +289,8 @@ a:not(.code_link):hover {
 }
 
 .sub_card_description{
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 1.58;
 
   color: rgba(0, 0, 0, 0.8);
   font-family: proxima-nova, sans-serif; 
