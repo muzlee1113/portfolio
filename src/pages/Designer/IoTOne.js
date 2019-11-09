@@ -63,7 +63,7 @@ class IoTOne extends React.Component {
 
                             <div className="project_brief_container">
                                 <div className="project_brief_title">Client Name</div>
-                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</div>
+                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</div>
                                 <div className="project_brief_title">Project End Goal</div>
                                 <div className="project_brief_content">To improve the usability of the back-stage management tool for the client’s products which serve the IoT-based city infrastructure.</div>
                                 <div className="project_brief_title">My Role</div>
@@ -103,12 +103,11 @@ class IoTOne extends React.Component {
 
                                 <h2>Problem Space & Research Insights</h2>
                                 <h5>What data do the users want and how do they get and use them?</h5>
-                                <p>In the <Link className="text_link" to={'/work/IoT/research'}>contextual inquiries</Link>, we found that the users could not easily figure out the system status, even though the system used in the office park offered dashboards and the highway light system had overall data panels. </p>
-                                    
-                                <p>The finding in <Link className="text_link" to={'/work/IoT/research'}>usability studies</Link> confirmed our findings in the field, it is not easy for the users to grasp system status at a glance and move from what they know to what they can do;</p>
+                                <p>In the <Link className="text_link" to={'/work/IoT/research'}>contextual inquiries</Link>, we found that the users could not easily figure out the system status, even though the system used in the office park offered dashboards and the highway light system had overall data panels. The finding in <Link className="text_link" to={'/work/IoT/research'}>usability studies</Link> proved it again, since it was not easy for the users to grasp system status at a glance on the old websites.</p>
                                 <p>To better figure our what helped users to capture the overall picture of the system, I went back to the data I collected, I synthesized that administrator's daily workflow can be depicted as follow:</p>
                                 <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/3_types_of_data.png"} />
                                 <p className="project_caption" style={{ "textAlign": "center" }}>A Day of an Administrator</p>
+                                <p>So what I ideated on how to help users get an overview, notice abnormal data and drill into details if need be.</p>
                             </section>
                             </LazyLoad>
                             <LazyLoad height={200} offset={100} once>
@@ -118,9 +117,9 @@ class IoTOne extends React.Component {
                                 <h2>Deliverable 1</h2>
                                 <h5>Design glanceable dashboards to show the big picture</h5>
 
-                                <p>I started with sketching. </p>
+                                <p>Dashboard is the best tool to brief users an overview. I started with sketching possible displays on the dashboards. </p>
                                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/sketches.png"} />
-                                <p>Later, I created a clickable testing page with my paper prototypes and Axure, and asked my colleagues from the administrative team to sort the graphs according to importance and point out the ones they could not understand. I tested them with administrators in my company as an alternative to the real users since they shared a similar mindset. </p>
+                                <p>Later, I created a clickable testing page with my paper prototypes and Axure, and asked my colleagues from the administrative team to rank the graphs according to importance and legibility. I tested them with administrators in my company as an alternative to the real users since they shared a similar mindset. </p>
 
                                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/testing_vis.gif"} />
 
@@ -144,7 +143,7 @@ class IoTOne extends React.Component {
                                 <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/env_sensor_dashboard_move.gif")}>Click to watch it move.</Button></div>
                                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/manhole_cover_dashboard.png"} />
                                 <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/manhole_cover_dashboard_move.gif")}>Click to watch it move.</Button></div>
-                                <p> Moreover, we needed how we highlight abnormal data on the dashboards so that the indicators will be coherent throughout the system. So I worked with PM and engineers to define anomalies for different data and worked with visual designers on how they should be displayed.</p>
+                                <p> As a side note, we needed a consistent way to visualize data on the dashboards so that the indicators would be coherent and understandable. So I researched and defined levels for different data and worked with visual designers on how they should be displayed.</p>
                                 <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/color_legend_icon.png"} />
                                 <p className="project_caption" style={{ "textAlign": "center" }}>Icons credited to visual and graphic designer Shiguang Yang.</p>
                                 <p>On the left are the color legends I created based on devices' data set and national standards; On the right are the icons indicating various device status.</p>
@@ -158,11 +157,11 @@ class IoTOne extends React.Component {
 
                                 <p>We found in contextual inquiries that people pay much attention to what is going wrong, and they sought for more information and guidance on how to bring them back to normal.</p>
 
-                                <p>Therefore, I divided the process of alert into <b>three phases</b>: <b>notice</b>, <b>understand</b>, <b>act</b>. The biggest gap doesn’t lie between the anomaly and the user’s perception, but between perception and action.</p>
+                                <p>To come a with a exhaustive solution, I divided the process of alert into <b>three phases</b>: <b>notice</b>, <b>understand</b>, <b>act</b>. Then, I brainstormed ways to support each phase, and facilitate them to move step by step from problems to solutions:</p>
                                     <img alt='three phases of alert design' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/three_phases.png"} />
-                                <p className="project_caption" style={{textAlign: "center"}}>A sketch of the three phases of alert design and the wireframes of their application on the website.</p>
+                                <p className="project_caption" style={{textAlign: "center"}}>A sketch of the three phases of alert design and the wireframes of the website supports each step.</p>
 
-                                <p>Therefore, when designing the notification system, I put a lot of efforts into facilitating people to move step by step from problems to solutions: </p>
+                            
                                 <h6>1. Notice Phase: Proactively Alert Users to Problems</h6>
                                 <p>For the notice phase, the application alerts users to anomalies in two ways: pop-up modals at the corner and a blinking dot on the notification icon, depending on their urgency. I classified the alarms into two levels to reduce possible distractions when too many alerts show up. In the modal, users are allowed to choose whether they want to dive into the problem right now.</p>
 
@@ -199,7 +198,7 @@ class IoTOne extends React.Component {
                                 <h2>TO DOS</h2>
                                 <p>There are several parts I would have dived deeper into if I had given more time.</p>
                                 <h6>Design for Behavior Change</h6>
-                                <p>I have been very interested in this topic and I saw a great opportunity here to design for more efficient energy use. I proposed a possibility to show users how much energy they will use after they set the working time on the strategy-setting page, and provide an option to optimize the settings by drawing in the analyses of traffic. SIID did have the technology to analyze traffic using video footage from the CCTV. This feature would serve as a nudge to environmentally friendly behavior. </p>
+                                <p>I have been very interested in this topic and I saw a great opportunity here to design for more efficient energy use. I proposed a possibility to show users how much energy they will use after they set the working time, and provide an option to optimize the settings by drawing in the analyses of traffic. SIID did have the technology to analyze traffic using video footage from the CCTV. This feature would serve as a nudge to environmentally friendly behavior. </p>
                                 <h6>Dashboard as Entrance</h6>
                                 <p>Second is to design dashboard as entrance rather than data display. In testing, I realized that many users didn't pay much attention to the dashboards. They spent less than a few seconds on them and jumped to the page they wanted right away. Some users clicked on the graphs, and charts, longing to know more details. I would have shifted my focus to showing numbers, graphs and charts as doors to more detailed information and analyses so that the design question would be how can we better show the users the diferent doors and lead them to the right door they want. A personalized dashboard according to visit history might be a good solution.</p>
                             </section>
@@ -216,7 +215,7 @@ class IoTOne extends React.Component {
                             <Row>
 
                                 <Col className="card_hover" md={12} lg={4}>
-                                    <Link to={'/work/IoT'}>
+                                    <Link to={'/work/IoT/research'}>
                                         <div>
                                             <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector0.png'} alt="" className='card-img' />
                                         </div>

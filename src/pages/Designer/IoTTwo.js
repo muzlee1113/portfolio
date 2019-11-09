@@ -73,7 +73,7 @@ class IoTTwo extends React.Component {
 
                             <div className="project_brief_container">
                                 <div className="project_brief_title">Client Name</div>
-                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</div>
+                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</div>
                                 <div className="project_brief_title">Project End Goal</div>
                                 <div className="project_brief_content">To improve the usability of the back-stage management tool for the client’s products which serve the IoT-based city infrastructure.</div>
                                 <div className="project_brief_title">My Role</div>
@@ -179,7 +179,7 @@ class IoTTwo extends React.Component {
                                 <Row>
 
                                     <Col className="card_hover" md={12} lg={4}>
-                                        <Link to={'/work/IoT'}>
+                                        <Link to={'/work/IoT/research'}>
                                             <div>
                                                 <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector0.png'} alt="" className='card-img' />
                                             </div>

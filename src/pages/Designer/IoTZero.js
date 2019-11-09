@@ -74,7 +74,7 @@ class IoTZero extends React.Component {
 
                             <div className="project_brief_container">
                                 <div className="project_brief_title">Client Name</div>
-                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</div>
+                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</div>
                                 <div className="project_brief_title">Project End Goal</div>
                                 <div className="project_brief_content">To improve the usability of the back-stage management tool for the client’s products which serve the IoT-based city infrastructure.</div>
                                 <div className="project_brief_title">My Role</div>
@@ -106,23 +106,17 @@ class IoTZero extends React.Component {
                         <LazyLoad height={200} offset={100} once>
                             <section id="list-item-1" className="project_body">
                                 <h2>Research Questions & Hypotheses</h2>
-                                <h5>What do we want to know?</h5>
-                                <p>The biggest challenge we faced was that we were so far away from the scenarios. We worked for the client and they worked for the cities or parks which actually implement the system. Therefore, we had very limited knowledge of the end users and the contexts. </p>
-                                <p>What made the problem even more complicated was that the organizations interested in IoT were normally big and complex. There were different sectors and different roles inside, with their own unique needs.</p>
-                                <p>Therefore, our user research mainly focuses one getting first-hand knowledge of potential users of the tool, understanding who they are, what they want and need, how they work and what problems they face. Ultimately, we were able to use the knowledge to prioritize the primary users and identify needs and opportunities. The <b>research questions</b> were written down as follows:</p>
-                                <ul>
-                                    <li>Who might potentially be the actual users of the tool?</li>
-                                    <li>What are their main tasks and how do they work on them now?</li>
-                                    <li>What problems do they face when working on the tasks? How do they solve them?</li>
-                                </ul>
-                                <p>Then, I hosted a brainstorm session with the product manager and engineers, and finally, we postulated that people in the following roles were the stakeholders, and they had their own different goals and needs: </p>
+                                <h5>Maximize Learning By Starting With Assumptions</h5>
+                                <p>The biggest challenge we faced when we started was that we were so far away from the scenarios. We worked for the client and they worked for the cities or parks which actually implement the system. Therefore, we had very limited knowledge of the end users and the contexts. </p>
+                                <p>To get the most knowledge with limited time and resources, I started with a brainstorm session with the product manager and other designers to make assumptions on who might be the users, how they work, what their main goals are and and what they need to achieve the goals. Finally, we postulated that people in the following roles were the stakeholders that might be involved, and listed out their potential goals and needs: </p>
                                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/hypothesis.png"} />
+                                <p>We also presumed that <b>the administrators</b> might be our primary users since they were the ones who actually in charge of monitoring and managing the system. It was proved that these assumptions guided us to find the right participants for interviews and look for meaningful insights in the data we got.</p>
                             </section>
                             </LazyLoad>
                             <LazyLoad height={200} offset={100} once>
                             <section id="list-item-2" className="project_body">
-                                <h2>From Research Questions to Design Requirements</h2>
-                                <h5>Learned From the Users in User Research</h5>
+                                <h2>From Assumptions to Design Requirements</h2>
+                                <h5>Test Assumptions with User Research</h5>
                                 
                                 <h6>Methods</h6>
                                 <p>Contextual Inquiries</p>
@@ -135,25 +129,25 @@ class IoTZero extends React.Component {
                                 <div className="frame_wrapper">
                                     <iframe className="project_illustration_medium" style={{border: "none"}} width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F31wTxeoPe74AqBg83CWTB3%2FUntitled%3Fnode-id%3D4%253A25%26scaling%3Dmin-zoom" allowfullscreen></iframe>
                                 </div>
-                                <p>This was a tool designed specifically for controlling highway lights. The administrator needed to go down 6 layers and many steps to control an individual light or lights on specific segments of the highway.. When they walked us through, one administrator told us that they found it difficult to find the light they wanted to control, but they gradually got used to it.</p>
-                                <p>Even though they used a complex system to control lights, the tasks were assigned by paper and they talked to the head of the on-site group by text messages and updated a sheet of tasks manually first thing in a day. Technicians who worked on the tasks simply reported to them by checking a box and signing.</p>
+                                <div className="project_caption">This was a tool designed specifically for controlling highway lights. The administrator needed to go down 6 layers and many steps to control an individual light or lights on specific segments of the highway.. When they walked us through, one administrator told us that they found it difficult to find the light they wanted to control, but they gradually got used to it.</div>
+                                <p>Even though they used a complex system to control lights, the tasks were assigned by paper, and they talked to the head of the on-site group by updating a sheet of tasks manually first thing in a day.</p>
                                     <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/papersheet.png"} />
                                 <div className="project_caption" style={{ "textAlign": "center" }}>These are images I downloaded online but they are very similar to what the administrators used.</div>
-                                <h6>Finding 2: Administrators were not able to know the status of the system in real-time with the tools they have in the office.</h6>
-                                <p>The administrators of highway lights relied on the daily report from the on-site technicians to learn about the status of the system. The manager of the office park used CCTV monitors or just simply walked around the park to keep track of the lights.</p>
-                                <p>These basic findings informed us that administrators as the actual users of the tool needed a better tool to:</p>
+                                <h6>Finding 2: It is hard for administrators to know the status of the system in real-time with the tools they had.</h6>
+                                <p>The administrators of highway lights relied on the daily reports from the on-site technicians to learn about the status of the system. The manager of the office park used CCTV monitors or just simply walked around the park to keep track of the lights.</p>
+                                <p>These basic findings informed us that administrators as the actual users of the tool needed a better one to:</p>
                                 <ul>
                                     <li>Control the devices</li>
                                     <li>Manage tasks</li>
                                     <li>Communicate with others</li>
                                     <li>Learn about the overall status of the system</li>
                                 </ul>
-                                <p>We also learned and set up the following design requirements:</p>
+                                <p>We then set up the following design requirements:</p>
                                 <ul>
                                     <li>The tool should be intuitive with gentle learning curve.</li>
                                     <li>The tool should allow and facilitate collaboration and communication.</li>
-                                    <li>The tool should proactively learn and push information.</li>
-                                    <li>The tool should not be constrained in office but extend to on-site contexts.</li>
+                                    <li>The tool should proactively learn and push information about the system.</li>
+                                    <li>The tool should not be constrained in office but extended to on-site contexts.</li>
                                 </ul>
                             </section>
                             </LazyLoad>
@@ -162,7 +156,7 @@ class IoTZero extends React.Component {
                             <section id="list-item-3" className="project_body">
                                 <h2>From General Knowledge to Design Problems</h2>
                                 <h5>Used usability studies to pivot on actionable items</h5>
-                                <p>To bridge the preliminary research and design phase, I led a <b>role-playing</b> session to inspect the old website. I invited colleagues from different teams to play the role of the system administrator of the Nanshan District, and complete tasks similar to the users’ daily tasks we learned from user research. You can read <a href="https://docs.google.com/document/d/1Wzhgqrxo7YtJaYprwnFdA7flDMVM8VVzVDO9i_Pwb1Y/edit?usp=sharing">the English version of the script here.</a></p>
+                                <p>In order to bridge the research and design phase and focus on severe usability problems, I led a <b>role-playing</b> session to inspect the old website. I invited colleagues from different teams to play the role of the system administrator, and complete tasks similar to the users’ daily tasks we learned from user research. You can read <a  className="text_link" href="https://docs.google.com/document/d/1Wzhgqrxo7YtJaYprwnFdA7flDMVM8VVzVDO9i_Pwb1Y/edit?usp=sharing">the English version of the script here.</a></p>
                                 <p>After several role-playing walkthroughs, I finally located the following problems that I could take actions to:</p>
                                 <div className="scrollby">
                                     <ul>

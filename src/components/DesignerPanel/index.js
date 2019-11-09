@@ -92,7 +92,7 @@ function DesignerPanel (props) {
         </div>
         </Fade>
                 
-、
+
     </>)}
 
 

@@ -7,7 +7,7 @@ function Footer() {
         <footer>
             <div className="footer_content">
                 <p>© 2019 Yuwen Li</p>
-                <br/>
+                {/* <br/> */}
                 <div className="footer_link">
                 <a href="https://dribbble.com/Leeven"><i className="fas fa-basketball-ball"></i></a>
                 <a href="https://github.com/muzlee1113"><i className="fab fa-github"></i></a>

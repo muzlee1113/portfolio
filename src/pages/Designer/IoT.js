@@ -70,7 +70,7 @@ class IoT extends React.Component {
 
                             <div className="project_brief_container">
                                 <div className="project_brief_title">Client Name</div>
-                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</div>
+                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</div>
                                 <div className="project_brief_title">Project End Goal</div>
                                 <div className="project_brief_content">To improve the usability of the back-stage management tool for the client’s products which serve the IoT-based city infrastructure.</div>
                                 <div className="project_brief_title">My Role</div>
@@ -90,23 +90,25 @@ class IoT extends React.Component {
                                 <h5>Internet of Things and Smart Cities</h5>
                                 <p>Internet of Things has become a hot topic these years. With the growing maturity of the technologies such as cellular network and smart devices, many cities in China have launched projects to bring innovations into city management. Shenzhen is among one of those.</p>
                                     <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/smart_city.jpg"} />
-                                <p className="project_caption" style={{ "textAlign": "center" }}>Longgang Operation Centre | photo from <a href = 'https://mytechdecisions.com/video/worlds-largest-curved-video-wall-installed-at-longgang-operation-centre/'>my tech decisions </a></p>
-                                <p>In summer 2019, my first task in Shenzhen Institute for Innovative Design (SIID) as a UX designer was to redesign the city infrastructure management tool offered by Xingyang Languang, a smart device manufacturer.</p>
+                                <p className="project_caption" style={{ "textAlign": "center" }}>Longgang Operation Centre | photo from <a className="text_link" href = 'https://mytechdecisions.com/video/worlds-largest-curved-video-wall-installed-at-longgang-operation-centre/'>my tech decisions </a></p>
+                                <p>In summer 2019, I spent more than three months in the Shenzhen Institute for Innovative Design (SIID) as a UX designer to redesign a city infrastructure management tool offered by Xingyang Languang, a smart device manufacturer.</p>
                                     <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/deliver.png"} />
                                 <p className="project_caption" style={{ "textAlign": "center" }}>I was delivering my findings to the project team.</p>
-                                <p>I was the only UX designer in the team working with a product manager, visual designers, and developers. I worked in an iterative cycle of user interviews, rapid prototyping and usability studies to redefine various features and interactions. I stopped working on the project as the websites started to be built.</p>
+                                <p>I was the only UX designer in the team working with a product manager, visual designers, and developers. I worked in an iterative cycle of user research, rapid prototyping and usability studies to redefine various features and interfaces. I stopped working on the project as the websites started to be built.</p>
                                 </section>
                                 </LazyLoad>
+                                
+   
                         </div>
                     </Col>
                 </Row>
             </div>
             <LazyLoad  height={200} offset={100} once>
-                        <section id="list-item-0" className="project_separator">
+                        <section className="project_separator">
                             <div className="project_separator_inner_wrapper">
-                            <h2>User Research & Case Studies</h2>
-                                <h5>The Process</h5>
-                                <p>My work can be divided into these four parts. Feel free to explore and find out more.</p>
+                            <h2>The Process</h2>
+                                <h5>User Research & Case Studies</h5>
+                                <p>My work can be divided into these four parts. Click to find out the process.</p>
                                         <div className="subCards_container">
 
                                             <Row>
@@ -114,7 +116,7 @@ class IoT extends React.Component {
                                                 <Col className="card_hover" md={12} lg={3}>
                                                     <Link to={'/work/IoT/research'}>
                                                         <div>
-                                                            <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector0.png'} alt="" className='card-img' />
+                                                            <img className="project_illustration_small" src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector0.png'} alt="" className='card-img' />
                                                         </div>
                                                         <div className="workCard_text_container_sub">
                                                             <div className="sub_card_tagline">User Research</div>
@@ -176,6 +178,51 @@ class IoT extends React.Component {
                         </section>
 
              </LazyLoad>
+            <LazyLoad height={200} offset={100} once>
+            <div className="project_separator">
+                <div className="project_separator_inner_wrapper">
+                            <h2>Final Design</h2>
+                            <h5>Key Pages That I worked on. Click to see the related case studies.</h5>
+              
+                            <div style={{margin: "32px 0 32px"}}>
+                                <a href="/work/IoT/datavis"><h6>1. Dashboards for the Whole System</h6>
+                                <img className="project_illustration_nomargin" src={process.env.PUBLIC_URL + "/images/IoT/final_1.png"} />
+                                </a>
+                            </div>
+                            <div style={{margin: "32px 0 32px"}}>
+                                <a href="/work/IoT/infonav"><h6>2. Monitor & Control Hub</h6>
+                                <img className="project_illustration_nomargin" src={process.env.PUBLIC_URL + "/images/IoT/final_2.png"} />
+                                </a>
+                            </div>
+                            <div style={{margin: "32px 0 32px"}}>
+                                <a href="/work/IoT/datavis"><h6>3. Notification Center</h6>
+                                <img className="project_illustration_nomargin" src={process.env.PUBLIC_URL + "/images/IoT/final_3.png"} />
+                                </a>
+                            </div>
+                            <div style={{margin: "32px 0 32px"}}>
+                            <a href="/work/IoT/sysimg">
+
+                                <h6>4. Smart Street Light Management Tool</h6>
+                                <img className="project_illustration_nomargin" src={process.env.PUBLIC_URL + "/images/IoT/final_4.png"} />
+                                </a>
+
+                            </div>
+                            <div style={{margin: "32px 0 32px"}}>
+                                <a href="/work/IoT/datavis"><h6>5. Smart Manhole Covers Management Tool</h6>
+                                <img className="project_illustration_nomargin" src={process.env.PUBLIC_URL + "/images/IoT/final_5.png"} />
+                                </a>
+                            </div>
+                            <div style={{margin: "32px 0 32px"}}>
+                                <a href="/work/IoT/datavis"><h6>6. Environmental Sensors Management Tool</h6>
+                                <img className="project_illustration_nomargin" src={process.env.PUBLIC_URL + "/images/IoT/final_6.png"} />
+                            </a>
+                            </div>
+                </div>
+                
+                
+            </div>
+            </LazyLoad>
+           
             <ProjectPagination prevUrl="" prevName="" nextUrl="/work/materialbank" nextName="Material Bank"/>
 
             <BackToTopBtn />

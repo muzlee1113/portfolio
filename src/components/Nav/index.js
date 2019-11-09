@@ -11,7 +11,7 @@ function Nav() {
                     <NavLink 
                     // id="aboutpage" 
                     activeClassName="link active_link"
-                    className="link"
+                    className="nav_link"
                     to="/about" exact><span className="mr-2 align-text-top" uk-icon="happy"></span>About</NavLink>
                     {/* <NavLink 
                     // id="ptfpage" 
@@ -22,13 +22,13 @@ function Nav() {
                     <NavLink 
                     // id="ptfpage" 
                     activeClassName="link active_link"
-                    className="link"
+                    className="nav_link"
                     to="/code" 
                     exact><span className="mr-2 align-text-top" uk-icon="code"></span>Code</NavLink>
                     <NavLink 
                     // id="ptfpage" 
                     activeClassName="link active_link"
-                    className="link"
+                    className="nav_link"
                     to="/" 
                     exact><span className="mr-2 align-text-top" uk-icon="pencil"></span>Design</NavLink>
                 </div>

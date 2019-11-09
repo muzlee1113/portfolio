@@ -50,6 +50,10 @@ footer{
   font-weight: 300
 }
 
+.footer_link{
+  margin-top: 1em
+}
+
 .fab, .fas{
   margin-right: 21px;
   font-size: 18pt;
@@ -62,7 +66,7 @@ footer{
 #logo {
   position: absolute;
   top: 21px;
-  left: 1.5em;
+  left: 21px;
   height: 30px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -73,11 +77,12 @@ footer{
   float: right;
   margin-right: 21px;
   display: block;
+
 }
+
 
 a, .btn-link{
   color: #777777!important;
-  text-decoration: none!important;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   -ms-transition: opacity 0.5s ease-in-out;
@@ -89,17 +94,18 @@ a, .btn-link{
 
 
 
-.link  {
+.nav_link  {
   float: right;
   text-align: center;
   margin: 28px 16px;
   display: block;
   font-size: 1rem;
+  text-decoration: none!important;
   /* font-family: 'Roboto', sans-serif; */
 }
 .text_link {
-  color: #9D2721 !important;
-
+  /* color: #9D2721 !important; */
+  text-decoration: underline!important;
 }
 .nav-li{
   /* padding: 5px 0; */
@@ -137,6 +143,7 @@ a, .btn-link{
 
 a:not(.code_link):hover {
   opacity: 0.5;
+ 
 } 
 
 .btn-link:hover {
@@ -192,7 +199,7 @@ a:not(.code_link):hover {
 .workCards_wrapper{
   max-width: 1440px;
   margin: 0 auto 0;
-  padding: 64px 16px 64px;
+  padding: 64px 30px 64px;
 
 
   /* grid-column-start: 3; */
@@ -607,7 +614,7 @@ h6{
   margin: 2.95em 0 -0.46em;
 
   font-family: proxima-nova, sans-serif;
-  background-color: white;
+  /* background-color: white; */
 
 }
 
@@ -623,6 +630,7 @@ p, .p{
 
 
 li, ol{
+  font-size: 21px;
   /* list-style-type: disc; */
   list-style-position: inside;
   margin-top: 1.05em 0 -0.46em;
@@ -787,7 +795,7 @@ li, ol{
 }
 
 .project_separator_inner_wrapper {
-  padding: 100px 50px 150px 50px;
+  padding: 100px 30px 120px;
 }
 
 .project_quote {
@@ -855,6 +863,10 @@ img{
   margin-right: auto;
 }
 
+.project_illustration_nomargin{
+  margin-top: 16px;
+}
+
 .project_image_model{
   margin:0;
   width: 100%;
@@ -870,8 +882,9 @@ img{
 
 /* hide the scroll by */
 
-.about_content, .footer_content, .leading,  .project_head_container, .project_overall_container{
-  padding: 0 16px 0 16px;
+.about_content, .footer_content, .leading,  .project_head_container, .project_overall_container, .section-title-container{
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /* back to top */
@@ -992,7 +1005,7 @@ img{
     height:10px;
   }
 
-  p{
+  li, ol, p{
     font-size: 17px;
     line-height: 1.58;
   }
@@ -1006,5 +1019,13 @@ img{
   /* #logo{
     height: 2rem
   } */
+  .about_content, .footer_content, .leading,  .project_head_container, .project_overall_container, .section-title-container{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
+  #logo{
+    left: 16px
+  }
+  
 }
