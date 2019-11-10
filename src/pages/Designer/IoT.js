@@ -14,6 +14,7 @@ import ProjectPagination from '../../components/ProjectPagination'
 
 
 
+
 // function App() {
 
 //     return (
@@ -69,16 +70,28 @@ class IoT extends React.Component {
                         <div className="left_bar_wrapper">
 
                             <div className="project_brief_container">
-                                <div className="project_brief_title">Client Name</div>
-                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</div>
+                                <div className="project_brief_title">Company</div>
+                                <div className="project_brief_content"><a href="http://www.siid.com.cn/" className="text_link">Shenzhen Institute for Innovative Design</a></div>
+                                <div className="project_brief_title">Client</div>
+                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider.</div>
                                 <div className="project_brief_title">Project End Goal</div>
-                                <div className="project_brief_content">To improve the usability of the back-stage management tool for the client’s products which serve the IoT-based city infrastructure.</div>
+                                <div className="project_brief_content">To improve the usability of the management tool of the client’s products which serve the IoT-based city infrastructure.</div>
+                                
                                 <div className="project_brief_title">My Role</div>
                                 <div className="project_brief_content">UX Designer</div>
 
-
+                               
                             </div>
-                            
+                            <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;">
+                                    <div className="project_brief_content"><Link className="text_link" to={'/work/IoT/research'}>User Research</Link></div>
+                                    <div className="project_brief_content">Inform Design With Research</div>
+                                    <div className="project_brief_content"><Link className="text_link" to={'/work/IoT/datavis'}>Case Study #1</Link></div>
+                                    <div className="project_brief_content"> Make Data Glanceable & Usable</div>
+                                    <div className="project_brief_content"><Link className="text_link" to={'/work/IoT/infonav'}>Case Study #2</Link></div>
+                                    <div className="project_brief_content"> Improve Information Navigation</div>
+                                    <div className="project_brief_content"><Link className="text_link" to={'/work/IoT/sysimg'}>Case Study #3</Link></div>
+                                    <div className="project_brief_content">Improve System Image</div>
+                                </div>
                         </div>
                     </Col>
                     <Col md={12} lg={9}>

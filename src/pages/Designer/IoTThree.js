@@ -11,6 +11,8 @@ import BackToTopBtn from "../../components/BackToTopBtn"
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import LazyLoad from 'react-lazyload';
 import ProjectPagination from '../../components/ProjectPagination'
+import ImageZoom from 'react-medium-image-zoom'
+
 
 
 
@@ -71,15 +73,18 @@ class IoTThree extends React.Component {
                     <Col md={12} lg={3}>
                         <div className="left_bar_wrapper">
 
-                            <div className="project_brief_container">
-                                <div className="project_brief_title">Client Name</div>
-                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</div>
+                        <div className="project_brief_container">
+                                <div className="project_brief_title">Company</div>
+                                <div className="project_brief_content"><a href="http://www.siid.com.cn/" className="text_link">Shenzhen Institute for Innovative Design</a></div>
+                                <div className="project_brief_title">Client</div>
+                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider.</div>
                                 <div className="project_brief_title">Project End Goal</div>
-                                <div className="project_brief_content">To improve the usability of the back-stage management tool for the client’s products which serve the IoT-based city infrastructure.</div>
+                                <div className="project_brief_content">To improve the usability of the management tool of the client’s products which serve the IoT-based city infrastructure.</div>
+                                
                                 <div className="project_brief_title">My Role</div>
                                 <div className="project_brief_content">UX Designer</div>
 
-
+                               
                             </div>
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;"
                             // style={{position: "fixed", right: "2vw", bottom: "5vh"}}
@@ -92,7 +97,7 @@ class IoTThree extends React.Component {
                                 <div className="project_brief_content"> Improve Information Navigation</div>
                                 <div className="project_brief_content"><Link className="text_link" to={'/work/IoT/sysimg'}>Case Study #3</Link></div>
                                 <div className="project_brief_content">Improve System Image</div>
-                                <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+                                <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
                                     <li className="uk-l project_brief_content"><a href="#list-item-1">User Research & Insights</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-2">Design Better Interaction</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-3">Takeaways</a></li>
@@ -114,6 +119,7 @@ class IoTThree extends React.Component {
                                 <Container>
                                     <Row>
                                         <Col style={{ textAlign: "center", justifyContent: "center" }} md="12" lg="4">
+                                            
                                                 <img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/habit1.PNG"} />
                                             <p className="project_caption">1. Bulk Control</p>
                                         </Col>
@@ -141,9 +147,16 @@ class IoTThree extends React.Component {
 
                                 <h6>Mismatch of System Models and User Mental Models</h6>
                                 <p>To my surprise, I found that many devices were not working in the ways that as the users thought it would be.</p>
-
-                                    <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/limitation.png"} />
-                                <p className="project_caption">For example, I thought that the smart street lights could adjust to changing ambient lights and for other cases, they followed a local schedule 'downloading' from the cloud. However, the truth is that the street lights themselves do not contain light sensors. The light sensors work independently, sending data to the cloud. It depends on the cloud application to process sensor data, calculate and send commands to the street lights to control them according to the changes of ambient light. Moreover, the street light works according to ‘a 24-hour clock’. Once the application sends a command, for example, asking it to turn on at 6:00 am, the street light will maintain its status (on or off) at the moment until the time of the internal clock reaches the first 6:00 am.</p>
+                                    <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/limitation.png',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                    }}
+                                                
+                                                />
+                               
+                                <p className="project_caption">For example, I thought that the smart street lights could either adjust to changing ambient lights or follow a schedule 'downloading' from the cloud. However, actually street lights themselves do not contain but relies on the cloud application's command after it processes the sensor data. Moreover, the street lights work according to ‘a 24-hour periodic timer’ and will maintain its status (on or off) until the timer match the time in the command.</p>
                                 <p>The mysterious system images of the devices were so different from user mental models and thus created huge obstacles in their use. Also, they created a lot of technical challenges in implementation. </p>
                             </section>
                             </LazyLoad>
@@ -153,14 +166,43 @@ class IoTThree extends React.Component {
 
                                 <h2>Deliverables</h2>
                                 <p><b>1. Selected Cart</b>: allow users to select group of devices by adding lights in an area into a selected ‘cart’ and by dragging on the map using the Hand tool; users can apply advanced filters in the Selected Cart to further narrow down the range of their control; </p>
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/bulkControl.gif"} />
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/bulkControl.gif',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                
+                                />
                                 <p className="project_caption" >Users can add lights into the selected cart and apply more filters to select the ones they want to control. This is a screen record of the actual website.</p>
                                 <p><b>2. Settings: </b> allow users to set work hours in the old way: from 12 p.m. to 12 p.m., using relative time.</p>
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/sketch_strategy.jpg"} />    
-                                <p className="project_caption" style={{ "textAlign": "center" }}>I was ideating the different steps of settings and how to visualize the strategy so that administrators can better decisions.</p>
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/strategy.png"} />    
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/sketch_strategy.jpg',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
                                 
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/lightControl.gif"} />
+                                />
+                                <p className="project_caption" style={{ "textAlign": "center" }}>I was ideating the different steps of settings and how to visualize the strategy so that administrators can better decisions.</p>
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/strategy.png',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                
+                                />
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/lightControl.gif',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                
+                                />   
+                                
+                                  
                                 <p className="project_caption">The final strategy dashboard and special strategy setting page.</p>
                                 <p><b>3. Provide Setting Guidances for Different Occasions</b>: guide users to configure the routine strategies when the system sets up, add on special working hours if need be and temporarily control one or groups of lights within some time in the monitor and control hub. </p>
 
@@ -171,8 +213,8 @@ class IoTThree extends React.Component {
 
                         <section id="list-item-2" className="project_body">
                             <h2>TAKEAWAYS</h2>
-                            <h6>Ask Questions and Learn from Anyone</h6>
-                            <p>IoT system consists of various hardware, software, communication channels, the cloud platform, and cloud applications. It is complex and daunting. I spent a lot of time talking with engineers and developers, to understand the purposes, functionalities, and limitations of the devices. By frequently raising questions, I not only learned every part of the system but also formed a reciprocal and supportive relationship with them, which was beneficial in cross-functional collaboration.</p>
+                            <h6>Ask Questions and Learn from Everyone</h6>
+                            <p>IoT system is complex and daunting. I spent a lot of time talking with engineers and developers, to understand the purposes, functionalities, and limitations of the devices. By frequently raising questions, I not only learned every part of the system but also formed a reciprocal and supportive relationship with them, which was beneficial in cross-functional collaboration.</p>
                             <h6>Design with Limitations</h6>
                             <p>The biggest lesson I learned from this project is to understand and get used to limitations in my design. Just like painting, an important thing to do is to understand your tools and materials. We should also understand the machine and data so that we won't subject our design to the whim of our naive mind.</p>
                         </section>

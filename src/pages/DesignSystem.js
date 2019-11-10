@@ -14,7 +14,7 @@ function DesignSystem() {
                             <div className="project_brief_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div> 
                         </div>
                         <div className="scrollby" style={{"zIndex": "980"}} uk-sticky="offset:100;">
-                            <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 180">
+                            <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 180">
 
                                 <li className="nav-li project_brief_content"><a href="#list-item-1">Typography</a></li>
                                 <li className="nav-li project_brief_content"><a href="#list-item-2">Paragraph</a></li>

@@ -41,7 +41,7 @@ function ReadwithMe() {
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;"
                             // style={{position: "fixed", right: "2vw", bottom: "5vh"}}
                             >
-                                <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
+                                <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
                                 // className="uk-nav uk-nav-default tm-nav uk-nav-parent-icon"
                                 >
 

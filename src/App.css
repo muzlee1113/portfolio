@@ -759,6 +759,8 @@ li, ol{
 
 .scrollby{
   padding-top: 28px;
+  /* position: fixed; top: 100px;  */
+  /* width: 200px; */
 }
 
 .project_container{
@@ -786,6 +788,7 @@ li, ol{
   background-color: #f8f8f8;
   width: 100%;
   position: relative;
+  z-index: 1000;
 }
 
 .project_separator_transparent {
@@ -816,15 +819,16 @@ li, ol{
 }
 
 /* illustrations */
-img{
+/* img{
   margin-top: 56px;
-}
+} */
 
 .frame_wrapper{
   margin: 56px 0 56px;
 }
 
 .project_illustration{
+  margin-top: 56px;
   /* margin-top: 2em; */
   /* margin-bottom: 2em; */
   width: 100%;
@@ -833,6 +837,7 @@ img{
 
 
 .project_illustration_medium{
+  margin-top: 56px;
   /* margin-top: 2em; */
   /* margin-bottom: 2em; */
   width: 80%;
@@ -844,6 +849,7 @@ img{
 
 
 .project_illustration_small{
+  margin-top: 56px;
   /* margin-top: 2em; */
   /* margin-bottom: 2em; */
   width: 60%;
@@ -854,6 +860,7 @@ img{
 }
 
 .project_illustration_extrasmall{
+  margin-top: 56px;
   /* margin-top: 2em;
   margin-bottom: 2em; */
   width: 25%;
@@ -864,6 +871,7 @@ img{
 }
 
 .project_illustration_nomargin{
+  
   margin-top: 16px;
 }
 

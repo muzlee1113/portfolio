@@ -25,7 +25,7 @@ function BoardingPass() {
 
                            
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;">
-                                <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+                                <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
 
                                 <li className="uk-l project_brief_content"><a href="#list-item-1">Journey Map</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-2">Ideation</a></li>

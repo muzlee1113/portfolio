@@ -11,6 +11,8 @@ import BackToTopBtn from "../../components/BackToTopBtn"
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import LazyLoad from 'react-lazyload';
 import ProjectPagination from '../../components/ProjectPagination'
+import ImageZoom from 'react-medium-image-zoom'
+
 
 
 
@@ -71,15 +73,18 @@ class IoTTwo extends React.Component {
                     <Col md={12} lg={3}>
                         <div className="left_bar_wrapper">
 
-                            <div className="project_brief_container">
-                                <div className="project_brief_title">Client Name</div>
-                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</div>
+                        <div className="project_brief_container">
+                                <div className="project_brief_title">Company</div>
+                                <div className="project_brief_content"><a href="http://www.siid.com.cn/" className="text_link">Shenzhen Institute for Innovative Design</a></div>
+                                <div className="project_brief_title">Client</div>
+                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider.</div>
                                 <div className="project_brief_title">Project End Goal</div>
-                                <div className="project_brief_content">To improve the usability of the back-stage management tool for the client’s products which serve the IoT-based city infrastructure.</div>
+                                <div className="project_brief_content">To improve the usability of the management tool of the client’s products which serve the IoT-based city infrastructure.</div>
+                                
                                 <div className="project_brief_title">My Role</div>
                                 <div className="project_brief_content">UX Designer</div>
 
-
+                               
                             </div>
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;"
                             // style={{position: "fixed", right: "2vw", bottom: "5vh"}}
@@ -90,7 +95,7 @@ class IoTTwo extends React.Component {
                                 <div className="project_brief_content"> Make Data Glanceable & Usable</div>
                                 <div className="project_brief_content"><Link className="text_link" to={'/work/IoT/infonav'}>Case Study #2</Link></div>
                                 <div className="project_brief_content"> Improve Information Navigation</div>
-                                <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
+                                <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
                                 // className="uk-nav uk-nav-default tm-nav uk-nav-parent-icon"
                                 >
                                     <li className="uk-l project_brief_content"><a href="#list-item-1">Usability Testing & Results</a></li>
@@ -112,25 +117,55 @@ class IoTTwo extends React.Component {
                                     <p>There are three important components in the map view of monitor and control hub: a map showing devices with icons, a list of devices in the right sidebar, filters of areas and device types on the top. During the role-play walkthroughs, I found that: </p>
                                     <Container>
                                         <Row style={{ alignItems: "center" }}>
-                                            <Col md="12" lg="6"><img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/testing_problems_1.PNG"} /></Col>
-                                            <Col md="12" lg="6">
+                                            <Col md="12" lg="8">
+                                                <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/testing_problems_1.PNG',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                    }}
+                                                
+                                                />
+                                                
+                                            </Col>
+                                            <Col md="12" lg="4">
 
 
-                                                <p><small>😟1 When users zoomed in and out, scrolled up and down the map, the device list on the right changed accordingly, showing only the devices they could see on the screen. However, it didn’t change the filters on top of the page, so users easily <b>felt lost</b>.</small></p>
+                                                <p><small>😟 1 When users zoomed in and out, scrolled up and down the map, the device list on the right changed accordingly, showing only the devices they could see on the screen. However, it didn’t change the filters on top of the page, so users easily <b>felt lost</b>.</small></p>
                                             </Col>
                                         </Row>
                                         <Row style={{ alignItems: "center" }}>
-                                            <Col md="12" lg="6"><img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/testing_problems_2.PNG"} /></Col>
-                                            <Col md="12" lg="6">
+                                            <Col md="12" lg="8">
+                                            <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/testing_problems_2.PNG',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                    }}
+                                                
+                                                />
+                                                
+                                               
+                                            </Col>
+                                            <Col md="12" lg="4">
 
-                                                <p><small>😟2 When users applied filters, the map this time <b>didn’t move accordingly</b> to where they can see all devices. So sometimes suddenly nothing was on the map.</small></p>
+                                                <p><small>😟 2 When users applied filters, the map this time <b>didn’t move accordingly</b> to where they can see all devices. So sometimes suddenly nothing was on the map.</small></p>
                                             </Col>
                                         </Row>
                                         <Row style={{ alignItems: "center" }}>
-                                            <Col md="12" lg="6"><img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/testing_problems_3.PNG"} /></Col>
-                                            <Col md="12" lg="6">
+                                            <Col md="12" lg="8">
+                                            <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/testing_problems_3.PNG',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                    }}
+                                                
+                                                />
+                                               </Col>
+                                            <Col md="12" lg="4">
 
-                                                <p><small>😟3 Once they found a device they were interested in, they clicked to see the details, but unexpectedly <b>the website</b> sent them to another page, and when they go back, all <b>the filters they had set disappeared.</b></small></p>
+                                                <p><small>😟 3 Once they found a device they were interested in, they clicked to see the details, but unexpectedly <b>the website</b> sent them to another page, and when they go back, all <b>the filters they had set disappeared.</b></small></p>
                                             </Col>
                                         </Row>
                                     </Container>
@@ -141,9 +176,16 @@ class IoTTwo extends React.Component {
                                 <section id="list-item-3" className="project_body">
 
                                     <h2>Deliverable 1</h2>
-                                    <h5>🙂1&2 Align interactions with users' expectations: WYSIWYG</h5>
+                                    <h5>🙂 1&2 Align interactions with users' expectations: WYSIWYG</h5>
                                     <p>When users apply filters, they expect to see the results. When they drag or scroll the map, they are looking for devices outside the viewport. The map and list should work according to users' expectations. So I redesigned the logics as follow:</p>
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/logics.png"} />
+                                    <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/logics.png',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                    }}
+                                                
+                                                />
                                     <p className="project_caption" style={{ "textAlign": "center" }}>The New Logics</p>
 
                                     <p>Since users have less freedom selecting filters compared with controlling the viewport of the map (zooming, scrolling, dragging), it is actually good for the users to specify the range or group of devices they want to control or view.</p>
@@ -156,16 +198,40 @@ class IoTTwo extends React.Component {
                                 <section id="list-item-4" className="project_body">
 
                                     <h2>Deliverable 2</h2>
-                                    <h5>🙂3 Use the sidebar to provide a seamless and linear experience</h5>
+                                    <h5>🙂 3 Use the sidebar to provide a seamless and linear experience</h5>
 
                                     <p>In the new design, device detailed views are moved to the sidebar on the right of the page to contextualize the in-depth navigation on the map. Therefore, users can view the map and the device information at the same time.</p>
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/sketch_map.png"} />
+                                    <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/sketch_map.png',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                    }}
+                                                
+                                                />
+                                   
                                     <p className="project_caption" style={{ "textAlign": "center" }}>My sketches on how to display information on the sidebar.</p>
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/scale.gif"} />
-                                    <p className="project_caption" style={{ "textAlign": "center" }}>This is a screen record of the alpha version. There were still some bugs here on the transition.</p>
+                                    <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/scale.gif',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                    }}
+                                                
+                                                />
+                                 
+                                    <p className="project_caption" style={{ "textAlign": "center" }}>This is a screen record of the alpha version. There were still some bugs here on the transitions.</p>
                                     <p>Moreover, I spent a lot of time figuring out the affiliations between different devices and provided links to help users better navigate to and fro from list to detailed view, and from one detailed view to another.</p>
-                                    <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/scale2.png"} />
-                                    <p className="project_caption" style={{ "textAlign": "center" }}>Users can zoom in to details and zoom out for overview; they can also move parallelly to other related devices.</p>
+                                    <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/scale2.png',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                    }}
+                                                
+                                                />
+                                 
+                                    <p className="project_caption" style={{ "textAlign": "center" }}>Users can drill into details and zoom out for overview; they can also move parallelly to other related devices.</p>
                                 </section>
                             </LazyLoad>
                         </div>
@@ -181,6 +247,7 @@ class IoTTwo extends React.Component {
                                     <Col className="card_hover" md={12} lg={4}>
                                         <Link to={'/work/IoT/research'}>
                                             <div>
+                                                
                                                 <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector0.png'} alt="" className='card-img' />
                                             </div>
                                             <div className="workCard_text_container_sub">

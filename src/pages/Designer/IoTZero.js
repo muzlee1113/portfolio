@@ -12,7 +12,7 @@ import BackToTopBtn from "../../components/BackToTopBtn"
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import LazyLoad from 'react-lazyload';
 import ProjectPagination from '../../components/ProjectPagination'
-
+import ImageZoom from 'react-medium-image-zoom'
 
 
 // function App() {
@@ -72,20 +72,23 @@ class IoTZero extends React.Component {
                 <Col md={12} lg={3}>
                         <div className="left_bar_wrapper">
 
-                            <div className="project_brief_container">
-                                <div className="project_brief_title">Client Name</div>
-                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</div>
+                        <div className="project_brief_container">
+                                <div className="project_brief_title">Company</div>
+                                <div className="project_brief_content"><a href="http://www.siid.com.cn/" className="text_link">Shenzhen Institute for Innovative Design</a></div>
+                                <div className="project_brief_title">Client</div>
+                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider.</div>
                                 <div className="project_brief_title">Project End Goal</div>
-                                <div className="project_brief_content">To improve the usability of the back-stage management tool for the client’s products which serve the IoT-based city infrastructure.</div>
+                                <div className="project_brief_content">To improve the usability of the management tool of the client’s products which serve the IoT-based city infrastructure.</div>
+                                
                                 <div className="project_brief_title">My Role</div>
                                 <div className="project_brief_content">UX Designer</div>
 
-
+                               
                             </div>
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;">
-                                <div className="project_brief_content"><Link className="text_link" to={'/work/IoT'}>User Research</Link></div>
+                                <div className="project_brief_content"><Link className="text_link" to={'/work/IoT/research'}>User Research</Link></div>
                                 <div className="project_brief_content">Inform Design With Research</div>
-                                <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+                                <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
                                      <li className="uk-l project_brief_content"><a href="#list-item-0">Intro</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-1">Research Questions & Hypotheses</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-2">Contextual Inquiries & Design Requirements</a></li>
@@ -131,7 +134,14 @@ class IoTZero extends React.Component {
                                 </div>
                                 <div className="project_caption">This was a tool designed specifically for controlling highway lights. The administrator needed to go down 6 layers and many steps to control an individual light or lights on specific segments of the highway.. When they walked us through, one administrator told us that they found it difficult to find the light they wanted to control, but they gradually got used to it.</div>
                                 <p>Even though they used a complex system to control lights, the tasks were assigned by paper, and they talked to the head of the on-site group by updating a sheet of tasks manually first thing in a day.</p>
-                                    <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/papersheet.png"} />
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/papersheet.png',
+                                    alt: '',
+                                    className: 'project_illustration_medium'
+                                    }}
+                     
+                                />
                                 <div className="project_caption" style={{ "textAlign": "center" }}>These are images I downloaded online but they are very similar to what the administrators used.</div>
                                 <h6>Finding 2: It is hard for administrators to know the status of the system in real-time with the tools they had.</h6>
                                 <p>The administrators of highway lights relied on the daily reports from the on-site technicians to learn about the status of the system. The manager of the office park used CCTV monitors or just simply walked around the park to keep track of the lights.</p>

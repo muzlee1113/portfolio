@@ -12,6 +12,9 @@ import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import LazyLoad from 'react-lazyload';
 import ProjectPagination from '../../components/ProjectPagination'
 
+import ImageZoom from 'react-medium-image-zoom'
+
+
 
 
 // function App() {
@@ -61,15 +64,18 @@ class IoTOne extends React.Component {
                     <Col md={12} lg={3}>
                         <div className="left_bar_wrapper">
 
-                            <div className="project_brief_container">
-                                <div className="project_brief_title">Client Name</div>
-                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider that aims to optimize energy efficiency and decision intelligence for cities, commercial, industrial and office parks.</div>
+                        <div className="project_brief_container">
+                                <div className="project_brief_title">Company</div>
+                                <div className="project_brief_content"><a href="http://www.siid.com.cn/" className="text_link">Shenzhen Institute for Innovative Design</a></div>
+                                <div className="project_brief_title">Client</div>
+                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider.</div>
                                 <div className="project_brief_title">Project End Goal</div>
-                                <div className="project_brief_content">To improve the usability of the back-stage management tool for the client’s products which serve the IoT-based city infrastructure.</div>
+                                <div className="project_brief_content">To improve the usability of the management tool of the client’s products which serve the IoT-based city infrastructure.</div>
+                                
                                 <div className="project_brief_title">My Role</div>
                                 <div className="project_brief_content">UX Designer</div>
 
-
+                               
                             </div>
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;"
                             // style={{position: "fixed", right: "2vw", bottom: "5vh"}}
@@ -78,7 +84,7 @@ class IoTOne extends React.Component {
                                 <div className="project_brief_content">Inform Design With Research</div>
                                 <div className="project_brief_content"><Link className="text_link" to={'/work/IoT/datavis'}>Case Study #1</Link></div>
                                 <div className="project_brief_content">Make Data Glanceable & Usable</div>
-                                <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
+                                <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
                                 // className="uk-nav uk-nav-default tm-nav uk-nav-parent-icon"
                                 >
                                     <li className="uk-l project_brief_content"><a href="#list-item-1">Problem Space & Research Insights</a></li>
@@ -105,7 +111,17 @@ class IoTOne extends React.Component {
                                 <h5>What data do the users want and how do they get and use them?</h5>
                                 <p>In the <Link className="text_link" to={'/work/IoT/research'}>contextual inquiries</Link>, we found that the users could not easily figure out the system status, even though the system used in the office park offered dashboards and the highway light system had overall data panels. The finding in <Link className="text_link" to={'/work/IoT/research'}>usability studies</Link> proved it again, since it was not easy for the users to grasp system status at a glance on the old websites.</p>
                                 <p>To better figure our what helped users to capture the overall picture of the system, I went back to the data I collected, I synthesized that administrator's daily workflow can be depicted as follow:</p>
-                                <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/3_types_of_data.png"} />
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/3_types_of_data.png',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                    zoomImage={{
+                                    src: '/images/IoT/3_types_of_data.png',
+                                    alt: ''
+                                    }}
+                                />
                                 <p className="project_caption" style={{ "textAlign": "center" }}>A Day of an Administrator</p>
                                 <p>So what I ideated on how to help users get an overview, notice abnormal data and drill into details if need be.</p>
                             </section>
@@ -118,12 +134,25 @@ class IoTOne extends React.Component {
                                 <h5>Design glanceable dashboards to show the big picture</h5>
 
                                 <p>Dashboard is the best tool to brief users an overview. I started with sketching possible displays on the dashboards. </p>
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/sketches.png"} />
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/sketches.png',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                
+                                />
                                 <p>Later, I created a clickable testing page with my paper prototypes and Axure, and asked my colleagues from the administrative team to rank the graphs according to importance and legibility. I tested them with administrators in my company as an alternative to the real users since they shared a similar mindset. </p>
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/testing_vis.gif',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                  
+                                />
 
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/testing_vis.gif"} />
-
-                                <p className="project_caption">This is the clickable testing page I created with Axure.</p>
+                                <p className="project_caption" style={{textAlign:"center"}}>This is the clickable testing page I created with Axure.</p>
                                 <p>I found that: </p>
                                 <div className="project_quote">
                                     <div className="project_quote_wrapper">
@@ -134,17 +163,56 @@ class IoTOne extends React.Component {
                                 <p><b>Real-time snapshots</b> of the system can reveal to them the status quo, but more importantly, comparing data with <b>historical records</b> and <b>others</b>  can help them interpret the data in contexts.</p>
 
                                 <p>Based on the insight. I delivered four dashboards: one for all devices, which is at the homepage of the application; and others are for smart street lights, smart manhole covers, and environment sensors. </p>
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/street_light_dashboard.png"} />
-                                <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/street_light_dashboard_move.gif")}>Click to watch it move.</Button></div>
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/homepage_dashboard.png"} />
-                                <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/homepage_dashboard_move.gif")}>Click to watch it move.</Button></div>
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/env_sensor_dashboard.png"} />
+                                  <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/street_light_dashboard.png',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                  
+                                />
 
-                                <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/env_sensor_dashboard_move.gif")}>Click to watch it move.</Button></div>
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/manhole_cover_dashboard.png"} />
-                                <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/manhole_cover_dashboard_move.gif")}>Click to watch it move.</Button></div>
+                                  
+                                <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/street_light_dashboard_move.gif")}>Click to watch it move.</Button></div>
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/homepage_dashboard.png',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                  
+                                />
+                                   
+                                <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/homepage_dashboard_move.gif")}>Click here to watch it move.</Button></div>
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/env_sensor_dashboard.png',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                  
+                                />
+
+                                <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/env_sensor_dashboard_move.gif")}>Click here to watch it move.</Button></div>
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/manhole_cover_dashboard.png',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                  
+                                />
+                                <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/manhole_cover_dashboard_move.gif")}>Click here to watch it move.</Button></div>
                                 <p> As a side note, we needed a consistent way to visualize data on the dashboards so that the indicators would be coherent and understandable. So I researched and defined levels for different data and worked with visual designers on how they should be displayed.</p>
-                                <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/color_legend_icon.png"} />
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/color_legend_icon.png',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                  
+                                />
+                               
                                 <p className="project_caption" style={{ "textAlign": "center" }}>Icons credited to visual and graphic designer Shiguang Yang.</p>
                                 <p>On the left are the color legends I created based on devices' data set and national standards; On the right are the icons indicating various device status.</p>
                             </section>
@@ -158,24 +226,63 @@ class IoTOne extends React.Component {
                                 <p>We found in contextual inquiries that people pay much attention to what is going wrong, and they sought for more information and guidance on how to bring them back to normal.</p>
 
                                 <p>To come a with a exhaustive solution, I divided the process of alert into <b>three phases</b>: <b>notice</b>, <b>understand</b>, <b>act</b>. Then, I brainstormed ways to support each phase, and facilitate them to move step by step from problems to solutions:</p>
-                                    <img alt='three phases of alert design' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/IoT/three_phases.png"} />
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/three_phases.png',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                  
+                                />
+                                   
                                 <p className="project_caption" style={{textAlign: "center"}}>A sketch of the three phases of alert design and the wireframes of the website supports each step.</p>
 
                             
                                 <h6>1. Notice Phase: Proactively Alert Users to Problems</h6>
                                 <p>For the notice phase, the application alerts users to anomalies in two ways: pop-up modals at the corner and a blinking dot on the notification icon, depending on their urgency. I classified the alarms into two levels to reduce possible distractions when too many alerts show up. In the modal, users are allowed to choose whether they want to dive into the problem right now.</p>
-
-                                    <img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/alert_1.gif"} />
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/alert_1.gif',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                  
+                                />
+                             
 
                                 <h6>2. Understand Phase: One Click for Problem Details</h6>
                                 <p>If they want to know more, the ‘more information’ button will provide users with brief information and pin the problematic device on the map. These data can help the users understand the situation and possible reasons behind so that they can make sound decisions. </p>
-                                    <img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/alert_2.gif"} />
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/alert_2.gif',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                  
+                                />
+                             
                                 <h6>3. Act Phase: Ease the Workflow with Step-by-step Instructions</h6>
                                 <p>This is the phase I encountered the biggest challenge. Since how to solve the problem highly depends on the workflow of the organization. However, the old workflows do not fit into the new context where the management tool plays a new role in coordinating all the departments and people. Therefore, I talked to administrators of some of the departments and generalized a basic workflow, and then I drafted a roadmap which finally turned into the design.</p>
-                                    <img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/workflow.png"} />
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/workflow.png',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                  
+                                />
+                                 
                                 <p className="project_caption">Here is the workflow we defined from receiving an alert to lifting an alert. It involves at least three departments/groups in the organization: the department of the system administrator, on-site technicians and the department in charge of hardware.</p>
                                 <p>In the previous phase, users can easily find a button that leads them to the page where they can kick off the procedure to deal with the problem.</p>
-                                    <img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/alert_3.gif"} />
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/alert_3.gif',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                  
+                                />
+                              
                             </section>
                             </LazyLoad>
 
@@ -187,7 +294,14 @@ class IoTOne extends React.Component {
                                 <h2>Deliverable 3</h2>
                                 <h5>Design interconnected system that allows deep dive to details in different situations</h5>
                                 <p>Sometimes users did go out to check on a specific device, mostly when something went wrong. Therefore, I linked alerts and abnormal area on heatmap with the related device’s detailed information. </p>
-                                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/anomaly_to_detail.gif"} />
+                                <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/anomaly_to_detail.gif',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                  
+                                />
                                 <p className="project_caption">Here is an example of how users are able to navigate to a detailed page of a specific device from a dashboard map. The detailed page provides general information of the device, real-time data and also logs in forms of table and graph.</p>
 
                             </section>
