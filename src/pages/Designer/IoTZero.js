@@ -185,7 +185,7 @@ class IoTZero extends React.Component {
   
   
                                       <Col className="card_hover" md={12} lg={4}>
-                                          <Link to={'/work/IoT/datavis'}>
+                                          <Link  className="card_link" to={'/work/IoT/datavis'}>
                                               <div>
                                                   <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector1.png'} alt="" className='card-img' />
                                               </div>
@@ -199,7 +199,7 @@ class IoTZero extends React.Component {
   
   
                                       <Col className="card_hover" md={12} lg={4}>
-                                          <Link to={'/work/IoT/infonav'}>
+                                          <Link  className="card_link" to={'/work/IoT/infonav'}>
                                               <div>
                                                   <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector2.png'} alt="" className='card-img' />
                                               </div>
@@ -214,7 +214,7 @@ class IoTZero extends React.Component {
   
   
                                       <Col className="card_hover" md={12} lg={4}>
-                                          <Link to={'/work/IoT/sysimg'}>
+                                          <Link  className="card_link" to={'/work/IoT/sysimg'}>
                                               <div>
                                                   <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector3.png'} alt="" className='card-img' />
                                               </div>

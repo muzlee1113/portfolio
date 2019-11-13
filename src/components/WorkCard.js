@@ -13,7 +13,7 @@ export default function WorkCard (props) {
     
     return (<>
            
-            <Link to={props.url}>
+            <Link className="card_link" to={props.url}>
             <div className="work_wrapper" style={{backgroundColor: props.bgColor, color: props.tColor}}>
             <div className="workCards_wrapper">
             <Fade bottom>

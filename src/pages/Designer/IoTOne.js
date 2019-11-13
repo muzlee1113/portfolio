@@ -176,6 +176,15 @@ class IoTOne extends React.Component {
                                 <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/street_light_dashboard_move.gif")}>Click to watch it move.</Button></div>
                                 <ImageZoom
                                     image={{
+                                    src: '/images/IoT/dashboard_iteration.png',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                    }}
+                                  
+                                />
+                                <div className="project_caption text-center" >Iteration on the Street Light Dashboard</div>
+                                <ImageZoom
+                                    image={{
                                     src: '/images/IoT/homepage_dashboard.png',
                                     alt: '',
                                     className: 'project_illustration'
@@ -230,7 +239,7 @@ class IoTOne extends React.Component {
                                     image={{
                                     src: '/images/IoT/three_phases.png',
                                     alt: '',
-                                    className: 'project_illustration'
+                                    className: 'project_illustration_medium'
                                     }}
                                   
                                 />
@@ -248,7 +257,7 @@ class IoTOne extends React.Component {
                                     }}
                                   
                                 />
-                             
+                               <p className="project_caption" >This is an interactive prototype I made with Adobe XD. The modal for urgent alters is at the left-down corner and the notification popover is at the top.</p>
 
                                 <h6>2. Understand Phase: One Click for Problem Details</h6>
                                 <p>If they want to know more, the ‘more information’ button will provide users with brief information and pin the problematic device on the map. These data can help the users understand the situation and possible reasons behind so that they can make sound decisions. </p>
@@ -260,7 +269,7 @@ class IoTOne extends React.Component {
                                     }}
                                   
                                 />
-                             
+                               <p className="project_caption">This is an interactive prototype I made with Adobe XD.</p>
                                 <h6>3. Act Phase: Ease the Workflow with Step-by-step Instructions</h6>
                                 <p>This is the phase I encountered the biggest challenge. Since how to solve the problem highly depends on the workflow of the organization. However, the old workflows do not fit into the new context where the management tool plays a new role in coordinating all the departments and people. Therefore, I talked to administrators of some of the departments and generalized a basic workflow, and then I drafted a roadmap which finally turned into the design.</p>
                                 <ImageZoom
@@ -271,7 +280,8 @@ class IoTOne extends React.Component {
                                     }}
                                   
                                 />
-                                 
+                              
+
                                 <p className="project_caption">Here is the workflow we defined from receiving an alert to lifting an alert. It involves at least three departments/groups in the organization: the department of the system administrator, on-site technicians and the department in charge of hardware.</p>
                                 <p>In the previous phase, users can easily find a button that leads them to the page where they can kick off the procedure to deal with the problem.</p>
                                 <ImageZoom
@@ -282,7 +292,7 @@ class IoTOne extends React.Component {
                                     }}
                                   
                                 />
-                              
+                                 <p className="project_caption">This is an interactive prototype I made with Adobe XD.</p>
                             </section>
                             </LazyLoad>
 
@@ -302,7 +312,7 @@ class IoTOne extends React.Component {
                                     }}
                                   
                                 />
-                                <p className="project_caption">Here is an example of how users are able to navigate to a detailed page of a specific device from a dashboard map. The detailed page provides general information of the device, real-time data and also logs in forms of table and graph.</p>
+                                <p className="project_caption">Here is an example of how users are able to navigate to a detailed page of a specific device from a dashboard map. The detailed page provides general information of the device, real-time data and also logs in forms of table and graph. This is an interactive prototype I made with Adobe XD.</p>
 
                             </section>
                             </LazyLoad>
@@ -329,7 +339,7 @@ class IoTOne extends React.Component {
                             <Row>
 
                                 <Col className="card_hover" md={12} lg={4}>
-                                    <Link to={'/work/IoT/research'}>
+                                    <Link className="card_link" to={'/work/IoT/research'}>
                                         <div>
                                             <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector0.png'} alt="" className='card-img' />
                                         </div>
@@ -344,7 +354,7 @@ class IoTOne extends React.Component {
 
 
                                 <Col className="card_hover" md={12} lg={4}>
-                                    <Link to={'/work/IoT/infonav'}>
+                                    <Link  className="card_link" to={'/work/IoT/infonav'}>
                                         <div>
                                             <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector2.png'} alt="" className='card-img' />
                                         </div>
@@ -359,7 +369,7 @@ class IoTOne extends React.Component {
 
 
                                 <Col className="card_hover" md={12} lg={4}>
-                                    <Link to={'/work/IoT/sysimg'}>
+                                    <Link  className="card_link" to={'/work/IoT/sysimg'}>
                                         <div>
                                             <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector3.png'} alt="" className='card-img' />
                                         </div>

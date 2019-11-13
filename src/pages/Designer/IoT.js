@@ -127,7 +127,7 @@ class IoT extends React.Component {
                                             <Row>
 
                                                 <Col className="card_hover" md={12} lg={3}>
-                                                    <Link to={'/work/IoT/research'}>
+                                                    <Link  className="card_link" to={'/work/IoT/research'}>
                                                         <div>
                                                             <img className="project_illustration_small" src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector0.png'} alt="" className='card-img' />
                                                         </div>
@@ -139,7 +139,7 @@ class IoT extends React.Component {
                                                     </Link>
                                                 </Col>
                                                 <Col className="card_hover" md={12} lg={3}>
-                                                    <Link to={'/work/IoT/datavis'}>
+                                                    <Link  className="card_link" to={'/work/IoT/datavis'}>
                                                         <div>
                                                             <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector1.png'} alt="" className='card-img' />
                                                         </div>
@@ -153,7 +153,7 @@ class IoT extends React.Component {
 
 
                                                 <Col className="card_hover" md={12} lg={3}>
-                                                    <Link to={'/work/IoT/infonav'}>
+                                                    <Link  className="card_link" to={'/work/IoT/infonav'}>
                                                         <div>
                                                             <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector2.png'} alt="" className='card-img' />
                                                         </div>
@@ -168,7 +168,7 @@ class IoT extends React.Component {
 
 
                                                 <Col className="card_hover" md={12} lg={3}>
-                                                    <Link to={'/work/IoT/sysimg'}>
+                                                    <Link  className="card_link" to={'/work/IoT/sysimg'}>
                                                         <div>
                                                             <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector3.png'} alt="" className='card-img' />
                                                         </div>

@@ -176,8 +176,34 @@ class IoTTwo extends React.Component {
                                 <section id="list-item-3" className="project_body">
 
                                     <h2>Deliverable 1</h2>
-                                    <h5>🙂 1&2 Align interactions with users' expectations: WYSIWYG</h5>
-                                    <p>When users apply filters, they expect to see the results. When they drag or scroll the map, they are looking for devices outside the viewport. The map and list should work according to users' expectations. So I redesigned the logics as follow:</p>
+                                    <h5>🙂 1&2 Align interactions with users' purposes and expectations</h5>
+                                    <p>Since users come to the map to locate and control devices, most of the time, as a group, it will create trouble if the range of selected devices is random and unclear.</p>
+                                    <Row className="align-items-center">
+                                        <Col md={12} lg={4}>
+                                            <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/filter_map.png',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                    }}
+                                                
+                                                />
+                                        </Col>
+                                        <Col md={12} lg={8}>
+                                            <ImageZoom
+                                                image={{
+                                                src: '/images/IoT/filter_map_table.png',
+                                                alt: '',
+                                                className: 'project_illustration'
+                                                }}
+                                            
+                                            />
+                                        </Col>
+                                    </Row>
+                                        
+                                    
+                                     <p className="project_caption" style={{ "textAlign": "center" }}>The flexibility of map navigation causes troubles when users need to specify the range of the devices.</p>
+                                    <p>Moreover, when users apply filters, they expect to see the results on the map and in the list. When they drag or scroll the map, they mean to look for devices outside the viewport, but not to change the filters. The map and list should work according to users' expectations and help them complete their tasks. So I redesigned the logics as follow:</p>
                                     <ImageZoom
                                                     image={{
                                                     src: '/images/IoT/logics.png',
@@ -245,7 +271,7 @@ class IoTTwo extends React.Component {
                                 <Row>
 
                                     <Col className="card_hover" md={12} lg={4}>
-                                        <Link to={'/work/IoT/research'}>
+                                        <Link  className="card_link" to={'/work/IoT/research'}>
                                             <div>
                                                 
                                                 <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector0.png'} alt="" className='card-img' />
@@ -258,7 +284,7 @@ class IoTTwo extends React.Component {
                                         </Link>
                                     </Col>
                                     <Col className="card_hover" md={12} lg={4}>
-                                        <Link to={'/work/IoT/datavis'}>
+                                        <Link  className="card_link" to={'/work/IoT/datavis'}>
                                             <div>
                                                 <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector1.png'} alt="" className='card-img' />
                                             </div>
@@ -272,7 +298,7 @@ class IoTTwo extends React.Component {
 
 
                                     <Col className="card_hover" md={12} lg={4}>
-                                        <Link to={'/work/IoT/sysimg'}>
+                                        <Link  className="card_link" to={'/work/IoT/sysimg'}>
                                             <div>
                                                 <img src={process.env.PUBLIC_URL + '/images/IoT/homepage_vector3.png'} alt="" className='card-img' />
                                             </div>
