@@ -16,9 +16,9 @@ function Nav() {
                     {/* <NavLink 
                     // id="ptfpage" 
                     activeClassName="link active_link"
-                    className="link"
+                    className="nav_link"
                     to="/play" 
-                    exact>Play</NavLink> */}
+                    exact><span className="mr-2 align-text-top" uk-icon="game"></span>Play</NavLink> */}
                     <NavLink 
                     // id="ptfpage" 
                     activeClassName="link active_link"

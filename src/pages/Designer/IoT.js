@@ -236,7 +236,7 @@ class IoT extends React.Component {
             </div>
             </LazyLoad>
            
-            <ProjectPagination prevUrl="" prevName="" nextUrl="/work/materialbank" nextName="Material Bank"/>
+            <ProjectPagination prevUrl="/" prevName="Home" nextUrl="/work/materialbank" nextName="Material Bank"/>
 
             <BackToTopBtn />
             <ImageModal

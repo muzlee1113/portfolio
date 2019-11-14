@@ -151,7 +151,7 @@ class IoTThree extends React.Component {
                                                     image={{
                                                     src: '/images/IoT/limitation.png',
                                                     alt: '',
-                                                    className: 'project_illustration'
+                                                    className: 'project_illustration_medium'
                                                     }}
                                                 
                                                 />

@@ -37,11 +37,11 @@ function About() {
                     <p>Last year, I obtained a full-stack web development certificate at the University of Minnesota 👩‍💻.</p>
                     <p>Even before that, I completed MA (Communication, Media & Information Literacy) 👩‍🎓</p>
                     <p>and BA (English Language and Literature) at Communication University of China 🇨🇳 .</p>
-                    <p>I had a minor in TV directing 🎬.</p>
+                    <p>I had a minor in TV directing & Interative Media 🎬.</p>
                     <p>I’m a night owl 🦉 and a dog person 🐶. </p>
                     <p>When I’m not sitting in front of my computer screen, sketching or coding, I’m probably at the gym 🏋️‍, in the kitchen 👩‍🍳 or on a trip ✈️.</p>
                     <p>Feel free to drop me a message on <a href="https://www.linkedin.com/in/yuwen-li-176a43105/">LinkedIn</a> or by <a href="mailto:liyuwen@uw.com"></a>Email ✉️.</p>
-                    <p>And let's grab coffee ☕️!</p>
+                    <p>And let's grab coffee ☕️ !</p>
                 </div>
             </section>
         </main>

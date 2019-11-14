@@ -3,6 +3,7 @@ import { ButtonToolbar, OverlayTrigger, Tooltip, Row, Col } from 'react-bootstra
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import BackToTopBtn from "../../components/BackToTopBtn"
 import LazyLoad from 'react-lazyload';
+import ProjectPagination from '../../components/ProjectPagination'
 
 
 
@@ -201,6 +202,7 @@ function WIS() {
             </Row>
 
         </div>
+        <ProjectPagination prevUrl="/" prevName="Home" />
 
 
         <BackToTopBtn />

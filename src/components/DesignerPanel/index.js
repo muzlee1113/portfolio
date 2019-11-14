@@ -27,7 +27,7 @@ function DesignerPanel (props) {
                 <Fade bottom>
         <div className="work_wrapper">
             <div className="section-title-container">
-                <h6>Other projects I do for learning.</h6>
+                <h6>Other projects that I did for learning.</h6>
             </div>
             
             <div className="cards show">
@@ -81,6 +81,21 @@ function DesignerPanel (props) {
                                 <div className="article-title">
                                     <div>The Boarding Pass</div>
                                     <div className="article-subtitle">A redesign project of the paper boarding pass to simplify and organize needed information in a clearer hierarchy.</div>
+                                    <div className="article-subtitle">UX/UI Design </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+                    
+                </article>
+                <article>
+                <Link to="/others">
+                        <div className="cardcontainer">
+                            <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/others/12.png"} alt=" "/>
+                            <div className="overlay" id="imggraphic">
+                                <div className="article-title">
+                                    <div>Graphics, Illustrations & Photographs</div>
+                                    <div className="article-subtitle">Training my muscle for visual communication.</div>
                                     <div className="article-subtitle">UX/UI Design </div>
                                 </div>
                             </div>

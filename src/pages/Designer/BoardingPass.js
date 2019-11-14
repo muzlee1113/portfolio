@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Col, Row } from 'react-bootstrap';
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import BackToTopBtn from "../../components/BackToTopBtn"
+import ProjectPagination from '../../components/ProjectPagination'
 
 
 
@@ -62,7 +63,8 @@ function BoardingPass() {
             </Row>
         
         </div>
-            
+        <ProjectPagination prevUrl="/work/lightup" prevName="Light Up" nextUrl="/others" nextName="Graphics, illustrations & photographs"/>
+
         <BackToTopBtn />
         </>)
 }
