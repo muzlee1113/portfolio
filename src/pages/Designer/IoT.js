@@ -11,6 +11,7 @@ import BackToTopBtn from "../../components/BackToTopBtn"
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import LazyLoad from 'react-lazyload';
 import ProjectPagination from '../../components/ProjectPagination'
+import ImageZoom from 'react-medium-image-zoom'
 
 
 
@@ -55,7 +56,7 @@ class IoT extends React.Component {
             <div className="project_head_container">
                 <section id="list-item-0" className="project_head">
                     <h1>An IoT-based smart city infrastructure management tool</h1>
-                    <h3>Improve the usability of the IoT network in real-world contexts.</h3>
+                    <h3>A web applicaiton that helps city managers make data-driven decisions.</h3>
                     <div className="project_info">May - July, 2019, Work Project, shipped in August.</div>
                 </section>
             </div>
@@ -73,9 +74,9 @@ class IoT extends React.Component {
                                 <div className="project_brief_title">Company</div>
                                 <div className="project_brief_content"><a href="http://www.siid.com.cn/" className="text_link">Shenzhen Institute for Innovative Design</a></div>
                                 <div className="project_brief_title">Client</div>
-                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider.</div>
+                                <div className="project_brief_content">A smart street lights and IoT sensors provider.</div>
                                 <div className="project_brief_title">Project End Goal</div>
-                                <div className="project_brief_content">To improve the usability of the management tool of the client’s products which serve the IoT-based city infrastructure.</div>
+                                <div className="project_brief_content">To improve the usability of the client’s IoT-based city infrastructure management tool to inform decision-making.</div>
                                 
                                 <div className="project_brief_title">My Role</div>
                                 <div className="project_brief_content">UX Designer</div>
@@ -116,6 +117,17 @@ class IoT extends React.Component {
                     </Col>
                 </Row>
             </div>
+            <LazyLoad height={200} offset={100} once>
+            <div className="project_separator">
+                <div className="project_separator_inner_wrapper">
+                            <h2>Final Design</h2>
+                            <h5>Key pages that I worked on.</h5>
+                            <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/final_v2.png"}/>
+                </div>
+                
+                
+            </div>
+            </LazyLoad>
             <LazyLoad  height={200} offset={100} once>
                         <section className="project_separator">
                             <div className="project_separator_inner_wrapper">
@@ -191,11 +203,11 @@ class IoT extends React.Component {
                         </section>
 
              </LazyLoad>
-            <LazyLoad height={200} offset={100} once>
+            {/* <LazyLoad height={200} offset={100} once>
             <div className="project_separator">
                 <div className="project_separator_inner_wrapper">
                             <h2>Final Design</h2>
-                            <h5>Key Pages That I worked on. Click to see the related case studies.</h5>
+                            <h5>Key pages that I worked on. Click to see the related case studies.</h5>
               
                             <div style={{margin: "32px 0 32px"}}>
                                 <a href="/work/IoT/datavis"><h6>1. Dashboards for the Whole System</h6>
@@ -234,7 +246,7 @@ class IoT extends React.Component {
                 
                 
             </div>
-            </LazyLoad>
+            </LazyLoad> */}
            
             <ProjectPagination prevUrl="/" prevName="Home" nextUrl="/work/materialbank" nextName="Material Bank"/>
 

@@ -211,7 +211,7 @@ function MaterialBank() {
                                     <li>Brief</li>
                                     <li>Contextualized and customized: provide the right information the users want to know right here right now.</li>
                                 </ul>
-                                <h6>Layer 2: A brief introduction</h6>
+                                <h6>Layer 2: An in-depth breakdowns</h6>
                                 <ul>
                                     <li>In-depth</li>
                                     <li>With multidimensional data</li>
