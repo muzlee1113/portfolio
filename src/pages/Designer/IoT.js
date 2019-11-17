@@ -71,12 +71,12 @@ class IoT extends React.Component {
                         <div className="left_bar_wrapper">
 
                             <div className="project_brief_container">
-                                <div className="project_brief_title">Company</div>
+                            <div className="project_brief_title">Company</div>
                                 <div className="project_brief_content"><a href="http://www.siid.com.cn/" className="text_link">Shenzhen Institute for Innovative Design</a></div>
                                 <div className="project_brief_title">Client</div>
-                                <div className="project_brief_content">A smart street lights and IoT sensors provider.</div>
+                                <div className="project_brief_content"><a href="h6tp://www.szxylg.com" className="text_link">新阳蓝光 | Xingyang Languang</a> | A smart street lights and IoT sensors provider.</div>
                                 <div className="project_brief_title">Project End Goal</div>
-                                <div className="project_brief_content">To improve the usability of the client’s IoT-based city infrastructure management tool to inform decision-making.</div>
+                                <div className="project_brief_content">To improve the usability of the management tool of the client’s products which serve the IoT-based city infrastructure.</div>
                                 
                                 <div className="project_brief_title">My Role</div>
                                 <div className="project_brief_content">UX Designer</div>
