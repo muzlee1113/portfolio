@@ -243,6 +243,14 @@ a:not(.code_link):hover {
   width: 100%;
   object-fit: cover;
   margin-top: 0px!important;
+  
+}
+.card-img:hover{
+  transform: scale(0.98);
+  -webkit-transition: -webkit-transform 275ms cubic-bezier(.39, .575, .565, 1);
+    transition: -webkit-transform 275ms cubic-bezier(.39, .575, .565, 1);
+    transition: transform 275ms cubic-bezier(.39, .575, .565, 1);
+    transition: transform 275ms cubic-bezier(.39, .575, .565, 1), -webkit-transform 275ms cubic-bezier(.39, .575, .565, 1);
 }
 
 .card_name {
@@ -282,6 +290,8 @@ a:not(.code_link):hover {
   opacity: 1;
   transition: opacity .5s ease-in-out;
 }
+
+
 .card_hover:hover{
   opacity: 0.6
 }
