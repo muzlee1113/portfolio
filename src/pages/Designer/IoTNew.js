@@ -429,7 +429,7 @@ class IoT extends React.Component {
                                             }}
                                         
                                         />
-                                         <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/street_light_dashboard_move.gif")}>Click to watch it move.</Button></div>
+                                         <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/street_light_dashboard_move.gif")}>click here to watch the interaction.</Button></div>
                                         <ImageZoom
                                                     image={{
                                                     src: '/images/IoT/street_light_dashboard_iteration.png',
@@ -510,8 +510,7 @@ class IoT extends React.Component {
                                                 }}
                                             
                                             />
-                                            <div className="project_caption text-center" >Administrators can view detailed information by clicking dashboards</div>
-                                           
+                                            <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/anomaly_to_detail.gif")}>click here to watch the interaction.</Button></div>                                           
                                            </LazyLoad>
                                            <LazyLoad height={200} offset={100} once>
 
@@ -605,6 +604,7 @@ class IoT extends React.Component {
                                                 }}
                                             
                                             />
+                                            <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/alert.gif")}>click here to watch the interaction.</Button></div>  
                                             </div>
                                             </LazyLoad>
 
@@ -736,6 +736,7 @@ class IoT extends React.Component {
                                                 }}
                                             
                                             />
+
                                             <ImageZoom
                                                 image={{
                                                 src: '/images/IoT/light_control_final2.png',
@@ -744,6 +745,7 @@ class IoT extends React.Component {
                                                 }}
                                             
                                             />
+                                             <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/bulkControl.gif")}>click here to watch the interaction.</Button></div>  
                                             <ImageZoom
                                                 image={{
                                                 src: '/images/IoT/light_control_final3.png',
@@ -752,6 +754,8 @@ class IoT extends React.Component {
                                                 }}
                                             
                                             />
+                                            <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/lightControl.gif")}>click here to watch the interaction.</Button></div>  
+
                                                 </LazyLoad>
 
                                                
