@@ -145,7 +145,7 @@ class IoTOne extends React.Component {
                                 <p>Later, I created a clickable testing page with my paper prototypes and Axure, and asked my colleagues from the administrative team to rank the graphs according to importance and legibility. I tested them with administrators in my company as an alternative to the real users since they shared a similar mindset. </p>
                                 <ImageZoom
                                     image={{
-                                    src: '/images/IoT/testing_vis.gif',
+                                    src: '/images/IoT/graph_testing_vis.gif',
                                     alt: '',
                                     className: 'project_illustration'
                                     }}

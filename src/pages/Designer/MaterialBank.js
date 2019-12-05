@@ -123,6 +123,8 @@ function MaterialBank() {
                                 <p>Based on the research, the Makers felt it hard to find materials they need because they didn't know what they want, and it is hard to choose one from thousands of research results. For the Roamers, the problem was either that they couldn't find the resources or that even if they found one, they seldom find anything interesting or enlightening, because it is hard to make connections between the materials and their design. Thus, Material Bank should do the following jobs:</p>
                                <Row>
                                    <Col lg={6} md={12}>
+                                       <div className="text-center"><p>What MB can do for the Maker</p></div>
+                                       
                                    <ImageZoom
                                     image={{
                                     src: '/images/MaterialBank/JTBD1.png',
@@ -142,6 +144,8 @@ function MaterialBank() {
                                     </div>
                                    </Col>
                                    <Col lg={6} md={12}>
+                                   <div className="text-center"><p>What MB can do for the Roamers</p></div>
+
                                    <ImageZoom
                                             image={{
                                             src: '/images/MaterialBank/JTBD2.png',
