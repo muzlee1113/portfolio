@@ -171,10 +171,10 @@ class IoT extends React.Component {
                         <div className="left_bar_wrapper">
 
 
-                        <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;"
+                        <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100; Top:100;"
                             // style={{position: "fixed", right: "2vw", bottom: "5vh"}}
                             >
-                               <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+                               <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 1000">
                                 <li className="uk-l project_brief_content"><a href="#overview">Project Overview</a></li>
                                     <li className="uk-l project_brief_content"><a href="#research">User Research</a></li>
                                     <li className="uk-l project_brief_content"><a href="#w1">#1 Ensure System Health</a></li>
