@@ -88,7 +88,7 @@ class IoTZero extends React.Component {
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;">
                                 <div className="project_brief_content"><Link className="text_link" to={'/work/IoT/research'}>User Research</Link></div>
                                 <div className="project_brief_content">Inform Design With Research</div>
-                                <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+                                <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
                                      <li className="uk-l project_brief_content"><a href="#list-item-0">Intro</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-1">Research Questions & Hypotheses</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-2">Contextual Inquiries & Design Requirements</a></li>

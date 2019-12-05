@@ -1113,6 +1113,13 @@ li, ol{
   font-size: 16px;
   font-weight: 400;
 }
+
+
+.unset-Sticky{
+  position: relative!important;
+}
+
+
 /* large: desktop 1040 and up*/
 @media (max-width: 1200px) {
 /* 

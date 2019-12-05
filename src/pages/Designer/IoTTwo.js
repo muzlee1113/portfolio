@@ -95,7 +95,7 @@ class IoTTwo extends React.Component {
                                 <div className="project_brief_content"> Make Data Glanceable & Usable</div>
                                 <div className="project_brief_content"><Link className="text_link" to={'/work/IoT/infonav'}>Case Study #2</Link></div>
                                 <div className="project_brief_content"> Improve Information Navigation</div>
-                                <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
+                                <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
                                 // className="uk-nav uk-nav-default tm-nav uk-nav-parent-icon"
                                 >
                                     <li className="uk-l project_brief_content"><a href="#list-item-1">Usability Testing & Results</a></li>

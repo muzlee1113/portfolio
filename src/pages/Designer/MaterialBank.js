@@ -41,7 +41,7 @@ function MaterialBank() {
 
                             </div>
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;">
-                                <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+                                <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
 
                                     <li className="uk-l project_brief_content"><a href="#list-item-1">User Research & Insight</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-2">Information Findability</a></li>

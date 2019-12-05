@@ -50,7 +50,7 @@ function WIS() {
                             <div className="project_brief_content">UX designer & front-end developer</div>
                         </div>
                         <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;">
-                            <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+                            <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
 
                                 <li className="uk-l project_brief_content"><a href="#list-item-1">Intro</a></li>
                                 <li className="uk-l project_brief_content"><a href="#list-item-2">Team Member and Role</a></li>

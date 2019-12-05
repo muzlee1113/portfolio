@@ -84,7 +84,7 @@ class IoTOne extends React.Component {
                                 <div className="project_brief_content">Inform Design With Research</div>
                                 <div className="project_brief_content"><Link className="text_link" to={'/work/IoT/datavis'}>Case Study #1</Link></div>
                                 <div className="project_brief_content">Make Data Glanceable & Usable</div>
-                                <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
+                                <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
                                 // className="uk-nav uk-nav-default tm-nav uk-nav-parent-icon"
                                 >
                                     <li className="uk-l project_brief_content"><a href="#list-item-1">Problem Space & Research Insights</a></li>
