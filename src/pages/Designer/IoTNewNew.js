@@ -195,7 +195,7 @@ class IoTNewNew extends React.Component {
                                     <ul>
                                         <li>Who might be the users?</li>
                                         <li>Are there any other stakeholders involved in this process?</li>
-                                        <li>What are their main goals?</li>
+                                        <li>Who are our primary users?</li>
                                     </ul>
                                     <p>To try to answer these questions, I started with secondary research:</p>
 
@@ -217,10 +217,10 @@ class IoTNewNew extends React.Component {
                                             </Col>
                                         </Row>
                                     </Container>
-                                    <p>Finally, we came up with the following 5 key roles involved in the system and decided to focus on the administrators since they were the ones who use the tool most often.</p>
+                                    <p>Finally, we came up with the following 5 key roles involved in the system and decided to focus on the administrators since they were the ones who need our tool the most to complete their jobs.</p>
                                     <ImageZoom
                                         image={{
-                                            src: '/images/IoT/hypothesis.png',
+                                            src: '/images/IoT/5_roles.png',
                                             alt: '',
                                             className: 'project_illustration'
                                         }}
@@ -766,9 +766,10 @@ class IoTNewNew extends React.Component {
             <h6>Design Goals for Automatic Configuration of Day-to-day Plan</h6>
             <p>Since day-to-day configuration was going to be largely automatic in the new system, I set up the following design goals for my solution:</p>
             <ul>
-                <li>Users should have freedom to change default plan</li>
-                <li>Users should be allowed to set thresholds for automatic control</li>
-                <li>Help users to trust the automated process</li>
+                <li>Users can decide whether they want to automate the process or not;</li>
+                <li>The interface should build trust between users and the system by explaining the automated process;</li>
+                <li>Users should be allowed to set thresholds for automatic controls.</li>
+
             </ul>
             <h6>Design Goals for Lighting Controls on Special Occasions</h6>
             <p>Besides, I focused on designing new tools for the special plan and temporary control and set up the design goals for these two workflows:</p>
@@ -776,7 +777,7 @@ class IoTNewNew extends React.Component {
                 <li>Users can plan out and set a work plan in advance;</li>
                 <li>Users should be allowed to override work plan for a period of time, after which the day-to-day plan should restore automatically;</li>
                 <li>Users can easily specify and control devices by groups;</li>
-                <li>User should be given enough visual hints about the settings to make the right decision</li>
+                <li>User should be given enough visual hints about the settings to make the right decision.</li>
             </ul>
         </section>
         <section  className="project_body" id="light">
