@@ -94,7 +94,7 @@ class IoTNewNew extends React.Component {
                     </Row>
                 {/* </Container> */}
             </div>
-
+            <LazyLoad height={200} offset={100} once>
             <div className="project_overview_container">
                 <div className="project_overview_title">Design Process</div>
     
@@ -995,7 +995,7 @@ class IoTNewNew extends React.Component {
                        
                   
             </div>
-
+    </LazyLoad>
 
 
             <ProjectPagination prevUrl="/" prevName="Home" nextUrl="/work/materialbank" nextName="Material Bank" />
