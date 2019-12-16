@@ -114,6 +114,7 @@ class IoTNewNew extends React.Component {
                             <div className="project_overview_content py-1"><b>Synthesize</b></div>
                             <div className="project_overview_content">User flow</div>
                             <div className="project_overview_content">Problem space</div>
+                            <div className="project_overview_content">Reframing</div>
 
                         </Col>
                         <Col xs={4} md={2}>
@@ -157,8 +158,7 @@ class IoTNewNew extends React.Component {
                         <div className="left_bar_wrapper">
 
 
-                        <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;"
-                            >
+                        <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;top: #scrollstart">
                               
                                 <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
                                 <li className="uk-l project_brief_content"><a href="#overview">Project Overview</a></li>
@@ -186,6 +186,8 @@ class IoTNewNew extends React.Component {
                     <Col md={12} lg={9}>
                         <div className="project_container" >
                         <section  className="project_body" id="secondary">
+                        <div id="scrollstart"></div>
+
                                     <h2>Clarify user scope</h2>
                                     <h5>Who are city managers?</h5>
                                     <p>After analyzing the existing product, I found it unclear for whom it is specifically designed. Some features are to help administrators monitor and control infrastructure devices; others are more intended for hardware maintenance team or dev-ops to register and configure devices . All these assorted features were open to every user without differentiating their roles, needs, purposes and workflows.</p>
@@ -938,7 +940,6 @@ class IoTNewNew extends React.Component {
     <div className="project_separator_inner_wrapper" >
         <h2>Final Design</h2>
         <h5>Navigation of the key pages that I worked on.</h5>
-        <LazyLoad height={200} offset={100} once>
 
         <ImageZoom
             image={{
@@ -948,7 +949,6 @@ class IoTNewNew extends React.Component {
             }}
         
         />
-        </LazyLoad>
 
     </div>
 </div>                       
