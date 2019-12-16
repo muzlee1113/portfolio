@@ -6,7 +6,7 @@ function Footer() {
     return (<>
         <footer>
             <div className="footer_content">
-                <p>© 2019 Yuwen Li</p>
+                <p>Made with ☕️ and lovely React by Yuwen Li</p>
                 {/* <br/> */}
                 <div className="footer_link">
                 <a href="https://dribbble.com/Leeven"><i className="fas fa-basketball-ball"></i></a>

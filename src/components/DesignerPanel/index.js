@@ -21,7 +21,6 @@ function DesignerPanel (props) {
                 
                 <WorkCard url='/work/materialbank' imgUrl='/images/MaterialBank/mockupp.png' name='Material Bank' tagline='A website that helps industrial designers navigate through the universe of materials to find the right one and get inspired.' description='User Research + UX Design' labels={['web design', 'information findability', 'data visualization', 'usability testing']} bgColor="#f8f8f8" tColor="#0f0f0f"/>
 
-                <WorkCard url='/work/readwithme' imgUrl='/images/D00ReadwithMe.png' name='ReadwithMe' tagline='A web application that provides afterschool English reading guidance and instructions to middle school students.' description='User Research + Product Design + Instructional Design' labels={['mobile', 'web application', 'gamification', 'design for behavior change']} bgColor="#f8f8f8" tColor="#0f0f0f"/>
     
        
                 <Fade bottom>
@@ -36,9 +35,24 @@ function DesignerPanel (props) {
                         <div className="cardcontainer">
                             <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Photome.png"} alt=" "/>
                             <div className="overlay" id="imgPhotome">
-                                <div className="article-title" style={{"color":"black"}}>
+                                <div className="article-title" style={{"color":"rgba(0,0,0,0.8)"}}>
                                     <div>PhotoMe</div>
                                     <div className="article-subtitle">A mobile app that empowers others to create satisfactory portraits for you.</div>
+                                    <div className="article-subtitle">User Research | UX Design </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+                </article>
+               
+                <article>
+                    <Link to="/work/weather">
+                        <div className="cardcontainer">
+                            <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00ReadwithMe_sqr.png"} alt=" "/>
+                            <div className="overlay" id="imgReadwithMe">
+                                <div className="article-title" style={{"color":"rgba(0,0,0,0.8)"}}>
+                                    <div>ReadwithMe</div>
+                                    <div className="article-subtitle">A web application that provides afterschool English reading guidance and instructions to middle school students.</div>
                                     <div className="article-subtitle">User Research | UX/UI Design </div>
                                 </div>
                             </div>

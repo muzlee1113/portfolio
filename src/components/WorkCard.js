@@ -20,7 +20,7 @@ export default function WorkCard (props) {
 
                 <div className="workCard" >
                     <Row className="align-items-center card_hover">
-                        <Col md={12} lg={6}>
+                        <Col xs={12} md={6} >
                             <div class="workCard_text_container">
                                 <div className="card_description">{props.description}</div>
                                 <div className="card_name">{props.name}</div>
@@ -31,7 +31,7 @@ export default function WorkCard (props) {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={12} lg={6}>
+                        <Col xs={12} md={6}>
                         <img src={process.env.PUBLIC_URL + props.imgUrl} alt="" className='card-img'/>
                         </Col>
                     </Row>

@@ -133,7 +133,7 @@ class IoT extends React.Component {
                             <div className="project_overview_content">Contextual inquiry</div>                        
                         </Col>
                         <Col  xs={4} md={2}>
-                            <div className="project_overview_content py-1"><b>Sythesize</b></div>
+                            <div className="project_overview_content py-1"><b>Synthesize</b></div>
                             <div className="project_overview_content">Workflow analysis</div>
                             <div className="project_overview_content">Problem space</div>
                             <div className="project_overview_content">Prioritization</div>
@@ -209,7 +209,6 @@ class IoT extends React.Component {
 
                         <div className="project_container">
 
-                            <LazyLoad height={200} offset={100} once>
 
                                 <section id="list-item-1" className="project_body" id="research">
                                     <h2>Clarify user scope</h2>
@@ -228,15 +227,15 @@ class IoT extends React.Component {
                                         <Row>
                                             <Col style={{ textAlign: "center", justifyContent: "center" }} xs={4}>
 
-                                                <img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/existing_product.png"} />
+                                                <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/existing_product.png"} />
                                                 <p className="project_caption">Existing product analysis</p>
                                             </Col>
                                             <Col style={{ textAlign: "center" }}  xs={4}>
-                                                <img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/competitive_analysis.png"} />
+                                                <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/competitive_analysis.png"} />
                                                 <p className="project_caption">Competitive analysis</p>
                                             </Col>
                                             <Col style={{ textAlign: "center" }} xs={4}>
-                                                <img alt='three phases of alert design' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/brainstorm.png"} />
+                                                <img className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/brainstorm.png"} />
                                                 <p className="project_caption">Brainstorm with PM & engineers</p>
                                             </Col>
                                         </Row>
@@ -252,16 +251,14 @@ class IoT extends React.Component {
                                     />
 
                                 </section>
-                            </LazyLoad>
 
 
 
 
-                            <LazyLoad height={200} offset={100} once>
                                 <section id="list-item-1" className="project_body" id="">
                                     <h2>User Research</h2>
                                     <h5>How do administrators work in real life?</h5>
-                                    <img alt='three phases of alert design' className="project_illustration_extrasmall" src={process.env.PUBLIC_URL + "/images/IoT/contextual_inquiry.png"} />
+                                    <img className="project_illustration_extrasmall" src={process.env.PUBLIC_URL + "/images/IoT/contextual_inquiry.png"} />
                                     <Container>
                                         <Row>
                                         <Col xs={12} md={3}>
@@ -347,13 +344,11 @@ class IoT extends React.Component {
                                                 </div>
                                             </div>
                                 </section>
-                            </LazyLoad>
 
 
                             
 
                                 <section id="list-item-1" className="project_body" id="w1">
-                                <LazyLoad height={200} offset={100} once>
 
                                     <h2>Workflow #1</h2>
                                     <h5>What do administrators do to ensure system health?</h5>
@@ -368,7 +363,6 @@ class IoT extends React.Component {
 
                                     />
                                      <p className="project_caption text-center">The problem shooting workflow and pain points.</p>
-                                     </LazyLoad>
                                 </section>
                             
                             
@@ -378,7 +372,6 @@ class IoT extends React.Component {
                                     <h2>Design Question #1</h2>
                                     <h5>How might we make the problem-shooting process easier and more efficient?</h5>
                                     <p>After delivering my findings to the PM, we decided to start with designing dashboards that provides administrators with real-time system data and actionable insights, and a proactive notification system that alerts them to abnormal data and leads them through the troubleshooting process.</p>
-                                    <LazyLoad height={200} offset={100} once>
 
                                     <h6 className="p-ilst">1. Data Dashboards: make sense of real-time data in contexts and by comparison</h6>
 
@@ -511,8 +504,6 @@ class IoT extends React.Component {
                                             
                                             />
                                             <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/anomaly_to_detail.gif")}>click here to watch the interaction.</Button></div>                                           
-                                           </LazyLoad>
-                                           <LazyLoad height={200} offset={100} once>
 
                                            
                                             <h6 className="p-ilst">2. Notification Center: guide users to troubleshoot problems step by step</h6>
@@ -606,7 +597,6 @@ class IoT extends React.Component {
                                             />
                                             <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/alert.gif")}>click here to watch the interaction.</Button></div>  
                                             </div>
-                                            </LazyLoad>
 
                                             
                                        
@@ -617,7 +607,6 @@ class IoT extends React.Component {
 
 
                                 <section id="list-item-1" className="project_body" id="w2">
-                                <LazyLoad height={200} offset={100} once>
 
                                     <h2>Workflow #2</h2>
                                     <h5>How do administrators control city lighting?</h5>
@@ -630,14 +619,12 @@ class IoT extends React.Component {
                                         }}
                                             
                                     />
-                                </LazyLoad>
                                 </section>
 
 
                                 <section id="list-item-1" className="project_body" id="d2">
                                     <h2>Design Question #2</h2>
                                     <h5>How might we make the street light control system more efficient?</h5>
-                                    <LazyLoad height={200} offset={100} once>
 
                                     <li className="p-list">Ideation and Design</li>
                                     <p>Since the first type of controls are automated in the new system, the only need is to distinguish its setting from the others. Thus, I focused on designing new tools for the special plan and temporary control.</p>
@@ -699,8 +686,6 @@ class IoT extends React.Component {
                                                         </Col>
                                                     </Row>
                                                 </Container>
-                                                </LazyLoad>
-                                                <LazyLoad height={200} offset={100} once>
 
                                                 <li className="p-list">Usability Testing & Iteration</li>
                                                 <p>After creating an interactive prototype, I tested my design with the administrators and found that </p>
@@ -724,8 +709,6 @@ class IoT extends React.Component {
                                                         
                                                 />
                                                  <p>2. Administrators would like to firstly set the time to turn on the lights (first day afternoon) and then the time to turn them off (next morning). So I changed the order of the inputs.</p>
-                                                 </LazyLoad>
-                                                 <LazyLoad height={200} offset={100} once>
 
                                                 <li className="p-list">Prototypes</li>
                                                 <ImageZoom
@@ -756,7 +739,6 @@ class IoT extends React.Component {
                                             />
                                             <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/lightControl.gif")}>click here to watch the interaction.</Button></div>  
 
-                                                </LazyLoad>
 
                                                
 

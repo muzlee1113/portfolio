@@ -105,7 +105,7 @@ function DeveloperPanel(){
                     <div className="cardcontainer">
                         <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00FriendFinder.png"} alt=" "/>
                         <div className="overlay" id="imgFriendFinder">
-                            <div className="article-title" style={{"color":"black"}}>
+                            <div className="article-title" style={{"color":"rgba(0,0,0,0.8)"}}>
                                 <div>Friend Finder</div>
                                 <div className="article-subtitle">A website to match users with their soul mate by a survey.</div>
                                 <div className="article-subtitle">Node.js | MySQL | Express</div>
