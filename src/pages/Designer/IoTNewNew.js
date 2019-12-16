@@ -774,6 +774,7 @@ class IoTNewNew extends React.Component {
             <h6>Design Goals for Lighting Controls on Special Occasions</h6>
             <p>Besides, I focused on designing new tools for the special plan and temporary control and set up the design goals for these two workflows:</p>
             <ul>
+                <li>Users can easily learn the difference between default and special plans;</li>
                 <li>Users can plan out and set a work plan in advance;</li>
                 <li>Users should be allowed to override work plan for a period of time, after which the day-to-day plan should restore automatically;</li>
                 <li>Users can easily specify and control devices by groups;</li>
