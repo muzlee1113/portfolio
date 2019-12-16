@@ -184,7 +184,7 @@ function Weather() {
                     </Col>
                 </Row>
             </div>
-            <ProjectPagination prevUrl="/work/photome" prevName="PhotoMe" nextUrl="/work/lightup" nextName="LightUp"/>
+            <ProjectPagination prevUrl="/work/photome" prevName="PhotoMe" nextUrl="/work/readwithme" nextName="ReadwithMe"/>
 
            
             <BackToTopBtn/>

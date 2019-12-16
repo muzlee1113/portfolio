@@ -472,7 +472,7 @@ function MaterialBank() {
             
                             
 
-            <ProjectPagination prevUrl="/work/IoT" prevName="An IoT-based City Infrastructure Management Tool" nextUrl="/work/readwithme" nextName="ReadwithMe"/>
+            <ProjectPagination prevUrl="/work/IoT" prevName="An IoT-based City Infrastructure Management Tool" nextUrl="https://medium.com/@tater.trots.uw/nightkick-a-mobile-app-and-modular-wearable-to-help-people-feel-safer-when-walking-alone-after-8efdcd101069" nextName="Nightkick"/>
 
             <BackToTopBtn />
      

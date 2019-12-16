@@ -130,7 +130,7 @@ function ReadwithMe() {
 
 
             </div>
-            <ProjectPagination prevUrl="/work/materialbank" prevName="Material Bank" nextUrl="/work/photome" nextName="PhotoMe"/>
+            <ProjectPagination prevUrl="/work/weather" prevName="Weather" nextUrl="/work/lightup" nextName="Light Up"/>
 
             <BackToTopBtn />
         </>)

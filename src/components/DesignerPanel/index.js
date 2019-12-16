@@ -31,7 +31,7 @@ function DesignerPanel (props) {
             
             <div className="cards show">
             <article>
-                    <a href="https://medium.com/@tater.trots.uw/nightkick-a-mobile-app-and-modular-wearable-to-help-people-feel-safer-when-walking-alone-after-8efdcd101069">
+                    <a href="https://medium.com/@tater.trots.uw/nightkick-a-mobile-app-and-modular-wearable-to-help-people-feel-safer-when-walking-alone-after-8efdcd101069" target="_blank">
                         <div className="cardcontainer">
                             <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/nightkick.png"} alt=" "/>
                             <div className="overlay" id="imgNightkick">
@@ -52,21 +52,22 @@ function DesignerPanel (props) {
                                 <div className="article-title" style={{"color":"rgba(0,0,0,0.8)"}}>
                                     <div>PhotoMe</div>
                                     <div className="article-subtitle">A mobile app that empowers others to create satisfactory portraits for you.</div>
-                                    <div className="article-subtitle">User Research | UX Design </div>
+                                    <div className="article-subtitle">User Research | UX/UI Design </div>
                                 </div>
                             </div>
                         </div>
                     </Link>
                 </article>
                
+                
                 <article>
                     <Link to="/work/weather">
                         <div className="cardcontainer">
-                            <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00ReadwithMe_sqr.png"} alt=" "/>
-                            <div className="overlay" id="imgReadwithMe">
-                                <div className="article-title" style={{"color":"rgba(0,0,0,0.8)"}}>
-                                    <div>ReadwithMe</div>
-                                    <div className="article-subtitle">A web application that provides afterschool English reading guidance and instructions to middle school students.</div>
+                            <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Weather.png"} alt=" "/>
+                            <div className="overlay" id="imgWeather">
+                                <div className="article-title">
+                                    <div>Weather</div>
+                                    <div className="article-subtitle">Alerts users to weather changes that will disturb their intended activities.</div>
                                     <div className="article-subtitle">User Research | UX/UI Design </div>
                                 </div>
                             </div>
@@ -76,11 +77,11 @@ function DesignerPanel (props) {
                 <article>
                     <Link to="/work/weather">
                         <div className="cardcontainer">
-                            <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Weather.png"} alt=" "/>
-                            <div className="overlay" id="imgWeather">
-                                <div className="article-title">
-                                    <div>Weather</div>
-                                    <div className="article-subtitle">Alerts users to weather changes that will disturb their intended activities.</div>
+                            <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00ReadwithMe_sqr.png"} alt=" "/>
+                            <div className="overlay" id="imgReadwithMe">
+                                <div className="article-title" style={{"color":"rgba(0,0,0,0.8)"}}>
+                                    <div>ReadwithMe</div>
+                                    <div className="article-subtitle">A web application that provides afterschool English reading guidance and instructions to middle school students.</div>
                                     <div className="article-subtitle">User Research | UX/UI Design </div>
                                 </div>
                             </div>
