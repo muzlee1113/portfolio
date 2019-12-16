@@ -31,6 +31,20 @@ function DesignerPanel (props) {
             
             <div className="cards show">
             <article>
+                    <a href="https://medium.com/@tater.trots.uw/nightkick-a-mobile-app-and-modular-wearable-to-help-people-feel-safer-when-walking-alone-after-8efdcd101069">
+                        <div className="cardcontainer">
+                            <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/nightkick.png"} alt=" "/>
+                            <div className="overlay" id="imgNightkick">
+                                <div className="article-title">
+                                    <div>Nightkick</div>
+                                    <div className="article-subtitle">A mobile app and modular wearable to help people feel safer when walking alone after dark</div>
+                                    <div className="article-subtitle">User Research | UX/UI Design </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            <article>
                     <Link to="/work/photome">
                         <div className="cardcontainer">
                             <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Photome.png"} alt=" "/>
@@ -87,7 +101,7 @@ function DesignerPanel (props) {
                         </div>
                     </Link>
                 </article>
-                <article>
+                {/* <article>
                     <Link to="/work/boardingpass">
                         <div className="cardcontainer">
                             <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00BoardingPass.png"} alt=" "/>
@@ -101,7 +115,7 @@ function DesignerPanel (props) {
                         </div>
                     </Link>
                     
-                </article>
+                </article> */}
                 <article>
                 <Link to="/others">
                         <div className="cardcontainer">

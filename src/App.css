@@ -546,6 +546,10 @@ article {
   background-color: #202020
 }
 
+#imgNightkick{
+  background-color: #213060;
+}
+
 #imgReadwithMe{
   background-color: #BEC8CF
 }
@@ -585,7 +589,7 @@ article {
 }
 
 #imggraphic{
-  background-color: lightgray;
+  background-color: #2E100B;
 }
 
 .cardcontainer:hover .overlay{
