@@ -75,7 +75,7 @@ function DesignerPanel (props) {
                     </Link>
                 </article>
                 <article>
-                    <Link to="/work/weather">
+                    <Link to="/work/readwithme">
                         <div className="cardcontainer">
                             <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00ReadwithMe_sqr.png"} alt=" "/>
                             <div className="overlay" id="imgReadwithMe">
