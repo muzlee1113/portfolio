@@ -3,6 +3,8 @@ import '../index.css';
 import Masonry from 'react-masonry-css';
 import ImageZoom from 'react-medium-image-zoom'
 import ProjectPagination from '../components/ProjectPagination'
+import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
+
 
 
 const breakpointColumnsObj = {
@@ -62,6 +64,7 @@ class Gallery extends React.Component {
         const childElements = graphics_elements.concat(photos_elements) 
     
         return (<>
+            <ScrollToTopOnMount />
             <Masonry
                 breakpointCols={breakpointColumnsObj}
                 className="my-masonry-grid"

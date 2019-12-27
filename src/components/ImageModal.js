@@ -14,7 +14,9 @@ export default function ImageModal(props) {
         style={{backgroundColor:"transparent"}}
       >
         <Modal.Body>
-          <img className="project_image_model" src={process.env.PUBLIC_URL + props.url}/>
+          <div className="project_model_wrapper">
+            <img className="project_image_model" src={process.env.PUBLIC_URL + props.url}/>
+          </div>
         </Modal.Body>
       </Modal>
     );

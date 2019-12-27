@@ -243,7 +243,7 @@ function PhotoMe() {
 
                 
             </div>
-            <ProjectPagination prevUrl="https://medium.com/@tater.trots.uw/nightkick-a-mobile-app-and-modular-wearable-to-help-people-feel-safer-when-walking-alone-after-8efdcd101069"  prevName="Nightkick" nextUrl="/work/weather" nextName="Weather"/>
+            <ProjectPagination prevUrl="/work/materialbank"  prevName="Material Bank" nextUrl="/work/weather" nextName="Weather"/>
 
             <BackToTopBtn />
         </>)

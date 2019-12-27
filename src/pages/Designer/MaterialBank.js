@@ -17,8 +17,8 @@ function MaterialBank() {
             <div className="project_head_container">
                 <section id="list-item-0" className="project_head">
                     <h1>Material Bank</h1>
-                    <h3>A website that helps designers find the materials they need, learn CMF and get inspired.</h3>
-                    <div className="project_info">August 2019 to September 2019, Work-In-Progress</div>
+                    <h3>A website that helps industrial designers search and navigate materials to find the right one and get inspired.</h3>
+                    <div className="project_info">August - September 2019, work project.</div>
                 </section>
             </div>
             <div className="project_separator_transparent">
@@ -62,7 +62,7 @@ function MaterialBank() {
                             
                             <img  src={process.env.PUBLIC_URL + "/images/leftStep.png"}/>
                             <div className="project_overview_content py-1"><b>Research</b></div>
-                            <div className="project_overview_content">User Research</div>
+                            <div className="project_overview_content">User Interview</div>
                             <div className="project_overview_content">Usability Testing</div>
                         </Col>
                         <Col  xs={4} md={2}>
@@ -472,7 +472,7 @@ function MaterialBank() {
             
                             
 
-            <ProjectPagination prevUrl="/work/IoT" prevName="An IoT-based City Infrastructure Management Tool" nextUrl="https://medium.com/@tater.trots.uw/nightkick-a-mobile-app-and-modular-wearable-to-help-people-feel-safer-when-walking-alone-after-8efdcd101069" nextName="Nightkick"/>
+            <ProjectPagination prevUrl="/work/nightkick" prevName="Nightkick" nextUrl="/work/photome" nextName="PhotoMe"/>
 
             <BackToTopBtn />
      

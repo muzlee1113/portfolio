@@ -31,6 +31,7 @@ import IoTOne from "./pages/Designer/IoTOne"
 import IoTTwo from "./pages/Designer/IoTTwo"
 import IoTThree from "./pages/Designer/IoTThree"
 import MaterialBank from './pages/Designer/MaterialBank';
+import Nightkick from './pages/Designer/Nightkick'
 
 import WIS from "./pages/Developer/WIS"
 
@@ -90,6 +91,8 @@ class App extends Component {
           <Route exact path="/work/IoT/infonav" component={IoTTwo}/>
           <Route exact path="/work/IoT/sysimg" component={IoTThree}/>
           <Route exact path="/work/materialbank" component={MaterialBank} />
+          <Route exact path="/work/nightkick" component={Nightkick}/>
+          
           {/* code */}
           <Route exact path="/work/WIS" component={WIS} />
           <Route exact path="/designsystem" component={DesignSystem}/>

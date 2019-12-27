@@ -17,33 +17,24 @@ function DesignerPanel (props) {
     
     return (<>
                 {/* <div className="divider"></div> */}
-                <WorkCard url='/work/IoT' imgUrl='/images/IoT/mockup_multiscreens.png' name='An IoT-based smart city infrastructure management tool' tagline='A tool built for city managers to monitor, operate, and maintain the smart city infrastructure devices efficiently, intelligently and collaboratively.' description='User Research + UX Design' labels={['IoT', 'SaaS', 'Web Design', 'Management Tool','Data Visualization', 'information navigation', 'contextual inquiries', 'usability testing']} bgColor="#f8f8f8" tColor="#0f0f0f"/>
+                <WorkCard url='/work/IoT' imgUrl='/images/IoT/mockup_multiscreens.png' name='An IoT-based smart city infrastructure management tool' tagline='A tool built for city managers to monitor, operate, and maintain the smart city infrastructure devices efficiently, intelligently and collaboratively.' description='User Research + UX Design' labels={['work project','IoT', 'SaaS', 'Web Design', 'Workflow Management Tool', 'Information Navigation']} bgColor="#f8f8f8" tColor="#0f0f0f"/>
                 
-                <WorkCard url='/work/materialbank' imgUrl='/images/MaterialBank/mockupp.png' name='Material Bank' tagline='A website that helps industrial designers navigate through the universe of materials to find the right one and get inspired.' description='User Research + UX Design' labels={['web design', 'information findability', 'data visualization', 'usability testing']} bgColor="#f8f8f8" tColor="#0f0f0f"/>
+             
+                <WorkCard url='/work/nightkick' imgUrl='/images/nightkick/mockup_cover.png' name='Nightkick' tagline='A mobile app and modular wearable to help people feel safer when walking alone after dark.' description='User Research + UX/UI Design' labels={['school project','Mobile Design', 'Wearable', 'Crowd-sourced']} bgColor="#f8f8f8" tColor="#0f0f0f"/>
+                
+                <WorkCard url='/work/materialbank' imgUrl='/images/MaterialBank/mockupp.png' name='Material Bank' tagline='A website that helps industrial designers search and navigate materials to find the right one and get inspired.' description='User Research + UX Design' labels={['work project','Web Design', 'Information Findability', 'Data Visualization']} bgColor="#f8f8f8" tColor="#0f0f0f"/>
+
 
     
        
                 <Fade bottom>
         <div className="work_wrapper">
             <div className="section-title-container">
-                <h6>Other projects that I did for learning.</h6>
+                <h6>More projects.</h6>
             </div>
             
             <div className="cards show">
-            <article>
-                    <a href="https://medium.com/@tater.trots.uw/nightkick-a-mobile-app-and-modular-wearable-to-help-people-feel-safer-when-walking-alone-after-8efdcd101069" target="_blank">
-                        <div className="cardcontainer">
-                            <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/nightkick.png"} alt=" "/>
-                            <div className="overlay" id="imgNightkick">
-                                <div className="article-title">
-                                    <div>Nightkick</div>
-                                    <div className="article-subtitle">A mobile app and modular wearable to help people feel safer when walking alone after dark</div>
-                                    <div className="article-subtitle">User Research | UX/UI Design </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
+  
             <article>
                     <Link to="/work/photome">
                         <div className="cardcontainer">
@@ -125,7 +116,6 @@ function DesignerPanel (props) {
                                 <div className="article-title">
                                     <div>Graphics, Illustrations & Photographs</div>
                                     <div className="article-subtitle">Training my muscle for visual communication.</div>
-                                    <div className="article-subtitle">UX/UI Design </div>
                                 </div>
                             </div>
                         </div>

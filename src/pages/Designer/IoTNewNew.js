@@ -504,7 +504,7 @@ class IoTNewNew extends React.Component {
                                         
                                             />
                                          <div className="image_model_link_container">
-                                                <Button variant="link" onClick={() => this.triggerModel("/images/IoT/street_light_dashboard_move.gif")}>click here to watch the interaction.</Button>
+                                                <Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/street_light_dashboard_move.gif")}>click here to watch the interaction.</Button>
                                          </div>
                                     <br/>
 
@@ -516,7 +516,7 @@ class IoTNewNew extends React.Component {
                                                 }}
                                             
                                             />
-                                            <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/anomaly_to_detail.gif")}>click here to watch the interaction.</Button></div>  
+                                            <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/anomaly_to_detail.gif")}>click here to watch the interaction.</Button></div>  
                                             {this.state.hide?(<>
                                             <div className="hiden_content_switch_container text-center">
                                                 <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("hide")}>See More Prototypes</button>
@@ -537,7 +537,7 @@ class IoTNewNew extends React.Component {
                                                         
                                                         />
                                                         
-                                                        <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/homepage_dashboard_move.gif")}>Click here to watch it move.</Button></div>
+                                                        <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/homepage_dashboard_move.gif")}>Click here to watch it move.</Button></div>
                                                         <ImageZoom
                                                             image={{
                                                             src: '/images/IoT/env_sensor_dashboard.png',
@@ -547,7 +547,7 @@ class IoTNewNew extends React.Component {
                                                         
                                                         />
 
-                                                        <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/env_sensor_dashboard_move.gif")}>Click here to watch it move.</Button></div>
+                                                        <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/env_sensor_dashboard_move.gif")}>Click here to watch it move.</Button></div>
                                                         <ImageZoom
                                                             image={{
                                                             src: '/images/IoT/manhole_cover_dashboard.png',
@@ -556,7 +556,7 @@ class IoTNewNew extends React.Component {
                                                             }}
                                                         
                                                         />
-                                                        <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/manhole_cover_dashboard_move.gif")}>Click here to watch it move.</Button></div>
+                                                        <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/manhole_cover_dashboard_move.gif")}>Click here to watch the interaction.</Button></div>
                                                         
                                                        
                                                         <ImageZoom
@@ -715,7 +715,7 @@ class IoTNewNew extends React.Component {
                                         }}
                                     
                                     />
-                                    <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/alert.gif")}>click here to watch the interaction.</Button></div> 
+                                    <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/alert.gif")}>click here to watch the interaction.</Button></div> 
                                         
                                 </section>
                         </div>
@@ -922,7 +922,7 @@ class IoTNewNew extends React.Component {
                 }}
             
             />
-                <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/bulkControl.gif")}>click here to watch the interaction.</Button></div>  
+                <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/bulkControl.gif")}>click here to watch the interaction.</Button></div>  
             <ImageZoom
                 image={{
                 src: '/images/IoT/light_control_final3.png',
@@ -931,7 +931,7 @@ class IoTNewNew extends React.Component {
                 }}
             
             />
-            <div className="image_model_link_container"><Button variant="link" onClick={() => this.triggerModel("/images/IoT/lightControl.gif")}>click here to watch the interaction.</Button></div>  
+            <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/lightControl.gif")}>click here to watch the interaction.</Button></div>  
         </section>
     </Col>
     </Row>
@@ -972,7 +972,7 @@ class IoTNewNew extends React.Component {
                         </Col>
                         <Col md={12} lg={9}>
                         <section id="todo" className="project_body">
-                            <h2>TO DOS</h2>
+                            <h2>TO-DOS</h2>
                             <p>There are several parts I would have dived deeper into if I had given more time.</p>
                             <h6>Design for Behavior Change</h6>
                             <p>I have been very interested in this topic and I saw a great opportunity here to design for more efficient energy use. I proposed a possibility to show users how much energy they will save after they choose to 'auto optimize' the day-to-day lighting plan. This feature would serve as a nudge to environmentally friendly behavior. </p>

@@ -245,7 +245,7 @@ a:not(.code_link):hover {
 
 .image_model_link_container{
   text-align: center;
-  margin: 10px 0 -1em;
+  margin: 10px 0 10px;
 }
 
 /* New panel design */
@@ -304,11 +304,13 @@ a:not(.code_link):hover {
 .card-img {
   height: 100%;
   width: 100%;
-  width: 100%;
   object-fit: cover;
   margin-top: 0px!important;
   
 }
+
+
+
 .card-img:hover{
   transform: scale(0.98);
   -webkit-transition: -webkit-transform 275ms cubic-bezier(.39, .575, .565, 1);
@@ -1052,12 +1054,20 @@ li, ol{
 
 
 
+.project_model_wrapper{
+  margin: 0 auto 0
+
+}
 
 
 .project_image_model{
-  margin:0;
-  width: 100%;
-  object-fit: cover
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 0;
+
+  /* width: 100%; */
+  max-height: 90vh;
+  /* object-fit: cover */
 }
 
 .my-masonry-grid {
