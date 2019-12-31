@@ -1,9 +1,13 @@
 import React from "react";
 import '../index.css';
 import Masonry from 'react-masonry-css';
-import ImageZoom from 'react-medium-image-zoom'
+// import ImageZoom from 'react-medium-image-zoom'
+import ImageZoom from "../components/ProgessiveImg"
+
 import ProjectPagination from '../components/ProjectPagination'
 import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
+
+
 
 const breakpointColumnsObj = {
     default: 4,
