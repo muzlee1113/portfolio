@@ -4,7 +4,6 @@ import Masonry from 'react-masonry-css';
 // import ImageZoom from 'react-medium-image-zoom'
 import ImageZoom from "../components/ProgessiveImg"
 
-import ProjectPagination from '../components/ProjectPagination'
 import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
 
 
@@ -21,20 +20,20 @@ class Play extends React.Component {
         let graphics = []
         for(let i = 27; i>=0; i--){
             let graphic_obj = {
-                url: '/images/others/'+i+'.png'
+                url: '/images/others/'+i+'.png',
+                overlaySrc: ('/images/others/thumbnail/'+i+'.png')
             }
             graphics.push(graphic_obj)
         }
 
         const graphics_elements = graphics.map(function(element){
             let url = element.url
+            let overlaySrc = element.overlaySrc
            return (
             <ImageZoom
-                image={{
-                src: url,
-                alt: '',
-                className: 'masonry-image'
-            }}
+                overlaySrc={overlaySrc}
+                src={url}
+                className= 'masonry-image'
         
         />
             );
