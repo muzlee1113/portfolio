@@ -61,7 +61,7 @@ class Play extends React.Component {
         });
 
         let photos = []
-        for(let i = 0; i<31; i++){
+        for(let i = 1; i<31; i++){
             let photo_obj = {
                 url: '/images/photograph/'+i+'.jpg',
                 overlaySrc: '/images/photograph/thumbnail/'+i+'.png'

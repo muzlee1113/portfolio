@@ -790,7 +790,7 @@ class IoTNewNew extends React.Component {
                         <div className="project_square_illustration_container">
                                     <ImageZoom
                                     image={{
-                                    src: '/images/IoT/device_limitation.png',
+                                    src: '/images/IoT/limitation.png',
                                     alt: '',
                                     className: 'project_square_illustration'
                                     }}
@@ -845,7 +845,7 @@ class IoTNewNew extends React.Component {
 
                                 <ImageZoom
                                     image={{
-                                    src: '/images/IoT/device_limitation.png',
+                                    src: '/images/IoT/limitation.png',
                                     alt: '',
                                     className: 'project_illustration_medium'
                                     }}
