@@ -33,12 +33,25 @@ export default class ProgressiveImage extends Component {
 		this.state = { highResImageLoaded: false };
 	}
 	render() {
-
+        const {overlaySrc} = this.props
 		const { highResImageLoaded } = this.state;
 		return (
 			<div style={{display: "block", position: "relative"}}>
-				<ImageZoom
+				<img
+					// {...filteredProps}
+                    className={this.props.className}
+                    style={
+                        highResImageLoaded?
+                        (loadDoneStyles):(loadingStyles)
+                    }
+					
+					src={process.env.PUBLIC_URL + overlaySrc}
+				/>
+                <ImageZoom
                     image={{
+                        style: {
+                            zIndex: "5"
+                        },
                         src: this.props.src,
                         alt: '',
                         className: 'masonry-image',
@@ -50,24 +63,15 @@ export default class ProgressiveImage extends Component {
                         }
                     }}
 				/>
-                <div uk-spinner="ratio: 1"
+                {/* <div uk-spinner="ratio: 1"
                     style={
                         highResImageLoaded?
                         (loadDoneStyles):(loadingStyles)
                     }
                 
-                ></div>
+                ></div> */}
 
-				{/* <img
-					{...filteredProps}
-                    className={this.props.className}
-                    style={
-                        highResImageLoaded?
-                        (overlayStylesDone):(overlayStyles)
-                    }
-					
-					src={process.env.PUBLIC_URL + overlaySrc}
-				/> */}
+				
 			</div>
 		);
 	}
