@@ -16,9 +16,9 @@ const loadingStyles = {
     position: "absolute",
     top: "50%",
     left: "50%",
-	// filter: "blur(4px)",
-	// transition: "opacity ease-in 1000ms",
-	// clipPath: "inset(0)"
+	filter: "blur(4px)",
+	transition: "opacity ease-in 1000ms",
+	clipPath: "inset(0)"
 };
 
 const loadDoneStyles = {

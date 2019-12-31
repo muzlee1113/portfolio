@@ -61,18 +61,21 @@ class Play extends React.Component {
         });
 
         let photos = []
-        for(let i = 1; i<23; i++){
+        for(let i = 0; i<31; i++){
             let photo_obj = {
-                url: '/images/photograph/'+i+'.jpg'
+                url: '/images/photograph/'+i+'.jpg',
+                overlaySrc: '/images/photograph/thumbnail/'+i+'.png'
+
             }
             photos.push(photo_obj)
         }
 
         const photos_elements = photos.map(function(element){
             let url = element.url
+            let overlaySrc = element.overlaySrc
            return (
             <ImageZoom
-              
+            overlaySrc = {overlaySrc} 
             src= {url}
             alt= ''
             className= 'masonry-image'
