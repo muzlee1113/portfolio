@@ -79,7 +79,7 @@ function DesignerPanel (props) {
                         </div>
                     </Link>
                 </article>
-                <article>
+                {/* <article>
                     <Link to="/work/lightup">
                         <div className="cardcontainer">
                             <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Lightup.png"} alt=" "/>
@@ -92,7 +92,7 @@ function DesignerPanel (props) {
                             </div>
                         </div>
                     </Link>
-                </article>
+                </article> */}
                 {/* <article>
                     <Link to="/work/boardingpass">
                         <div className="cardcontainer">
