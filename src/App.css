@@ -986,6 +986,10 @@ li, ol{
   margin: 56px 0 56px;
 }
 
+#me{
+  width: 50%;
+}
+
 .project_illustration{
   margin-top: 30px;
   /* margin-top: 2em; */

@@ -72,8 +72,8 @@ class App extends Component {
           <Route exact path="/researcher" render={props => <Researcher {...props} />} />
 
           <Route exact path="/teacher" render={props => <Teacher {...props} />} />
-          <Route exact path="/others"
-            render={props => <Others {...props} />} />
+          {/* <Route exact path="/others"
+            render={props => <Others {...props} />} /> */}
 
           <Route exact path="/about"
             render={props => <About {...props} />}

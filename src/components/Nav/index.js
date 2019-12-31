@@ -27,22 +27,25 @@ class Nav extends Component {
                 <div className="nav_link_container">
         
                     <NavLink 
-                    // id="ptfpage" 
                     activeClassName="link active_link"
                     className="nav_link"
                     to="/" 
                     exact><span className="mr-2 align-text-top" uk-icon="pencil"></span>Design</NavLink>
                     <NavLink 
-                    // id="ptfpage" 
                     activeClassName="link active_link"
                     className="nav_link"
                     to="/code" 
                     exact><span className="mr-2 align-text-top" uk-icon="code"></span>Code</NavLink>
-                     <NavLink 
-                    // id="aboutpage" 
+                    <NavLink 
+                    // id="ptfpage" 
                     activeClassName="link active_link"
                     className="nav_link"
-                    to="/about" exact><span className="mr-2 align-text-top" uk-icon="happy"></span>About</NavLink>
+                    to="/play" 
+                    exact><span className="mr-2 align-text-top" uk-icon="happy"></span>Play</NavLink>
+                     <NavLink 
+                    activeClassName="link active_link"
+                    className="nav_link"
+                    to="/about" exact><span className="mr-2 align-text-top" uk-icon="hashtag"></span>About</NavLink>
                 </div>
                 <div onClick={this.hamburgerHandler} className="hamburger"><span uk-icon="icon: menu; ratio: 1.6"></span></div>
             </div>

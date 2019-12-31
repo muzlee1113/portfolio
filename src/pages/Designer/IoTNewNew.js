@@ -1000,7 +1000,7 @@ class IoTNewNew extends React.Component {
     </LazyLoad>
 
 
-            <ProjectPagination prevUrl="/" prevName="Home" nextUrl="/work/materialbank" nextName="Material Bank" />
+            <ProjectPagination prevUrl="/" prevName="Home" nextUrl="/work/nightkick" nextName="Nightkick" />
 
             <BackToTopBtn />
             <ImageModal
