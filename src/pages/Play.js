@@ -21,17 +21,14 @@ class Play extends React.Component {
         for(let i = 27; i>=0; i--){
             let graphic_obj = {
                 url: '/images/others/'+i+'.png',
-                overlaySrc: ('/images/others/thumbnail/'+i+'.png')
             }
             graphics.push(graphic_obj)
         }
 
         const graphics_elements = graphics.map(function(element){
             let url = element.url
-            let overlaySrc = element.overlaySrc
            return (
             <ImageZoom
-                overlaySrc={overlaySrc}
                 src={url}
                 className= 'masonry-image'
         
@@ -50,18 +47,18 @@ class Play extends React.Component {
             let url = element.url
            return (
             <ImageZoom
-                image={{
-                src: url,
-                alt: '',
-                className: 'masonry-image'
-            }}
+                
+                src= {url}
+                alt= ''
+                className= 'masonry-image'
+        
         
         />
             );
         });
 
         let photos = []
-        for(let i = 0; i<23; i++){
+        for(let i = 1; i<23; i++){
             let photo_obj = {
                 url: '/images/photograph/'+i+'.jpg'
             }
@@ -72,11 +69,11 @@ class Play extends React.Component {
             let url = element.url
            return (
             <ImageZoom
-                image={{
-                src: url,
-                alt: '',
-                className: 'masonry-image'
-            }}
+              
+            src= {url}
+            alt= ''
+            className= 'masonry-image'
+   
         
         />
             );

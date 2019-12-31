@@ -2,32 +2,27 @@ import React, { Component } from "react";
 import ImageZoom from 'react-medium-image-zoom'
 import { HelpBlock } from "react-bootstrap";
 
-const omit = (obj, omitKey) =>
-	Object.keys(obj).reduce((result, key) => {
-		if (key !== omitKey) {
-			result[key] = obj[key];
-		}
-		return result;
-	}, {});
+// const omit = (obj, omitKey) =>
+// 	Object.keys(obj).reduce((result, key) => {
+// 		if (key !== omitKey) {
+// 			result[key] = obj[key];
+// 		}
+// 		return result;
+// 	}, {});
 
-const overlayStyles = {
+const loadingStyles = {
     display: "block",
     width:"100%",
     position: "absolute",
-    top: "0%",
-    left: "0%",
-	filter: "blur(4px)",
-	transition: "opacity ease-in 1000ms",
-	clipPath: "inset(0)"
+    top: "50%",
+    left: "50%",
+	// filter: "blur(4px)",
+	// transition: "opacity ease-in 1000ms",
+	// clipPath: "inset(0)"
 };
 
-const overlayStylesDone = {
-    display: "block",
-    top: "0%",
-    left: "0%",
-    width:"100%",
-    position: "absolute",
-    opacity: "0"
+const loadDoneStyles = {
+    display: "none",
 }
 
 
@@ -38,11 +33,8 @@ export default class ProgressiveImage extends Component {
 		this.state = { highResImageLoaded: false };
 	}
 	render() {
-        const { overlaySrc } = this.props;
-        console.log(overlaySrc)
 
 		const { highResImageLoaded } = this.state;
-		let filteredProps = omit(this.props, "overlaySrc");
 		return (
 			<div style={{display: "block", position: "relative"}}>
 				<ImageZoom
@@ -57,21 +49,16 @@ export default class ProgressiveImage extends Component {
 
                         }
                     }}
-					{...filteredProps}
-					
-					ref={img => {
-						this.highResImage = img;
-					}}
 				/>
-                {/* <div uk-spinner="ratio: 3"
+                <div uk-spinner="ratio: 1"
                     style={
                         highResImageLoaded?
-                        (overlayStylesDone):(overlayStyles)
+                        (loadDoneStyles):(loadingStyles)
                     }
                 
-                ></div> */}
+                ></div>
 
-				<img
+				{/* <img
 					{...filteredProps}
                     className={this.props.className}
                     style={
@@ -80,7 +67,7 @@ export default class ProgressiveImage extends Component {
                     }
 					
 					src={process.env.PUBLIC_URL + overlaySrc}
-				/>
+				/> */}
 			</div>
 		);
 	}
