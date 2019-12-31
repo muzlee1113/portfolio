@@ -2,7 +2,6 @@ import React from "react";
 import { ButtonToolbar, OverlayTrigger, Tooltip, Row, Col } from 'react-bootstrap';
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import BackToTopBtn from "../../components/BackToTopBtn"
-import LazyLoad from 'react-lazyload';
 import ProjectPagination from '../../components/ProjectPagination'
 
 
@@ -65,7 +64,7 @@ function WIS() {
                 </Col>
                 <Col md={12} lg={9}>
                     <div className="project_container">
-                    <LazyLoad height={200} offset={100} once>
+                    
 
                         <section className="project_body" id="list-item-1">
                             <h2>Intro</h2>
@@ -73,8 +72,8 @@ function WIS() {
                             <img className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/WIS/intro.png"} />
                             <ul></ul>
                         </section>
-                        </LazyLoad>
-                        <LazyLoad height={200} offset={100} once>
+                        
+                        
 
                         <section className="project_body" id="list-item-2">
                             <h2>Team Members & Roles</h2>
@@ -87,8 +86,8 @@ function WIS() {
                             </ul>
                             <p>My job focus on the front end, using React.js to create the dashboard, inventory page, product and category modal, sorting and filtering functions and promotion page.</p>
                         </section>
-                        </LazyLoad>
-                        <LazyLoad height={200} offset={100} once>
+                        
+                        
 
                         <section className="project_body" id="list-item-3">
                             <h2>Research & Ideation</h2>
@@ -111,8 +110,8 @@ function WIS() {
                                 <li className="p"><b>Promotions</b>: business owner can easily manage special price changes</li>
                             </ul>
                         </section>
-                        </LazyLoad>
-                        <LazyLoad height={200} offset={100} once>
+                        
+                        
 
                         <section className="project_body" id="list-item-4" >
                             <h2>UX Design</h2>
@@ -135,26 +134,26 @@ function WIS() {
                             </ul>
 
                         </section>
-                        </LazyLoad>
-                        <LazyLoad height={200} offset={100} once>
+                        
+                        
 
                         <section className="project_body" id="list-item-5">
                             <h2>Data Set</h2>
                             <img className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/WIS/data_set.png"} />
                             <p>We use MongoDB to keep and manage data which has more flexibility and horizontal Scale and allows nested data set in different format. We manage 1-to-N data relations which basically converge at the user collection.</p>
                         </section>
-                        </LazyLoad>
-                        <LazyLoad height={200} offset={100} once>
+                        
+                        
 
                         <section className="project_body" id="list-item-6">
                             <h2>Basic Features</h2>
-                            <LazyLoad height={200} offset={100} once>
+                            
                                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/WIS/add_product.gif"} />
-                                </LazyLoad>
+                                
                                 <div className="project_caption mt-2" style={{textAlign:"center"}}>Add a product to inventory</div>
                         </section>
-                        </LazyLoad>
-                        <LazyLoad height={200} offset={100} once>
+                        
+                        
 
                         <section className="project_body" id="list-item-6">
                             <h2>Cool Snippets</h2>
@@ -183,8 +182,8 @@ function WIS() {
                                 <p>The handleSorting function will keep track of the dropdown on inventory page and set the "sorting" state with the keywords of how we're going to sort the products (for example, price from low to high). After we set the state, we call the handleSortedDom function which is basically a switch that take in the filteredProducts array and sort the products inside according to the keywords, and finally reset the filteredProducts array in the right order.</p>
                             </ul>
                         </section>
-                        </LazyLoad>
-                        <LazyLoad height={200} offset={100} once>
+                        
+                        
 
                         <section className="project_body" id="list-item-7">
                             <h2>To Do</h2>
@@ -194,7 +193,7 @@ function WIS() {
                                 <li className="p">Better visualizes the inventory using various layouts charts and graphs;</li>
                             </ul>
                         </section>
-                        </LazyLoad>
+                        
 
                     </div>
 

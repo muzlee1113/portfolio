@@ -3,7 +3,6 @@ import { Container, Col, Row } from 'react-bootstrap';
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import BackToTopBtn from "../../components/BackToTopBtn"
 import ProjectPagination from '../../components/ProjectPagination'
-import LazyLoad from 'react-lazyload';
 
 
 
@@ -45,7 +44,7 @@ function Weather() {
                     </Col>
                     <Col md={12} lg={9}>
                     <div className="project_container">  
-                    <LazyLoad height={200} offset={100} once>
+                    
 
                         <section className="project_body" id="list-item-1">  
                             <h2>Intro</h2>
@@ -57,8 +56,8 @@ function Weather() {
                             
                             <p>I had the Weather app in my iPhone, but it didn’t stop this from happening or even repeating. <b>How could I redesign the Weather app to improve the experience?</b></p>
                         </section>
-                        </LazyLoad>
-                        <LazyLoad height={200} offset={100} once>
+                        
+                        
 
                         <section className="project_body" id="list-item-2">
                             <h2>User Research & Problem Space</h2>
@@ -87,10 +86,10 @@ function Weather() {
 
                             <p>So 'Weather' should <b><span style={{"textDecoration": "underline"}}>① understand</span></b> what users want to do and what weather changes will interfere with their intended activities, then <b><span style={{"textDecoration": "underline"}}>② deliver</span></b> that information to users and help them prepare for those changes.</p>
                         </section>
-                        </LazyLoad>
+                        
 
                         <section className="project_body" id="list-item-3">
-                        <LazyLoad height={200} offset={100} once>
+                        
 
                             <h2>Ideation and Design</h2>
                             <h5>How might we <b style={{"textDecoration": "underline"}}>understand</b> what people want to do and what weather information is needed?​</h5>
@@ -108,8 +107,8 @@ function Weather() {
                                 <li className="project_caption" style={{"margin": "0.5em"}}>③ Accordingly, Weather can match these related weather information and forward them to the user before they leave home so that they can get prepared.</li>
                             </ul>
                             <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/Weather/culture_map_2.png"} />
-                            </LazyLoad>
-                            <LazyLoad height={200} offset={100} once>
+                            
+                            
 
                             <h6>2. Users can tell Weather their plans and set alert of weather changes.</h6>
                             <ul>
@@ -118,9 +117,9 @@ function Weather() {
                                 <li ><b>Care</b>: tell Weather the locations of your families and friends and it can help you start a chat with them</li>
                                 <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/Weather/Care.png"} />
                             </ul>
-                            </LazyLoad>
+                            
                             <br/>
-                            <LazyLoad height={200} offset={100} once>
+                            
                             <h5>How might we <b style={{"textDecoration": "underline"}}>get, understand and react</b> to that information so that they can get prepared?​</h5>
                             <p>How to deliver the information depends on users' behaviors and habits. Users of Weather app fall into two kinds: Habitual user and Infrequent user.</p>
                             <Container>
@@ -133,8 +132,8 @@ function Weather() {
                                 </Col>
                             </Row>
                             </Container>
-                            </LazyLoad>
-                            <LazyLoad height={200} offset={100} once>
+                            
+                            
 
                             <p>To relieve the pain points of each of these users, the app focuses on:</p>
                             <ul>
@@ -166,9 +165,9 @@ function Weather() {
 
                             </ul>
                             
-                            </LazyLoad>
+                            
                         </section>
-                        <LazyLoad height={200} offset={100} once>
+                        
 
                         <section className="project_body" id="list-item-4">
                             <h2>Takeaways</h2>
@@ -179,7 +178,7 @@ function Weather() {
                             <h6>Professional critiques are valuable.</h6>
                             <p>Besides user testing, advice from other designers is important. My discussion with several UX designer about whether Apple users are accustomed to frequent alerts led me to reconsider the different design environments and user habits. Finally, I decided to provide weather information when people are using Calendar in form of a weather brief embedded in the Calendar, instead of a pop-up notification. </p>
                         </section>
-                        </LazyLoad>
+                        
                     </div>
                     </Col>
                 </Row>

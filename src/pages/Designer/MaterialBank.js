@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Col, Row, Button } from 'react-bootstrap';
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import BackToTopBtn from "../../components/BackToTopBtn"
-import LazyLoad from 'react-lazyload';
 import ImageModal from '../../components/ImageModal'
 import ProjectPagination from '../../components/ProjectPagination'
 import ImageZoom from 'react-medium-image-zoom'
@@ -348,10 +347,7 @@ function MaterialBank() {
                                                     }}
                                                 
                                                 />
-                                        
-                                        {/* <LazyLoad height={200} offset={100} once>
-                                            <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/MaterialBank/accessibility2.png"} />
-                                        </LazyLoad> */}
+                                   
                             </section>
                         </div>
                     </Col>

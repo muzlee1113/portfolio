@@ -13,9 +13,7 @@ import { HelpBlock } from "react-bootstrap";
 const loadingStyles = {
     display: "block",
     width:"100%",
-    position: "absolute",
-    top: "50%",
-    left: "50%",
+ 
 	filter: "blur(4px)",
 	transition: "opacity ease-in 1000ms",
 	clipPath: "inset(0)"
@@ -50,7 +48,11 @@ export default class ProgressiveImage extends Component {
                 <ImageZoom
                     image={{
                         style: {
-                            zIndex: "5"
+                            zIndex: "5",
+                            opacity: this.state.highResImageLoaded?("1"):("0")
+                            // position: "absolute",
+                            // top: "50%",
+                            // left: "50%",
                         },
                         src: this.props.src,
                         alt: '',

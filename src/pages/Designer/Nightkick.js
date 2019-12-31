@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Col, Row, Button } from 'react-bootstrap';
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import BackToTopBtn from "../../components/BackToTopBtn"
-import LazyLoad from 'react-lazyload';
 import ImageModal from '../../components/ImageModal'
 import ProjectPagination from '../../components/ProjectPagination'
 import ImageZoom from 'react-medium-image-zoom'

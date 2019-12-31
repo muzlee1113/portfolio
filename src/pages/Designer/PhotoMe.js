@@ -3,7 +3,6 @@ import { Container, Col, Row } from 'react-bootstrap';
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import BackToTopBtn from "../../components/BackToTopBtn"
 import ProjectPagination from '../../components/ProjectPagination'
-import LazyLoad from 'react-lazyload';
 
 
 
@@ -70,7 +69,7 @@ function PhotoMe() {
             </section>
             
             <div className="project_container" id="list-item-2">
-            <LazyLoad height={200} offset={100} once>
+
                 <section className="project_body">
                     <h2>User Research</h2>
                     <h5>Why do people fail to take satisfactory portraits?</h5>
@@ -86,8 +85,8 @@ function PhotoMe() {
                     <p>I realized that the key issue was not the nature of the scene nor the photographer's skill. The photographer knew exactly the angle, the light and the composition that he wanted for his "good" picture, but he didn't know or understand what she wanted for her good picture, because she failed to convey her expectation or he failed to grasp it.</p>
                     <p>The biggest design opportunity I discovered lies in <b>communication</b>. So I reframed the problem as <b>why do people fail to convey or decode information in the photo-taking process? </b></p>
                 </section>
-            </LazyLoad>
-            <LazyLoad height={200} offset={100} once>
+            
+
                 <section className="project_body" id="list-item-3">
                     <h2>Key Insights</h2>
                     <h5>Why do people fail to convey or decode information in the photo-taking process?</h5>
@@ -101,8 +100,8 @@ function PhotoMe() {
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/quote_3.png"} />
                     <p>Even if the subject manages to give some concrete instructions, for the photographer, to understand what those mean and apply them into the photo-taking process still <b>involves a lot of translations</b>. People use different words to refer to the same thing. When talking about 'Don't take the picture from a low angle' or 'Stand closer to me', the terms 'low angle' or 'closer' actually requires a clear and explicit definition. But when people talk before taking the picture, there is no time for them to clarify all the languages they use.</p>
                 </section>
-                </LazyLoad>
-                <LazyLoad height={200} offset={100} once>
+
+    
                 <section className="project_body" id="list-item-4">
                     <h2>Inspiration & Design Principle</h2>
                     <h5>What I learned from workarounds</h5>
@@ -115,7 +114,7 @@ function PhotoMe() {
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/selfie.png"} />
                     <p>These two workarounds inspired me to adopt the design principle: <b>What You See Is What You Get, show rather than tell.</b></p>
                 </section>
-                </LazyLoad>
+
                 
                 <section className="project_body" id="list-item-5">
                     <h2>Final Design</h2>
@@ -124,7 +123,7 @@ function PhotoMe() {
                     
                     <h6>1. Manage Expectation</h6>
                     <p>· Use pictures generated in the community to inspire and visualize expectation.</p>
-                    <LazyLoad height={200} offset={100} once>
+        
                     <Container>
                     <Row className="align-items-center">
                         <Col xs={12} sm={12} md={6} lg={6}>
@@ -161,7 +160,7 @@ function PhotoMe() {
                     </Row>
                     
                     </Container>
-                    </LazyLoad>
+    
                     <div className="divider"></div>
                     <h6>2. Provide Common Grounds</h6>
                     <p>· What You See Is What You Get</p>
@@ -170,7 +169,7 @@ function PhotoMe() {
                         <li>'Guideline': instructional lines which abstract the sample and define the key compositions in the scene</li>
                         <li>'Tag': break down detailed instructions into customizing tags glittering on screen</li>
                     </ul>
-                    <LazyLoad height={200} offset={100} once>
+        
                     <Container>
                         <Row className="align-items-center">
                             <Col xs={12} sm={12} md={8} lg={8}>
@@ -201,9 +200,9 @@ function PhotoMe() {
                         </Row> 
 
                     </Container>
-                    </LazyLoad>
+    
                     <div className="divider"></div>
-                    <LazyLoad height={200} offset={100} once>
+        
                     <ul>
                         <li>'Pencil': allow the subject to display her expectation on screen with customized guidelines.</li>
                         <li>'Pose': show hit model poses on screen against the immediate surroundings to inspire the subjects</li>
@@ -222,9 +221,9 @@ function PhotoMe() {
                         <p className="project_caption">· 'Pose' tool can be used as inspiration and dragged to the screen as reference in discussion</p>
                         </Col>
                     </Row> 
-                    </LazyLoad>
+    
                 </section>
-                <LazyLoad height={200} offset={100} once>
+    
                 <section className="project_body" id="list-item-6">
                     <h2>Takeaways</h2>
                     <h5>Computers are not to replace human factors, but to facilitate them.</h5>
@@ -233,7 +232,7 @@ function PhotoMe() {
                     <h6>We should empower people with technology.</h6>
                     <p>The final design tries to help people better communicate their thoughts by providing common grounds. It doesn't look forward to saving people from verbose talks about how to take that pictures. On the contrary, it serves a prompt to make people talk and talk better.</p>
                 </section>
-                </LazyLoad>
+
                         
                     </div>
                     

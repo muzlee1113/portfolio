@@ -9,7 +9,6 @@ import {
 import ImageModal from '../../components/ImageModal'
 import BackToTopBtn from "../../components/BackToTopBtn"
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
-import LazyLoad from 'react-lazyload';
 import ProjectPagination from '../../components/ProjectPagination'
 import ImageZoom from 'react-medium-image-zoom'
 
@@ -94,7 +93,6 @@ class IoTNewNew extends React.Component {
                     </Row>
                 {/* </Container> */}
             </div>
-            <LazyLoad height={200} offset={100} once>
             <div className="project_overview_container">
                 <div className="project_overview_title">Design Process</div>
     
@@ -997,7 +995,6 @@ class IoTNewNew extends React.Component {
                        
                   
             </div>
-    </LazyLoad>
 
 
             <ProjectPagination prevUrl="/" prevName="Back to Home" nextUrl="/work/nightkick" nextName="Nightkick" />
