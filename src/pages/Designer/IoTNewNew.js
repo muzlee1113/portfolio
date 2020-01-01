@@ -121,13 +121,15 @@ class IoTNewNew extends React.Component {
                             <div className="project_overview_content py-1"><b>Ideate</b></div>
                             <div className="project_overview_content">Brainstormimg</div>
                             <div className="project_overview_content">Sketching</div>
+                            <div className="project_overview_content">Feasibility analysis</div>
                         </Col>
                         <Col xs={4} md={2}>
                         <img  src={process.env.PUBLIC_URL + "/images/centerStep.png"}/>
                             <div className="project_overview_content py-1"><b>Design</b></div>
-                            <div className="project_overview_content">Feasibility analysis</div>
-                            <div className="project_overview_content">Design specifications</div>
-                            <div className="project_overview_content">Prototypes</div>
+                            <div className="project_overview_content">Lo-fi prototyping</div>
+                            <div className="project_overview_content">Interaction design</div>
+                            <div className="project_overview_content">Wireframing</div>
+                            <div className="project_overview_content">Hi-fi prototyping</div>
                         </Col>
                         <Col  xs={4} md={2}>
                         <img  src={process.env.PUBLIC_URL + "/images/centerStep.png"}/>
@@ -140,7 +142,7 @@ class IoTNewNew extends React.Component {
                         <img  src={process.env.PUBLIC_URL + "/images/rightStep.png"}/>
 
                             <div className="project_overview_content py-1"><b>Deliver</b></div>
-                            <div className="project_overview_content">Hi-fi prototyping</div>
+                            <div className="project_overview_content">Hi-fi prototypes</div>
                             <div className="project_overview_content">Design specs</div>
 
                         </Col>

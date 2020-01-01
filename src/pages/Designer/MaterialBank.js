@@ -86,7 +86,8 @@ function MaterialBank() {
                             <div className="project_overview_content py-1"><b>Design</b></div>
                             <div className="project_overview_content">Site Map</div>
                             <div className="project_overview_content">Information architecture</div>
-                            <div className="project_overview_content">Prototypes</div>
+                            <div className="project_overview_content">Wireframing</div>
+                            <div className="project_overview_content">Hi-fi prototyping</div>
                         </Col>
                         <Col  xs={4} md={2}>
                         <img  src={process.env.PUBLIC_URL + "/images/centerStep.png"}/>
@@ -98,7 +99,7 @@ function MaterialBank() {
                         <img  src={process.env.PUBLIC_URL + "/images/rightStep.png"}/>
 
                             <div className="project_overview_content py-1"><b>Deliver</b></div>
-                            <div className="project_overview_content">Hi-fi prototyping</div>
+                            <div className="project_overview_content">Hi-fi prototypes</div>
                             <div className="project_overview_content">Design specs</div>
 
                         </Col>

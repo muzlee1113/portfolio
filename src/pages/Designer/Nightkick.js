@@ -102,10 +102,10 @@ class Nightkick extends React.Component {
                             <Col  xs={4} md={2}>
                             <img  src={process.env.PUBLIC_URL + "/images/centerStep.png"}/>
                                 <div className="project_overview_content py-1"><b>Synthesize</b></div>
-                                <div className="project_overview_content">Affinity Diagram</div>
+                                <div className="project_overview_content">Affinity diagram</div>
                                 <div className="project_overview_content">Personas</div>
-                                <div className="project_overview_content">User Flow</div>
-                                <div className="project_overview_content">Usage Scenarios</div>
+                                <div className="project_overview_content">User flows</div>
+                                <div className="project_overview_content">Usage scenarios</div>
     
                             </Col>
                             <Col xs={4} md={2}>
@@ -118,27 +118,32 @@ class Nightkick extends React.Component {
                             <Col xs={4} md={2}>
                             <img  src={process.env.PUBLIC_URL + "/images/centerStep.png"}/>
                                 <div className="project_overview_content py-1"><b>Design</b></div>
-                                <div className="project_overview_content">Wireframes</div>
-                                <div className="project_overview_content">Prototypes</div>
+                                <div className="project_overview_content">Paper prototyping</div>
+                                <div className="project_overview_content">Wireframing</div>
+                                <div className="project_overview_content">Lo-fi prototyping</div>
+                                <div className="project_overview_content">Me-fi prototyping</div>
+
+                                <div className="project_overview_content">Visual Design</div>
+                                <div className="project_overview_content">Hi-fi prototyping</div>
+                                <div className="project_overview_content">Video prototyping</div>
+                                <div className="project_overview_content">3D Modeling</div>
                             </Col>
                             <Col  xs={4} md={2}>
                             <img  src={process.env.PUBLIC_URL + "/images/centerStep.png"}/>
     
                                 <div className="project_overview_content py-1"><b>Evaluate</b></div>
                                 <div className="project_overview_content">Usability testing</div>
-                                <div className="project_overview_content">Severity analysis</div>
+                               
     
                             </Col>
                             <Col xs={4} md={2}>
                             <img  src={process.env.PUBLIC_URL + "/images/rightStep.png"}/>
     
                                 <div className="project_overview_content py-1"><b>Deliver</b></div>
-                                <div className="project_overview_content">Visual Design</div>
-                                <div className="project_overview_content">Hi-fi prototyping</div>
+                                <div className="project_overview_content">Hi-fi prototypes</div>
                                 <div className="project_overview_content">Video prototype</div>
-                                <div className="project_overview_content">3D Modeling</div>
-                                <div className="project_overview_content">Design specs</div>
-    
+                                <div className="project_overview_content">Design handbook</div>
+
     
                             </Col>
                         </Row>
@@ -158,12 +163,12 @@ class Nightkick extends React.Component {
                                         <li className="uk-l project_brief_content"><a href="#ideate">Ideate</a></li>
                                         <li className="uk-l project_brief_content"><a href="#design">Design</a></li>
                                         <li className="uk-l project_brief_content"><a href="#evaluate">Evaluate & Iterate</a></li>
-                                        <li className="uk-l project_brief_content"><a href="#hifi">Hi-fi Prototype</a></li>
+                                        <li className="uk-l project_brief_content"><a href="#hifi">Visual Design & Specs</a></li>
                                         <li className="uk-l project_brief_content"><a href="#deliver">Deliver</a></li>
                                         <li className="uk-l project_brief_content"><a href="#concern">Concerns</a></li>
                                         <li className="uk-l project_brief_content"><a href="#todos">To-Dos</a></li>
                                         <li className="uk-l project_brief_content"><a href="#take">Takeaways</a></li>
-                                        <li className="uk-l project_brief_content"><a href="#present">Final Presentation</a></li>
+                                        <li className="uk-l project_brief_content"><a href="#present">Bonus!</a></li>
 
 
                                         </ul>
@@ -231,7 +236,7 @@ class Nightkick extends React.Component {
     
                                                 </Col>
                                                 <Col xs={6}>
-                                                <p>For learning user behavior and patterns</p>
+                                                <p>For learning user behaviors and patterns</p>
     
                                                 <ul className="">
                                                     <li>Video diary</li>
@@ -249,12 +254,18 @@ class Nightkick extends React.Component {
                                         alt: '',
                                         className: 'project_illustration'
                                         }}/>
-                                      <p>I was in charge of drafting user interview questions and found a way to observe how people walk alone after dark. I crafted <a className="text_link" href="https://docs.google.com/document/u/3/d/10GNB17x5bil41jrfX---k993r8L7j-Ryjpe-_X73gF4/edit?usp=sharing">interview questions</a> to probe the goal, process, feelings of people's daily commutes, what tools/methods people adopt or want to feel safer.</p> 
-                                     <p>For observation, I eventually chose video diary since it has the least influence on the participants while reveals to us as many clues and details of the participants’ emotions as possible. I then drafted the <a className="text_link" href="https://docs.google.com/document/d/1HoD-fcEsiY-5p6EdLRqwugta3pMzVOn8o5NzBhJU-nY/edit">instructions</a> for participants</p>
+                                    <h6>My Responsibility</h6>
+                                    <li className="p-list">Interview Questions</li>
+                                      <p>I crafted <a className="text_link" href="https://docs.google.com/document/u/3/d/10GNB17x5bil41jrfX---k993r8L7j-Ryjpe-_X73gF4/edit?usp=sharing">interview questions</a> to probe the goal, process, feelings of people's daily commutes, what tools/methods people adopt or want to feel safer.</p> 
+                                      <li className="p-list">Passive Observation Method</li>
+                                     <p>I eventually chose video diary since it has the least influence on the participants while reveals to us as many clues and details of the participants’ emotions as possible. I then drafted the <a className="text_link" href="https://docs.google.com/document/d/1HoD-fcEsiY-5p6EdLRqwugta3pMzVOn8o5NzBhJU-nY/edit">instructions</a> for participants</p>
                                       
                                      {this.state.research?
                                      (<>
                                         {/* HIDDEN CONTENT 👇 */}
+                                        <div className="hiden_content_switch_container text-center">
+                                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("research")}>Hide Research Details</button>
+                                        </div>
                                         <h6>Survey</h6>
                                         <p className="project_info">2 rounds, 43 and 34 responses. To get a big picture of what a typical commute looks like, as well as discover what tools commuters use to help themselves feel safer. Links to <a className="text_link" href="https://www.surveymonkey.com/r/YSP2NHY">survey1</a> & <a className="text_link" href="https://docs.google.com/forms/d/e/1FAIpQLSeqgzFVjsaIKsUXMP_KP9omzDy289nGPQyYrf4MyfEyFCTqGQ/viewform?usp=sf_link">survey2</a>.</p>
                                         <p>Our surveys were distributed electronically to classmates and colleagues who walk as part of their commute, and was disseminated to members of the University of Washington community through various Slack channels. After conducting our initial survey, we revised the questions based on the answers we received, in order to gather more relevant data from our second round.</p> 
@@ -406,6 +417,9 @@ class Nightkick extends React.Component {
                                     {this.state.synthesize?
                                      (<>
                                         {/* HIDDEN CONTENT 👇 */}
+                                        <div className="hiden_content_switch_container text-center">
+                                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("synthesize")}>Hide Syntheses</button>
+                                        </div>
                                         <h6>Affinity Diagram</h6>
                                         <p>We went through all the scripts and data together and use affinity diagram to group and synthesize insights.</p>
                                     <ImageZoom
@@ -511,6 +525,10 @@ class Nightkick extends React.Component {
                                  <section className="project_body" id="design">
                                     <h2>Design</h2>
                                     <h5>From Low to Medium Fidelity</h5>
+                                    
+                                    <h6>Lo-fidelity Prototypes & Concept Validation</h6>
+                                    
+                                    
                                     <p>We started with paper protypes to test the three ideas we have and how people are going to interact with them.</p>
                                     <Container>
                                         <Row>
@@ -536,12 +554,27 @@ class Nightkick extends React.Component {
                                         </Row>
                                     </Container>
                                     <div className="project_caption text-center">Paper prototypes and how we tested the three ideas</div>
-                                    <p>After paper prototyping and reprioritizing these three concepts based on our personas and design principles, we settled on combining a Community-Driven App with a Wearable Device. While we agreed the AR glasses concept was a great idea, we acknowledged that it would be too complex for our project scope and would likely be visually distracting for our users.</p>
-                                     
-                                    <p>Our medium-fidelity prototypes were to test different features of the wearable and the app and their interactions as a whole system.</p>
-                                    <h6>The Wearable</h6>
+                                    <p>After paper prototyping and reprioritizing these three concepts based on our personas and design principles, we settled on combining a <b>Community-Driven App with a Wearable Device.</b> </p>
+                                    <ImageZoom
+                                            image={{
+                                            src: '/images/nightkick/concept_validation.png',
+                                            alt: '',
+                                            className: 'project_illustration'
+                                            }}
+                                            
+                                    />
+                                   
+                                   <h6>Medium-fidelity Prototypes</h6>
+                                    
+                                    <p>Our medium-fidelity prototypes were to</p>
+                                    <ul>
+                                        <ol>1. test different features different features in usage scenarios</ol>
+                                        <ol>2. explore variations of interations</ol>
+                                        <ol>3. test the interations between the wearable and the app</ol>
+                                    </ul>
+                                    <li className="p-list">The Wearable</li>
                                     <p>In paper prototyping, we found that it was very hard to reach the clip-on on backpack and use it. Therefore, we shifted to a badge-like wearble with a clip at the back.</p>
-                                    <p>We developed interactive medium-fidelity prototypes and put many features on the wearable such a flashlight, siren, call 9–1–1 and notify contacts in order to test how users are going to use it in different scenarios and which are the most desirable feature.</p>
+                                    <p>We developed interactive medium-fidelity prototypes and put many features on the wearable to test how users are going to use it in different scenarios and which are the most desirable feature.</p>
                                     <ImageZoom
                                             image={{
                                             src: '/images/nightkick/me-fi_wearable.png',
@@ -550,8 +583,8 @@ class Nightkick extends React.Component {
                                             }}
                                             
                                     />
-                                    <h6>The App</h6>
-                                    <p>We started with defining the key features on the app. Since it was designed to work with the wearable, so it should include login & signup, an onboarding manual, a contact setting for the device and a route builder with different filters.</p>
+                                    <li className="p-list">The App</li>
+                                    <p>We started with defining the key features on the app: login & signup, an onboarding manual, a contact setting for the device and a route builder with different filters.</p>
                                     <ImageZoom
                                             image={{
                                             src: '/images/nightkick/app_features.jpg',
@@ -588,7 +621,7 @@ class Nightkick extends React.Component {
                                 <section className="project_body" id="evaluate">
                                     <h2>Evaluate</h2>
                                     <h5>Usability Testing</h5>
-                                    <p>We invited 3 participants to test Nightkick in 3 scenarios: a first-time user, commuters on a new route, and commuters on a familiar route. (Link to <a className="text_link" href="https://docs.google.com/document/d/1YPTgu-1kTpLU6OkzMlRnDkPBQQSHqWZz74nX7tHUCe0/edit?usp=sharing">the full report)</a></p>
+                                    <p>We invited 3 participants to test Nightkick in 3 scenarios: a first-time user, commuters on a new route, and commuters on a familiar route. (Link to <a className="text_link" href="https://docs.google.com/document/d/1YPTgu-1kTpLU6OkzMlRnDkPBQQSHqWZz74nX7tHUCe0/edit?usp=sharing">the full report</a>)</p>
                                     <Container>
                                         <Row>
                                             <Col xs={4}>
@@ -629,6 +662,14 @@ class Nightkick extends React.Component {
                                     </div>
                                     
                                     <p>Users did not use the call 911 button, and sometimes the flashlight and the siren on the wearable when they felt unsafe. They felt these features were too extreme for panic moments and were useless for dangerous situations. So in the final design, we got rid of all the safety-gear features and focused on <b>non-emergency</b> scenarios.</p>
+                                    <ImageZoom
+                                        image={{
+                                        src: '/images/nightkick/delete_features.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                    }}/>
+                                     <div className="project_caption">  We focused on non-emergency scenarios and got rid of call-911 button, flashlight and siren; we also improved the ways of response after users notify contacts</div>
+                                    
                                     <li className="p-list"><b>More features are needed to help people know more about new surroundings.</b></li>
                                     <div style={{ borderLeft: "solid #f8f8f8", paddingLeft: '30px'}}>
                                         <p className="project_info">“More likely that I would use it when I'm alone in a new city.”</p>
@@ -640,7 +681,7 @@ class Nightkick extends React.Component {
                                         alt: '',
                                         className: 'project_illustration'
                                     }}/>
-                                    <div className="project_caption text-center">  The Heatmap</div>
+                                    <div className="project_caption text-center">  The original heat map idea we generated after testing.</div>
 
                                            
                                     <li className="p-list"><b>Uncertain usage scenario and consequences of the 'notify' button</b></li>
@@ -677,7 +718,7 @@ class Nightkick extends React.Component {
                                             {/* <Col xs={2}></Col> */}
                                         </Row>
                                     </Container>
-                                    <div className="project_caption text-center">  Left: The manual; Right: Custom Notify Message</div>
+                                    <div className="project_caption text-center">  Left: the manual. Right: custom notify message</div>
                                     <li className="p-list"><b>Unclear end of location sharing</b></li>
                                     <div style={{ borderLeft: "solid #f8f8f8", paddingLeft: '30px'}}>
                                         <p className="project_info">“I expect that the app will stop sharing my location and send out an auto-notification to my friend that I arrived.”</p>
@@ -713,7 +754,7 @@ class Nightkick extends React.Component {
                                 </section>
                                 <section className="project_body" id="hifi">
                                     <h2>Design</h2>
-                                    <h5>Visual Design and Hi-fi Prototypes</h5>
+                                    <h5>Visual Design and Specification</h5>
                                     <h6>Moodboard & Visual System</h6>
                                     <p>I was responsible for the visual system of Nightkick. I created a moodboard and managed the final visual design system. We decided to use dark mode to better fit the usage scenario. (Icons credited to Material Design).</p>
                                     <Container>
@@ -737,20 +778,25 @@ class Nightkick extends React.Component {
                                         </Row>
                                     </Container>
                                    
-                                    <h6>Hi-fi Prototypes & Task Flow of the App</h6>
-                                    <p>After that I worked with another team member to develope hi-fi prototypes applying the visual system</p>
+                                    <h6>App Specifications</h6>
+                                    <p>After that I worked with another team member to develope hi-fi prototypes applying the visual system and specifying interactions</p>
                                     <ImageZoom
                                                 image={{
                                                 src: '/images/nightkick/taskflow-hi-fi.png',
                                                 alt: '',
                                                 className: 'project_illustration'
                                             }}/>
+                                    <div className="project_caption text-center">User Task Flow</div>
+                                    <ImageZoom
+                                                image={{
+                                                src: '/images/nightkick/specs.png',
+                                                alt: '',
+                                                className: 'project_illustration'
+                                        }}/>
+                                    <div className="project_caption">Design Specifications (view engineering details, visual design rationale and other design specifications in our <a className="text_link" href="https://drive.google.com/file/d/1F-PqgyP1GGQTS37YrUgyLODn_4SuA9tW/view?usp=sharing">design solution handbook</a>).</div>
                                     
-
-                                   
-
-                                     <h6>3D modeling of the wearable</h6>
-                                     <p>I also made 3D model made with Fusion 360 to show that the design of the wearable should be simple, small and modular.</p>
+                                     <h6>Wearable 3D modeling</h6>
+                                     <p>I also made 3D model made with Fusion 360 to show the size, texture, and shape of the wearable.</p>
                                     <ImageZoom
                                                 image={{
                                                 src: '/images/nightkick/3dmodeling.png',
@@ -766,36 +812,24 @@ class Nightkick extends React.Component {
                                 <h6>Key Features</h6>
                                     <ImageZoom
                                         image={{
-                                        src: '/images/nightkick/key_features_app.png',
+                                        src: '/images/nightkick/key_features.png',
                                         alt: '',
-                                        className: 'project_illustration_medium'
+                                        className: 'project_illustration'
                                     }}/>
-                                    <ImageZoom
-                                        image={{
-                                        src: '/images/nightkick/key_features_wearable.png',
-                                        alt: '',
-                                        className: 'project_illustration_medium'
-                                    }}/>
+                                  
                                     <h6>Video Prototype</h6>
                                     <p>To showcase the scenarios and the interactions between the wearable and the app, we made a video prototype.</p>
                                     <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
                                         <iframe style={{width:'100%',minHeight:'540px'}}  src="https://www.youtube.com/embed/GHMqMzMxpWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
-                                    <h6>Hi-fi Prototypes</h6>
+                                    <h6>Hi-fi Prototypes of the App</h6>
                                     <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
                                     <iframe style={{border: "none", width: "100%", height:"600px"}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWIV685BOxE1xbpfIrscxKw%2FTater-Trots%3Fnode-id%3D328%253A25941%26scaling%3Dscale-down" allowfullscreen></iframe>
                                      </div>
-                                     <h6>Design Specifications</h6>
-                                        <p>We also specified all our rationale behind the design and details of all features in the design handbook. I was responsible for the specification of the mobile app</p>
-                                        <ImageZoom
-                                                image={{
-                                                src: '/images/nightkick/specs.png',
-                                                alt: '',
-                                                className: 'project_illustration'
-                                        }}/>
-                                        <p>View engineering details, visual design rationale and other design specifications in our <a className="text_link" href="https://drive.google.com/file/d/1F-PqgyP1GGQTS37YrUgyLODn_4SuA9tW/view?usp=sharing">design solution handbook</a>.</p>
+                                    
+                                       
                                 </section>
-                                <section className="project_body" id="concerns">
+                                <section className="project_body" id="concern">
                                 <h2>Concerns</h2>
                                 <h6>Privacy issues</h6>
                                 <p>Utilizing location sharing as a feature causes vulnerability for users. In order to keep users' locations secure, we decided to use a “Heat Map” rather than share other users’ exact locations with each other.</p>
@@ -827,10 +861,10 @@ class Nightkick extends React.Component {
                                 <p>Our first versions were slightly too high-fidelity, and thus some of the responses we received from usability testing focused more on appearance and less on function. This was not our intended goal for the usability testing phase.</p>
                                 <h6>K.I.S.S.</h6>
                                 <p>Keep it Simple. With limited time and resources, we relied on this mantra to keep us moving forward on feasible features and directions.</p>
-                                <h6>Design with users and principles in mind</h6>
+                                <h6>Dissolve Conflicts with personas and design principles</h6>
                                 <p>Our research and personas were important foundations and guides, especially when we had disagreements or personal preferences to debate.</p>
                                 <h6>Design ethics</h6>
-                                <p>Many considerations came up during our design process. For example, our research found that many people felt unsafe by people who appeared to be experiencing homelessness. Even though trying to address this would fit within our design question, we decided that the risk of unintentional consequences from stereotyping were very high if we chose this path.</p>
+                                <p>Many considerations came up during our design process. For example, our research found that many people felt unsafe by people who appeared to be experiencing homelessness. Even though trying to address this would fit within our design question, we decided that the risk of unintentional consequences from stereotypes were very high if we chose this path.</p>
                             </section>
                             <section className="project_body" id="present">
                                 <h2>Bonus</h2>
