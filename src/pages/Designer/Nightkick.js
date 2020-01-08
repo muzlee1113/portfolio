@@ -52,12 +52,20 @@ class Nightkick extends React.Component {
                 <div className="project_overview_container" id="overview">
                     {/* <Container> */}
                         <Row>
-                            <Col sm={12} md={6}>
+                            <Col sm={12} md={5}>
                                 <div className="project_overview_title">Background</div>
                                 <div className="project_overview_content">In Autumn 2019, we built Nightkick, a modular wearable with mobile app that helps people feel safer when walking alone after dark as a group project for the User Centered Design course at the University of Washington.</div>
                                 
+                                
                             </Col>
-                            <Col sm={4} md={3}>
+                            <Col sm={12} md={3}>
+                                <div className="project_overview_title">Key Learnings</div>
+                                <div className="project_overview_content">Complete UX design process</div>
+                                <div className="project_overview_content">Teamwork</div>
+                                <div className="project_overview_content">Design Documentation</div>
+                                <div className="project_overview_content">Design Communication</div>
+                            </Col>
+                            <Col sm={4} md={2}>
                             
                                 <div className="project_overview_title">My Role</div>
                                 <div className="project_overview_content">User Research</div>
@@ -67,9 +75,9 @@ class Nightkick extends React.Component {
                                 <div className="project_overview_content">Visual Design</div>
                                 <div className="project_overview_content">Prototyping</div>
                             </Col>
-                            <Col sm={4} md={3}>
+                            <Col sm={4} md={2}>
                             
-                                <div className="project_overview_title">Team</div>
+                                <div className="project_overview_title">Teammates</div>
                                 <div className="project_overview_content">Bridgett Zayas</div>
                                 <div className="project_overview_content">Devin Ajimine</div>
                                 <div className="project_overview_content">Nora Carr</div>

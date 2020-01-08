@@ -18,7 +18,7 @@ const breakpointColumnsObj = {
 class Play extends React.Component {
     render(){
         let graphics = []
-        for(let i = 27; i>=0; i--){
+        for(let i = 28; i>=0; i--){
             let graphic_obj = {
                 url: '/images/others/'+i+'.png',
                 overlaySrc: '/images/others/thumbnail/'+i+'.png'

@@ -553,15 +553,23 @@ article {
 }
 
 #imgReadwithMe{
-  background-color: #BEC8CF
+  background-color: #EEF1F3
+}
+
+#imgMB{
+  background-color: #FDF6F3
+}
+
+#imgSW{
+  background-color: #E2FAF7
 }
 
 #imgPhotome{
-  background-color: #FED9DD
+  background-color: #FFF4F5
 }
 
 #imgWeather{
-  background-color: #8EA1BA
+  background-color: #CBD6E5
 }
 
 #imgLightup{
@@ -580,9 +588,6 @@ article {
   background-color: #F1EFED
 }
 
-#imgMB{
-  background-color: #A5A1A0;
-}
 #imgTeacher{
   background-color: #77B6FF;
 }
@@ -752,7 +757,7 @@ li, ol{
   /* margin-bottom: -1.25em; */
   font-weight: 500;
   color: black;
-  letter-spacing: 0.06em;  
+  letter-spacing: 0.04em;  
 }
 
 .footer_content{

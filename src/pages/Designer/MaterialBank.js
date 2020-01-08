@@ -469,7 +469,7 @@ function MaterialBank() {
             
                             
 
-            <ProjectPagination prevUrl="/work/nightkick" prevName="Nightkick" nextUrl="/work/photome" nextName="PhotoMe"/>
+            <ProjectPagination prevUrl="/work/nightkick" prevName="Nightkick" nextUrl="/work/sw" nextName="Seattle Works"/>
 
             <BackToTopBtn />
      
