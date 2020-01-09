@@ -12,7 +12,7 @@ export default function WorkSmallCard (props) {
     return (<>
            <article>
            <Fade bottom>
-                    <Link to="/work/materialbank">
+                    <Link to={props.url}>
                         <div className="cardcontainer">
                             <img alt='' className="article-img" src={process.env.PUBLIC_URL+props.imgUrl} alt=" "/>
                             <div className="overlay" style={{backgroundColor: props.bgColor}}>
