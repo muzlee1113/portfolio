@@ -1071,12 +1071,20 @@ li, ol{
 }
 
 
-.project_image_model{
-  max-width: 100%;
+.project_image_model_portrait{
+  height: 100%;
+  max-width: 90vw;
   display: block;
   margin: 0 auto 0;
+  max-height: 90vh;
+  /* object-fit: cover */
+}
 
-  /* width: 100%; */
+.project_image_model{
+  width: 100%;
+  max-width: 90vw;
+  display: block;
+  margin: 0 auto 0;
   max-height: 90vh;
   /* object-fit: cover */
 }

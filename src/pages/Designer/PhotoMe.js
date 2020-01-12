@@ -3,6 +3,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import BackToTopBtn from "../../components/BackToTopBtn"
 import ProjectPagination from '../../components/ProjectPagination'
+import ImageZoom from 'react-medium-image-zoom'
 
 
 
@@ -75,13 +76,46 @@ function PhotoMe() {
                     <h5>Why do people fail to take satisfactory portraits?</h5>
                     <p>Twelve respondents were interviewed to gain an understanding of the current process of photo shooting. Meanwhile, I also conducted passive observations in a gallery and park to find out how people take pictures for each other.</p>
                     <p>A typical unsatisfactory portrait shooting experience can be divided in to seven steps as below, some of which are reversible:</p>
-                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/storyboard_vertical.png"} />
+                   
+                    <ImageZoom
+                        image={{
+                            src: '/images/PhotoMe/storyboard_vertical.png',
+                            alt: '',
+                            className: 'project_illustration'
+                        }}
+
+                    />
                     <p>Therefore, the reasons why people fail to take satisfactory portraits can be summarized as follow:</p>
-                    <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/insight.png"} />
+                    <ImageZoom
+                        image={{
+                            src: '/images/PhotoMe/insight.png',
+                            alt: '',
+                            className: 'project_illustration_small'
+                        }}
+
+                    />
+                   
                     <p>And indeed, most of the existing solutions are targeting some of these problem areas, except the one related to <b>communication</b>:</p>
-                    <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/PhotoMe/competition_analysis.png"} />
+                    <ImageZoom
+                        image={{
+                            src: '/images/PhotoMe/competition_analysis.png',
+                            alt: '',
+                            className: 'project_illustration_medium'
+                        }}
+
+                    />
+                   
                     <p>From the journey map, it is clear that communication takes a large part in the process. So I sifted through the scripts from the lens of communication, and two particular quotes coming from a couple attracted my attention:</p>
-                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/quote.png"} />
+                    <ImageZoom
+                        image={{
+                            src: '/images/PhotoMe/quote.png',
+                            alt: '',
+                            className: 'project_illustration'
+                        }}
+
+                    />
+                   
+                    
                     <p>I realized that the key issue was not the nature of the scene nor the photographer's skill. The photographer knew exactly the angle, the light and the composition that he wanted for his "good" picture, but he didn't know or understand what she wanted for her good picture, because she failed to convey her expectation or he failed to grasp it.</p>
                     <p>The biggest design opportunity I discovered lies in <b>communication</b>. So I reframed the problem as <b>why do people fail to convey or decode information in the photo-taking process? </b></p>
                 </section>
@@ -92,12 +126,28 @@ function PhotoMe() {
                     <h5>Why do people fail to convey or decode information in the photo-taking process?</h5>
                     <h6>1. People have no place to start the talk without a clear expectation.</h6>
                     <p>The starting point of the photo-taking process, as well as the communication, is the subject's expectation of the picture, what it will look like. However, some subjects don't have a clear expectation.</p>
-                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/quote_2.png"} />
+                    <ImageZoom
+                        image={{
+                            src: '/images/PhotoMe/quote_2.png',
+                            alt: '',
+                            className: 'project_illustration'
+                        }}
+
+                    />
+                  
                     <p>Even if the subject holds a clear envision, it is often different from the photographer's. That's why communication becomes so essential a step in this process.</p>
                     <div className="divider"></div>
                     <h6>2. People lack the common ground on which they can quickly and explicitly communicate.</h6>
                     <p>Photography is complicated. Conveying one's expectation or instructing other how to take the picture involves a lot of detailed and subtle information, such as light, angle, composition, and so on. The subject often fails to give such detailed instruction all in once. So the photo taking process becomes frustrating:</p>
-                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/quote_3.png"} />
+                    <ImageZoom
+                        image={{
+                            src: '/images/PhotoMe/quote_3.png',
+                            alt: '',
+                            className: 'project_illustration'
+                        }}
+
+                    />
+                   
                     <p>Even if the subject manages to give some concrete instructions, for the photographer, to understand what those mean and apply them into the photo-taking process still <b>involves a lot of translations</b>. People use different words to refer to the same thing. When talking about 'Don't take the picture from a low angle' or 'Stand closer to me', the terms 'low angle' or 'closer' actually requires a clear and explicit definition. But when people talk before taking the picture, there is no time for them to clarify all the languages they use.</p>
                 </section>
 
@@ -119,7 +169,15 @@ function PhotoMe() {
                 <section className="project_body" id="list-item-5">
                     <h2>Final Design</h2>
                     <h5>How might we help people better communicate in the photo taking process?</h5>
-                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/wireframe.png"} />
+                    <ImageZoom
+                        image={{
+                            src: '/images/PhotoMe/wireframe.png',
+                            alt: '',
+                            className: 'project_illustration'
+                        }}
+
+                    />
+                   
                     
                     <h6>1. Manage Expectation</h6>
                     <p>· Use pictures generated in the community to inspire and visualize expectation.</p>

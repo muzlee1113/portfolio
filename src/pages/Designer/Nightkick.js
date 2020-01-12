@@ -11,6 +11,7 @@ import ImageZoom from 'react-medium-image-zoom'
 class Nightkick extends React.Component {
     state = {
         modalShow: false,
+        modalDirection: false,
         research: false,
         synthesize: false,
         // setModalShow:false,
@@ -23,13 +24,14 @@ class Nightkick extends React.Component {
             [part]: !this.state[part]
         })
     }
-    triggerModel = (url) => {
+    triggerModel = (url, direction) => {
 
         this.setState({
             url: url,
         }, () => {
             this.setState({
-                modalShow: true
+                modalShow: true,
+                modalDirection: direction,
             })
         })
     }
@@ -740,7 +742,7 @@ class Nightkick extends React.Component {
                                                     alt: '',
                                                     className: 'project_illustration'
                                                 }}/>
-                                    <div className="project_caption text-center">  Clearer state of location sharing. <a className="text_link" onClick={() => this.triggerModel("/images/nightkick/exit.gif")}>Click here to watch the interaction.</a></div>
+                                    <div className="project_caption text-center">  Clearer state of location sharing. <a className="text_link" onClick={() => this.triggerModel("/images/nightkick/exit.gif", true)}>Click here to watch the interaction.</a></div>
 
                                  
                                  
@@ -898,6 +900,7 @@ class Nightkick extends React.Component {
                 show={this.state.modalShow}
                 onHide={() => this.setState({ modalShow: false })}
                 url={this.state.url}
+                direction={this.state.modalDirection}
                 />
                 <BackToTopBtn />
                 

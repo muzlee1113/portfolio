@@ -166,12 +166,12 @@ class IoTNewNew extends React.Component {
                                     <li className="uk-l project_brief_content"><a href="#secondary">Secondary Research</a></li>
                                     <li className="uk-l project_brief_content"><a href="#contextual">User Research</a></li>
                                     <div className="project_brief_title">Q1 Ensure System Health</div>
-                                    <li className="uk-l project_brief_content"><a href="#syn1">Synthesize</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#syn1">Workflow & Problems</a></li>
                                     <li className="uk-l project_brief_content"><a href="#ideate1">Ideate</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#dashboard">Design #1 Dashboards</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#notification">Design #2 Notification</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#notification">Design #1 Notification</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#dashboard">Design #2 Dashboards</a></li>
                                     <div className="project_brief_title">Q2 Operate The System</div>
-                                    <li className="uk-l project_brief_content"><a href="#syn2">Synthesize</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#syn2">Workflow & Problems</a></li>
                                     <li className="uk-l project_brief_content"><a href="#ideate2">Ideate</a></li>
                                     <li className="uk-l project_brief_content"><a href="#light">Design Lighting Control</a></li>
                                     <li className="uk-l project_brief_content"><a href="#usability">Usability Testing</a></li>
@@ -327,23 +327,10 @@ class IoTNewNew extends React.Component {
                                     
                                     <h2>Ideate</h2>
                                     <h5>How might we help administrators notice and react to system problem quickly and coordinate problem shooting process efficiently?</h5>
-                                    <p>After delivering my findings to the PM, we decided to start with designing dashboards that provides administrators with real-time system data and actionable insights, and a proactive notification system that alerts them to abnormal data and leads them through the troubleshooting process.</p>
+                                    <p>After delivering my findings to the PM, we decided to start with designing a proactive notification system that alerts them to abnormal data and leads them through the troubleshooting process, and dashboards that provides administrators with real-time system data and actionable insights.</p>
                                     <Container>
                                         <Row>
-                                            <Col xs={4}>
-                                            <div className="project_square_illustration_container">
-                                                <ImageZoom
-                                                    image={{
-                                                    src: '/images/IoT/dashboard_ideate.png',
-                                                    alt: '',
-                                                    className: 'project_square_illustration'
-                                                    }}
-                                                
-                                                />
-                                                                
-                                            </div>   
-                                            <div className="project_caption text-center">Dashboard</div>                      
-                                            </Col>
+                                          
                                             <Col xs={4}>
                                                 <div className="project_square_illustration_container">
                                                     <ImageZoom
@@ -371,13 +358,181 @@ class IoTNewNew extends React.Component {
                                                 </div> 
                                                 <div className="project_caption text-center">Workflow Management Tool</div>  
                                             </Col>
+                                            <Col xs={4}>
+                                            <div className="project_square_illustration_container">
+                                                <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/dashboard_ideate.png',
+                                                    alt: '',
+                                                    className: 'project_square_illustration'
+                                                    }}
+                                                
+                                                />
+                                                                
+                                            </div>   
+                                            <div className="project_caption text-center">Dashboard</div>                      
+                                            </Col>
                                         </Row>
                                     </Container>
                                 
                                 
                                 </section>
-                                <section  className="project_body" id="dashboard">
+                                
+                                           
+
+                                <section  className="project_body" id="notification">
                                     <h2>Design #1</h2>
+                                    <h5>Notification Center: proactive custom alerts & workflow management</h5>
+                                    <h6>User flow & wireframe</h6>
+                                    <p>Based on user workflow, the new system should support the flowing user flow.</p>
+                                    <ImageZoom
+                                        image={{
+                                        src: '/images/IoT/alert_wireframe.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                        }}
+                                    
+                                    />
+                                    <h6>Design Specifications</h6>
+                                    <p>When wireframing, I further explored:</p>
+                                        <Container>
+                                            <Row>
+                                                
+                                                <Col xs={4}>
+                                                <div className="project_square_illustration_container">
+                                                    <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/alert_notification_sketch.png',
+                                                    alt: '',
+                                                    className: 'project_square_illustration'
+                                                    }}
+                                                
+                                                    />
+                                                
+                                                </div>
+                                                <div className="project_caption text-center">Defining Ways of notifications</div>
+
+                                                </Col>
+                                                <Col xs={4}>
+                                                    <div className="project_square_illustration_container">
+                                                <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/alert_workflow.png',
+                                                    alt: '',
+                                                    className: 'project_square_illustration'
+                                                    }}
+                                                
+                                                />
+                                                </div>
+                                                <div className="project_caption text-center">Synthesizing and Visualizing Troubleshooting Workflows</div>
+
+                                                </Col>
+                                                <Col xs={4}>
+                                                <div className="project_square_illustration_container">
+                                                <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/alert_status_sketch.png',
+                                                    alt: '',
+                                                    className: 'project_square_illustration'
+                                                    }}
+                                                
+                                                />
+                                                </div>
+                                                <div className="project_caption text-center">Defining & Visualizing 4 Alert States</div>
+
+                                                </Col>
+                                            </Row>
+                                     </Container>
+
+
+
+
+                                     {this.state.hide3?(<>
+                                            <div className="hiden_content_switch_container text-center">
+                                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("hide3")}>See Detailed Process</button>
+                                            </div></>):(<>
+                                            <div className="hiden_content_switch_container text-center">
+                                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("hide3")}>Hide Detailed Process</button> 
+                                            </div> 
+                                              {/* ----------------hidden 👇---------------------- */}     
+                                            
+                                            <h6>Sketching Ways to Alert</h6>
+                                            <p>I brainstormed different ways of notification and sorted them according to degrees of disturbance</p>
+                                                <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/alert_notification_sketch.png',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                }}/>
+                                            <p>To avoid information overload, we decided to allow users to customize the ways for different types of alerts (we later defined as 3 types) so that they can prioritize.</p>
+                                            <h6>Synthesizing and visualizing trouble shooting workflow</h6>
+                                            <p>I revisited the scripts of contextual inquiries and consulted the administrators again about some most frequent problem-shooting process. We ended up with three main types: device breakdown, abnormal data and citizen requests. We synthesized their workflows and classified the steps by whether they involved human interferences for automation. We finally defined the following user flow and specified the role of the system and each of the participants.</p>
+                                           
+                                                <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/alert_workflow.png',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                }}/>
+                                                
+                                            <p>Since for the alpha version we are not going to include workflow customization, the second question I ran into was how to display the workflow and how users can interact with it. I ideated and developed two layouts for the interface:</p>
+                                            <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/workflow_display.png',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                    }}
+                                                
+                                                />
+                                            <p>Eventually, we moved on with the left flow chart since the workflow might eventually be very long and even with branches. A horizontal flowchart cannot take as many information as the vertical one.</p>
+                                            <h6>Specify alert states with user flow</h6>
+                                            <p>I mapped the new user flow as followed and found that the system should specify the states of the alert/task according to the step it is at in the process. Therefore, I defined 4 states of the alert/task and provide users different ways to keep track of the records.</p>
+                                                <ImageZoom
+                                                    image={{
+                                                    src: '/images/IoT/alert_status_sketch2.png',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                }}/>
+                                                   
+                                            
+                                            {/* ----------------hidden 👆---------------------- */}
+                                            <div className="hiden_content_switch_container text-center">
+                                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("hide3")}>Hide Detailed Process</button>
+                                            </div>  
+                                            </>)}
+                                </section>
+                                <section className="project_body" id="deliver2">
+                                    <h2>Deliver #1</h2>
+                                    <h5>Hi-fidelity Prototypes</h5>    
+                                    <ImageZoom
+                                        image={{
+                                        src: '/images/IoT/notification_center_final1.png',
+                                        alt: '',
+                                        className: ''
+                                        }}
+                                    
+                                    />
+                                    <ImageZoom
+                                        image={{
+                                        src: '/images/IoT/notification_center_final2.png',
+                                        alt: '',
+                                        className: ''
+                                        }}
+                                    
+                                    />
+                                    <ImageZoom
+                                        image={{
+                                        src: '/images/IoT/notification_center_final3.png',
+                                        alt: '',
+                                        className: ''
+                                        }}
+                                    
+                                    />
+                                    <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/alert.gif")}>click here to watch the interaction.</Button></div> 
+                                        
+                                </section>
+                                <section  className="project_body" id="dashboard">
+                                    <h2>Design #2</h2>
                                     <h5>Data Dashboards: monitoring & spoting issues</h5>
                                     <p>What I did to tackle this design challenge includes: learning about available data and metrics, matching what we have with what users need by sketching, evaluating and prototyping.</p>
 
@@ -460,7 +615,7 @@ class IoTNewNew extends React.Component {
                                                     }}
 
                                                 />
-                                                <h6>Testing</h6>
+                                                <h6>Legibility Testing</h6>
 
                                                 <p>Later, I created a clickable testing page with my paper prototypes and Axure, and asked my colleagues from the administrative team to rank the graphs according to importance and legibility. I tested them with administrators in my company as an alternative to the real users since they shared a similar mindset.</p>  
                                                 <ImageZoom
@@ -492,7 +647,7 @@ class IoTNewNew extends React.Component {
                                             </>)}
                                 </section>
                                 <section className="project_body" id="deliver1">   
-                                    <h2>Deliver #1</h2>
+                                    <h2>Deliver #2</h2>
                                     <h5>Hi-fidelity Prototypes</h5>
                                     <p>I designed four different dashboards for the system and various devices and also their interations with other pages.</p>
                                         <ImageZoom
@@ -537,7 +692,7 @@ class IoTNewNew extends React.Component {
                                                         
                                                         />
                                                         
-                                                        <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/homepage_dashboard_move.gif")}>Click here to watch it move.</Button></div>
+                                                        <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/homepage_dashboard_move.gif")}>Click here to watch the interaction (gif of the website).</Button></div>
                                                         <ImageZoom
                                                             image={{
                                                             src: '/images/IoT/env_sensor_dashboard.png',
@@ -547,7 +702,7 @@ class IoTNewNew extends React.Component {
                                                         
                                                         />
 
-                                                        <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/env_sensor_dashboard_move.gif")}>Click here to watch it move.</Button></div>
+                                                        <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/env_sensor_dashboard_move.gif")}>Click here to watch the interaction </Button></div>
                                                         <ImageZoom
                                                             image={{
                                                             src: '/images/IoT/manhole_cover_dashboard.png',
@@ -556,8 +711,7 @@ class IoTNewNew extends React.Component {
                                                             }}
                                                         
                                                         />
-                                                        <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/manhole_cover_dashboard_move.gif")}>Click here to watch the interaction.</Button></div>
-                                                        
+                                                       
                                                        
                                                         <ImageZoom
                                                                 image={{
@@ -581,143 +735,6 @@ class IoTNewNew extends React.Component {
                                                                               
 
                             {/* ------------- */}
-                                           
-
-                                <section  className="project_body" id="notification">
-                                    <h2>Design #2</h2>
-                                    <h5>Notification Center: proactive custom alerts & workflow management</h5>
-                                    <p>When specifying the design, I further explored:</p>
-                                        <Container>
-                                            <Row>
-                                                
-                                                <Col xs={4}>
-                                                <div className="project_square_illustration_container">
-                                                            <ImageZoom
-                                                            image={{
-                                                            src: '/images/IoT/alert_notification_sketch.png',
-                                                            alt: '',
-                                                            className: 'project_square_illustration'
-                                                            }}
-                                                        
-                                                        />
-                                                
-                                                </div>
-                                                <div className="project_caption text-center">Sketching Ways to Alert</div>
-
-                                                </Col>
-                                                <Col xs={4}>
-                                                    <div className="project_square_illustration_container">
-                                                <ImageZoom
-                                                    image={{
-                                                    src: '/images/IoT/alert_workflow.png',
-                                                    alt: '',
-                                                    className: 'project_square_illustration'
-                                                    }}
-                                                
-                                                />
-                                                </div>
-                                                <div className="project_caption text-center">Synthesizing 3 Troubleshooting Workflows</div>
-
-                                                </Col>
-                                                <Col xs={4}>
-                                                <div className="project_square_illustration_container">
-                                                <ImageZoom
-                                                    image={{
-                                                    src: '/images/IoT/alert_status_sketch.png',
-                                                    alt: '',
-                                                    className: 'project_square_illustration'
-                                                    }}
-                                                
-                                                />
-                                                </div>
-                                                <div className="project_caption text-center">Defining & Visualizing 4 Alert States</div>
-
-                                                </Col>
-                                            </Row>
-                                     </Container>
-
-
-
-
-                                     {this.state.hide3?(<>
-                                            <div className="hiden_content_switch_container text-center">
-                                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("hide3")}>See Detailed Process</button>
-                                            </div></>):(<>
-                                            <div className="hiden_content_switch_container text-center">
-                                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("hide3")}>Hide Detailed Process</button> 
-                                            </div> 
-                                              {/* ----------------hidden 👇---------------------- */}     
-                                            <h6>Ideation</h6>
-                                            <p>Since I synthesized the problem-shooting workflow into three phases: notice, understand, act, I then came up with more focused design questions for brainstorming</p>
-                                                <ImageZoom
-                                                    image={{
-                                                    src: '/images/IoT/notification_hmw.png',
-                                                    alt: '',
-                                                    className: 'project_illustration'
-                                                    }}
-                                                
-                                                />
-                                            <h6>Sketching</h6>
-                                            <p>I brainstormed different ways of notification and sorted them according to degrees of disturbance</p>
-                                                <ImageZoom
-                                                    image={{
-                                                    src: '/images/IoT/alert_notification_sketch.png',
-                                                    alt: '',
-                                                    className: 'project_illustration_small'
-                                                }}/>
-                                            <h6>Second-round research & synthesizing</h6>
-                                            <p>I revisited the scripts of contextual inquiries and consulted the administrators again about some most frequent problem-shooting process. Then, synthesized them into three workflows and classified them according to whether they involved human interference.</p>
-                                                <ImageZoom
-                                                    image={{
-                                                    src: '/images/IoT/alert_workflow.png',
-                                                    alt: '',
-                                                    className: 'project_illustration'
-                                                }}/>
-                                            <h6>Alert states design</h6>
-                                            <p>I mapped the new user flow as followed and found that the system should specify the states of the alert/task according to the step it is at in the process. Therefore, I defined 4 states of the alert/task and provide users different ways to keep track of the records.</p>
-                                                <ImageZoom
-                                                    image={{
-                                                    src: '/images/IoT/alert_status_sketch2.png',
-                                                    alt: '',
-                                                    className: 'project_illustration_medium'
-                                                }}/>
-                                            
-                                            {/* ----------------hidden 👆---------------------- */}
-                                            <div className="hiden_content_switch_container text-center">
-                                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("hide3")}>Hide Detailed Process</button>
-                                            </div>  
-                                            </>)}
-                                </section>
-                                <section className="project_body" id="deliver2">
-                                    <h2>Deliver #2</h2>
-                                    <h5>Hi-fidelity Prototypes</h5>    
-                                    <ImageZoom
-                                        image={{
-                                        src: '/images/IoT/notification_center_final1.png',
-                                        alt: '',
-                                        className: ''
-                                        }}
-                                    
-                                    />
-                                    <ImageZoom
-                                        image={{
-                                        src: '/images/IoT/notification_center_final2.png',
-                                        alt: '',
-                                        className: ''
-                                        }}
-                                    
-                                    />
-                                    <ImageZoom
-                                        image={{
-                                        src: '/images/IoT/notification_center_final3.png',
-                                        alt: '',
-                                        className: ''
-                                        }}
-                                    
-                                    />
-                                    <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/alert.gif")}>click here to watch the interaction.</Button></div> 
-                                        
-                                </section>
                         </div>
 
                     </Col>
@@ -744,10 +761,24 @@ class IoTNewNew extends React.Component {
 <Row>
     <Col md={12} lg={3}></Col>
     <Col md={12} lg={9}>
+  
         <section className="project_body" id="syn2">
             <h2>Synthesize</h2>
             <h5>Street Light Control Workflows & Problem Space</h5>
-            <p>According to the interviews, I found that why and how they control the the lighting system can be classified into three types which follow different workflows:</p>
+            <h6>Administrators were given complex tools to control devices</h6>
+            <p>Here is a management tool for the administrators controlling the highway light system. The tool is no doubt:</p>
+                <li>hierarchically intricated, with multiple layers of information</li>
+                <li>viusally overloaded, with redundant information and unnecessary visualization</li>
+                <li>hard to use, required multiple clicks to locate one device.</li>
+                
+    
+        
+            <div className="frame_wrapper">
+                <iframe className="project_illustration_medium" style={{border: "none"}} width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F31wTxeoPe74AqBg83CWTB3%2FUntitled%3Fnode-id%3D4%253A25%26scaling%3Dmin-zoom" allowfullscreen></iframe>
+            </div>
+            <div className="project_caption">This was a tool designed specifically for controlling highway lights. The administrator needed to go down 6 layers and many steps to control an individual light or lights on specific segments of the highway. When they walked us through, one administrator told us that they found it difficult to find the light they wanted to control, but they had gradually got used to it.</div>
+            <h6>Different purposes, different workflows, different unmet needs</h6>
+            <p>According to the interviews, I found that why and how they control the the lighting system can be classified into three types which follow different workflows. However, the exiting system didn't distinguish these types, let alone supporting their different workflows.</p>
             <ImageZoom
                 image={{
                 src: '/images/IoT/control_lighting.png',
@@ -784,10 +815,50 @@ class IoTNewNew extends React.Component {
         <section  className="project_body" id="light">
             <h2>Design</h2>
             <h5>Street Light Control System</h5>
-            <p>When specifying the design, I further explored:</p>
+            <h6>User flows and Wireframes</h6>
+            <ImageZoom
+                image={{
+                    src: '/images/IoT/lighting_wireframes.png',
+                    alt: '',
+                    className: 'project_illustration'
+                }}
+
+            />
+            
+            <h6>Design Specifications</h6>
+            <p>When prototyping, I further explored:</p>
                 <Container>
                     <Row>
+                        <Col xs={4}>
+                        <div className="project_square_illustration_container">
+                        <ImageZoom
+                            image={{
+                            src: '/images/IoT/bulkcontrol/retrieve_buttontop.png',
+                            alt: '',
+                            className: 'project_square_illustration'
+                            }}
                         
+                        />
+                        </div>
+                        <p className="project_caption text-center">Bulk Control</p>
+
+                         
+                        </Col>
+                        <Col xs={4}>
+                        <div className="project_square_illustration_container">
+                                    <ImageZoom
+                                    image={{
+                                    src: '/images/IoT/bulkcontrol/filters.png',
+                                    alt: '',
+                                    className: 'project_square_illustration'
+                                    }}
+                                
+                                />
+                        
+                        </div>
+                        <p className="project_caption text-center">Advanced Filters</p>
+
+                        </Col>
                         <Col xs={4}>
                         <div className="project_square_illustration_container">
                                     <ImageZoom
@@ -803,45 +874,89 @@ class IoTNewNew extends React.Component {
                         <p className="project_caption text-center">Feasibility Analysis</p>
 
                         </Col>
-                        <Col xs={4}>
-                            <div className="project_square_illustration_container">
-                        <ImageZoom
-                            image={{
-                            src: '/images/IoT/vis_lighting_sketch.png',
-                            alt: '',
-                            className: 'project_square_illustration'
-                            }}
+                       
                         
-                        />
-                        </div>
-                        <p className="project_caption text-center">Visualizing Lighting Plan</p>
-
-                        </Col>
-                        <Col xs={4}>
-                        <div className="project_square_illustration_container">
-                        <ImageZoom
-                            image={{
-                            src: '/images/IoT/bulk_control_sketch.png',
-                            alt: '',
-                            className: 'project_square_illustration'
-                            }}
-                        
-                        />
-                        </div>
-                        <p className="project_caption text-center">5 Ways for Bulk Control</p>
-
-                         
-                        </Col>
                     </Row>
                 </Container>
+            
                 {this.state.hide4?(<>
                             <div className="hiden_content_switch_container text-center">
-                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("hide4")}>See Detailed Process</button>
+                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("hide4")}>See Detailed Exploration</button>
                             </div></>):(<>
                             <div className="hiden_content_switch_container text-center">
-                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("hide4")}>Hide Detailed Process</button> 
+                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("hide4")}>Hide Detailed Exploration</button> 
                             </div> 
                                 {/* ----------------hidden 👇---------------------- */}     
+                            
+                                <h6>Bulk Control Specification</h6>
+                                <p>The biggest challenge in designing the this flow is to specify how users can select multiple devices, retrieve devices and get responses after controls.</p>
+                                <p>To control devices in group, users need to follow this flow:</p>
+                                <ImageZoom
+                                        image={{
+                                        src: '/images/IoT/bulkcontrol/bulkcontrol_userflow.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                        }}
+                                    
+                                    />
+                                <p>Therefore, I experimented with different options:</p>
+                                
+                                
+                                <li className="p-list">Select Devices</li>
+                                <p className="project_info">I developed four ways to select multiple devices. Since administrators usually control lights by areas, the 'selet-a-area' buttons and multi-selection on map were adopted for administrators to specify group of lights on map view, and the tree diagram was used on light plan set up where administrators can apply a light plan to large and multiple areas.</p>
+                                <ImageZoom
+                                        image={{
+                                        src: '/images/IoT/bulkcontrol/select.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                        }}
+                                    
+                                    />
+                                
+
+
+                                <li className="p-list">Retrieve Selected Device</li>
+                                <p className="project_info">The questions of specifying the information retrieval process lie in where the "selected device" button should locate and where and how to diplay the selected device.</p>
+                                <p className="project_info">I wireframed four locations of the button. We finally decided on the last option since it's the most straightforward version.</p>
+                                <ImageZoom
+                                        image={{
+                                        src: '/images/IoT/bulkcontrol/retrieve_button.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                        }}
+                                    
+                                    />
+                                <li className="p-list">Check Selected Device</li>
+                                <p className="project_info">As for how to display selected devices. I created the following wireframes. We eventually decided to jump to new page once user click view selected device to give more space for information display so that user can clearly check what are slected and control the devices. In addition, grouped table proved to be the most efficient and clear way to display the selected devices.</p>
+                                <ImageZoom
+                                        image={{
+                                        src: '/images/IoT/bulkcontrol/retrieve_display.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                        }}
+                                    
+                                    />
+
+                                    <li className="p-list">Control Response</li>
+                                <p className="project_info">The administrators should be careful about adjusting city infrastructure setting. Therefore, an alert will pop up once they apply a new setting. It is possible that control of devices may run into some problems which administrator who sitting in office are hard to notice. Thus, after applying the setting, a clear response should show the number of successful settings and errors to support trouble shooting and guarantee effective control.</p>
+                                <ImageZoom
+                                        image={{
+                                        src: '/images/IoT/bulkcontrol/response.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                        }}
+                                    
+                                    />
+                            <h6>Advanced Filters</h6>
+                            <p>For selecting street lights on map view, administrators can narrow down the scope by the area and road filters. However, they also need to specify types of lights. To support this, I included advanced filters in the selected device page. The problem is how to display various options and, at the same time, make sure that administrators know what are selected.</p>
+                            <ImageZoom
+                                        image={{
+                                        src: '/images/IoT/bulkcontrol/advancedFilters.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                        }}
+                                    
+                                    />
                             <h6>Feasibility Analysis</h6>
                             <p>I talked to engineers to ensure that it was possible to automate the default settings with light sensors, CCTV monitor and cloud processing. I learned about the device and the computing process on cloud, and confirmed that overwriting default setting could be done on cloud:</p>
 
@@ -854,27 +969,21 @@ class IoTNewNew extends React.Component {
                                 
                                 />
                             <p className="project_caption">Actually, street lights do not contain local work plan, but rely on the cloud application's command after it processes the sensor data. Moreover, the street lights work according to ‘a 24-hour periodic timer’ and will maintain its status (on or off) until the timer match the time in the command.</p>
-                            <h6>Visualizing Lighting Plan</h6>
+                            {/* <h6>Visualizing Lighting Plan</h6>
                             <p>I brainstormed different ways to visualize lighting plan of a day and a month, and decided to use bar chart.</p>
                                 <ImageZoom
                                     image={{
                                     src: '/images/IoT/vis_lighting_sketch.png',
                                     alt: '',
                                     className: 'project_illustration_medium'
-                                }}/>
-                            <h6>Sketching Ways for Bulk Control</h6>
-                            <p>I sketched 5 different ways for bulk control and delivered them to design critique. I was later inspired by a visual designer's proposal to allow multi-selecting on map.</p>
-                                <ImageZoom
-                                    image={{
-                                    src: '/images/IoT/bulk_control_sketch.png',
-                                    alt: '',
-                                    className: 'project_illustration'
-                                }}/>
+                                }}/> */}
+                            
+                            
                             
                             
                             {/* ----------------hidden 👆---------------------- */}
                             <div className="hiden_content_switch_container text-center">
-                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("hide4")}>Hide Detailed Process</button>
+                                <button class="uk-button uk-button-default uk-width-1-1" onClick={()=>this.toggleHiddenContent("hide4")}>Hide Detailed Exploration</button>
                             </div>  
                             </>)}
         </section>
@@ -900,7 +1009,7 @@ class IoTNewNew extends React.Component {
                             }}
                         
                 />
-                    <p>2. Administrators would like to firstly set the time to turn on the lights (first day afternoon) and then the time to turn them off (next morning). So I changed the order of the inputs.</p>                    
+                    <p>2. Administrators would like to firstly set the time to turn on the lights (first day afternoon) and then the time to turn them off (next morning), so I changed the order of the inputs. Also, setting by clicking the graph actually took longer time and more clicks. Therefore, I got rid of this feature and used the bar chart only for displaying settings.</p>                    
         </section>
         <section className="project_body" id="deliver3">
             <h2>Deliver</h2>
@@ -922,7 +1031,7 @@ class IoTNewNew extends React.Component {
                 }}
             
             />
-                <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/bulkControl.gif")}>click here to watch the interaction.</Button></div>  
+                <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/bulkControl.gif")}>click here to watch the interaction (gif of the website).</Button></div>  
             <ImageZoom
                 image={{
                 src: '/images/IoT/light_control_final3.png',
@@ -931,7 +1040,7 @@ class IoTNewNew extends React.Component {
                 }}
             
             />
-            <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/lightControl.gif")}>click here to watch the interaction.</Button></div>  
+            <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/lightControl.gif")}>click here to watch the interaction (gif of the website).</Button></div>  
         </section>
     </Col>
     </Row>
@@ -942,16 +1051,9 @@ class IoTNewNew extends React.Component {
     <div className="project_separator_inner_wrapper" >
         <h2>Final Design</h2>
         <h5>Navigation of the key pages that I worked on.</h5>
+        <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/final_v2.png"} />
 
-        <ImageZoom
-            image={{
-            src: '/images/IoT/final_v2.png',
-            alt: '',
-            className: 'project_illustration'
-            }}
-        
-        />
-
+      
     </div>
 </div>                       
                             
