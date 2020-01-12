@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 
-function Footer() {
+export default function Footer() {
     return (<>
         <footer>
             <div className="footer_content">
