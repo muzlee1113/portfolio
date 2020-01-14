@@ -962,7 +962,8 @@ li, ol{
 }
 
 .project_separator_inner_wrapper_small{
-  width: 1000px;
+  max-width: 1000px;
+  
   margin: 0 auto 0;
   padding: 60px 60px;
 } 
@@ -1226,7 +1227,7 @@ li, ol{
     display: none
   }
   .left_bar_wrapper,.project_body{
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   .project_separator_inner_wrapper {
