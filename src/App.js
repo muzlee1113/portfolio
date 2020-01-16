@@ -25,11 +25,12 @@ import PhotoMe from "./pages/Designer/PhotoMe"
 import Weather from "./pages/Designer/Weather"
 import LightUp from "./pages/Designer/LightUp"
 import BoardingPass from "./pages/Designer/BoardingPass"
-import IoT from "./pages/Designer/IoTNewNew"
+import IoT from "./pages/Designer/IoTBest"
 import IoTZero from "./pages/Designer/IoTZero"
 import IoTOne from "./pages/Designer/IoTOne"
 import IoTTwo from "./pages/Designer/IoTTwo"
 import IoTThree from "./pages/Designer/IoTThree"
+
 import MaterialBank from './pages/Designer/MaterialBank';
 import Nightkick from './pages/Designer/Nightkick'
 import SW from './pages/Designer/SW'

@@ -18,7 +18,7 @@ function DesignerPanel (props) {
     
     return (<>
                 {/* <div className="divider"></div> */}
-                <WorkCard url='/work/IoT' imgUrl='/images/IoT/mockup_multiscreens.png' name='An IoT-based smart city infrastructure management tool' tagline='A tool built for city managers to monitor, operate, and maintain the smart city infrastructure devices efficiently, intelligently and collaboratively.' description='User Research + UX Design' labels={['work project','IoT', 'SaaS', 'Web Design', 'Workflow Management Tool', 'Information Navigation']} bgColor="#f8f8f8" tColor="#0f0f0f"/>
+                <WorkCard url='/work/IoT' imgUrl='/images/IoT/mockup_multiscreens.png' name='An IoT-based smart city infrastructure management tool' tagline='A case study on how I designed a tool that helps lighting infrastructure administrators to control smart street lights energy-efficiently, accurately and easily on different occasions.' description='User Research + UX Design' labels={['work project','IoT', 'Web Design', 'Device Management Tool']} bgColor="#f8f8f8" tColor="#0f0f0f"/>
                 
              
                 <WorkCard url='/work/nightkick' imgUrl='/images/nightkick/mockup_cover.png' name='Nightkick' tagline='A mobile app and modular wearable to help people feel safer when walking alone after dark.' description='User Research + UX/UI Design' labels={['school project','Mobile Design', 'Wearable', 'Crowd-sourced']} bgColor="#f8f8f8" tColor="#0f0f0f"/>

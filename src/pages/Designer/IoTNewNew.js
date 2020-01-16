@@ -186,9 +186,10 @@ class IoTNewNew extends React.Component {
                         </div>
                     </Col>
                     <Col md={12} lg={9}>
+                         <div id="scrollstart"></div>
                         <div className="project_container" >
                         <section  className="project_body" id="secondary">
-                        <div id="scrollstart"></div>
+                       
 
                                     <h2>Clarify user scope</h2>
                                     <h5>Who are city managers?</h5>
