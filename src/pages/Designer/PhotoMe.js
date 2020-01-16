@@ -43,7 +43,8 @@ function PhotoMe() {
                                     <li className="uk-l project_brief_content"><a href="#list-item-1">Demo Video</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-2">User Research</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-3">Key Insights</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#list-item-4">Inspiration & Design Principle</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#ideate">Ideation</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#design">Design & Evaluation</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-5">Final sign</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-6">Takeaways</a></li>
                                 </ul>
@@ -152,18 +153,50 @@ function PhotoMe() {
                 </section>
 
     
-                <section className="project_body" id="list-item-4">
-                    <h2>Inspiration & Design Principle</h2>
-                    <h5>What I learned from workarounds</h5>
+                <section className="project_body" id="ideate">
+                    <h2>Ideation</h2>
+                    <h5>What I learned from how people worked around</h5>
+                    <h6>User Workarounds</h6>
                     <p>To prevent the ambiguity of translation, people actually figured out some ways:</p>
-                    <div className="divider"></div>
-                    <h6>1. Sample Picture</h6>
+                    <li className="p-list">1. Sample Picture</li>
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/sample_photo.png"} />
-                    <div className="divider"></div>
-                    <h6>2. Use the photographer as a selfie pole</h6>
+                    <li className="p-list">2. Use the photographer as a selfie pole</li>
                     <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/selfie.png"} />
-                    <p>These two workarounds inspired me to adopt the design principle: <b>What You See Is What You Get, show rather than tell.</b></p>
+                    <h6>Key features</h6>
+                    <p>These two workarounds inspired my brainstorming of the following features as solutions: </p>
+                    <li>Feeds of appealing photos that users can look into as samples;</li>
+                    <li>Applying sample photos directly onto the screen as mask when taking photos;</li>
+                    <li>Sharing screen between the photographer and the subject for output checking</li>
+                    <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/ideas.png"} />
+                    
                 </section>
+               
+
+
+                <section className="project_body" id="design">
+                    <h2>Design & Evaluation</h2>
+                    <h5>Crafting the best interations</h5>
+                    
+                    <h6>User Flow</h6>
+                    <p>I used the ideal userflow as guidance for my prototypes.</p>
+                    <ImageZoom
+                        image={{
+                            src: '/images/PhotoMe/userflow.png',
+                            alt: '',
+                            className: 'project_illustration'
+                        }}
+
+                    />
+                    <h6>Rapid Prototyping for Usability Studies</h6>
+                    <p>I rapidly created low-fidelity prototypes in order to test the best design (layouts and interations) for: </p>
+                    <li>Quickly scanning through the samples and find the one I like</li>
+                    <li>Retrieving one sample that I saved</li>
+                    <li>Easily shifting between different ways of sample photo display</li>
+                   
+                   
+
+                </section>
+
 
                 
                 <section className="project_body" id="list-item-5">
@@ -180,7 +213,7 @@ function PhotoMe() {
                    
                     
                     <h6>1. Manage Expectation</h6>
-                    <p>· Use pictures generated in the community to inspire and visualize expectation.</p>
+                    <li className="p-list">Use pictures generated in the community to inspire and visualize expectation.</li>
         
                     <Container>
                     <Row className="align-items-center">
@@ -196,8 +229,7 @@ function PhotoMe() {
                         </Col>
                     </Row>
                     </Container>
-                    <div className="divider"></div>
-                    <p>· Save the expectation whenever the subject gets it in the 'Scrapbook' for future use. </p>
+                    <li className="p-list">Save the expectation whenever the subject gets it in the 'Scrapbook' for future use. </li>
                     <Container>
                     <Row className="align-items-center justify-content-center">
                         <Col xs={12} sm={12} md={6} lg={6}>
@@ -220,67 +252,76 @@ function PhotoMe() {
                     </Container>
     
                     <div className="divider"></div>
-                    <h6>2. Provide Common Grounds</h6>
-                    <p>· What You See Is What You Get</p>
-                    <ul>
-                        <li>'Matte': semi-translucent sample picture overlay on the screen to visualize what is expected,  avoiding ambiguity due to translation</li>
-                        <li>'Guideline': instructional lines which abstract the sample and define the key compositions in the scene</li>
-                        <li>'Tag': break down detailed instructions into customizing tags glittering on screen</li>
-                    </ul>
-        
+                    <h6>2. Foster Communication</h6>
+                    <li className="p-list">Provide Common Grounds</li>
+                    
                     <Container>
                         <Row className="align-items-center">
-                            <Col xs={12} sm={12} md={8} lg={8}>
-                            <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/PhotoMe/layer.png"} />
+                            <Col xs={12} sm={12} md={8} lg={6}>
+                            <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/shiftmode.gif"} />
                             </Col>
-                            <Col xs={12} sm={12} md={4} lg={4}>
-                            <ul>
-                            <li className="project_caption">· Sample pictures are available in three different modes: mask, guideline, or two combined;</li>
-                            <li className="project_caption">· The sample photo will be used as mask to guide the photographer;</li>
-                            <li className="project_caption">· Guideline shows the highlights of the sample picture;</li>
-                            <li className="project_caption">· Tags on the screen will directly work as reminders and hints to guide the photographer.</li>
-                            </ul>
+                            <Col xs={12} sm={12} md={4} lg={6}>
+                           
+                            <li className="project_caption">Sample pictures are available in three different modes: mask, guideline, or two combined;</li>
+                            <li className="project_caption">'Mask': semi-translucent sample picture overlay on the screen that visualizes what is expected, avoiding ambiguity due to translation</li>
+                            <li className="project_caption">'Guideline': instructional lines that abstract the sample and define the key compositions in the scene</li>
+                            <li className="project_caption">'Tag': customizable detailed instructions glittering on the screen that work as reminders and hints to guide the photographer</li>                          
                             </Col>
                         </Row>
                         <Row className="align-items-center justify-content-around">
-                            <Col xs={12} sm={12} md={6} lg={6}>
-                            <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/tag.png"} />
-                            </Col>
-                            <Col xs={12} sm={12} md={6} lg={6}>
-                            <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/tag_2.png"} />
-                            </Col>
-                            <Col xs={10} sm={10} md={5} lg={5}>
-                            <p className="project_caption">· When shooting, users can easily add, edit, delete tags on screen; frequently-used tags can be saved deliberately or automatically for easy access</p>
-                            </Col>
-                            <Col xs={10} sm={10} md={5} lg={5}>
-                            <p className="project_caption">· Users can attach tags or edit photo providers' tages in advance</p>
-                            </Col>
-                        </Row> 
+                            <Col xs={10} sm={10} md={5} lg={6}>
+                           
+                            <li className="project_caption">· Users can attach tags or edit photo providers' tages in advance</li>
+                            <li className="project_caption">· Frequently-used tags will be saved automatically for easy access</li>
 
-                    </Container>
-    
-                    <div className="divider"></div>
-        
-                    <ul>
-                        <li>'Pencil': allow the subject to display her expectation on screen with customized guidelines.</li>
-                        <li>'Pose': show hit model poses on screen against the immediate surroundings to inspire the subjects</li>
-                    </ul>
-                    <Row className="align-items-center justify-content-around">
+                            </Col>
+                            <Col xs={12} sm={12} md={6} lg={6}>
+                            <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/addtag.gif"} />
+                            </Col>
+                      
+                           
+                        </Row> 
+                        <Row className="align-items-center justify-content-around">
                         <Col xs={12} sm={12} md={6} lg={6}>
-                        <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/pencil.png"} />
+                        <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/tools.gif"} />
                         </Col>
-                        <Col xs={12} sm={12} md={6} lg={6}>
-                        <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/pose.png"} />
-                        </Col>
-                        <Col xs={10} sm={10} md={5} lg={5}>
+                        
+                        <Col xs={10} sm={10} md={5} lg={6}>
                         <p className="project_caption">· 'Pencil' can be used to jot down anything on the screen as a reference to communicate</p>
-                        </Col>
-                        <Col xs={10} sm={10} md={5} lg={5}>
-                        <p className="project_caption">· 'Pose' tool can be used as inspiration and dragged to the screen as reference in discussion</p>
+                       
+                        <p className="project_caption">· 'Poses' can be used as inspiration and dragged and dropped to the screen as reference in discussion</p>
                         </Col>
                     </Row> 
-    
+
+                 
+                        <Row className="align-items-center justify-content-around">
+                           
+                            <Col xs={10} sm={10} md={5} lg={6}>
+                            <li className="project_caption">· Taking portrait like a selfie</li>
+                            <li className="project_caption">· The Photographer can share view with the subject so that they can check whether they are satisfied with the photos themselves and adjust accordingly</li>
+
+                            </Col>
+                            <Col xs={12} sm={12} md={6} lg={6}>
+                            <img alt='' className="project_illustration_small" src={process.env.PUBLIC_URL + "/images/PhotoMe/share.gif"} />
+                            </Col>
+                          
+                      
+                           
+                        </Row> 
+                    </Container>
+                    
                 </section>
+                <section className="project_body" id="">
+                    <h5>Clickable Hi-fi Prototypes</h5>
+                        <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
+                        
+                            <iframe style={{border: "none", width: "100%", height:"600px"}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvqvzoA8Su3do5wqJZPYRJq%2FPhotoMe%3Fnode-id%3D42%253A1%26scaling%3Dscale-down" allowfullscreen></iframe>
+                            </div>
+                      </section>
+                     
+                        
+                     
+                  
     
                 <section className="project_body" id="list-item-6">
                     <h2>Takeaways</h2>
