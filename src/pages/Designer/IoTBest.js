@@ -159,12 +159,11 @@ class IoTBest extends React.Component {
                                 <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
                                 <li className="uk-l project_brief_content"><a href="#overview">Project Overview</a></li>
                                 <li className="uk-l project_brief_content"><a href="#intro">Intro</a></li>
-                                <li className="uk-l project_brief_content"><a href="#research">Intro</a></li>
-             
-                                    <li className="uk-l project_brief_content"><a href="#syn">Workflow & Problems</a></li>
+                                <li className="uk-l project_brief_content"><a href="#research">Research</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#syn">Synthesize</a></li>
                                     <li className="uk-l project_brief_content"><a href="#ideate">Ideate</a></li>
                                     <li className="uk-l project_brief_content"><a href="#design">Design</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#usability">Usability Testing</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#usability">Evaluate</a></li>
                                     <li className="uk-l project_brief_content"><a href="#deliver">Final Design</a></li>
                                     <li className="uk-l project_brief_content"><a href="#todo">To dos</a></li>
                                     <li className="uk-l project_brief_content"><a href="#take">Takeaways</a></li>
@@ -198,6 +197,7 @@ class IoTBest extends React.Component {
             </div>
            
             </section>
+           
             <section className="project_body" id="research">
             <h2>Research</h2>
             <h5>Why and how did administrators control the street lights?</h5>
@@ -494,6 +494,7 @@ class IoTBest extends React.Component {
                 }}
             
             />
+             <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/final_special_plan.gif")}>click here to watch the interaction (gif of hi-fi prototypes).</Button></div>  
             <h6>Temporary Control</h6>
             <p></p>
             <li>Quickly locate devices with map and filters</li>
@@ -506,7 +507,7 @@ class IoTBest extends React.Component {
                 }}
             
             />
-
+ <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/final_single_control.gif")}>click here to watch the interaction (gif of the website).</Button></div>  
             <ImageZoom
                 image={{
                 src: '/images/IoT/light_control_final2.png',
@@ -515,9 +516,10 @@ class IoTBest extends React.Component {
                 }}
             
             />
-                <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/bulkControl.gif")}>click here to watch the interaction (gif of the website).</Button></div>  
+                <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/final_bulk_control.gif")}>click here to watch the interaction (gif of the website).</Button></div>  
            
         </section>
+        
     </Col>
     </Row>
 </div>
