@@ -166,9 +166,11 @@ class Nightkick extends React.Component {
                             <div className="left_bar_wrapper">
                                 <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;">
                                     <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
-                                    <li className="uk-l project_brief_content"><a href="#intro">Intro</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#overview">Project Overview</a></li>
 
-                                        <li className="uk-l project_brief_content"><a href="#research"> Research</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#intro">Problem</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#demo">Demo Video</a></li>
+                                        <li className="uk-l project_brief_content"><a href="#research">Research</a></li>
                                         <li className="uk-l project_brief_content"><a href="#synthesize">Synthesize</a></li>
                                         <li className="uk-l project_brief_content"><a href="#ideate">Ideate</a></li>
                                         <li className="uk-l project_brief_content"><a href="#design">Design</a></li>
@@ -191,7 +193,7 @@ class Nightkick extends React.Component {
                             <div className="project_container">
     
                                 <section className="project_body" id="intro">
-                                    <h2>Intro</h2>
+                                    <h2>Problem</h2>
                                     <h5>Walking alone after dark is a scary experience</h5>
                                     <p>Many people who work or live in the Greater Seattle Area walk as part of their commute to and from work, school, and nightlife activities. Due to decreased hours of daylight in the winter, much of this commuting is done in the dark. However, being alone in a public place when it is dark outside can provoke anxiety for many people. Previously published research demonstrates that a significant number of people are afraid to walk alone at night near their places of residence.</p>
                                     
@@ -216,6 +218,14 @@ class Nightkick extends React.Component {
                                             </div>
                                         </div>
                                  </section>
+                                 <section className="project_body" id="demo">
+                                        <h2>Demo Video</h2>
+                                    
+                                        <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
+                                        <iframe style={{width:'100%',minHeight:'540px'}}  src="https://www.youtube.com/embed/GHMqMzMxpWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </section>
+                                
     
                                 <section className="project_body" id="research">
                                     <h2>Research</h2>
@@ -827,11 +837,7 @@ class Nightkick extends React.Component {
                                         className: 'project_illustration'
                                     }}/>
                                   
-                                    <h6>Video Prototype</h6>
-                                    <p>To showcase the scenarios and the interactions between the wearable and the app, we made a video prototype.</p>
-                                    <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
-                                        <iframe style={{width:'100%',minHeight:'540px'}}  src="https://www.youtube.com/embed/GHMqMzMxpWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
+                                   
                                     <h6>Hi-fi Prototypes of the App</h6>
                                     <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
                                     <iframe style={{border: "none", width: "100%", height:"600px"}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWIV685BOxE1xbpfIrscxKw%2FTater-Trots%3Fnode-id%3D328%253A25941%26scaling%3Dscale-down" allowfullscreen></iframe>

@@ -34,7 +34,7 @@ function Weather() {
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;">
                                 <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
 
-                                <li className="uk-l project_brief_content"><a href="#list-item-1">Intro</a></li>
+                                <li className="uk-l project_brief_content"><a href="#list-item-1">Problem</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-2">User Research & Problem Space</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-3">Ideation and Design</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-4">Takeaways</a></li>
@@ -47,7 +47,7 @@ function Weather() {
                     
 
                         <section className="project_body" id="list-item-1">  
-                            <h2>Intro</h2>
+                            <h2>Problem</h2>
                             <p>It was cloudy that day. I left home, got on an ofo bike and headed for the metro station, where I bored into the underground world. One mile. Twenty-two stops. Two transfers. I shuttled between the far east and the far west of Beijing.</p>
                             <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/Weather/intro_1.png"} />
                             <p>When I went off the train and stood on the rising escalator, the chill and humid air jerked me out of the trance. Peering through the crowd at the entrance, I saw the dark gray sky and water pouring down.</p>

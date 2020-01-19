@@ -117,7 +117,10 @@ function MaterialBank() {
                         <div className="left_bar_wrapper">
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;">
                                 <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
-                                <li className="uk-l project_brief_content"><a href="#intro">Intro</a></li>
+                                <li className="uk-l project_brief_content"><a href="#overview">Project Overview</a></li>
+
+                                <li className="uk-l project_brief_content"><a href="#intro">Problem</a></li>
+                                
                                     <li className="uk-l project_brief_content"><a href="#research">Research</a></li>
                                     <li className="uk-l project_brief_content"><a href="#synthesize">Synthesize</a></li>
                                     <li className="uk-l project_brief_content"><a href="#design">Design & Evaluate</a></li>
@@ -133,7 +136,7 @@ function MaterialBank() {
                         <div className="project_container">
 
                             <section className="project_body" id="intro">
-                                <h2>Intro</h2>
+                                <h2>Problem</h2>
                                 <h5>A cluttered information bulletin board</h5>
                                 <p>I was completely shocked the first time when I opened Seattle Works' web page. It took me serveral minutes to understand the mission and purpose of Seattle Works.</p>
                                 <ImageZoom
@@ -161,7 +164,7 @@ function MaterialBank() {
                                         
                                         <div className="project_quote">
                                             <div className="project_quote_wrapper">
-                                            <p className="project_quote_text">How might we improve Seattle Works' website to be informationally efficient and visually appealing to its users?</p>
+                                            <p className="project_quote_text">How might we improve Seattle Works' website to display information efficiently and appeal to its users?</p>
                                             </div>
                                         </div>
                                  </section>

@@ -22,6 +22,90 @@ function PhotoMe() {
             <div className="project_separator_transparent">
                 <img alt='' className="project_headerImg" src={process.env.PUBLIC_URL + "/images/PhotoMe/headerImg.png"} />
             </div>
+            <div className="project_overview_container" id="overview">
+                {/* <Container> */}
+                    <Row>
+                        <Col sm={12} md={6}>
+                            <div className="project_overview_title">Background</div>
+                            <div className="project_overview_content">This is a individual project I did for learning and practicing the UCD process. The research and the first version of design were finished in August, 2018. Additional usability studies and UI updates were completed in January, 2020.</div>
+                            
+                        </Col>
+                        <Col></Col>
+                        <Col sm={4} md={2}>
+                        
+                            <div className="project_overview_title">My Role</div>
+                            <div className="project_overview_content">Research</div>
+                            <div className="project_overview_content">Product Design</div>
+                            <div className="project_overview_content">Interaction Design</div>
+                            <div className="project_overview_content">Visual Design</div>
+                            <div className="project_overview_content">Prototyping</div>
+                            <div className="project_overview_content">Usability Testing</div>
+                        </Col>
+                        <Col sm={4} md={3}>
+                        
+                            <div className="project_overview_title">Team</div>
+                            <div className="project_overview_content">Only Me</div>
+                        </Col>
+
+                    </Row>
+                {/* </Container> */}
+            </div>
+          <div className="project_overview_container">
+                <div className="project_overview_title">Design Process</div>
+    
+
+                <Row>
+                        <Col xs={4} md={2}>
+          
+                            
+                            <img  src={process.env.PUBLIC_URL + "/images/leftStep.png"}/>
+                            <div className="project_overview_content py-1"><b>Research</b></div>
+                            <div className="project_overview_content">User Interview</div>
+                            <div className="project_overview_content">Passive Observation</div>  
+                            <div className="project_overview_content">Competitive Analysis</div>                        
+                        </Col>
+                        <Col  xs={4} md={2}>
+                        <img  src={process.env.PUBLIC_URL + "/images/centerStep.png"}/>
+                            <div className="project_overview_content py-1"><b>Synthesize</b></div>
+                            <div className="project_overview_content">User flow</div>
+                            <div className="project_overview_content">Problem space</div>
+
+                        </Col>
+                        <Col xs={4} md={2}>
+                        <img  src={process.env.PUBLIC_URL + "/images/centerStep.png"}/>
+
+                            <div className="project_overview_content py-1"><b>Ideate</b></div>
+                            <div className="project_overview_content">Brainstormimg</div>
+                            <div className="project_overview_content">Concept sketching</div>
+                        </Col>
+                        <Col xs={4} md={2}>
+                        <img  src={process.env.PUBLIC_URL + "/images/centerStep.png"}/>
+                            <div className="project_overview_content py-1"><b>Design</b></div>
+                            <div className="project_overview_content">Lo-fi prototyping</div>
+                            <div className="project_overview_content">Interaction design</div>
+                            <div className="project_overview_content">Visual Design</div>
+                            <div className="project_overview_content">Hi-fi prototyping</div>
+                        </Col>
+                        <Col  xs={4} md={2}>
+                        <img  src={process.env.PUBLIC_URL + "/images/centerStep.png"}/>
+
+                            <div className="project_overview_content py-1"><b>Evaluate</b></div>
+                            <div className="project_overview_content">Cognitive walkthrough</div>
+                        </Col>
+                        <Col xs={4} md={2}>
+                        <img  src={process.env.PUBLIC_URL + "/images/rightStep.png"}/>
+
+                            <div className="project_overview_content py-1"><b>Deliver</b></div>
+                            <div className="project_overview_content">Hi-fi prototypes</div>
+                            <div className="project_overview_content">Video prototypes</div>
+
+                        </Col>
+                    </Row>
+            </div>
+           
+
+           
+
 
             
             <div className="project_overall_container">
@@ -33,19 +117,21 @@ function PhotoMe() {
                                 <div className="project_brief_title">Background</div>
                                 <div className="project_brief_content">This is a individual project I did in a UX Boot Camp.</div>
                             </div> */}
-                            <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;"
+                            <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;top: #scrollstart"
                             // style={{position: "fixed", right: "2vw", bottom: "5vh"}}
                             >
                                 <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
                                 // className="uk-nav uk-nav-default tm-nav uk-nav-parent-icon"
                                 >
-                                    <li className="uk-l project_brief_content"><a href="#list-item-0">Intro</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#overview">Project Overview</a></li>
+
+                                    <li className="uk-l project_brief_content"><a href="#list-item-0">Problem</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-1">Demo Video</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-2">User Research</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-3">Key Insights</a></li>
                                     <li className="uk-l project_brief_content"><a href="#ideate">Ideation</a></li>
                                     <li className="uk-l project_brief_content"><a href="#design">Design & Evaluation</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#list-item-5">Final sign</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#list-item-5">Final Design</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-6">Takeaways</a></li>
                                 </ul>
                             </div>
@@ -54,7 +140,9 @@ function PhotoMe() {
                     <Col md={12} lg={9}>
                     <div className="project_container">
                     <section className="project_body" id="list-item-0">
-                    <h2>Intro</h2>
+                    <div id="scrollstart"></div>
+
+                    <h2>Problem</h2>
                     <p>I always felt frustrated when I asked my boyfriend to take a picture of me. Describing what I want, posing awkwardly in front of a bunch of strangers, the whole experience always ended up with piles of unsatisfactory portraits, lying in my phone. And I found that I was not alone.</p>
                     <p><b>“Me in My Boyfriend's Camera”</b> became a hot discussion topic on the Internet in China. Many girls complained that their boyfriends made them look three times fatter and ungainly in the photo. A decent portrait by boyfriend has become a luxury.</p>
                     <img alt='' className="project_headerImg" src={process.env.PUBLIC_URL + "/images/PhotoMe/intro.png"} />
@@ -66,7 +154,7 @@ function PhotoMe() {
             <section className="project_body" id="list-item-1">
                     <h2>Demo Video</h2>
                     <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
-                        <iframe style={{width:'100%',minHeight:'540px'}} src="https://www.youtube.com/embed/nIvh_a4-Oq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe style={{width:'100%',minHeight:'540px'}} src="https://www.youtube.com/embed/9SHfjBA0Bdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
             </section>
             
@@ -175,7 +263,7 @@ function PhotoMe() {
 
                 <section className="project_body" id="design">
                     <h2>Design & Evaluation</h2>
-                    <h5>Crafting the best interations</h5>
+                    <h5>Crafting the best experience</h5>
                     
                     <h6>User Flow</h6>
                     <p>I used the ideal userflow as guidance for my prototypes.</p>
@@ -187,15 +275,50 @@ function PhotoMe() {
                         }}
 
                     />
-                    <h6>Rapid Prototyping for Usability Studies</h6>
-                    <p>I rapidly created low-fidelity prototypes in order to test the best design (layouts and interations) for: </p>
-                    <li>Quickly scanning through the samples and find the one I like</li>
-                    <li>Retrieving one sample that I saved</li>
-                    <li>Easily shifting between different ways of sample photo display</li>
-                   
-                   
+                    
+                    <h6>Low-fidelity Prototypes & Usability Studies</h6>
+                    <p>There are several important interactions I created different variations and assessed with the usability studies. I asked 4 participants to walk through different tasks that involve these interactions and make comments after the test. </p>
+                    <li>Shift among different ways of sample photo display (mask, instructional guide, tags)</li>
+                    <ImageZoom
+                        image={{
+                            src: '/images/PhotoMe/shift.gif',
+                            alt: '',
+                            className: 'project_illustration'
+                        }}
+
+                    />
+                    <li>Scan through the sample photos and find the one I like</li>
+                    <ImageZoom
+                        image={{
+                            src: '/images/PhotoMe/scanning.gif',
+                            alt: '',
+                            className: 'project_illustration'
+                        }}
+
+                    />
+                    <li>When taking photos, retrive one sample that I saved</li>
+                    <ImageZoom
+                        image={{
+                            src: '/images/PhotoMe/retrieve.gif',
+                            alt: '',
+                            className: 'project_illustration'
+                        }}
+
+                    />
+                    <p>I finally decided to use the swiping gesture and a wheel for shifting among different ways of display because it is more obvious; the two-column layout is used for both the photo feeds and the saved photos to display more photos on each scroll so that users can find the one they like or need easily.</p>
+                    <h6>Moodboard</h6>
+                    <p>Before developing hi-fi prototypes, I built a moodboard that is fashion, young, joyful and showing girl power and extract brand colors from it.</p>
+                    <ImageZoom
+                        image={{
+                        src: '/images/PhotoMe/moodboard.png',
+                        alt: '',
+                        className: ''
+                        }}
+                    
+                    />
 
                 </section>
+           
 
 
                 

@@ -115,8 +115,8 @@ function MaterialBank() {
                                 <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
                                     <li className="uk-l project_brief_content"><a href="#research">User Research</a></li>
                                     <li className="uk-l project_brief_content"><a href="#synthesize">Synthesize</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#list-item-2">Q1 Information Findability</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#list-item-3">Q2 Information Understandability</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#list-item-2">Design #1</a></li>
+                                    <li className="uk-l project_brief_content"><a href="#list-item-3">Design #2</a></li>
                                     <li className="uk-l project_brief_content"><a href="#list-item-4">To Dos</a></li>
                                     </ul>
                                 </div>
@@ -268,9 +268,10 @@ function MaterialBank() {
                                 <h2>Ideate #1</h2>
                                 <h5>Job to be done</h5>
                                 <p>Based on the research, the Makers felt it hard to find materials they need because they didn't know what they want, and it is hard to choose one from thousands of research results. For the Roamers, the problem was either that they couldn't find the resources or that even if they found one, they seldom find anything interesting or enlightening, because it is hard to make connections between the materials and their design. Thus, Material Bank should do the following jobs:</p>
+                                <p></p>
                                <Row>
                                    <Col lg={6} md={12}>
-                                       <div className="text-center"><p>What MB can do for the Maker</p></div>
+                                       <div className=""><p><b>What MB can do to help the Makers find what they need</b></p></div>
                                        
                                    <ImageZoom
                                     image={{
@@ -291,7 +292,7 @@ function MaterialBank() {
                                     </div>
                                    </Col>
                                    <Col lg={6} md={12}>
-                                   <div className="text-center"><p>What MB can do for the Roamers</p></div>
+                                   <div className=""><p><b>What MB can do to help the Roamers find what they are interested in</b></p></div>
 
                                    <ImageZoom
                                             image={{
@@ -373,24 +374,25 @@ function MaterialBank() {
                                 <h2>Ideate</h2>
                                 <h5>Information architecture</h5>
                                 <p>There are at least two layers of information for a material: a brief introduction and a detailed view. They play different roles. </p>
-                                <h6>Layer 1: A brief introduction</h6>
+                                <h6>Layer 1: A brief of the material on the list</h6>
                                 <ul>
                                     <li>The abstract</li>
                                     <li>Attract users to drill in</li>
                                     <li>Brief</li>
                                     <li>Contextualized and customized: provide the right information the users want to know right here right now.</li>
                                 </ul>
-                                <h6>Layer 2: An in-depth breakdowns</h6>
+                                <h6>Layer 2: A detailed view of the material after clicking down</h6>
                                 <ul>
                                     <li>In-depth</li>
-                                    <li>With multidimensional data</li>
+                                    <li>With multi-dimensional data</li>
                                     <li>Answer what it is and how to use it</li>
                                 </ul>
+                                <h6>Specify Design Questions</h6>
                                <p>Thus the new design should address the following questions:</p>
                                <ul>
                                    <li>How might we provide users with contextualized and customized information on the cards?</li>
                                    <li>How might we put materials into contexts so that users can know how to make use of them?</li>
-                                   <li>How might we visualize multidimensional data to enable better understanding?</li>
+                                   <li>How might we visualize multi-dimensional data to enable better understanding?</li>
                                </ul>
                                </section>
                                <section className="project_body" id="design2">
@@ -429,7 +431,7 @@ function MaterialBank() {
                                 />
                                   
                                 <h6>How might we visualize multidimensional data to enable better understanding?</h6>
-                                <p>I ran out of time when I tried to further explore the topic of visualizing multidimensional data, so I started a side project after my internship and shared it with my colleagues in SIID. [This part is still in progress]</p>
+                                <p>I ran out of time when I tried to further explore the topic of visualizing multi-dimensional data, so I started a side project after my internship and shared it with my colleagues in SIID. This part is still in progress</p>
                             </section>
                             <section className="project_body" id="list-item-4">
                                 <h2>To Dos</h2>
