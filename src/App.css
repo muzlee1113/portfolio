@@ -985,6 +985,12 @@ li, ol{
   font-style: italic;
 }
 
+.reflect_box{
+  padding: 50px 50px;
+  border-left: 6px solid rgba(153, 199, 255, 1);
+  background-color: rgba(153, 199, 255, 0.2)
+}
+
 /* illustrations */
 /* img{
   margin-top: 56px;
