@@ -96,12 +96,12 @@ export default class IoTDashboard extends React.Component {
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;top: #scrollstart">
 
                             <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
-                                <div><a href={prev.url} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('Home')}</a></div>
+                                <div><a href={prev['url']?(prev['url']):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('Home')}</a></div>
                                 <br/>
                                 
                                 {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
                                 <br/>
-                                <div><a href={next.url} className="project_brief_content">{next['url']?('next project'):('Home')}<span uk-icon="icon:triangle-right"></span></a></div>
+                                <div><a href={next['url']?(next['url']):('/')} className="project_brief_content">{next['url']?('next project'):('Home')}<span uk-icon="icon:triangle-right"></span></a></div>
                                 </ul> 
                             </div>
                         </div>

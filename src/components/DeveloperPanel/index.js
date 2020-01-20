@@ -74,13 +74,30 @@ function DeveloperPanel(){
                             <div className="article-title">
                                 <div>Pet Park</div>
                                 <div className="article-subtitle">A web tamagotchi game that kids love.</div>
-                                <div className="article-subtitle">Handlebars | SQL | Express </div>
+                                <div className="article-subtitle">Handlebars | MySQL | Express </div>
                             </div>
                         </div>
                     </div>
                 </a>
                 <a className="code_link" href="https://github.com/JoshVanOverbeke/Project2">
                     <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                </a>
+            </article>
+            <article>
+                <a href="https://muzlee1113.github.io/clicky-game/">
+                    <div className="cardcontainer">
+                        <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00Clicky.png"} alt=" "/>
+                        <div className="overlay" id="imgFriendFinder">
+                            <div className="article-title" style={{"color":"rgba(0,0,0,0.8)"}}>
+                                <div>Face Blindness Terminator</div>
+                                <div className="article-subtitle">A clicky game that cures face blindness.</div>
+                                <div className="article-subtitle">React | Serverless</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a className="code_link" href="https://github.com/muzlee1113/friendFinder">
+                    <img alt='' className="code invert" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
             <article>
@@ -100,23 +117,7 @@ function DeveloperPanel(){
                     <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                 </a>
             </article>
-            <article>
-                <a href="https://findfriendbyyuwen.herokuapp.com/">
-                    <div className="cardcontainer">
-                        <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/D00FriendFinder.png"} alt=" "/>
-                        <div className="overlay" id="imgFriendFinder">
-                            <div className="article-title" style={{"color":"rgba(0,0,0,0.8)"}}>
-                                <div>Friend Finder</div>
-                                <div className="article-subtitle">A website to match users with their soul mate by a survey.</div>
-                                <div className="article-subtitle">Node.js | MySQL | Express</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a className="code_link" href="https://github.com/muzlee1113/friendFinder">
-                    <img alt='' className="code invert" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
-                </a>
-            </article>
+            
             <article>
                 <a href="https://giphy-to-me.herokuapp.com/index.html">
                     <div className="cardcontainer">
