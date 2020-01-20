@@ -5,6 +5,62 @@ import BackToTopBtn from "../../components/BackToTopBtn"
 import ProjectPagination from '../../components/ProjectPagination'
 import ImageZoom from 'react-medium-image-zoom'
 
+const contents=[
+    {
+        id:"#overview",
+        name:"Project Overview"
+
+    },
+    {
+        id:"#intro",
+        name:"Problem"
+
+    },
+    {
+        id:"#demo",
+        name:"Solution"
+    },
+    {
+        id:"#research",
+        name:"Research"
+
+    },
+    {
+        id:"#syn",
+        name:"Synthesize"
+
+    },
+    {
+        id:"#ideate",
+        name:"Ideate"
+
+    },
+    {
+        id:"#design",
+        name:"Design & Evaluate"
+
+    },
+    {
+        id:"#deliver",
+        name:"Final Design"
+
+    },
+    {
+        id:"#take",
+        name:"Takeaways"
+
+    },
+]
+
+const prev = {
+    url: "/work/Nightkick",
+    name: "Nightkick"
+}
+
+const next = {
+    url: "/work/materialbank",
+    name: "Material Bank"
+}
 
 
 function PhotoMe() {
@@ -120,26 +176,20 @@ function PhotoMe() {
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;top: #scrollstart"
                             // style={{position: "fixed", right: "2vw", bottom: "5vh"}}
                             >
-                                <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80"
-                                // className="uk-nav uk-nav-default tm-nav uk-nav-parent-icon"
-                                >
-                                    <li className="uk-l project_brief_content"><a href="#overview">Project Overview</a></li>
-
-                                    <li className="uk-l project_brief_content"><a href="#list-item-0">Problem</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#list-item-1">Demo Video</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#list-item-2">User Research</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#list-item-3">Key Insights</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#ideate">Ideation</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#design">Design & Evaluation</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#list-item-5">Final Design</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#list-item-6">Takeaways</a></li>
-                                </ul>
+                                <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+                                <div><a href={prev.url} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('Home')}</a></div>
+                                <br/>
+                                
+                                {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
+                                <br/>
+                                <div><a href={next.url} className="project_brief_content">{next['url']?('next project'):('Home')}<span uk-icon="icon:triangle-right"></span></a></div>
+                                </ul> 
                             </div>
                         </div>
                     </Col>
                     <Col md={12} lg={9}>
                     <div className="project_container">
-                    <section className="project_body" id="list-item-0">
+                    <section className="project_body" id="intro">
                     <div id="scrollstart"></div>
 
                     <h2>Problem</h2>
@@ -148,20 +198,29 @@ function PhotoMe() {
                     <img alt='' className="project_headerImg" src={process.env.PUBLIC_URL + "/images/PhotoMe/intro.png"} />
                     <p className="project_caption">The pictures a girl post online. The left is her expectation and the right is the actual photo taken by her boyfriend. She commented that: “I really don’t want to admit that it’s me.”</p>
                     <p>In the U.S., a new word, <b>“Instagram Husband”</b>, was coined, referring to dudes who are responsible for taking photos for their Instagram famous girls but more often than not fail the job. In fact, it is not the only husband that screws up. Parents and friends all do. Something is certainly not working.</p>
+                    <p>Therefore, I raised the question</p>
+                    <div className="project_quote">
+                        <div className="project_separator_inner_wrapper_small">
+
+                        <p className="project_quote_text">How might we help people get/take satisfactory portraits?</p>
+                        </div>
+
+                    </div>
                 </section>
             </div>
 
-            <section className="project_body" id="list-item-1">
-                    <h2>Demo Video</h2>
+            <section className="project_body" id="demo">
+                    <h2>Solution</h2>
+                    <h5>Demo Video</h5>
                     <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
                         <iframe style={{width:'100%',minHeight:'540px'}} src="https://www.youtube.com/embed/9SHfjBA0Bdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
             </section>
             
-            <div className="project_container" id="list-item-2">
+            <div className="project_container" id="research">
 
                 <section className="project_body">
-                    <h2>User Research</h2>
+                    <h2>Research</h2>
                     <h5>Why do people fail to take satisfactory portraits?</h5>
                     <p>Twelve respondents were interviewed to gain an understanding of the current process of photo shooting. Meanwhile, I also conducted passive observations in a gallery and park to find out how people take pictures for each other.</p>
                     <p>A typical unsatisfactory portrait shooting experience can be divided in to seven steps as below, some of which are reversible:</p>
@@ -210,8 +269,8 @@ function PhotoMe() {
                 </section>
             
 
-                <section className="project_body" id="list-item-3">
-                    <h2>Key Insights</h2>
+                <section className="project_body" id="syn">
+                    <h2>Synthesize</h2>
                     <h5>Why do people fail to convey or decode information in the photo-taking process?</h5>
                     <h6>1. People have no place to start the talk without a clear expectation.</h6>
                     <p>The starting point of the photo-taking process, as well as the communication, is the subject's expectation of the picture, what it will look like. However, some subjects don't have a clear expectation.</p>
@@ -262,7 +321,7 @@ function PhotoMe() {
 
 
                 <section className="project_body" id="design">
-                    <h2>Design & Evaluation</h2>
+                    <h2>Design & Evaluate</h2>
                     <h5>Crafting the best experience</h5>
                     
                     <h6>User Flow</h6>
@@ -322,7 +381,7 @@ function PhotoMe() {
 
 
                 
-                <section className="project_body" id="list-item-5">
+                <section className="project_body" id="deliver">
                     <h2>Final Design</h2>
                     <h5>How might we help people better communicate in the photo taking process?</h5>
                     <ImageZoom
@@ -446,7 +505,7 @@ function PhotoMe() {
                      
                   
     
-                <section className="project_body" id="list-item-6">
+                <section className="project_body" id="take">
                     <h2>Takeaways</h2>
                     <h5>Computers are not to replace human factors, but to facilitate them.</h5>
                     <h6>We cannot replace humans with machines.</h6>
@@ -464,9 +523,8 @@ function PhotoMe() {
 
                 
             </div>
-            <ProjectPagination prevUrl="/work/materialbank"  prevName="Material Bank" nextUrl="/work/weather" nextName="Weather"/>
-
-            <BackToTopBtn />
+            <ProjectPagination prev={prev} next={next}/>
+            <BackToTopBtn contents={contents} prev={prev} next={next}/>
         </>)
 }
 

@@ -1,16 +1,40 @@
 
 .scroll {
-    opacity: 0.6;
+    display: none;
+    opacity: 1;
     width: 2.5rem;
     height: 2.5rem;
     position: fixed;
     bottom: 2.5rem;
     right: 2.5rem;
-    background-color: white!important
+    /* border-color: #9D2721;
+    color:#9D2721; */
+    background-color: white
 }
 
 .scroll:hover {
-    opacity: 1;
+    background-color: #9D2721;
+    border-color: #9D2721;
+
+}
+.content{
+    position: fixed;
+    bottom: 3.5rem;
+    right: 0.8rem;
+    z-index: 9999;
+    min-width: 280px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 1.8em;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.10);
+    border-radius:4px;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+
+.content ul{
+    margin:0;
+    padding:0;
 }
 
 .arrow-up {
@@ -21,11 +45,12 @@
 }
 
 
-@media (max-width: 680px) {
+@media (max-width: 768px) {
     
     .scroll {
-        width: 2rem;
-        height: 2rem;
+        display: block;
+        /* width: 2rem;
+        height: 2rem; */
         bottom: 0.5rem;
         right: 0.8rem;
         padding-left: 6px;

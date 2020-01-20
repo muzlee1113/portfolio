@@ -26,6 +26,10 @@ import Weather from "./pages/Designer/Weather"
 import LightUp from "./pages/Designer/LightUp"
 import BoardingPass from "./pages/Designer/BoardingPass"
 import IoT from "./pages/Designer/IoTBest"
+import IoTDashboard from "./pages/Designer/IoTDashboard"
+import IoTNotification from "./pages/Designer/IoTNotification"
+
+
 import IoTZero from "./pages/Designer/IoTZero"
 import IoTOne from "./pages/Designer/IoTOne"
 import IoTTwo from "./pages/Designer/IoTTwo"
@@ -90,10 +94,13 @@ class App extends Component {
           <Route exact path="/work/lightup" component={LightUp} />
           <Route exact path="/work/boardingpass" component={BoardingPass} />
           <Route exact path="/work/IoT" component={IoT}/>
-          <Route exact path="/work/IoT/research" component={IoTZero}/>
+          {/* <Route exact path="/work/IoT/research" component={IoTZero}/>
           <Route exact path="/work/IoT/datavis" component={IoTOne}/>
           <Route exact path="/work/IoT/infonav" component={IoTTwo}/>
-          <Route exact path="/work/IoT/sysimg" component={IoTThree}/>
+          <Route exact path="/work/IoT/sysimg" component={IoTThree}/> */}
+           <Route exact path="/work/IoTDashboard" component={IoTDashboard}/>
+           <Route exact path="/work/IoTNotification" component={IoTNotification}/>
+
           <Route exact path="/work/materialbank" component={MaterialBank} />
           <Route exact path="/work/nightkick" component={Nightkick}/>
           <Route exact path="/work/sw" component={SW}/>

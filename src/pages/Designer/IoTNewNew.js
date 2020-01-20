@@ -931,6 +931,12 @@ class IoTNewNew extends React.Component {
                             <h6>Work with ambiguity but always look for chance to check my assumptions</h6>
                             <p>There are many assumptions I made during the ideation and design process. I kept a list of questions I had and looked for opportunity to get them answered by consulting or formal and informal usability studies.</p>
                         </section>
+                        <section id="take" className="project_body">
+                            <h2>Other Projects</h2>
+                            <h6>Data Dashboard</h6>
+                            <p>I designed the data dashboard for the overall management system, street lights, environmental sensors and smart manholes.</p>
+                            
+                        </section>
 
                         </Col>
                     </Row>

@@ -6,7 +6,53 @@ import ImageModal from '../../components/ImageModal'
 import ProjectPagination from '../../components/ProjectPagination'
 import ImageZoom from 'react-medium-image-zoom'
 
+const contents=[
+    {
+        id:"#overview",
+        name:"Project Overview"
 
+    },
+    {
+        id:"#intro",
+        name:"Problem"
+
+    },
+    {
+        id:"#research",
+        name:"Research"
+
+    },
+    {
+        id:"#syn",
+        name:"Synthesize"
+
+    },
+    {
+        id:"#design",
+        name:"Design & Evaluate"
+
+    },
+    {
+        id:"#deliver",
+        name:"Final Design"
+
+    },
+    {
+        id:"#take",
+        name:"Takeaways"
+
+    },
+]
+
+const prev = {
+    url: "/work/materialbank",
+    name: "Material Bank"
+}
+
+const next = {
+    url: "/work/weather",
+    name: "Weather"
+}
 
 function MaterialBank() {
 
@@ -117,16 +163,13 @@ function MaterialBank() {
                         <div className="left_bar_wrapper">
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;">
                                 <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
-                                <li className="uk-l project_brief_content"><a href="#overview">Project Overview</a></li>
-
-                                <li className="uk-l project_brief_content"><a href="#intro">Problem</a></li>
+                                <div><a href={prev.url} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('Home')}</a></div>
+                                <br/>
                                 
-                                    <li className="uk-l project_brief_content"><a href="#research">Research</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#synthesize">Synthesize</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#design">Design & Evaluate</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#deliver">Final Design</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#take">Takeaways</a></li>
-                                    </ul>
+                                {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
+                                <br/>
+                                <div><a href={next.url} className="project_brief_content">{next['url']?('next project'):('Home')}<span uk-icon="icon:triangle-right"></span></a></div>
+                                </ul> 
                                 </div>
                             </div>
                     </Col>
@@ -192,7 +235,7 @@ function MaterialBank() {
                                  
                                    
                             </section>
-                            <section className="project_body" id="synthesize">
+                            <section className="project_body" id="syn">
                                 <h2>Synthesize</h2>
                                 <h5>The website fails to meet the needs of both the organization and the volunteers</h5>
                                 
@@ -471,10 +514,8 @@ function MaterialBank() {
 
             
                             
-
-            <ProjectPagination prevUrl="/work/materialbank" prevName="Material Bank" nextUrl="/work/photome" nextName="PhotoMe"/>
-
-            <BackToTopBtn />
+            <ProjectPagination prev={prev} next={next}/>
+            <BackToTopBtn contents={contents} prev={prev} next={next}/>
      
         </>)
 }

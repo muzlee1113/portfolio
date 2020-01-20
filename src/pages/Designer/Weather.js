@@ -6,6 +6,44 @@ import ProjectPagination from '../../components/ProjectPagination'
 
 
 
+const contents=[
+    {
+        id:"#overview",
+        name:"Project Overview"
+
+    },
+    {
+        id:"#intro",
+        name:"Problem"
+
+    },
+    {
+        id:"#research",
+        name:"Research & Synthesize"
+
+    },
+    {
+        id:"#design",
+        name:"Ideate & Design"
+
+    },
+    {
+        id:"#take",
+        name:"Takeaways"
+
+    },
+]
+
+const prev = {
+    url: "/work/sw",
+    name: "Seattle Works"
+}
+
+const next = {
+    url: "",
+    name: ""
+}
+
 
 function Weather() {
 
@@ -17,11 +55,68 @@ function Weather() {
                 <section className="project_head">
                     <h1>Weather</h1>
                     <h3>Alerts users to weather changes that will disturb their intended activities.</h3>
-                    <div className="project_info">October to November 2018 (1 month), Bootcamp Individual Project</div>
+                    <div className="project_info">October to November 2018 (20 days), Individual Project</div>
                 </section>
             </div>
             <div className="project_separator_transparent">
                 <img alt='' className="project_headerImg" src={process.env.PUBLIC_URL + "/images/Weather/headerImg.png"} />
+            </div>
+            <div className="project_overview_container" id="overview">
+                {/* <Container> */}
+                    <Row>
+                        <Col sm={12} md={6}>
+                            <div className="project_overview_title">Background</div>
+                            <div className="project_overview_content">This is a individual project I did for learning and practicing the UCD process and rapid prototyping. The initial challenge I took is to solve a daily problem that I ran into.</div>
+                        </Col>
+                        <Col></Col>
+                        <Col sm={4} md={2}>
+                        
+                            <div className="project_overview_title">My Role</div>
+                            <div className="project_overview_content">Research</div>
+                            <div className="project_overview_content">Product Design</div>
+                            <div className="project_overview_content">Interaction Design</div>
+                            <div className="project_overview_content">Visual Design</div>
+                            <div className="project_overview_content">Prototyping</div>
+                        </Col>
+                        <Col sm={4} md={3}>
+                        
+                            <div className="project_overview_title">Team</div>
+                            <div className="project_overview_content">Only Me</div>
+                        </Col>
+
+                    </Row>
+                {/* </Container> */}
+            </div>
+          <div className="project_overview_container">
+                <div className="project_overview_title">Design Process</div>
+    
+
+                <Row>
+                        <Col xs={4} md={3}>
+          
+                            
+                            <img  src={process.env.PUBLIC_URL + "/images/leftStep.png"}/>
+                            <div className="project_overview_content py-1"><b>Research</b></div>
+                            <div className="project_overview_content">User Interview</div>                      
+                        </Col>
+                        <Col  xs={4} md={3}>
+                        <img  src={process.env.PUBLIC_URL + "/images/centerStep.png"}/>
+                            <div className="project_overview_content py-1"><b>Synthesize</b></div>
+                            <div className="project_overview_content">Problem space</div>
+                        </Col>
+                        <Col xs={4} md={3}>
+                        <img  src={process.env.PUBLIC_URL + "/images/centerStep.png"}/>
+
+                            <div className="project_overview_content py-1"><b>Ideate</b></div>
+                            <div className="project_overview_content">Brainstormimg</div>
+                            <div className="project_overview_content">Concept sketching</div>
+                        </Col>
+                        <Col xs={4} md={3}>
+                        <img  src={process.env.PUBLIC_URL + "/images/rightStep.png"}/>    <div className="project_overview_content py-1"><b>Design</b></div>
+                            <div className="project_overview_content">Lo-fi prototyping</div>
+                            <div className="project_overview_content">Hi-fi prototyping</div>
+                        </Col>
+                    </Row>
             </div>
 
             <div className="project_overall_container">
@@ -32,13 +127,14 @@ function Weather() {
 
                            
                             <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;">
-                                <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
-
-                                <li className="uk-l project_brief_content"><a href="#list-item-1">Problem</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#list-item-2">User Research & Problem Space</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#list-item-3">Ideation and Design</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#list-item-4">Takeaways</a></li>
-                                </ul>
+                            <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+                                <div><a href={prev.url} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('Home')}</a></div>
+                                <br/>
+                                
+                                {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
+                                <br/>
+                                <div><a href={next.url} className="project_brief_content">{next['url']?('next project'):('Home')}<span uk-icon="icon:triangle-right"></span></a></div>
+                                </ul> 
                             </div>
                         </div>
                     </Col>
@@ -46,9 +142,10 @@ function Weather() {
                     <div className="project_container">  
                     
 
-                        <section className="project_body" id="list-item-1">  
+                        <section className="project_body" id="intro">  
                             <h2>Problem</h2>
-                            <p>It was cloudy that day. I left home, got on an ofo bike and headed for the metro station, where I bored into the underground world. One mile. Twenty-two stops. Two transfers. I shuttled between the far east and the far west of Beijing.</p>
+                            <h5>Losing track of weather information makes troubles to people's lives</h5>
+                            <p>It was cloudy that day. I left home, got on an shared bike and headed for the metro station, where I bored into the underground world. One mile. Twenty-two stops. Two transfers. I shuttled between the far east and the far west of Beijing.</p>
                             <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/Weather/intro_1.png"} />
                             <p>When I went off the train and stood on the rising escalator, the chill and humid air jerked me out of the trance. Peering through the crowd at the entrance, I saw the dark gray sky and water pouring down.</p>
                             <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/Weather/intro_2.png"} />
@@ -59,16 +156,18 @@ function Weather() {
                         
                         
 
-                        <section className="project_body" id="list-item-2">
-                            <h2>User Research & Problem Space</h2>
+                        <section className="project_body" id="research">
+                            <h2>User Research & Synthesize</h2>
+                            <h5>Why and how do people check weather information?</h5>
+                            <h6>Research Questions</h6>
                             <p>I talked with people from different age groups, cities and industries about weather. I asked:</p>
                             <ul>
                                 <li>What and why did you want to know about weather?</li>
                                 <li>Have weather ever made any trouble to your life?</li>
                             </ul>
+                            <h6>Key Insights</h6>
                             <p>I heard these different stories about people’s encounter with weather information and weather itself. These stories shed a new light on my understanding of weather information.</p>
-                            <ul>
-                                <li className="p-list">People pay attention to changes, to difference.</li>
+                                <li className="p-list">People pay attention to changes.</li>
                                 <p>80% of the users of weather app spend less than 3 seconds on every visit*. When people scan through the weather information, they pay more attention to changes, in other words, differences, abnormality. Then quickly take in such information and do the math in their mind.</p>
                                 <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/Weather/changes.png"} />
                                 <p className="project_caption">*According to data from Wuyou Weather, a Chinese weather app on android.</p>
@@ -82,16 +181,15 @@ function Weather() {
                                 <img alt='' className="project_illustration_medium" src={process.env.PUBLIC_URL + "/images/Weather/quote.png"} />
                                 <p>Weather information cannot decide what people want to wear tomorrow or what they desire to do this weekend. It is people that make these decisions. Weather just encourages or discourages such intention. Even for daily activities, people only pay attention to the weather when it may create some troubles to their intended actions (e.g. going to work, going back home).</p>
 
-                            </ul>
 
                             <p>So 'Weather' should <b><span style={{"textDecoration": "underline"}}>① understand</span></b> what users want to do and what weather changes will interfere with their intended activities, then <b><span style={{"textDecoration": "underline"}}>② deliver</span></b> that information to users and help them prepare for those changes.</p>
                         </section>
                         
 
-                        <section className="project_body" id="list-item-3">
+                        <section className="project_body" id="design">
                         
 
-                            <h2>Ideation and Design</h2>
+                            <h2>Ideate and Design</h2>
                             <h5>How might we <b style={{"textDecoration": "underline"}}>understand</b> what people want to do and what weather information is needed?​</h5>
                             <h6>1. 'Weather' understand user's intended activities by getting access to user's data on the device</h6>
                             <ul>
@@ -169,7 +267,7 @@ function Weather() {
                         </section>
                         
 
-                        <section className="project_body" id="list-item-4">
+                        <section className="project_body" id="take">
                             <h2>Takeaways</h2>
                             <h6>Design assumptions should always be validated by users</h6>
                             <p>I invited designers and users to test my design and their critiques opened up a new understanding of people’s behaviors to me. For example, a user questioned my design that asked a user to press a button to set an alert for weather changes, by comparing it with forgetting to turn an alarm clock on. This discussion offered insight into of people’s concern about the weather: it is not a whim but a habit. So I changed the alert button to a default setting based on several sign-in questions and users’ data and provided a shortcut for users to temporarily or permanently stop the alerts.</p>
@@ -183,10 +281,8 @@ function Weather() {
                     </Col>
                 </Row>
             </div>
-            <ProjectPagination prevUrl="/work/photome" prevName="PhotoMe" nextUrl="/work/readwithme" nextName="ReadwithMe"/>
-
-           
-            <BackToTopBtn/>
+            <ProjectPagination prev={prev} next={next}/>
+            <BackToTopBtn contents={contents} prev={prev} next={next}/>
         </>)
 }
 

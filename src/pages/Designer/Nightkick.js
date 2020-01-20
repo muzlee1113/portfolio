@@ -6,6 +6,87 @@ import ImageModal from '../../components/ImageModal'
 import ProjectPagination from '../../components/ProjectPagination'
 import ImageZoom from 'react-medium-image-zoom'
 
+const contents=[
+    {
+        id:"#overview",
+        name:"Project Overview"
+
+    },
+    {
+        id:"#intro",
+        name:"Problem"
+
+    },
+    {
+        id:"#demo",
+        name:"Solution"
+    },
+    {
+        id:"#research",
+        name:"Research"
+
+    },
+    {
+        id:"#syn",
+        name:"Synthesize"
+
+    },
+    {
+        id:"#ideate",
+        name:"Ideate"
+
+    },
+    {
+        id:"#design",
+        name:"Design"
+
+    },
+    {
+        id:"#evaluate",
+        name:"Evaluate & Iterate"
+
+    },
+    {
+        id:"#hifi",
+        name:"Visual Design & Specs"
+
+    },
+    {
+        id:"#deliver",
+        name:"Final Design"
+
+    },
+    {
+        id:"#concern",
+        name:"Concerns"
+
+    },
+    {
+        id:"#todos",
+        name:"To Dos"
+
+    },
+    {
+        id:"#take",
+        name:"Takeaways"
+
+    },
+    {
+        id:"#present",
+        name:"Bonus!"
+
+    },
+]
+
+const prev = {
+    url: "/work/IoT",
+    name: "An IoT-based City Infrastructure Management Tool"
+}
+
+const next = {
+    url: "/work/photome",
+    name: "PhotoMe"
+}
 
 
 class Nightkick extends React.Component {
@@ -164,28 +245,20 @@ class Nightkick extends React.Component {
                     <Row>
                         <Col md={12} lg={3}>
                             <div className="left_bar_wrapper">
-                                <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;">
-                                    <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
-                                    <li className="uk-l project_brief_content"><a href="#overview">Project Overview</a></li>
-
-                                    <li className="uk-l project_brief_content"><a href="#intro">Problem</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#demo">Demo Video</a></li>
-                                        <li className="uk-l project_brief_content"><a href="#research">Research</a></li>
-                                        <li className="uk-l project_brief_content"><a href="#synthesize">Synthesize</a></li>
-                                        <li className="uk-l project_brief_content"><a href="#ideate">Ideate</a></li>
-                                        <li className="uk-l project_brief_content"><a href="#design">Design</a></li>
-                                        <li className="uk-l project_brief_content"><a href="#evaluate">Evaluate & Iterate</a></li>
-                                        <li className="uk-l project_brief_content"><a href="#hifi">Visual Design & Specs</a></li>
-                                        <li className="uk-l project_brief_content"><a href="#deliver">Deliver</a></li>
-                                        <li className="uk-l project_brief_content"><a href="#concern">Concerns</a></li>
-                                        <li className="uk-l project_brief_content"><a href="#todos">To-Dos</a></li>
-                                        <li className="uk-l project_brief_content"><a href="#take">Takeaways</a></li>
-                                        <li className="uk-l project_brief_content"><a href="#present">Bonus!</a></li>
-
-
-                                        </ul>
-                                    </div>
-                                </div>
+                            <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;top: #scrollstart">
+                              
+                                <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+                                <div><a href={prev.url} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('Home')}</a></div>
+                                <br/>
+                                
+                                {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
+                                <br/>
+                                <div><a href={next.url} className="project_brief_content">{next['url']?('next project'):('Home')}<span uk-icon="icon:triangle-right"></span></a></div>
+                                </ul>                               
+                                
+                            
+                            </div>    
+                            </div>
                         </Col>
                         <Col md={12} lg={9}>
                             
@@ -219,7 +292,8 @@ class Nightkick extends React.Component {
                                         </div>
                                  </section>
                                  <section className="project_body" id="demo">
-                                        <h2>Demo Video</h2>
+                                    <h2>Solution</h2>
+                                    <h5>Demo Video</h5>
                                     
                                         <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
                                         <iframe style={{width:'100%',minHeight:'540px'}}  src="https://www.youtube.com/embed/GHMqMzMxpWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -317,7 +391,7 @@ class Nightkick extends React.Component {
                                    
                                
                                 </section>
-                                <section className="project_body" id="synthesize">
+                                <section className="project_body" id="syn">
                                     <h2>Synthesize</h2>
                                     
                                     <h5>Key Findings & Insights</h5>
@@ -901,14 +975,14 @@ class Nightkick extends React.Component {
                 
                                 
     
-                <ProjectPagination prevUrl="/work/IoT" prevName="An IoT-based City Infrastructure Management Tool" nextUrl="/work/materialbank" nextName="Material Bank"/>
+                <ProjectPagination prev={prev} next={next}/>
                 <ImageModal
                 show={this.state.modalShow}
                 onHide={() => this.setState({ modalShow: false })}
                 url={this.state.url}
                 direction={this.state.modalDirection}
                 />
-                <BackToTopBtn />
+                <BackToTopBtn contents={contents} prev={prev} next={next}/>
                 
             </>)
     }

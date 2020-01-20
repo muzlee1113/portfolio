@@ -12,6 +12,73 @@ import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import ProjectPagination from '../../components/ProjectPagination'
 import ImageZoom from 'react-medium-image-zoom'
 
+const contents=[
+    {
+        id:"#overview",
+        name:"Project Overview"
+
+    },
+    {
+        id:"#intro",
+        name:"Problem"
+
+    },
+    {
+        id:"#research",
+        name:"Research"
+
+    },
+    {
+        id:"#syn",
+        name:"Synthesize"
+
+    },
+    {
+        id:"#ideate",
+        name:"Ideate"
+
+    },
+    {
+        id:"#design",
+        name:"Design"
+
+    },
+    {
+        id:"#evaluate",
+        name:"Evaluate"
+
+    },
+    {
+        id:"#deliver",
+        name:"Final Design"
+
+    },
+    {
+        id:"#todo",
+        name:"To dos"
+
+    },
+    {
+        id:"#take",
+        name:"Takeaways"
+
+    },
+    {
+        id:"#relate",
+        name:"Related Work"
+
+    },
+]
+
+const prev = {
+    url: "",
+    name: ""
+}
+
+const next = {
+    url: "/work/nightkick",
+    name: "Nightkick"
+}
 
 
 class IoTBest extends React.Component {
@@ -157,17 +224,15 @@ class IoTBest extends React.Component {
                         <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;top: #scrollstart">
                               
                                 <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
-                                <li className="uk-l project_brief_content"><a href="#overview">Project Overview</a></li>
-                                <li className="uk-l project_brief_content"><a href="#intro">Problem</a></li>
-                                <li className="uk-l project_brief_content"><a href="#research">Research</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#syn">Synthesize</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#ideate">Ideate</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#design">Design</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#usability">Evaluate</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#deliver">Final Design</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#todo">To dos</a></li>
-                                    <li className="uk-l project_brief_content"><a href="#take">Takeaways</a></li>
-                                </ul>
+                                <div><a href={prev.url} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('Home')}</a></div>
+                                <br/>
+                                
+                                {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
+                                <br/>
+                                <div><a href={next.url} className="project_brief_content">{next['url']?('next project'):('Home')}<span uk-icon="icon:triangle-right"></span></a></div>
+                                </ul>                               
+                                
+                            
                             </div>
                         </div>
                     </Col>
@@ -439,7 +504,7 @@ class IoTBest extends React.Component {
                             
                             />
         </section>
-        <section  className="project_body" id="usability">
+        <section  className="project_body" id="evaluate">
             <h2>Evaluate</h2>
             <h5>Usability Testing & Iterations</h5>
             <p>After creating an interactive prototype, I conducted scenario-based usability testing with the administrators (<a href="https://docs.google.com/document/d/1Wzhgqrxo7YtJaYprwnFdA7flDMVM8VVzVDO9i_Pwb1Y/edit?usp=sharing"  className="text_link">link of the usability testing tasks</a>). The studies meant to test:</p> 
@@ -573,13 +638,38 @@ class IoTBest extends React.Component {
                             <h6>Work with ambiguity but always look for chance to check my assumptions</h6>
                             <p>There are many assumptions I made during the ideation and design process. I kept a list of questions I had and looked for opportunity to get them answered by consulting or formal and informal usability studies.</p>
                         </section>
-                        {/* <section id="take" className="project_body">
-                            <h2>See More</h2>
-                            <h5>Other things I did for this project</h5>
-                            <h6>Notification Center</h6>
-                            <h6>Various Data Dashboards</h6>
+                        <section id="relate" className="project_body">
+                            <h2>Related Work</h2>
+                            <div><h5>Other things I did for this project</h5></div>
+                             <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between", alignItems:"flex-end"}}>
+                             <h6>Notification Center</h6>
+                             <a className="text_link" href="/work/IoTNotification">see more</a>
+                                
+                            </div>
+                           
+                            <ImageZoom
+                                image={{
+                                src: '/images/IoT/notification.gif',
+                                alt: '',
+                                className: 'project_illustration'
+                                }}
                             
-                        </section> */}
+                            />
+                            <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between", alignItems:"flex-end"}}>
+                            <h6>Data Dashboards</h6>
+                            <a className="text_link" href="/work/IoTDashboard">see more</a>
+                                
+                            </div>
+                            <ImageZoom
+                                image={{
+                                src: '/images/IoT/dashboards.gif',
+                                alt: '',
+                                className: 'project_illustration'
+                                }}
+                            
+                            />
+                            
+                        </section>
                         </Col>
                     </Row>
                 </Container>
@@ -589,9 +679,9 @@ class IoTBest extends React.Component {
             </div>
 
 
-            <ProjectPagination prevUrl="/" prevName="Back to Home" nextUrl="/work/nightkick" nextName="Nightkick" />
+            <ProjectPagination prev={prev} next={next}/>
 
-            <BackToTopBtn />
+            <BackToTopBtn contents={contents} prev={prev} next={next}/>
             <ImageModal
                 show={this.state.modalShow}
                 onHide={() => this.setState({ modalShow: false })}
