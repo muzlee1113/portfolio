@@ -39,6 +39,8 @@ import MaterialBank from './pages/Designer/MaterialBank';
 import Nightkick from './pages/Designer/Nightkick'
 import SW from './pages/Designer/SW'
 import QuickHire from './pages/Designer/QuickHire'
+import Specs from './pages/Designer/Specs'
+
 
 
 import WIS from "./pages/Developer/WIS"
@@ -105,6 +107,7 @@ class App extends Component {
           <Route exact path="/work/nightkick" component={Nightkick}/>
           <Route exact path="/work/sw" component={SW}/>
           <Route exact path="/work/quickhire" component={QuickHire}/>
+          <Route exact path="/work/specs" component={Specs}/>
           
           {/* code */}
           <Route exact path="/work/WIS" component={WIS} />
