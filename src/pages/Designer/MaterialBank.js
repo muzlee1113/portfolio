@@ -50,13 +50,13 @@ const contents = [
 ]
 
 const prev = {
-    url: "/work/photome",
-    name: "PhotoMe"
+    url: "/work/sw",
+    name: "Seattle Works"
 }
 
 const next = {
-    url: "/work/sw",
-    name: "Seattle Works"
+    url: "/work/weather",
+    name: "Weather"
 }
 
 
@@ -409,8 +409,8 @@ function MaterialBank() {
                                 <li>⑦ <b>Contextual search result card</b> that renders information according to what are searched and filtered.</li>
                             </section>
                             <section className="project_body" id="deliver">
-                                    <h2>Deliver</h2>
-                                    <h5>Hi-fi Prototypes</h5>
+                                    <h2>Final Design</h2>
+                                    <h5>How I solved the problem</h5>
                                     <p>Since we used K7 library for front end development, I developed hi-fi prototypes according to components in the library.</p>
                                     <ImageZoom
                                         image={{

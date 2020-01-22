@@ -18,6 +18,11 @@ const contents=[
 
     },
     {
+        id:"#solution",
+        name:"Solution"
+
+    },
+    {
         id:"#research",
         name:"Research"
 
@@ -33,6 +38,11 @@ const contents=[
 
     },
     {
+        id:"#visual",
+        name:"Visual Design"
+
+    },
+    {
         id:"#deliver",
         name:"Final Design"
 
@@ -45,13 +55,13 @@ const contents=[
 ]
 
 const prev = {
-    url: "/work/materialbank",
-    name: "Material Bank"
+    url: "/work/photome",
+    name: "PhotoMe"
 }
 
 const next = {
-    url: "/work/weather",
-    name: "Weather"
+    url: "/work/specs",
+    name: "Specs"
 }
 
 function MaterialBank() {
@@ -203,6 +213,8 @@ function MaterialBank() {
                                <p>A Organization's web page should serve dual purposes: displaying information and appealing to target audiences/users/customers. It is tricky to find a balance between these two. Obviously, Seattle Works' website fails to accomplish either of the purpose. Therefore, we asked:</p>
                                 
                             </section>
+
+                            
                             <section className="project_body" id="">
                                         
                                         <div className="project_quote">
@@ -211,6 +223,33 @@ function MaterialBank() {
                                             </div>
                                         </div>
                                  </section>
+
+                                 </div>
+                 </Col>
+                 </Row>
+                 </div>
+                 <div className="project_separator" id="solution">
+
+                    <div className="project_separator_inner_wrapper" >
+                        <h2>Solution</h2>
+                        <h5>Interactive Prototype</h5>
+                        <p>Here is the clickable hi-fi prototype and how we solved the problems in exisiting website</p>
+                        <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
+                        
+                            <iframe style={{border: "none", width: "100%", height:"90vh"}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlIOaQri1Eo3ECuqczDyLbE%2FSeattle-Works-only-wireframe-latest%3Fnode-id%3D402%253A78%26scaling%3Dscale-down" allowfullscreen></iframe>
+                            </div>
+                            <div className="project_caption text-center">Clickable Hi-fi prototype</div>
+                        </div>
+                    </div>      
+                 <div className="project_overall_container">
+                     <Row>
+                        <Col md={12} lg={3}></Col> 
+                        <Col md={12} lg={9}>
+                            
+                  
+                                  
+                            <div className="project_container">
+                           
     
                             <section className="project_body" id="research">
                                 <h2>Research</h2>
@@ -286,17 +325,44 @@ function MaterialBank() {
                                         </Col>
                                         
                                     </Row>
-                                    <p>Therefore, after prioritizing issues by severity and matching key problems with pages we decided to focus on redesigning:</p>
-                                        <li>Overall navigation (navbar)</li>
-                                        <li>Landing page</li>
-                                        <li>About us</li>
-                                        <li>Main volunteer page</li>
-                                        <li>Volunteer event related pages</li>
-                                        <li>Seattle Works' Day page as a example of special event</li>
+                                    
                             </section>
                             <section className="project_body" id="design">
                                 <h2>Design & Evaluate</h2>
                                 <h5>Rapid prototyping for usability testing</h5>
+                                <h6>Scoping</h6>
+                                <p>Based on usability studies, we prioritized issues by severity and matched key problems with pages and elements</p>
+                                    <ImageZoom
+                                        image={{
+                                        src: '/images/sw/miro.jpg',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                    }}/>
+                                    <div className="project_caption text-center">We sorted all issues under categories and decided to redesign within 5 focus areas</div>
+                                    <br/>
+                                    <p>We finally decided to focus our redesign on 5 areas and their related elements</p>
+                                    <Container>
+                                        <Row>
+                                            <Col xs={12} md={8}>
+                                            <p class="project_info">Focus Areas</p>
+                                            <li class="project_info">Clear communication of the organization's work and goals</li>
+                                            <li class="project_info">Streamlined user flows on search system and event calendar</li>
+                                            <li class="project_info">A clear distinction between different types of volunteering event</li>
+                                            <li class="project_info">Clear visual hierarchy in event detail descriptions</li>
+                                            <li class="project_info">Better visual design across the website</li>
+                                            </Col>
+                                            <Col xs={12} md={4}>
+                                            <p class="project_info">Elements</p>
+                                            <li class="project_info">Overall navigation (navbar)</li>
+                                            <li class="project_info">Landing page</li>
+                                            <li class="project_info">About us</li>
+                                            <li class="project_info">Main volunteer page</li>
+                                            <li class="project_info">Volunteer event related pages</li>
+                                            <li class="project_info">Seattle Works' Day page as a example of special event</li>
+                                            </Col>
+                                            
+                                        </Row>
+                                        </Container>
                                 <h6>Site Map</h6>
                                     <p>We started with definting the overall site map of the website</p>
                                     
@@ -339,7 +405,7 @@ function MaterialBank() {
                                     
                             </section>
                             <section className="project_body" id="visual">
-                                <h2>Design</h2>
+                                <h2>Visual Design</h2>
                                 <h5>Improve the overall visual communication</h5>
                                 <h6>Moodboard</h6>
                                 <p>The moodboard meant to convey a energetic, thriving and welcoming feeling. It captures images of volunteers working together, enjoying contributing and team work. The moodboard also contains images that represent the identity of Seattle, which is modern, fun and dynamic</p>
@@ -371,33 +437,11 @@ function MaterialBank() {
                                     
                                     
                             </section>
-                 </div>
-                 </Col>
-                 </Row>
-                 </div>
-                 <div className="project_separator" id="deliver" style={{zIndex: "1000"}}>
-
-                    <div className="project_separator_inner_wrapper" >
-                        <h2>Deliver</h2>
-                        <h5>Final Design</h5>
-                        <p>Here is the clickable hi-fi prototype and how we solved the problems in exisiting website</p>
-                        <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
-                        
-                            <iframe style={{border: "none", width: "100%", height:"90vh"}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlIOaQri1Eo3ECuqczDyLbE%2FSeattle-Works-only-wireframe-latest%3Fnode-id%3D402%253A78%26scaling%3Dscale-down" allowfullscreen></iframe>
-                            </div>
-                            <div className="project_caption text-center">Clickable Hi-fi prototype</div>
-                        </div>
-                    </div>      
-                 <div className="project_overall_container">
-                     <Row>
-                        <Col md={12} lg={3}></Col> 
-                        <Col md={12} lg={9}>
-                            
-                  
-                                  
-                            <div className="project_container">
-                            <section className="project_body" id="">
-                               
+                
+                            <section className="project_body" id="deliver">
+                           
+                                <h2>Final Design</h2>
+                                <h5>How we solved the problems</h5>
                                 <h6>1. Simplify information architecture and site navigation</h6>
                                 <br/>
                                 <Row>
@@ -503,6 +547,8 @@ function MaterialBank() {
                             <h2>TAKEAWAYS</h2>
                             <h6>Use usability studies to pivot on actionable items</h6>
                             <p>By listing out and prioritizing issues found in usability testing, we successfully narrowed down our scope and focused on details</p>
+                            <h6>Considering the user needs and the organization's goal at the same time</h6>
+                            <p>After we found the usability issues, we could come up with a lot of different good ways to solve the problems. The current design decision could be made because we tried to solve the fundamental problems and understanding of the core purpose of the website by interviewing a staff.</p>
                         </section>
 
                             </div>

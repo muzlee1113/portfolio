@@ -949,6 +949,7 @@ li, ol{
   background-color: #f8f8f8;
   width: 100%;
   position: relative;
+  z-index: 998;
 }
 
 .project_separator_transparent {

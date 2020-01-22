@@ -51,13 +51,13 @@ const contents = [
 ]
 
 const prev = {
-    url: "/work/Weather",
-    name: "Weather"
+    url: "/work/sw",
+    name: "Seattle Works"
 }
 
 const next = {
-    url: "",
-    name: ""
+    url: "/work/materialbank",
+    name: "Material Bank"
 }
 
 
@@ -68,9 +68,12 @@ function Specs() {
         <div className="project_head_container">
             <section className="project_head">
                 <h1>Specs</h1>
-                <h3>A Figma plugin that helps UX/UI designers specify and communicate their design.</h3>
+                <h3>A Figma plugin that helps UX/UI designers specify their designs and translate them into engineering language.</h3>
                 <div className="project_info">January 2020 (1 day), Individual Project (Still in progress)</div>
             </section>
+        </div>
+        <div className="project_separator_transparent">
+            <img alt='' className="project_headerImg" src={process.env.PUBLIC_URL + "/images/specs/banner.png"} />
         </div>
        
         <div className="project_overview_container" id="overview">
@@ -143,7 +146,7 @@ function Specs() {
                                 </div>
                                 <p>I was very surprised since she made beautiful interactive mockups on Figma. This conversation reminded me again of what I witnessed when I was worked as a UX intern in a design studio: my design colleagues kept running back and forth, getting feedback from the development team and adding things that they had neglected or editing things that didn't work. </p>
 
-                                <p>As a designer who knows how to code, I also experienced some muddles leaving comments or annotations on my prototypes, explaining details of interactions and creating different states of an icon button with a carefully worded label beside. </p>
+                                <p>As a designer who knows how to code, I also experienced some muddles leaving comments or annotations on my prototypes, explaining details of interactions and creating different states of an icon button with a carefully worded label beside:</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/Specs/problem.png',
@@ -170,6 +173,7 @@ function Specs() {
                         <section className="project_body" id="demo">
                             <h2>Solution</h2>
                             <h5>Demo Video</h5>
+                            <p><a className="text_link" href="https://www.figma.com/c/plugin/801332951684837051/Specs">👉 Play with it on Figma</a></p>
                             <p>I designed and developed a Figma Plugin that helps designers to deliver specified prototypes with guided notes to developers. Here is a demo video of an implemented feature (the button design specification).</p>
                             <div style={{ display: 'relative', padding: "20px 0 20px" }} className="d-flex justify-content-center">
                                 <iframe style={{ width: '100%', minHeight: '540px' }} src="https://www.youtube.com/embed/Jj4vYHkfZvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -226,7 +230,7 @@ function Specs() {
                                 <li>③ A design-to-dev notes with fill-in-the-blank questions</li>
                                 <li>④ Auto renaming of all the components in 'component/states' format so that designers can <a href="https://www.youtube.com/watch?v=IHEh9HFBtFU">swap</a> among the states easily on Figma.</li>
                                 <h6>User Flows</h6>
-                                <p>Then, I defined the ideal user flows based on the sketch as guides for my prototypes.</p>
+                                <p>Then, I defined the ideal user flows of both the designers and developers based on the sketch as guides for my prototypes.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/Specs/userflow.png',
@@ -300,14 +304,28 @@ function Specs() {
 
 
                             <section className="project_body" id="deliver">
-                                <h2>Final Solution</h2>
-                                <h5></h5>
-                                
+                                <h2>Final Design</h2>
+                                <h5>How I solved the problems</h5>
+                                <p>Here is the hi-fi prototypes of the interface and also the various new frames and components added to the page after using the plugin.</p>
+                                <ImageZoom
+                                    image={{
+                                        src: '/images/Specs/hi-fi.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                    }}
+
+                                />
                             </section>
                            
                             <section className="project_body" id="todo">
                                 <h2>To Dos</h2>
-                                
+
+                                <h6>Usability Testing</h6>
+                                <p>More usability studies are needed to improve the interface and user interactions</p>
+                                <h6>Extreme Cases Definitions and Design</h6>
+                                <p>There are some cases that users might not follow the ideal user flow. For example they select multiple component or select nothing. These extreme cases should be identified through ideation and testing and alternate user flows, alerts or notifications should be specified.</p>
+                                <h6>More Components, More Features</h6>
+                                <p>My next step is to ideate and prototype data components such as table, list and carousel. Moreover, I'm going to interview more designers to discover more components that designers ran into trouble specifying and communicating and continue to add new components to the plugin.</p>
                             </section>
 
 

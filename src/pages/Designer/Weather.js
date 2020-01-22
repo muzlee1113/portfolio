@@ -35,8 +35,8 @@ const contents=[
 ]
 
 const prev = {
-    url: "/work/sw",
-    name: "Seattle Works"
+    url: "/work/materialbank",
+    name: "Material Bank"
 }
 
 const next = {

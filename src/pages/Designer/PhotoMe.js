@@ -58,8 +58,8 @@ const prev = {
 }
 
 const next = {
-    url: "/work/materialbank",
-    name: "Material Bank"
+    url: "/work/specs",
+    name: "Specs"
 }
 
 
