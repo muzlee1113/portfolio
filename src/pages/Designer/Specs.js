@@ -154,7 +154,7 @@ function Specs() {
                                 />
                                 <div className="project_caption text-center">This is the Figma page of <a className="text_link" href="https://github.com/dabreegster/abstreet/">A/B Street</a>, a game that I'm working on as an UX designer.</div>
                                 
-                                <p>Even if designers work with advanced prototyping tools such as Figma, which offers detailed specifications and even codes, designers still feel it a struggle to deliver their designs to developers.</p>
+                                <p>Even if designers work with advanced prototyping tools such as Figma, which offers detailed specifications and even codes, designers still feel it like a struggle to deliver their designs to developers.</p>
                                 <p>Therefore, I was very interested in the following design question:</p>
                                 <div className="project_quote">
                                     <div className="project_separator_inner_wrapper_small">
