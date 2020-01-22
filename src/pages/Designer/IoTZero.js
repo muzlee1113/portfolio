@@ -126,7 +126,7 @@ class IoTZero extends React.Component {
                                 <h6>Participants</h6>
                                 <p>Administrators from the department in charge of highway light infrastructure and a manager in charge of the streetlight system of an office park.</p>
                                 <h6>Finding 1: Administrators were used to complex tools to 'talk' to devices while used primitive tools and ways to manage their tasks and communicated with others.</h6>
-                                <p>The administrators controlling the highway light system had their own management tool at hand. However, the tool is intricated, with many layers of information and couter-intuitive way of interations.</p>
+                                <p>The administrators controlling the highway light system had their own management tool at hand. However, the tool is intricated, with many layers of information and couter-intuitive way of interactions.</p>
                       
                            
                                 <div className="frame_wrapper">

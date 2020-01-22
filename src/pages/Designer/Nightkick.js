@@ -663,8 +663,8 @@ class Nightkick extends React.Component {
                                     <p>Our medium-fidelity prototypes were to</p>
                                     <ul>
                                         <ol>1. test different features different features in usage scenarios</ol>
-                                        <ol>2. explore variations of interations</ol>
-                                        <ol>3. test the interations between the wearable and the app</ol>
+                                        <ol>2. explore variations of interactions</ol>
+                                        <ol>3. test the interactions between the wearable and the app</ol>
                                     </ul>
                                     <li className="p-list">The Wearable</li>
                                     <p>In paper prototyping, we found that it was very hard to reach the clip-on on backpack and use it. Therefore, we shifted to a badge-like wearble with a clip at the back.</p>
@@ -687,7 +687,7 @@ class Nightkick extends React.Component {
                                             }}
                                             
                                     />
-                                    <p>Then, I used Figma to work on the wireframes and conducted internal test on key interations. Since the interations are highly scenario-based, so we went directly to interactive prototypes so as to test the different features in usage scenarios with users.</p>
+                                    <p>Then, I used Figma to work on the wireframes and conducted internal test on key interactions. Since the interactions are highly scenario-based, so we went directly to interactive prototypes so as to test the different features in usage scenarios with users.</p>
                                     <Container>
                                         <Row>
                                         <Col xs={6}>

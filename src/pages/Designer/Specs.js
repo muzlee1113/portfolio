@@ -68,7 +68,7 @@ function Specs() {
         <div className="project_head_container">
             <section className="project_head">
                 <h1>Specs</h1>
-                <h3>A figma plugin that help UX/UI designers specify and communicate their design.</h3>
+                <h3>A Figma plugin that helps UX/UI designers specify and communicate their design.</h3>
                 <div className="project_info">January 2020 (1 day), Individual Project (Still in progress)</div>
             </section>
         </div>
@@ -77,7 +77,7 @@ function Specs() {
             <Row>
                 <Col sm={12} md={6}>
                     <div className="project_overview_title">Background</div>
-                    <div className="project_overview_content"> This is a "design + coding" challenge I gave to myself to solve a problem that exists in design-dev communication, which is a field that I have been passionate about. I did it to practice using UCD process to solve real-life problem.</div>
+                    <div className="project_overview_content"> This is a "design + coding" challenge I gave to myself to solve a problem that exists in design-dev communication, which is a field that I have been passionate about. I did it to practice using UCD process to solve a real-life problem.</div>
 
                 </Col>
                 <Col></Col>
@@ -137,13 +137,13 @@ function Specs() {
                                 <div className="project_quote">
                                     <div className="project_separator_inner_wrapper_small">
 
-                                        <p className="project_quote_text">I’ve been having a hard time communicating design specs with engineering team utilizing Figma, but I don't have any coding background.</p>
+                                        <p className="project_quote_text">I’ve been having a hard time communicating design specs with the engineering team utilizing Figma, but I don't have any coding background.</p>
                                     </div>
 
                                 </div>
-                                <p>I was very suprised since she made beautiful interactive mockups on Figma. This conversation reminded me again of what I witnessed when I was worked as a UX intern in a design studio: my design colleagues kept running back and forth, getting feedback from the development team and adding things that they had neglected or editing things that didn't work. </p>
+                                <p>I was very surprised since she made beautiful interactive mockups on Figma. This conversation reminded me again of what I witnessed when I was worked as a UX intern in a design studio: my design colleagues kept running back and forth, getting feedback from the development team and adding things that they had neglected or editing things that didn't work. </p>
 
-                                <p>As a designer know how to code, I also experienced some muddles leaving comments or annotations on my prototypes, explaining details of interations and creating different states of a icon button with carefully worded label beside. </p>
+                                <p>As a designer who knows how to code, I also experienced some muddles leaving comments or annotations on my prototypes, explaining details of interactions and creating different states of an icon button with a carefully worded label beside. </p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/Specs/problem.png',
@@ -152,9 +152,9 @@ function Specs() {
                                     }}
 
                                 />
-                                <div className="project_caption text-center">This is the Figma page of <a className="text_link" href="https://github.com/dabreegster/abstreet/">A/B Street</a>, a game that I'm working on as UX designer.</div>
+                                <div className="project_caption text-center">This is the Figma page of <a className="text_link" href="https://github.com/dabreegster/abstreet/">A/B Street</a>, a game that I'm working on as an UX designer.</div>
                                 
-                                <p>Even if designers work with advanced prototyping tool such as Figma, which offers detailed specifications and even codes, designers still feel it a struggle to deliver their design to developers.</p>
+                                <p>Even if designers work with advanced prototyping tools such as Figma, which offers detailed specifications and even codes, designers still feel it a struggle to deliver their designs to developers.</p>
                                 <p>Therefore, I was very interested in the following design question:</p>
                                 <div className="project_quote">
                                     <div className="project_separator_inner_wrapper_small">
@@ -170,9 +170,9 @@ function Specs() {
                         <section className="project_body" id="demo">
                             <h2>Solution</h2>
                             <h5>Demo Video</h5>
-                            <p>I designed and developed a Figma Plugin that helps designers to deliver specified prototypes with guided notes to developers. Here is a demo video of a implemented feature (the button design specification).</p>
+                            <p>I designed and developed a Figma Plugin that helps designers to deliver specified prototypes with guided notes to developers. Here is a demo video of an implemented feature (the button design specification).</p>
                             <div style={{ display: 'relative', padding: "20px 0 20px" }} className="d-flex justify-content-center">
-                                <iframe style={{ width: '100%', minHeight: '540px' }} src="https://www.youtube.com/embed/nQ9lpMrf1zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe style={{ width: '100%', minHeight: '540px' }} src="https://www.youtube.com/embed/Jj4vYHkfZvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </section>
 
@@ -184,7 +184,7 @@ function Specs() {
                                 {/* <h6>User Journey Map</h6> */}
                                 <h6>Key Problems</h6>
                                 <p>Based on my observations and previous talks with different UX/UI designers, I realized the following obstacles that make the communication hard:</p>
-                                <li>When designing, designers neglect important details that creates gaps on their design. Therefore, developers either fill in the blank with their imagination (which is likely to result in more conflicts) or repeatedly ask for specifications.</li>
+                                <li>When designing, designers neglect important details that create gaps in their designs. Therefore, developers either fill in the blank with their imagination (which is likely to result in more conflicts) or repeatedly ask for specifications.</li>
                                 <li>When communicating, designers are not able to use engineering language to explain their thoughts or understand questions raised with these jargons and terms.</li>
                                 <h6>Opportunity Areas</h6>
                                 <p>Therefore, I found these two opportunity areas</p>
@@ -207,11 +207,11 @@ function Specs() {
                                 <h2>Ideate & Design</h2>
                                 <h5>Start from small problems</h5>
                                 <h6>Scoping</h6>
-                                <p>I scoped my design according to the requirements and decided to focus on <b>simple scenrios</b> when designers are designing and later delivering very simple components/pages with basic UI elements such as buttons, inputs and result lists. Also, I decided to a <b>Figma plugin</b> which has lower entry and can fit into design flow seamlessly.</p>
+                                <p>I scoped my design according to the requirements and decided to focus on <b>simple scenarios</b> when designers are designing and later delivering very simple components/pages with basic UI elements such as buttons, inputs and result lists. Also, I decided to a <b>Figma plugin</b> which has lower entry and can fit into design flow seamlessly.</p>
                                 
                                
                                 <h6>Sketching</h6>
-                                <p>I sketched potential feature concepts and how user interact with the product:</p>
+                                <p>I sketched potential feature concepts and how users are going to interact with the product:</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/Specs/sketch.png',
@@ -226,7 +226,7 @@ function Specs() {
                                 <li>③ A design-to-dev notes with fill-in-the-blank questions</li>
                                 <li>④ Auto renaming of all the components in 'component/states' format so that designers can <a href="https://www.youtube.com/watch?v=IHEh9HFBtFU">swap</a> among the states easily on Figma.</li>
                                 <h6>User Flows</h6>
-                                <p>Then, I defined the ideal userflows based on the sketch as guides for my prototypes.</p>
+                                <p>Then, I defined the ideal user flows based on the sketch as guides for my prototypes.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/Specs/userflow.png',
@@ -293,7 +293,7 @@ function Specs() {
                           
                         </Row>
                     </Container>
-                            <p>However, I find it really hard to create interactive prototypes to test the design and interations in real scenarios. Therefore, I decided to develop real HTML/Javascript prototypes for user testing and iteration.</p>
+                            <p>However, I find it really hard to create interactive prototypes to test the design and interactions in real scenarios. Therefore, I decided to develop real HTML/Javascript prototypes for user testing and iteration.</p>
                             </section>
 
 

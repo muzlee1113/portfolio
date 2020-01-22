@@ -114,7 +114,7 @@ export default class IoTDashboard extends React.Component {
                     <section  className="project_body" id="intro">
                     <h2>Problem</h2>
                     <h5>It is hard for infrastructure administrators to notice and solve system issues.</h5>
-                    <p>City infrastructure administrators are responsible for ensuring system health. They need to keep an eye on issues showing up in the system and keep the number down. However, sitting in office, they do not have effective ways to know what is going on until they receive the report comming from on-site team.</p>
+                    <p>City infrastructure administrators are responsible for ensuring system health. They need to keep an eye on issues showing up in the system and keep the number down. However, sitting in office, they do not have effective ways to know what is going on until they receive the report coming from the on-site team.</p>
                     <p>So the initial design question I raised was:</p>
                     <div className="project_quote">
                         <div className="project_separator_inner_wrapper_small">
@@ -128,7 +128,7 @@ export default class IoTDashboard extends React.Component {
                     <section  className="project_body" id="research">
                     <h2>Research & Synthesize</h2>
                     <h5>Problem-shooting Workflow & Problem Space</h5>
-                    <p>I interviewed three administrators from lighting department and synthesized a typical trouble-shooting workflow. I also summarised the problems they faced in the process.</p>
+                    <p>I interviewed three administrators from the lighting department and synthesized a typical trouble-shooting workflow. I also summarised the problems they faced in the process.</p>
                     
                     <ImageZoom
                         image={{
@@ -145,7 +145,7 @@ export default class IoTDashboard extends React.Component {
                 <section  className="project_body" id="ideate1">
                     
                     <h2>Ideate</h2>
-                    <h5>How might we help administrators notice and react to system problem quickly and coordinate problem shooting process efficiently?</h5>
+                    <h5>How might we help administrators notice and react to system problems quickly and coordinate the problem shooting process efficiently?</h5>
                     <p>After delivering my findings to the PM, we decided to start with designing a proactive notification system that alerts them to abnormal data and leads them through the troubleshooting process, and dashboards that provides administrators with real-time system data and actionable insights.</p>
                     <br/>
                     <Container>

@@ -109,7 +109,7 @@ export default class IoTDashboard extends React.Component {
                         </section> */}
                         <section className="project_body" id="design">
                             <h2>Design</h2>
-                            <h5>What data are available and how to visualiza?</h5>
+                            <h5>What data are available and how to visualize?</h5>
                             <p>What I did to tackle this design challenge includes: learning about available data and metrics, matching what we have with what users need by sketching, evaluating and prototyping.</p>
 
                            
@@ -129,7 +129,7 @@ export default class IoTDashboard extends React.Component {
                                     <div className="project_caption text-center">Data sets and metrics of 7 kinds of devices connected to the system</div>
 
                                     <h6>Sketching</h6>
-                                    <p>Then, I started sketching possible visual displays of data and found the graphs fell into three categories: snapshot, trend and comparison</p>
+                                    <p>Then, I started sketching possible visual displays of data and found the graphs fell into three categories: snapshot, trend, and comparison</p>
                                     <ImageZoom
                                         image={{
                                             src: '/images/IoT/sketch_dashboard_graphs.png',
@@ -140,7 +140,7 @@ export default class IoTDashboard extends React.Component {
                                     />
                                     <h6>Exploratory Usability Study</h6>
 
-                                    <p>Later, I created a clickable testing page with my paper prototypes and Axure, and asked my colleagues from the administrative team to rank the graphs according to importance and legibility. I tested them with administrators in my company as an alternative to the real users since they shared a similar mindset.</p>
+                                    <p>Later, I created a clickable testing page with my paper prototypes and Axure and asked my colleagues from the administrative team to rank the graphs according to importance and legibility. I tested them with administrators in my company as an alternative to the real users since they shared a similar mindset.</p>
                                     <ImageZoom
                                         image={{
                                             src: '/images/IoT/graph_testing_vis.gif',
@@ -169,7 +169,7 @@ export default class IoTDashboard extends React.Component {
                         <section className="project_body" id="deliver">
                             <h2>Deliver</h2>
                             <h5>Hi-fidelity Prototypes</h5>
-                            <p>I designed different dashboards for different systems and various devices and also their interations with other pages.</p>
+                            <p>I designed different dashboards for different systems and various devices and also their interactions with other pages.</p>
                             <h6>Dashboard for Street Lighting System</h6>
                             <ImageZoom
                                 image={{
@@ -205,7 +205,7 @@ export default class IoTDashboard extends React.Component {
                         <section className="project_body" id="todo">
                             <h2>To Dos</h2>
                                 <h6>Interactions with Dashboard</h6>
-                                <p>In testing, I realized that many users didn't pay much attention to the dashboards. They spent less than a few seconds on them and jumped to the page they wanted right away. Some users clicked on the graphs, and charts, longing to know more details. Dashboard is a window to view the larger the data well. I would love to improve users' interations with the numbers, graphs and charts so as to give them a powerful tool to pry into details and get more in-depth insights.</p>
+                                <p>In testing, I realized that many users didn't pay much attention to the dashboards. They spent less than a few seconds on them and jumped to the page they wanted right away. Some users clicked on the graphs, and, charts, longing to know more details. A Dashboard is a window to view the larger the data well. I would love to improve users' interactions with the numbers, graphs and charts so as to give them a powerful tool to pry into details and get more in-depth insights.</p>
                             </section>
                         
                       
