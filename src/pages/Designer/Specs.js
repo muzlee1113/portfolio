@@ -73,7 +73,7 @@ function Specs() {
             </section>
         </div>
         <div className="project_separator_transparent">
-            <img alt='' className="project_headerImg" src={process.env.PUBLIC_URL + "/images/specs/mockup.png"} />
+            <img alt='' className="project_headerImg" src={process.env.PUBLIC_URL + "/images/specs/mockup.jpg"} />
         </div>
        
         <div className="project_overview_container" id="overview">
