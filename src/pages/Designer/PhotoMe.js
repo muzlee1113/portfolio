@@ -230,7 +230,7 @@ function PhotoMe() {
                 <section className="project_body">
                     <h2>Research</h2>
                     <h5>Why do people fail to take satisfactory portraits?</h5>
-                    <p>Twelve respondents were interviewed to gain an understanding of the current process of photo shooting. Meanwhile, I also conducted passive observations in a gallery and park to find out how people take pictures for each other.</p>
+                    <p>Twelve participants (9 are portrait-lovers and 3 are their partners/friends) were interviewed to gain an understanding of the current process of photo shooting. Meanwhile, I also conducted passive observations in a gallery and park to find out how people take pictures for each other.</p>
                     <p>A typical unsatisfactory portrait shooting experience can be divided in to seven steps as below, some of which are reversible:</p>
                    
                     <ImageZoom
@@ -273,7 +273,7 @@ function PhotoMe() {
                    
                     
                     <p>I realized that the key issue was not the nature of the scene nor the photographer's skill. The photographer knew exactly the angle, the light and the composition that he wanted for his "good" picture, but he didn't know or understand what she wanted for her good picture, because she failed to convey her expectation or he failed to grasp it.</p>
-                    <p>The biggest design opportunity I discovered lies in <b>communication</b>. So I reframed the research question as <b>why do people fail to convey or decode information in the photo-taking process? </b></p>
+                    <p>The biggest design opportunity I discovered lies in <b>communication</b>. So I shifted my focus to <b>why  people fail to convey or decode information in the photo-taking process? </b></p>
                 </section>
             
 
