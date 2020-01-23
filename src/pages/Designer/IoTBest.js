@@ -81,8 +81,8 @@ const prev = {
 }
 
 const next = {
-    url: "/work/nightkick",
-    name: "Nightkick"
+    url: "/work/sw",
+    name: "Seattle Works"
 }
 
 
@@ -672,7 +672,15 @@ class IoTBest extends React.Component {
 
                                 />
                                 <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/final_bulk_control.gif")}>click here to watch the interaction (gif of the website).</Button></div>
+                                <div className="project_quote">
+                                    <div className="project_separator_inner_wrapper_small">
 
+                                       
+                                        <p className="project_quote_text">The new system was shipped in late September 2019 as part of the alpha product for more testing and improvement. With the new lighting control interfaces, administrators found the lighting plan configuration and device control process much shorter and easier. They also liked the flexibility of controling devices in group.</p>
+                                    </div>
+
+                                </div>
+                               
                             </section>
 
                     </Col>
@@ -707,7 +715,7 @@ class IoTBest extends React.Component {
                             </Col>
                             <Col md={12} lg={9}>
                                 <section id="todo" className="project_body">
-                                    <h2>TO-DOS</h2>
+                                    <h2>TO DOS</h2>
                                     <p></p>
                                     <h6>Design for Behavior Change</h6>
                                     <p>I would love to dive deeper into applying nudge theory in the design if I had given more time. I have been very interested in this topic and I saw a great opportunity here to design for more efficient energy use. I proposed a possibility to show users how much energy they will save after they choose to 'auto-optimize' the day-to-day lighting plan. This feature would serve as a nudge to environmentally friendly behavior. </p>

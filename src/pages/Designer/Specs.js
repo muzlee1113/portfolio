@@ -51,13 +51,13 @@ const contents = [
 ]
 
 const prev = {
-    url: "/work/sw",
-    name: "Seattle Works"
+    url: "/work/photome",
+    name: "Photo Me"
 }
 
 const next = {
-    url: "/work/materialbank",
-    name: "Material Bank"
+    url: "/work/nightkick",
+    name: "Nightkick"
 }
 
 
@@ -315,6 +315,15 @@ function Specs() {
                                     }}
 
                                 />
+                                 <div className="project_quote">
+                                    <div className="project_separator_inner_wrapper_small">
+
+                                       
+                                        <p className="project_quote_text">With the help of specs, designers can consider all design aspects thoroughly and communicate their ideas to engineers easily and accurately to achieve better implementation of their designs. Eventually, it will improve the efficiency of the product development process and the quality of the final deliverables.</p>
+                                    </div>
+
+                                </div>
+                               
                             </section>
                            
                             <section className="project_body" id="todo">

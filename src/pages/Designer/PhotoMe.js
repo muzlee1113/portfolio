@@ -53,8 +53,8 @@ const contents=[
 ]
 
 const prev = {
-    url: "/work/Nightkick",
-    name: "Nightkick"
+    url: "/work/sw",
+    name: "Seattle Works"
 }
 
 const next = {
@@ -71,7 +71,7 @@ function PhotoMe() {
             <div className="project_head_container">
                 <section className="project_head">
                     <h1>PhotoMe</h1>
-                    <h3>A mobile app that empowers others to create satisfactory portraits for you.</h3>
+                    <h3>A mobile app that empowers others to capture better you.</h3>
                     <div className="project_info">May to August 2018 (4 months), Bootcamp Individual Project</div>
                 </section>
             </div>
@@ -215,6 +215,14 @@ function PhotoMe() {
                     <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
                         <iframe style={{width:'100%',minHeight:'540px'}} src="https://www.youtube.com/embed/9SHfjBA0Bdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    <br/>
+                    <hr/>
+                    <br/>
+                    <h5>Clickable Hi-fi Prototypes</h5>
+                    <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
+                    
+                        <iframe style={{border: "none", width: "100%", height:"600px"}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvqvzoA8Su3do5wqJZPYRJq%2FPhotoMe%3Fnode-id%3D42%253A1%26scaling%3Dscale-down" allowfullscreen></iframe>
+                    </div>
             </section>
             
             <div className="project_container" id="research">
@@ -265,7 +273,7 @@ function PhotoMe() {
                    
                     
                     <p>I realized that the key issue was not the nature of the scene nor the photographer's skill. The photographer knew exactly the angle, the light and the composition that he wanted for his "good" picture, but he didn't know or understand what she wanted for her good picture, because she failed to convey her expectation or he failed to grasp it.</p>
-                    <p>The biggest design opportunity I discovered lies in <b>communication</b>. So I reframed the problem as <b>why do people fail to convey or decode information in the photo-taking process? </b></p>
+                    <p>The biggest design opportunity I discovered lies in <b>communication</b>. So I reframed the research question as <b>why do people fail to convey or decode information in the photo-taking process? </b></p>
                 </section>
             
 
@@ -297,6 +305,14 @@ function PhotoMe() {
                     />
                    
                     <p>Even if the subject manages to give some concrete instructions, for the photographer, to understand what those mean and apply them into the photo-taking process still <b>involves a lot of translations</b>. People use different words to refer to the same thing. When talking about 'Don't take the picture from a low angle' or 'Stand closer to me', the terms 'low angle' or 'closer' actually requires a clear and explicit definition. But when people talk before taking the picture, there is no time for them to clarify all the languages they use.</p>
+                    <p>Based on the insights, I reframed the design question to be:</p>
+                        <div className="project_quote">
+                            <div className="project_separator_inner_wrapper_small">
+
+                                <p className="project_quote_text">How might we help people better communicate in the photo taking process?</p>
+                            </div>
+
+                        </div>
                 </section>
 
     
@@ -383,7 +399,7 @@ function PhotoMe() {
                 
                 <section className="project_body" id="deliver">
                     <h2>Final Design</h2>
-                    <h5>How might we help people better communicate in the photo taking process?</h5>
+                    <h5>How I solved the problems</h5>
                     <ImageZoom
                         image={{
                             src: '/images/PhotoMe/wireframe.png',
@@ -491,15 +507,16 @@ function PhotoMe() {
                            
                         </Row> 
                     </Container>
-                    
+                    <div className="project_quote">
+                                    <div className="project_separator_inner_wrapper_small">
+
+                                       
+                                        <p className="project_quote_text">With PhotoMe, people can truely enjoy a carefree portrait taking experience. They can easily find where to go, show what they want and see what they got. Their partner or friend no longer need to guess about their preferences and worry about ruining their quality time with terrible pictures. </p>
+                                    </div>
+
+                                </div>    
                 </section>
-                <section className="project_body" id="">
-                    <h5>Clickable Hi-fi Prototypes</h5>
-                        <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
-                        
-                            <iframe style={{border: "none", width: "100%", height:"600px"}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvqvzoA8Su3do5wqJZPYRJq%2FPhotoMe%3Fnode-id%3D42%253A1%26scaling%3Dscale-down" allowfullscreen></iframe>
-                            </div>
-                      </section>
+             
                      
                         
                      

@@ -79,13 +79,13 @@ const contents=[
 ]
 
 const prev = {
-    url: "/work/IoT",
-    name: "An IoT-based City Infrastructure Management Tool"
+    url: "/work/specs",
+    name: "Specs"
 }
 
 const next = {
-    url: "/work/photome",
-    name: "PhotoMe"
+    url: "/work/materialbank",
+    name: "Material Bank"
 }
 
 
@@ -847,7 +847,7 @@ class Nightkick extends React.Component {
 
                                 </section>
                                 <section className="project_body" id="hifi">
-                                    <h2>Design</h2>
+                                    <h2>Visual Design</h2>
                                     <h5>Visual Design and Specification</h5>
                                     <h6>Moodboard & Visual System</h6>
                                     <p>I was responsible for the visual system of Nightkick. I created a moodboard and managed the final visual design system. We decided to use dark mode to better fit the usage scenario. (Icons credited to Material Design).</p>
@@ -901,8 +901,8 @@ class Nightkick extends React.Component {
                                     
                                 </section>
                                 <section className="project_body" id="deliver">
-                                <h2>Deliver</h2>
-                                <h5>Final Design and Design Communication</h5>
+                                <h2>Final Design</h2>
+                                <h5>How did we solve the problems</h5>
                                 <h6>Key Features</h6>
                                     <ImageZoom
                                         image={{
@@ -916,7 +916,14 @@ class Nightkick extends React.Component {
                                     <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
                                     <iframe style={{border: "none", width: "100%", height:"600px"}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWIV685BOxE1xbpfIrscxKw%2FTater-Trots%3Fnode-id%3D328%253A25941%26scaling%3Dscale-down" allowfullscreen></iframe>
                                      </div>
-                                    
+                                     <div className="project_quote">
+                                    <div className="project_separator_inner_wrapper_small">
+
+                                       
+                                        <p className="project_quote_text">We got a lot of positive feedback in the final showcase. People liked how we keep the product simple but useful. Some even told us that they would love to buy one for their night commute :).</p>
+                                    </div>
+
+                                </div>    
                                        
                                 </section>
                                 <section className="project_body" id="concern">

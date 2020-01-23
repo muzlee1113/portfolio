@@ -55,13 +55,13 @@ const contents=[
 ]
 
 const prev = {
-    url: "/work/photome",
-    name: "PhotoMe"
+    url: "/work/IoT",
+    name: "An IoT-based City Infrastructure Management Tool"
 }
 
 const next = {
-    url: "/work/specs",
-    name: "Specs"
+    url: "/work/photome",
+    name: "PhotoMe"
 }
 
 function MaterialBank() {
