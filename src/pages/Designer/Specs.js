@@ -144,7 +144,7 @@ function Specs() {
                                     </div>
 
                                 </div>
-                                <p>I was very surprised since she made beautiful interactive mockups on Figma. This conversation reminded me again of what I witnessed when I was worked as a UX intern in a design studio: my design colleagues kept running back and forth, getting feedback from the development team and adding things that they had neglected or editing things that didn't work. </p>
+                                <p>I was very surprised since she made beautiful interactive mockups on Figma. This conversation reminded me again of what I witnessed when I was working as a UX intern in a design studio: my design colleagues kept running back and forth, getting feedback from the development team and adding things that they had neglected or editing things that didn't work. </p>
 
                                 <p>As a designer who knows how to code, I also experienced some muddles leaving comments or annotations on my prototypes, explaining details of interactions and creating different states of an icon button with a carefully worded label beside:</p>
                                 <ImageZoom
@@ -157,7 +157,7 @@ function Specs() {
                                 />
                                 <div className="project_caption text-center">This is the Figma page of <a className="text_link" href="https://github.com/dabreegster/abstreet/">A/B Street</a>, a game that I'm working on as an UX designer.</div>
                                 
-                                <p>Even if designers work with advanced prototyping tools such as Figma, which offers detailed specifications and even codes, designers still feel it like a struggle to deliver their designs to developers.</p>
+                                <p>Even if designers work with advanced prototyping tools such as Figma, which offers detailed specifications and even codes, they still feel it like a struggle to deliver their designs to developers.</p>
                                 <p>Therefore, I was very interested in the following design question:</p>
                                 <div className="project_quote">
                                     <div className="project_separator_inner_wrapper_small">
@@ -211,7 +211,7 @@ function Specs() {
                                 <h2>Ideate & Design</h2>
                                 <h5>Start from small problems</h5>
                                 <h6>Scoping</h6>
-                                <p>I scoped my design according to the requirements and decided to focus on <b>simple scenarios</b> when designers are designing and later delivering very simple components/pages with basic UI elements such as buttons, inputs and result lists. Also, I decided to a <b>Figma plugin</b> which has lower entry and can fit into design flow seamlessly.</p>
+                                <p>I scoped my design according to the requirements and decided to focus on <b>simple scenarios</b> when designers are designing and later delivering very simple components/pages with basic UI elements such as buttons, inputs and result lists. Also, I decided to create a <b>Figma plugin</b> which has lower entry and can fit into one's design flow seamlessly.</p>
                                 
                                
                                 <h6>Sketching</h6>
@@ -226,11 +226,11 @@ function Specs() {
                                 />
                                 <p>I decided to help designers specify their design with:</p>
                                 <li>① A checklist of easy-to-forget details</li>
-                                <li>② A need-to-be-specified list of different component states with engineering language label and designer language decription</li>
-                                <li>③ A design-to-dev notes with fill-in-the-blank questions</li>
-                                <li>④ Auto renaming of all the components in 'component/states' format so that designers can <a href="https://www.youtube.com/watch?v=IHEh9HFBtFU">swap</a> among the states easily on Figma.</li>
+                                <li>② A need-to-be-specified list of different component states with labels in engineering language and decriptions in designer language</li>
+                                <li>③ A design-to-dev notes in a fill-in-the-blank format</li>
+                                <li>④ Auto renaming all the components in 'component/states' format so that designers can <a className="text_link" href="https://www.youtube.com/watch?v=IHEh9HFBtFU">swap</a> among the states easily on Figma.</li>
                                 <h6>User Flows</h6>
-                                <p>Then, I defined the ideal user flows of both the designers and developers based on the sketch as guides for my prototypes.</p>
+                                <p>Then, I defined the ideal user flows of both the designers and developers based on the sketch and used it as guide for my prototypes.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/Specs/userflow.png',
@@ -297,7 +297,7 @@ function Specs() {
                           
                         </Row>
                     </Container>
-                            <p>However, I find it really hard to create interactive prototypes to test the design and interactions in real scenarios. Therefore, I decided to develop real HTML/Javascript prototypes for user testing and iteration.</p>
+                            <p>However, I found it really hard to create interactive prototypes to test the design and interactions in real scenarios. Therefore, I decided to develop real HTML/Javascript prototypes for user testing and iteration.</p>
                             </section>
 
 
@@ -306,7 +306,7 @@ function Specs() {
                             <section className="project_body" id="deliver">
                                 <h2>Final Design</h2>
                                 <h5>How I solved the problems</h5>
-                                <p>Here is the hi-fi prototypes of the interface and also the various new frames and components added to the page after using the plugin.</p>
+                                <p>Here is the hi-fi prototypes of the plugin interface and also the various new frames and components added to the page after using the plugin.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/Specs/hi-fi.png',
@@ -332,9 +332,9 @@ function Specs() {
                                 <h6>Usability Testing</h6>
                                 <p>More usability studies are needed to improve the interface and user interactions</p>
                                 <h6>Extreme Cases Definitions and Design</h6>
-                                <p>There are some cases that users might not follow the ideal user flow. For example they select multiple component or select nothing. These extreme cases should be identified through ideation and testing and alternate user flows, alerts or notifications should be specified.</p>
+                                <p>There are some cases that users might not follow the ideal user flow. For example, they might select multiple components or select nothing. These extreme cases should be identified through ideation and testing and alternate user flows and notifications should be specified.</p>
                                 <h6>More Components, More Features</h6>
-                                <p>My next step is to ideate and prototype data components such as table, list and carousel. Moreover, I'm going to interview more designers to discover more components that designers ran into trouble specifying and communicating and continue to add new components to the plugin.</p>
+                                <p>My next step is to ideate and prototype data components such as table, list and carousel. Moreover, I'm going to interview more designers to discover more components that designers ran into trouble when specifying or communicating and continue to add new components to the plugin.</p>
                             </section>
 
 
