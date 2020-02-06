@@ -48,6 +48,11 @@ const contents=[
 
     },
     {
+        id:"#impact",
+        name:"Impact"
+
+    },
+    {
         id:"#take",
         name:"Takeaways"
 
@@ -539,9 +544,26 @@ function MaterialBank() {
                                     }}
                                 
                                 />
-
+                       
+                              
 
                             </section>
+                            <section id="impact" className="project_body">
+                            <h2>Impact</h2>
+                            <h5>Client Feedback</h5>
+                            <p>We shared our final design with Seattle Works and got very possitive feedback.</p>
+                            <div className="project_quote">
+                                    <div className="project_separator_inner_wrapper_small">
+                                    
+                                    
+                                       
+                                        <p className="project_quote_text">I really like the addition of images and removing a lot of the text. I especially like the “About” section. I think it tells a better story of who we are and what we do, in a much easier to read and more visually appealing way. This is helpful as we think about website design in the future, and how we make our website more user friendly.</p>
+                                    </div>
+
+                                </div>
+                        </section>
+                            
+
                             
                         <section id="take" className="project_body">
                             <h2>TAKEAWAYS</h2>

@@ -508,13 +508,13 @@ function PhotoMe() {
                         </Row> 
                     </Container>
                     <div className="project_quote">
-                                    <div className="project_separator_inner_wrapper_small">
+                        <div className="project_separator_inner_wrapper_small">
 
-                                       
-                                        <p className="project_quote_text">With PhotoMe, people can truely enjoy a carefree portrait taking experience. They can easily find where to go, show what they want and see what they got. Their partner or friend no longer need to guess about their preferences and worry about ruining their quality time with terrible pictures. </p>
-                                    </div>
+                            
+                            <p className="project_quote_text">With PhotoMe, people can truely enjoy a carefree portrait taking experience. They can easily find where to go, show what they want and see what they got. Their partner or friend no longer need to guess about their preferences and worry about ruining their quality time with terrible pictures. </p>
+                        </div>
 
-                                </div>    
+                    </div>    
                 </section>
              
                      

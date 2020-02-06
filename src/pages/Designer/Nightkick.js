@@ -57,6 +57,11 @@ const contents=[
 
     },
     {
+        id:"#impact",
+        name:"Impact"
+
+    },
+    {
         id:"#concern",
         name:"Concerns"
 
@@ -71,11 +76,7 @@ const contents=[
         name:"Takeaways"
 
     },
-    {
-        id:"#present",
-        name:"Bonus!"
-
-    },
+    
 ]
 
 const prev = {
@@ -916,16 +917,32 @@ class Nightkick extends React.Component {
                                     <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
                                     <iframe style={{border: "none", width: "100%", height:"600px"}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWIV685BOxE1xbpfIrscxKw%2FTater-Trots%3Fnode-id%3D328%253A25941%26scaling%3Dscale-down" allowfullscreen></iframe>
                                      </div>
-                                     <div className="project_quote">
+                                     
+                                       
+                                </section>
+                                <section className="project_body" id="impact">
+                                <h2>Impact</h2>
+                                <h5>Presentation & Feedback</h5>
+                                <p>We had a great time doing final presentation</p>
+                                <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
+                                        <iframe style={{width:'100%',minHeight:'540px'}}  src="https://www.youtube.com/embed/PBKgMAdzla0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <p>We got a lot of positive feedback in the final showcase. </p>
+                                <div className="project_quote">
                                     <div className="project_separator_inner_wrapper_small">
 
                                        
-                                        <p className="project_quote_text">We got a lot of positive feedback in the final showcase. People liked how we keep the product simple but useful. Some even told us that they would love to buy one for their night commute :).</p>
+                                        <p className="project_quote_text">I liked how you guys keep the product simple but useful. I would love to buy one for my night commute :).</p>
                                     </div>
 
                                 </div>    
-                                       
-                                </section>
+                                <ImageZoom
+                                        image={{
+                                        src: '/images/nightkick/feedback.jpg',
+                                        alt: '',
+                                        className: 'project_illustration_medium'
+                                }}/>
+                            </section>
                                 <section className="project_body" id="concern">
                                 <h2>Concerns</h2>
                                 <h6>Privacy issues</h6>
@@ -939,14 +956,8 @@ class Nightkick extends React.Component {
                             </section>
                             <section className="project_body" id="todos">
                                 <h2>To-dos</h2>
-                                <p>We received a lot of feedback after the final showcase and we would love to work on the following problems and potential features</p>
-                                <ImageZoom
-                                        image={{
-                                        src: '/images/nightkick/feedback.jpg',
-                                        alt: '',
-                                        className: 'project_illustration_medium'
-                                }}/>
-                                <br/>
+                                <p>We would love to work on the following problems and potential features</p>
+                                
                                 <li>The view of the contacts who receive notifications.</li>
                                 <li>Reflect uncomfortable zone on map in addition to crowdedness</li>
                                 <li>Electronic and mechanical design of the wearable</li>
@@ -963,14 +974,7 @@ class Nightkick extends React.Component {
                                 <h6>Design ethics</h6>
                                 <p>Many considerations came up during our design process. For example, our research found that many people felt unsafe by people who appeared to be experiencing homelessness. Even though trying to address this would fit within our design question, we decided that the risk of unintentional consequences from stereotypes were very high if we chose this path.</p>
                             </section>
-                            <section className="project_body" id="present">
-                                <h2>Bonus</h2>
-                                <h5>The Final Presentation 😝</h5>
-
-                                <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
-                                        <iframe style={{width:'100%',minHeight:'540px'}}  src="https://www.youtube.com/embed/PBKgMAdzla0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </section>
+                           
                                
                             </div>
                            
