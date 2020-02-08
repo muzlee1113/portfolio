@@ -154,7 +154,7 @@ class IoTBest extends React.Component {
                     <Col sm={4} md={2}>
 
                         <div className="project_overview_title">My Role</div>
-                        <div className="project_overview_content">Research</div>
+                        <div className="project_overview_content">User Research</div>
                         <div className="project_overview_content">Product Design</div>
                         <div className="project_overview_content">Interaction Design</div>
                         <div className="project_overview_content">Prototyping</div>
@@ -196,7 +196,6 @@ class IoTBest extends React.Component {
                         <div className="project_overview_content py-1"><b>Ideate</b></div>
                         <div className="project_overview_content">Brainstorming</div>
                         <div className="project_overview_content">Sketching</div>
-                        <div className="project_overview_content">Feasibility analysis</div>
                     </Col>
                     <Col xs={4} md={2}>
                         <img src={process.env.PUBLIC_URL + "/images/centerStep.png"} />
@@ -251,8 +250,8 @@ class IoTBest extends React.Component {
                         <section className="project_body" id="intro">
                             <div id="scrollstart"></div>
                             <h2>Problem</h2>
-                            <h5>Lighting infrastructure Administrators were given complex tools to control devices</h5>
-                            <p>Here is the existing management tool for the administrators to control the highway light system. The problems of the tool are obvious:</p>
+                            <h5>Complex tools were used to control street lights</h5>
+                            <p>Here is the existing management tool for the administrators to control the highway lighting system. The problems of the tool are obvious:</p>
                             <ImageZoom
                                 image={{
                                     src: '/images/IoT/existingtool.png',
@@ -280,7 +279,7 @@ class IoTBest extends React.Component {
 
                 <div className="project_separator_inner_wrapper" >
                     <h2>Solution</h2>
-                    <h5>Demos</h5>
+                    <h5>Final Design</h5>
                             <Row>
 
                                 <Col xs={4}>
@@ -359,9 +358,15 @@ class IoTBest extends React.Component {
 
                             <section className="project_body" id="research">
                                 <h2>Research</h2>
-                                <h5>Why and how did administrators control the street lights?</h5>
+                                <h5>Why and how did administrators of lighting infrastructure control the street lights?</h5>
                                 <h6>Research Questions</h6>
-                                <p>To understand the purposes of controlling the street lights and their typical workflows, I advocated strongly conducting user research to my PM. I eventually got the chance to connect with three administrators of the street lighting system and visited their office in person.</p>
+                                <p></p>
+                                <li>How do administrators of city street lighting system work?</li>
+                                <li>What are the purposes for controling the lights?</li>
+                                <li>What problems do they have in the process?</li>
+
+                                <h6>Research Methods</h6>
+                                <p>To understand the purposes of controlling the street lights and an administrator's typical workflows, I conducted contextual inquires with three administrators of the street lighting system. They walked me through their daily work at their office and answered my questions.</p>
                                 <img className="project_illustration_extrasmall" src={process.env.PUBLIC_URL + "/images/IoT/contextual_inquiry.png"} />
                                 <Container>
                                     <Row>
@@ -393,7 +398,7 @@ class IoTBest extends React.Component {
 
                             <section className="project_body" id="syn">
                                 <h2>Synthesize</h2>
-                                <h5>Different scenarios, different workflows, different purposes</h5>
+                                <h5>Different scenarios, different purposes, different workflows, different problems</h5>
                                 <p>From the contextual inquiries, I found that why and how they control the lighting system can be classified into three scenarios that follow different workflows. However, the existing system didn't distinguish these types, let alone supporting their different needs.</p>
                                 <ImageZoom
                                     image={{
@@ -408,7 +413,7 @@ class IoTBest extends React.Component {
                                 <div className="project_quote">
                                     <div className="project_separator_inner_wrapper_small">
 
-                                        <p className="project_quote_text">How might we help administrators configure daily city lighting to achieve energy-saving goals and adjust the lighting on special occasions easily?</p>
+                                        <p className="project_quote_text">How might we help administrators configure daily city lighting to achieve energy-saving goals and adjust the lighting on special occasions or in emergency?</p>
                                     </div>
 
                                 </div>
@@ -418,7 +423,7 @@ class IoTBest extends React.Component {
                             <section className="project_body" id="ideate">
                                 <h2>Ideate</h2>
 
-                                <h5>How might we help administrators to configure city lighting energy-efficiently and adjust lighting for special occasions easily?</h5>
+                                <h5>From problems to solutions</h5>
 
 
                                 <ImageZoom
@@ -441,7 +446,7 @@ class IoTBest extends React.Component {
                             </section>
                             <section className="project_body" id="design">
                                 <h2>Design</h2>
-                                <h5>User flows and Wireframes</h5>
+                                <h5>User flows and wireframes</h5>
 
                                 <p>So I started with mapping the user flows of each scenario and how the new system was going to support each of the steps. I then wireframed the possible interfaces of the system.</p>
                                 <h6>1. Day-to-day plan setup</h6>
@@ -464,12 +469,12 @@ class IoTBest extends React.Component {
                                     }}
 
                                 />
-                                <p>A specific challenge I faced in wireframing the setting interface is how to make the work plan setting interface more intuitive. I wireframed two ways to improve the experience: one is allowing users to click boxes on the bar chart to set luminosity; the other is using simple dropdown and inputs.</p>
+                                <p>A specific challenge I faced in wireframing the setting interface is how to make the work plan setting interface more intuitive and provide users with more visual hints. I wireframed two ways to improve the experience: one is clicking boxes on the bar charts to set time and luminosity; the other using simple dropdown and inputs to select time and enter luminosity.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/workplan.png',
                                         alt: '',
-                                        className: 'project_illustration_medium'
+                                        className: 'project_illustration'
                                     }}
 
 
@@ -486,7 +491,7 @@ class IoTBest extends React.Component {
                                     }}
 
                                 />
-                                <p>Later, when actually wireframing, I realized that the first path, looking for street lights from a map was a lot more complicated than I had thought, especially in the case when users want to control multiple devices. Therefore, I specified the user flow of bulk control:</p>
+                                <p>When actually wireframing, I realized that the first path, looking for street lights from a map was a lot more complicated than I had thought, especially in the case when users want to control multiple devices. Therefore, I specified the user flow of bulk control:</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/bulkcontrol/bulkcontrol_userflow.png',
@@ -496,12 +501,12 @@ class IoTBest extends React.Component {
 
                                 />
                                 <div className="project_caption text-center">Specification of the bulk control user flow</div>
-                                <p>Later, I wireframed variations of the interfaces for each step including selecting groups of devices, retrieving and checking selected devices, narrowing down the list for control and getting control feedback.</p>
+                                <p>I later wireframed variations of the interfaces for each step including selecting groups of devices, retrieving and checking selected devices, narrowing down the list for control and getting control feedback.</p>
 
 
                                 {this.state.hide4 ? (<>
                                     <div className="hiden_content_switch_container text-center">
-                                        <button class="uk-button uk-button-secondary uk-width-1-1" onClick={() => this.toggleHiddenContent("hide4")}><span uk-icon="icon: search"></span> Click to See Detailed Exploration </button>
+                                        <button class="uk-button uk-button-secondary uk-width-1-1" onClick={() => this.toggleHiddenContent("hide4")}><span uk-icon="icon: search"></span> Click to See Detailed Exploration of Bulk Control</button>
                                     </div></>) : (<>
                                         <div className="hiden_content_switch_container text-center">
                                             <button class="uk-button uk-button-secondary uk-width-1-1" onClick={() => this.toggleHiddenContent("hide4")}>Hide Detailed Exploration</button>
@@ -509,43 +514,67 @@ class IoTBest extends React.Component {
                                         {/* ----------------hidden 👇---------------------- */}
 
 
-
+                                        <h6>*Bulk control</h6>
                                         <li className="p-list">Select Devices</li>
-                                        <p className="project_info">I ideated four ways to select multiple devices. Since administrators usually control lights by defined areas (administrative divisions), the 'selet-a-area' buttons will be useful for them. Moreover, multi-selection on map is the ideal way to select devices by undefined areas such as a intersection. So I decided to combine these two and used the tree diagram on special light plan set up where administrators want to apply a light plan to large and multiple areas.</p>
+                                        <p className="project_info">I ideated four ways to select multiple devices.</p>
                                         <ImageZoom
                                             image={{
-                                                src: '/images/IoT/bulkcontrol/select.png',
+                                                src: '/images/IoT/bulkcontrol/select1.png',
+                                                alt: '',
+                                                className: 'project_illustration'
+                                            }}
+
+                                        /><ImageZoom
+                                        image={{
+                                            src: '/images/IoT/bulkcontrol/select2.png',
+                                            alt: '',
+                                            className: 'project_illustration'
+                                        }}
+
+                                    />
+                                        <p className="project_info">Since administrators usually control lights by defined areas (administrative divisions), the 'selet-an-area' button is more useful for them. Moreover, multi-selection on map is the ideal way to select devices by undefined areas such as all lights at an intersection. So I decided to combine these two and use the tree diagram on special plan setup where administrators want to apply a light plan to large and multiple areas.</p>
+
+
+
+                                        <li className="p-list">Retrieve Selected Device</li>
+                                        <p className="project_info">One thing that needed to be considered was where the "selected device" button should be located. I wireframed four locations of the button and finally decided to put the button at top since it was the most straightforward version and produced no ambiguity of its scope.</p>
+                                        <ImageZoom
+                                            image={{
+                                                src: '/images/IoT/bulkcontrol/retrieve_button1.png',
                                                 alt: '',
                                                 className: 'project_illustration'
                                             }}
 
                                         />
-
-
-
-                                        <li className="p-list">Retrieve Selected Device</li>
-                                        <p className="project_info">The questions of specifying the information retrieval process existed in where the "selected device" button should locate and where and how to display the selected device.</p>
-                                        <p className="project_info">I wireframed four locations of the button. I finally decided on the last option since it was the most straightforward version and produced no ambiguity of its scope.</p>
                                         <ImageZoom
                                             image={{
-                                                src: '/images/IoT/bulkcontrol/retrieve_button.png',
+                                                src: '/images/IoT/bulkcontrol/retrieve_button2.png',
                                                 alt: '',
                                                 className: 'project_illustration'
                                             }}
 
                                         />
                                         <li className="p-list">Check Selected Device</li>
-                                        <p className="project_info">As for how to display selected devices, I created the following wireframes. We eventually decided to send users to a new page once user click 'view selected device' button on top to give more space for information display so that users can clearly check what are selected. In addition, a grouped table was proved to be the most efficient and clear way to display the selected devices.</p>
+                                        <p className="project_info">As for how to display selected devices, I created the following wireframes.</p>
                                         <ImageZoom
                                             image={{
-                                                src: '/images/IoT/bulkcontrol/retrieve_display.png',
+                                                src: '/images/IoT/bulkcontrol/retrieve_display1.png',
                                                 alt: '',
                                                 className: 'project_illustration'
                                             }}
 
                                         />
+                                        <ImageZoom
+                                            image={{
+                                                src: '/images/IoT/bulkcontrol/retrieve_display2.png',
+                                                alt: '',
+                                                className: 'project_illustration'
+                                            }}
+
+                                        />
+                                        <p className="project_info">I eventually decided to send users to a new page once user click 'view selected device' button on top to give more space for information display so that users can clearly check what are selected. In addition, a grouped table was proved to be the most efficient and clear way to display the selected devices.</p>
                                         <li className="p-list">Apply Advanced Filters</li>
-                                        <p>For selecting street lights on map view, administrators can narrow down the scope by the area and road filters on map. However, they also want to specify types, luminance or other attributes of the lights. To support this, I included advanced filters in the selected device page. The problem is how to display various options and, at the same time, make sure that administrators know what are selected.</p>
+                                        <p>For selecting street lights on map view, administrators can narrow down the scope by the area and street filters on map. However, they still need to narrowed them down by specifying types, luminance or other attributes of the lights. To support this, I included advanced filters in the selected device page. The problem is how to display various options and, at the same time, make sure that administrators know what are selected.</p>
                                         <ImageZoom
                                             image={{
                                                 src: '/images/IoT/bulkcontrol/advancedFilters.png',
@@ -557,7 +586,7 @@ class IoTBest extends React.Component {
                                         <p>The final version was coming from several iterations on how to show options and display applied filters.</p>
 
                                         <li className="p-list">Control Response</li>
-                                        <p className="project_info">The administrators should be careful about adjusting city infrastructure settings. They need to know whether they have changed the setting successfully. Thus, I ideated are two ways of feedback.</p>
+                                        <p className="project_info">The administrators should be careful about adjusting city infrastructure settings. They need to know whether they have changed the setting successfully or not. Thus, I ideated two ways of feedback.</p>
 
                                         <ImageZoom
                                             image={{
@@ -576,9 +605,9 @@ class IoTBest extends React.Component {
                                             }}
 
                                         />
-                                        <li className="project_info">Firstly, an alert will pop up once they apply a new setting asking for confirmation.</li >
+                                        <li className="project_info">Firstly, an alert will pop up once once a control was applied, asking for confirmation.</li >
                                         <li className="project_info">After confirmation, a alert will show up indicating the process and the action button will gray out. </li>
-                                        <li className="project_info">After applying the setting, a clear alert will show the number of successful settings with indicators of error and success on the selected device list to support trouble shooting. The button will then changes into 'redo' that allow users to rerun the action again.</li>
+                                        <li className="project_info">After applying the setting, a clear alert will show the number of successful settings and the indicators of error and success will show up on the selected device list to support trouble shooting. The button will then changes into 'redo' that allow users to rerun the action again to the devices that returned errors.</li>
 
 
 
@@ -587,7 +616,7 @@ class IoTBest extends React.Component {
                                             <button class="uk-button uk-button-secondary uk-width-1-1" onClick={() => this.toggleHiddenContent("hide4")}>Hide Detailed Exploration</button>
                                         </div>
                                     </>)}
-                                <p>Finally, I developed the wireframes for temporary control after the brainstorming:</p>
+                                <p>Finally, I developed the wireframes for temporary control after the brainstorming and critique:</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/temporary.png',
@@ -596,18 +625,20 @@ class IoTBest extends React.Component {
                                     }}
 
                                 />
+                                <p>After all these, I created high-fidelity interactive prototypes for the usability testing with users.</p>
                             </section>
                             <section className="project_body" id="evaluate">
                                 <h2>Evaluate</h2>
                                 <h5>Usability Testing & Iterations</h5>
-                                <p>After creating an interactive prototype, I conducted scenario-based usability testing with the administrators (<a href="https://docs.google.com/document/d/1Wzhgqrxo7YtJaYprwnFdA7flDMVM8VVzVDO9i_Pwb1Y/edit?usp=sharing" className="text_link">link of the usability testing tasks</a>). The studies meant to test:</p>
-                                <li>whether the new features are learnable</li>
+                                <p>After creating an interactive prototype, I conducted scenario-based usability testing with 2 administrators and cognitive walkthrough with 3 colleagues (<a href="https://docs.google.com/document/d/1Wzhgqrxo7YtJaYprwnFdA7flDMVM8VVzVDO9i_Pwb1Y/edit?usp=sharing" className="text_link">link of the usability testing tasks</a>). The study meant to test:</p>
+                                <li>whether the new categories of lighting settings are learnable</li>
                                 <li>whether the new interactions improve the efficiency of controls in different scenarios</li>
                                 <li>whether users feel comfortable and confident when using the new tool</li>
 
-                                <p>As it turned out, administrators really liked the new design, especially the temporary control features. There were some problems I discovered with the special plan settings which I later iterated on:</p>
+                                <p>As it turned out, all participants in both studies completed 80% of the tasks and were satisfied with the time they spent on each task. The administrators both explicitly said that the new tool were a lot more easier to use compared with the old one.</p>
+                                <p>There were two main problems I discovered with the special plan settings which I later iterated on:</p>
 
-                                <p>1. The visual hint was not strong enough to help users distinguish the day-to-day plan from special plans so I enhanced the difference by separating them into two sections. Also, the visualizations and briefs of the special plans on the table needed to be improved to help users distinguish different plans when scanning through.</p>
+                                <p>1. The visual hint was not strong enough to help users distinguish the day-to-day plan from the special plans, which was the main learning point in the new design. Therefore, I enhanced the difference by separating them into two sections. Also, the visualizations and briefs of the special plans on the table needed to be improved to help users distinguish different plans when scanning through.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/iterate_lighting_plan_dashboard.png',
@@ -617,7 +648,7 @@ class IoTBest extends React.Component {
 
                                 />
 
-                                <p>2. Administrators would like to first set the time to turn on the lights (first day afternoon) and then the time to turn them off (next morning), so I changed the order of the inputs. Also, setting by clicking the graph actually took a longer time and more clicks. Therefore, I got rid of this feature and used the bar chart only for work-plan settings.</p>
+                                <p>2. Administrators would like to first set the time to turn on the lights (first day afternoon) and then the time to turn them off (next morning), so I changed the order of the inputs. Also, setting by clicking the graph actually took a longer time and more clicks. Therefore, I got rid of this feature and used the bar chart only for displaying work-plan settings.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/iterate_lighting_plan_setting.png',
@@ -633,9 +664,13 @@ class IoTBest extends React.Component {
                                 <h2>Final Design</h2>
                                 <h5>How I solved the problems</h5>
                                 <p>Here is the final design and how it addressed each problem I discovered in the user research</p>
-                                <h6>Day-to-day Plan and Special Plan Setup</h6>
+                                
+                 
+                                
+                                <h6>Day-to-day Plan & Special Plan Setup</h6>
                                 <p></p>
                                 <li>IoT supported configuration of day-to-day plan</li>
+                                <li>Build trust with users by giving them the on-off of automation</li>
                                 <li>Set special plans in advance that override the daily plan in a defined period</li>
                                 <li>Flexible work hour setting relative to daylight and custom repeated cycle</li>
                                 <ImageZoom
@@ -682,8 +717,8 @@ class IoTBest extends React.Component {
                             </section>
                             <section className="project_body" id="impact">
                                 <h2>Impact</h2>
-                                <h5>User Feedback</h5>
-                                <p>The new system was shipped in late September 2019 as part of the alpha product and more testing was conducted. With the new lighting control interfaces, administrators found the lighting plan configuration and device control process much shorter and easier. They also liked the flexibility of controling devices in group.</p>
+                                <h5>User and Client Feedback</h5>
+                                <p>In the usability studies, all participants (2 administrators 3 colleagues) all completed 80% of the tasks and were satisfied with the time they spent on each task. In post-testing interviews, the administrators found the lighting plan configuration and device control process much shorter and easier compared with the old system. They also liked the flexibility of controling devices in group.</p>
                                 <div className="project_quote">
                                     <div className="project_separator_inner_wrapper_small">
 
@@ -692,6 +727,8 @@ class IoTBest extends React.Component {
                                     </div>
 
                                 </div>
+                                <p>After the demo pitch, our client decided to continue working with us to further improve the products and bring it to the next stage. The new lighting control features were shipped in late September 2019 as part of the alpha product and more testings were to be conducted.</p>
+                           
                                
                             </section>
 
