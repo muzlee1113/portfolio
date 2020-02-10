@@ -318,7 +318,7 @@ class IoTTwo extends React.Component {
                 </Row>
 
             </div>
-            <ProjectPagination prevUrl="" prevName="" nextUrl="/work/materialbank" nextName="Material Bank" />
+            {/* <ProjectPagination prevUrl="" prevName="" nextUrl="/work/materialbank" nextName="Material Bank" /> */}
 
             <BackToTopBtn />
 

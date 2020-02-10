@@ -100,6 +100,7 @@ class App extends Component {
           <Route exact path="/work/IoT/datavis" component={IoTOne}/>
           <Route exact path="/work/IoT/infonav" component={IoTTwo}/>
           <Route exact path="/work/IoT/sysimg" component={IoTThree}/> */}
+          <Route exact path="/work/IoT/infonav" component={IoTTwo}/>
            <Route exact path="/work/IoTDashboard" component={IoTDashboard}/>
            <Route exact path="/work/IoTNotification" component={IoTNotification}/>
 

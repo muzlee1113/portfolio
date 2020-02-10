@@ -16,7 +16,7 @@ function About() {
                 <img id="me" src={process.env.PUBLIC_URL+"/images/me.png"} alt=" "/>
                 <div className="textcontainer">
                     <p><b>Hi, I'm Yuwen.</b> If you found your tongue twisted, just say ‘you win’. It’s pretty close 😝. </p>
-                    <p>I’m now a student at the University of Washington (Go Huskies 🐾 !), </p>
+                    <p>I’m now a student at the University of Washington (Go Dawgs 🐾 !), </p>
                     <p>studying human-centered design and engineering 🎨 📐 💻 📱.</p>
                     <p>Before HCDE, I worked in education industry for 3 years as a product & instructional designer 👩‍🏫 .</p>
                     <p>Last year, I obtained a full-stack web development certificate at the University of Minnesota 👩‍💻.</p>
