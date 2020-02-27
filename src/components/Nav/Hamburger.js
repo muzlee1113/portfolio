@@ -25,11 +25,19 @@ class Hamburger extends Component {
                             ><span className="mr-2 align-text-top" uk-icon="code"></span>CODE</Link>
                         </li>
                         <li>
+                        <Link
+                                to="/play"
+                                onClick={this.props.collapse}
+
+                            ><span className="mr-2 align-text-top" uk-icon="happy"></span>PLAY</Link>
+                        
+                        </li>
+                        <li>
                             <Link
                                 to="/about"
                                 onClick={this.props.collapse}
 
-                            ><span className="mr-2 align-text-top" uk-icon="happy"></span>ABOUT</Link>
+                            ><span className="mr-2 align-text-top" uk-icon="hashtag"></span>ABOUT</Link>
                         </li>
                     </ul>
                 </div>
