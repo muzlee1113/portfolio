@@ -40,7 +40,7 @@ import Nightkick from './pages/Designer/Nightkick'
 import SW from './pages/Designer/SW'
 import QuickHire from './pages/Designer/QuickHire'
 import Specs from './pages/Designer/Specs'
-
+import Cor from './pages/Designer/Coronavirus'
 
 
 import WIS from "./pages/Developer/WIS"
@@ -52,15 +52,19 @@ import DesignSystem from "./pages/DesignSystem"
 
 
 
-
+let nav = true
+let footer = true
 
 
 class App extends Component {
+  
+
+
   render() {
     return (<>
       <Router>
         <div uk-sticky="show-on-up: true">
-          <Nav />
+          <Nav display={nav}/>
         </div>
         <Switch>
           <Route exact path="/"
@@ -116,10 +120,15 @@ class App extends Component {
           <Route component={NoMatch} />
 
         </Switch>
-        <Footer />
+        <Footer display={footer}/>
       </Router>
+    
+
+
     </>);
   }
 }
+
+
 
 export default App;

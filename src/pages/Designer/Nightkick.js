@@ -717,7 +717,7 @@ class Nightkick extends React.Component {
                                     <h2>Evaluate</h2>
                                     <h5>Usability Testing</h5>
                                     <p>We invited 3 participants to test Nightkick in 3 scenarios: a first-time user, commuters on a new route, and commuters on a familiar route. (Link to <a className="text_link" href="https://docs.google.com/document/d/1YPTgu-1kTpLU6OkzMlRnDkPBQQSHqWZz74nX7tHUCe0/edit?usp=sharing">the full report</a>)</p>
-                                    <Container>
+                                    {/* <Container>
                                         <Row>
                                             <Col xs={4}>
                                                 <ImageZoom
@@ -747,7 +747,7 @@ class Nightkick extends React.Component {
                                                 <div className="project_caption text-center">Commuters on a familiar route</div>
                                             </Col>
                                         </Row>
-                                    </Container>
+                                    </Container> */}
                                   
                                     <p>We color-coded the issues we found into different types and prioritized them according to the severity. Then, we ideated solutions to the problems.</p>
                                     <h6>Key Findings & Iterations</h6>

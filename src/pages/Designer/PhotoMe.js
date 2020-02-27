@@ -427,7 +427,7 @@ function PhotoMe() {
                         </Col>
                     </Row>
                     </Container>
-                    <li className="p-list">Save the expectation whenever the subject gets it in the 'Scrapbook' for future use. </li>
+                    <li className="p-list">Save the expectation whenever the user gets it in the 'Scrapbook' for future use. </li>
                     <Container>
                     <Row className="align-items-center justify-content-center">
                         <Col xs={12} sm={12} md={6} lg={6}>
