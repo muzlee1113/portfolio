@@ -383,11 +383,15 @@ function MaterialBank() {
                                     <h6>Wireframes</h6>
                                     <p>Then, we created lo-fi wireframes for usability testing</p>
 
-                                    <div style={{display:'relative',padding:"20px 0 20px"}} className="d-flex justify-content-center">
-                                   
-                                    <iframe style={{border: "none", width: "100%", height:"600px"}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlIOaQri1Eo3ECuqczDyLbE%2FSeattle-Works-only-wireframe-latest%3Fnode-id%3D165%253A416%26scaling%3Dscale-down" allowfullscreen></iframe>
-                                     </div>
-                                    <div className="project_caption text-center">Clickable Wireframes</div>
+                                    <ImageZoom
+                                        image={{
+                                        src: '/images/sw/wireframe.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                    }}
+                                
+                                    />
+                                    <div className="project_caption text-center"><a className="text_link" href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlIOaQri1Eo3ECuqczDyLbE%2FSeattle-Works-only-wireframe-latest%3Fnode-id%3D165%253A416%26scaling%3Dscale-down">Link to clickable Wireframes</a></div>
                             
                                 <h6>Usability Testing</h6>
                                     <p>The usability problems we found mainly existed on</p>
