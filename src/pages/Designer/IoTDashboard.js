@@ -37,8 +37,8 @@ const prev = {
 }
 
 const next = {
-    url: "/work/Nightkick",
-    name: "Nightkick"
+    url: "/work/sw",
+    name: "Seattle Works"
 }
 
 export default class IoTDashboard extends React.Component {

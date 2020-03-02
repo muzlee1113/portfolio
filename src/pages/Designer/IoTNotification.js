@@ -43,7 +43,7 @@ const prev = {
 
 const next = {
     url: "/work/IoTDashboard",
-    name: ""
+    name: "Data Dashboard"
 }
 
 export default class IoTDashboard extends React.Component {
