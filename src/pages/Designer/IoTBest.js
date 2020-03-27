@@ -147,7 +147,7 @@ class IoTBest extends React.Component {
                 <Row>
                     <Col sm={12} md={6}>
                         <div className="project_overview_title">Background</div>
-                        <div className="project_overview_content">The team that I interned on was commissioned by a smart device manufacturer to redesign a web-based smart city infrastructure management tool. The tool was supposed to be used for managing smart devices related to city lighting, sewage, and environmental monitoring. This is a case study of one of the features that I designed specifically for lighting infrastructure administrators to control various smart street lights.</div>
+                        <div className="project_overview_content">The team that I interned on was commissioned by a smart device manufacturer to redesign a web-based smart city infrastructure management tool. This is a case study of one of the features that I designed specifically for lighting infrastructure administrators to control various smart street lights.</div>
 
                     </Col>
                     <Col></Col>
@@ -366,13 +366,13 @@ class IoTBest extends React.Component {
                                 <li>What problems do they have in the process?</li>
 
                                 <h6>Research Methods</h6>
-                                <p>To understand the purposes of controlling the street lights and an administrator's typical workflows, I conducted contextual inquires with three administrators of the street lighting system. They walked me through their daily work at their office and answered my questions.</p>
+                                {/* <p>To understand the purposes of controlling the street lights and an administrator's typical workflows, I conducted contextual inquires with three administrators of the street lighting system. They walked me through their daily work at their office and answered my questions.</p> */}
                                 <img className="project_illustration_extrasmall" src={process.env.PUBLIC_URL + "/images/IoT/contextual_inquiry.png"} />
                                 <Container>
                                     <Row>
                                         <Col xs={12} md={3}>
                                             {/* <div className="project_overview_title">Design Process</div> */}
-                                            <div className="project_overview_content py-1"><b>Methods</b></div>
+                                            <div className="project_overview_content py-1"><b>Method</b></div>
                                             <div className="project_overview_content">Contextual Inquiry</div>
 
                                         </Col>
@@ -398,8 +398,9 @@ class IoTBest extends React.Component {
 
                             <section className="project_body" id="syn">
                                 <h2>Synthesize</h2>
-                                <h5>Different scenarios, different purposes, different workflows, different problems</h5>
-                                <p>From the contextual inquiries, I found that why and how they control the lighting system can be classified into three scenarios that follow different workflows. However, the existing system didn't distinguish these types, let alone supporting their different needs.</p>
+                                <h5>Three Scenarios, Three Problems</h5>
+                                {/* <h6></h6> */}
+
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/control_lighting.png',
@@ -409,24 +410,25 @@ class IoTBest extends React.Component {
 
                                 />
                                 <br />
-                                <p>Based on the research finding, I reframed my design question to be:</p>
-                                <div className="project_quote">
-                                    <div className="project_separator_inner_wrapper_small">
-
-                                        <p className="project_quote_text">How might we help administrators configure daily city lighting to achieve energy-saving goals and adjust the lighting on special occasions or in emergency?</p>
-                                    </div>
-
-                                </div>
+                                
                             </section>
 
 
                             <section className="project_body" id="ideate">
                                 <h2>Ideate</h2>
 
-                                <h5>From problems to solutions</h5>
+                                <h5>Design Goals</h5>
+                                <div className="project_quote">
+                                    <div className="project_separator_inner_wrapper_small">
 
+                                        <li className="project_quote_text">Automate default plan configuration</li>
+                                        <li className="project_quote_text">Preset special plan for special occasions</li>
+                                        <li className="project_quote_text">Quickly locate and control of light in emergency</li>
+                                    </div>
 
-                                <ImageZoom
+                                </div>
+
+                                {/* <ImageZoom
                                     image={{
                                         src: '/images/IoT/problemsolution_lightcontrol.png',
                                         alt: '',
@@ -441,16 +443,16 @@ class IoTBest extends React.Component {
                                         className: 'project_illustration_medium'
                                     }}
 
-                                />
+                                /> */}
 
                             </section>
                             <section className="project_body" id="design">
                                 <h2>Design</h2>
                                 <h5>User flows and wireframes</h5>
 
-                                <p>So I started with mapping the user flows of each scenario and how the new system was going to support each of the steps. I then wireframed the possible interfaces of the system.</p>
+                                {/* <p>So I started with mapping the user flows of each scenario and how the new system was going to support each of the steps. I then wireframed the possible interfaces of the system.</p> */}
                                 <h6>1. Default plan setup</h6>
-                                <p>Since the most laborious part of the job was going to be done by the IoT system, the management tool only needs to expose enough information and give enough controls to the users so that they can trust the system and use the new feature. Therefore, the new user flow is mainly about checking information and options of the automation:</p>
+                                <p>Since the most laborious part of the job was going to be done by the IoT system, the management tool only needs to expose enough information and give enough controls to the users so that they can <b>trust</b> the new system.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/daytoday.png',
@@ -469,7 +471,7 @@ class IoTBest extends React.Component {
                                     }}
 
                                 />
-                                <p>A specific challenge I faced in wireframing the setting interface is how to make the work plan setting interface more intuitive and provide users with more visual hints. I wireframed two ways to improve the experience: one is clicking boxes on the bar charts to set time and luminosity; the other using simple dropdown and inputs to select time and enter luminosity.</p>
+                                <p>A specific challenge I faced in wireframing the setting interface is how to make the work plan setting interface more intuitive and provide users with more visual hints.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/workplan.png',
@@ -625,15 +627,16 @@ class IoTBest extends React.Component {
                             <section className="project_body" id="evaluate">
                                 <h2>Evaluate</h2>
                                 <h5>Usability Testing & Iterations</h5>
-                                <p>After creating an interactive prototype, I conducted scenario-based usability testing with 2 administrators and cognitive walkthrough with 3 colleagues (<a href="https://docs.google.com/document/d/1Wzhgqrxo7YtJaYprwnFdA7flDMVM8VVzVDO9i_Pwb1Y/edit?usp=sharing" className="text_link">link of the usability testing tasks</a>). The study meant to test:</p>
-                                <li>whether the new categories of lighting settings are learnable</li>
-                                <li>whether the new interactions improve the efficiency of controls in different scenarios</li>
-                                <li>whether users feel comfortable and confident when using the new tool</li>
+                                <p>After creating an interactive prototype, I conducted scenario-based usability testing with 2 administrators and cognitive walkthrough with 3 colleagues (<a href="https://docs.google.com/document/d/1Wzhgqrxo7YtJaYprwnFdA7flDMVM8VVzVDO9i_Pwb1Y/edit?usp=sharing" className="text_link">link of the usability testing tasks</a>).</p>
+                                <h6>Research Questions</h6>
+                                <p></p>
+                                <li>Are the new categories of lighting settings learnable?</li>
+                                <li>Are the new system improve the efficiency of controls in different scenarios?</li>
+                                <li>Do users feel comfortable and confident when using the new tool?</li>
+                                <h6>Key Findings & Iterations</h6>
 
-                                <p>As it turned out, all participants in both studies completed 80% of the tasks and were satisfied with the time they spent on each task. The administrators both explicitly said that the new tool were a lot more easier to use compared with the old one.</p>
-                                <p>There were two main problems I discovered with the special plan settings which I later iterated on:</p>
-
-                                <p>1. The visual hint was not strong enough to help users distinguish the default plan from the special plans, which was the main learning point in the new design. Therefore, I enhanced the difference by separating them into two sections. Also, the visualizations and briefs of the special plans on the table needed to be improved to help users distinguish different plans when scanning through.</p>
+                                <p><b>1. Users can't distinguish the default plan from the special plans.</b></p>
+                                <p>Therefore, I enhanced the difference by separating them into two sections. Also, the visualizations and briefs of the special plans on the table needed to be improved to help users distinguish different plans when scanning through.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/iterate_lighting_plan_dashboard.png',
@@ -642,8 +645,10 @@ class IoTBest extends React.Component {
                                     }}
 
                                 />
-
-                                <p>2. Administrators would like to first set the time to turn on the lights (first day afternoon) and then the time to turn them off (next morning), so I changed the order of the inputs. Also, setting by clicking the graph actually took a longer time and more clicks. Therefore, I got rid of this feature and used the bar chart only for displaying work-plan settings.</p>
+                                <p></p>
+                                <p><b>2. Administrators prefer typing in time</b></p>
+                                <p>We found that setting by clicking the graph actually took a longer time and more clicks. Therefore, I got rid of this feature and used the bar chart only for displaying work-plan settings.</p>
+                                {/* <p>Also, administrators would like to first set the time to turn on the lights (first day afternoon) and then the time to turn them off (next morning), so I changed the order of the inputs. </p> */}
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/iterate_lighting_plan_setting.png',
