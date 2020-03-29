@@ -26,7 +26,7 @@ function About() {
                     <p>I’m a night owl 🦉 and a dog person 🐶. </p>
                     <p>When I’m not sitting in front of my computer screen, sketching or coding,</p>
                     <p>I’m probably at the gym 🏋️‍, in the kitchen 👩‍🍳 or on a trip ✈️.</p>
-                    <p>Feel free to drop me a message on <a href="https://www.linkedin.com/in/yuwen-li-176a43105/">LinkedIn</a> or by <a href="mailto:liyuwen@uw.com"></a><a href="mailto:liyuwen@uw.com">Email</a> ✉️.</p>
+                    <p>Feel free to drop me a message on <a href="https://www.linkedin.com/in/yuwen-li-176a43105/">LinkedIn</a> or by <a href="mailto:liyuwen@uw.edu"></a><a href="mailto:liyuwen@uw.edu">Email</a> ✉️.</p>
                     <p>And let's grab coffee ☕️ !</p>
                 </div>
             </section>
