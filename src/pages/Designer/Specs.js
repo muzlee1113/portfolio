@@ -51,8 +51,8 @@ const contents = [
 ]
 
 const prev = {
-    url: "/work/photome",
-    name: "Photo Me"
+    url: "/work/outbreak",
+    name: "Data Viz of National Enteric Outbreaks"
 }
 
 const next = {

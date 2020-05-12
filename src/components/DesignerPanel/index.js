@@ -37,13 +37,13 @@ function DesignerPanel (props) {
             
             <div className="cards show">
            
-           
+            <WorkSmallCard url='/work/outbreak' imgUrl='/images/outbreak.png' name='Data Viz of National Enteric Outbreaks' tagline='A website that guide people explore and learn the patterns of enteric disease outbreaks in the US.' description='For general public' labels={['school project','data visualization', 'web design & dev']} bgColor="#F0F8FC" tColor="rgba(0,0,0,0.8)"/>
             <WorkSmallCard url='/work/specs' imgUrl='/images/mockup_specs.png' name='Specs' tagline='A Figma plugin that helps designers specify their designs and translate them into engineering language.' description='For designers' labels={['individual project', 'design sprint', 'prototyping with code','interaction design']} bgColor="#FFF4F5" tColor="rgba(0,0,0,0.8)"/>
             <WorkSmallCard url='/work/nightkick' imgUrl='/images/nightkick.png' name='Nightkick' tagline='A mobile app and modular wearable to help people feel safer when walking alone after dark.' description='For Seattle citizens' labels={['school project','Mobile Design', 'Wearable', 'Crowd-sourced']} bgColor="#CFDBFF" tColor="rgba(0,0,0,0.8)"/>
            
             {/* <WorkSmallCard url='/work/materialbank' imgUrl='/images/mb_mockup.png' name='Material Bank' tagline='A website that helps industrial designers search and navigate materials to find the right one and get inspired.' description='User Research + UX/UI Design' labels={['work project','Web Redesign','product thinking 0-1', 'Information Findability']} bgColor="#FDF6F3" tColor="rgba(0,0,0,0.8)"/> */}
             {/* <WorkSmallCard url='/work/photome' imgUrl='/images/D00Photome.png' name='PhotoMe' tagline='A mobile app that empowers others to create satisfactory portraits for you.' description='User Research + UX/UI Design' labels={['individual project','mobile Design', 'interaction design']} bgColor="#FFF4F5" tColor="rgba(0,0,0,0.8)"/> */}
-            <WorkSmallCard url='/work/weather' imgUrl='/images/D00Weather.png' name='Weather' tagline='Alerts users to weather changes that will disturb their intended activities.' description='For everyone' labels={['individual project','mobile app Redesign', 'interaction design','personal informatics',]} bgColor="#CBD6E5" tColor="rgba(0,0,0,0.8)"/>
+            {/* <WorkSmallCard url='/work/weather' imgUrl='/images/D00Weather.png' name='Weather' tagline='Alerts users to weather changes that will disturb their intended activities.' description='For everyone' labels={['individual project','mobile app Redesign', 'interaction design','personal informatics',]} bgColor="#CBD6E5" tColor="rgba(0,0,0,0.8)"/> */}
             {/* <WorkSmallCard url='/work/readwithme' imgUrl='/images/D00ReadwithMe_sqr.png' name='ReadwithMe' tagline='A web application that provides afterschool English reading guidance and instructions to middle school students.' description='User Research + Product Design' labels={['work project','mobile Design', 'gamification']} bgColor="#EEF1F3" tColor="rgba(0,0,0,0.8)"/>
         */}
                 

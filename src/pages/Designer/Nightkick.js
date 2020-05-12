@@ -85,8 +85,8 @@ const prev = {
 }
 
 const next = {
-    url: "/work/weather",
-    name: "Weather"
+    url: "",
+    name: ""
 }
 
 
