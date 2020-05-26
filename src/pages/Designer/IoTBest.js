@@ -227,23 +227,20 @@ class IoTBest extends React.Component {
             <div className="project_overall_container">
                 <Row>
                     <Col md={12} lg={3}>
-                        <div className="left_bar_wrapper">
-
-
-                            <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;top: #scrollstart">
-
-                                <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
-                                    <div><a href={prev['url'] ? (prev['url']) : ('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url'] ? ('prev project') : ('Home')}</a></div>
-                                    <br />
-
-                                    {contents.map((item) => <li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
-                                    <br />
-                                    <div><a href={next['url'] ? (next['url']) : ('/')} className="project_brief_content">{next['url'] ? ('next project') : ('Home')}<span uk-icon="icon:triangle-right"></span></a></div>
-                                </ul>
-
-
-                            </div>
-                        </div>
+                        <div className="scrollby left_bar_wrapper">
+                              
+                              <ul  
+                              data-uk-scrollspy-nav="closest: li; scroll: true;">
+                                  <div><a href={prev['url']?(prev['url']):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('home')}</a></div>
+                                  <br/>
+                                  
+                                  {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
+                                  <br/>
+                                  <div><a href={next['url']?(next['url']):('/')} className="project_brief_content">{next['url']?('next project'):('home')}<span uk-icon="icon:triangle-right"></span></a></div>
+                              </ul>                             
+                              
+                          
+                          </div>  
                     </Col>
 
                     <Col md={12} lg={9}>
@@ -335,27 +332,23 @@ class IoTBest extends React.Component {
             </div>
             <div className="project_overall_container">
                 <Row>
-                    <Col md={12} lg={3}></Col>
+                    <Col md={12} lg={3}>
+                        <div className="scrollby left_bar_wrapper">
+                              
+                              <ul  
+                              data-uk-scrollspy-nav="closest: li; scroll: true;">
+                                  <div><a href={prev['url']?(prev['url']):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('home')}</a></div>
+                                  <br/>
+                                  
+                                  {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
+                                  <br/>
+                                  <div><a href={next['url']?(next['url']):('/')} className="project_brief_content">{next['url']?('next project'):('home')}<span uk-icon="icon:triangle-right"></span></a></div>
+                              </ul>                             
+                              
+                          
+                          </div>  
+                    </Col>
                     <Col md={12} lg={9}>
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                             <section className="project_body" id="research">
                                 <h2>Research</h2>
                                 <h5>Why and how did administrators of lighting infrastructure control the street lights?</h5>
@@ -731,39 +724,7 @@ class IoTBest extends React.Component {
                            
                                
                             </section>
-
-                    </Col>
-                </Row>
-            </div>
-                {/*                         
-<div className="project_separator" id="navigation" style={{zIndex: "1000"}}>
-
-    <div className="project_separator_inner_wrapper" >
-        <h2>Final Design</h2>
-        <h5>Navigation of the key pages that I worked on.</h5>
-        <img alt='' className="project_illustration" src={process.env.PUBLIC_URL + "/images/IoT/final_v2.png"} />
-
-      
-    </div>
-</div>                       
-                             */}
-
-
-
-
-
-
-
-
-
-
-                <div className="project_overall_container">
-                    <Container>
-                        <Row>
-                            <Col md={12} lg={3}>
-                            </Col>
-                            <Col md={12} lg={9}>
-                                <section id="todo" className="project_body">
+                            <section id="todo" className="project_body">
                                     <h2>Next Step</h2>
                                     <p></p>
                                     <h6>Design for Behavior Change</h6>
@@ -815,15 +776,10 @@ class IoTBest extends React.Component {
                                     />
 
                                 </section>
-                            </Col>
-                        </Row>
-                    </Container>
 
-
-
-                </div>
-
-
+                    </Col>
+                </Row>
+            </div>
                 <ProjectPagination prev={prev} next={next} />
 
                 <BackToTopBtn contents={contents} prev={prev} next={next} />

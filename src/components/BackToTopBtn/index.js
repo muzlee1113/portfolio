@@ -51,8 +51,8 @@ class BackToTopBtn extends Component {
 
         <hr/>
         <div className="pagination">
-        <a href={this.props.prev['url']?(this.props.prev['url']):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{this.props.prev['url']?('prev project'):('Home')}</a>
-            <a href={this.props.next['url']?(this.props.next['url']):('/')} className="project_brief_content">{this.props.next['url']?('next project'):('Home')}<span uk-icon="icon:triangle-right"></span></a>
+        <a href={this.props.prev['url']?(this.props.prev['url']):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{this.props.prev['url']?('prev project'):('home')}</a>
+            <a href={this.props.next['url']?(this.props.next['url']):('/')} className="project_brief_content">{this.props.next['url']?('next project'):('home')}<span uk-icon="icon:triangle-right"></span></a>
         </div>
        
         

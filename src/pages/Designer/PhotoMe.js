@@ -58,8 +58,8 @@ const prev = {
 }
 
 const next = {
-    url: "/work/specs",
-    name: "Specs"
+    url: "/work/outbreak",
+    name: "National Outbreak Data Viz"
 }
 
 
@@ -165,27 +165,22 @@ function PhotoMe() {
 
             
             <div className="project_overall_container">
-            <Row>
-            <Col md={12} lg={3}>
-                        <div className="left_bar_wrapper">
-
-                            {/* <div className="project_brief_container">
-                                <div className="project_brief_title">Background</div>
-                                <div className="project_brief_content">This is a individual project I did in a UX Boot Camp.</div>
-                            </div> */}
-                            <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;top: #scrollstart"
-                            // style={{position: "fixed", right: "2vw", bottom: "5vh"}}
-                            >
-                               <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
-                                <div><a href={prev['url']?(prev['url']):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('Home')}</a></div>
-                                <br/>
-                                
-                                {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
-                                <br/>
-                                <div><a href={next['url']?(next['url']):('/')} className="project_brief_content">{next['url']?('next project'):('Home')}<span uk-icon="icon:triangle-right"></span></a></div>
-                                </ul> 
-                            </div>
-                        </div>
+                <Row>
+                    <Col md={12} lg={3}>
+                        <div className="scrollby left_bar_wrapper">
+                              
+                              <ul  
+                              data-uk-scrollspy-nav="closest: li; scroll: true;">
+                                  <div><a href={prev['url']?(prev['url']):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('home')}</a></div>
+                                  <br/>
+                                  
+                                  {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
+                                  <br/>
+                                  <div><a href={next['url']?(next['url']):('/')} className="project_brief_content">{next['url']?('next project'):('home')}<span uk-icon="icon:triangle-right"></span></a></div>
+                              </ul>                             
+                              
+                          
+                          </div>  
                     </Col>
                     <Col md={12} lg={9}>
                     <div className="project_container">

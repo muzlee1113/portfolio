@@ -188,7 +188,7 @@ a, .btn-link{
 .uk-active{
   position: relative;
 }
-.uk-sticky>ul>.uk-active>a:before{
+.scrollby>ul>.uk-active>a:before{
   
     content: "";
     position: absolute;
@@ -895,8 +895,10 @@ li:not(.project_brief_content){
 }
 
 .scrollby{
-  padding-top: 28px;
-  /* position: fixed; top: 100px;  */
+  /* padding-top: 28px; */
+  position: sticky!important; 
+  top: 100px!important; 
+  z-index: 980;
   /* width: 200px; */
 }
 
