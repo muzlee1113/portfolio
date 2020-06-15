@@ -42,6 +42,7 @@ import QuickHire from './pages/Designer/QuickHire'
 import Specs from './pages/Designer/Specs'
 import Cor from './pages/Designer/Coronavirus'
 import Outbreak from './pages/Designer/Outbreak'
+import ABStreet from './pages/Designer/ABStreet';
 
 
 import WIS from "./pages/Developer/WIS"
@@ -116,6 +117,7 @@ class App extends Component {
           <Route exact path="/work/specs" component={Specs}/>
 
           <Route exact path="/work/outbreak" component={Outbreak}/>
+          <Route exact path="/work/abstreet" component={ABStreet}/>
 
           
           {/* code */}

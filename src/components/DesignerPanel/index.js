@@ -16,13 +16,13 @@ import WorkSmallCard from '../WorkSmallCard'
 
 function DesignerPanel (props) {
     
-    return (<>
+    return (<div className="featureWorkerContainer">
                 {/* <div className="divider"></div> */}
-                <WorkCard url='/work/IoT' imgUrl='/images/IoT/mockup_multiscreens.png' name='An IoT-based smart city infrastructure management tool' tagline='A case study on how I designed a tool that helps lighting infrastructure administrators to control smart street lights energy-efficiently, accurately and easily on different occasions.' description='For city managers' labels={['Shipped','work project', 'product thinking 0-1', 'Web Design', 'interaction design','IoT','Management Tool']} bgColor="#FCFCFC" tColor="#0f0f0f"/>
-                <WorkCard url='/work/sw' imgUrl='/images/sw_mockup_big.png' name='Seattle Works' tagline='A web redesign practice for clearer information hierarchy and better visual communication.' description='For non-profit' labels={['school side project','Web Redesign', 'visual design', 'Visual Communication', 'IA', 'organization website']} bgColor="#FCFCFC" tColor="0f0f0f"/>
+                <WorkCard url='/work/IoT' imgUrl='/images/IoT/mockup_multiscreens.png' name='Smart City Street Light Management Tool' tagline='A tool that helps lighting infrastructure administrators to control smart street lights energy-efficiently, accurately and easily on different occasions.' description='For city managers' labels={['Shipped','work project', 'product thinking 0-1', 'Web Design', 'interaction design','IoT','Management Tool']} bgColor="#FFF7EF" tColor="#0f0f0f"/>
+                <WorkCard url='/work/sw' imgUrl='/images/sw_mockup_big.png' name='Seattle Works' tagline='A web redesign practice for clearer information hierarchy and better visual communication.' description='For non-profit' labels={['school side project','Web Redesign', 'visual design', 'Visual Communication', 'IA', 'organization website']} bgColor="#FFF7EF" tColor="0f0f0f"/>
              
                 
-                <WorkCard url='/work/photome' imgUrl='/images/mockup_photome.png' name='PhotoMe' tagline='A mobile app that helps others to capture better you.' description='For portrait-lovers' labels={['individual project','mobile app Design', 'interaction design', 'visual design', 'fosters communication']}  bgColor="#FCFCFC" tColor="#0f0f0f"/>
+                <WorkCard url='/work/photome' imgUrl='/images/mockup_photome.png' name='PhotoMe' tagline='A mobile app that helps others to capture better you.' description='For portrait-lovers' labels={['individual project','mobile app Design', 'interaction design', 'visual design', 'fosters communication']}  bgColor="#FFF7EF" tColor="#0f0f0f"/>
                 
                 {/* <WorkCard url='/work/materialbank' imgUrl='/images/MaterialBank/mockupp.png' name='Material Bank' tagline='A website that helps industrial designers search and navigate materials to find the right one and get inspired.' description='User Research + UX Design' labels={['work project','Web Design', 'Information Findability', 'Data Visualization']} bgColor="#f8f8f8" tColor="#0f0f0f"/> */}
 
@@ -97,7 +97,7 @@ function DesignerPanel (props) {
         </Fade>
                 
 
-    </>)}
+    </div>)}
 
 
 export default DesignerPanel;

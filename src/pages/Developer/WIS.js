@@ -201,7 +201,6 @@ function WIS() {
             </Row>
 
         </div>
-        <ProjectPagination prevUrl="/" prevName="Home" />
 
 
         <BackToTopBtn />

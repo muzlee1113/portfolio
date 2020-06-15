@@ -3,7 +3,7 @@ body{
   font-size: 21px;
   font-family: proxima-nova, sans-serif;
   font-style: normal;
-    /* font-family: 'Open Sans', sans-serif; */
+  background-color: #FFFCF6;
 }
 /* header */
 header {
@@ -29,7 +29,7 @@ header {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: white;
+    background-color: #FFFCF6;
 }        
 
 .bottom_line{
@@ -249,15 +249,17 @@ a:not(.code_link):hover {
 }
 
 /* New panel design */
-
+.featureWorkerContainer{
+  margin-top: 72px;
+}
 .work_wrapper {
   /* display: grid; */
   /* grid-template-columns: repeat(10, 1fr); */
   /* grid-gap: 30px; */
   /* max-width: 1260px; */
   /* margin: 0 auto 30px; */
-  margin-top: 64px;
-  margin-bottom: 64px; 
+  /* margin-top: 64px;
+  margin-bottom: 64px;  */
   /* transition: opacity 1s ease-in-out; */
   /* grid-column-gap: 32px;
   grid-row-gap: 24px; */
@@ -359,7 +361,7 @@ a:not(.code_link):hover {
 
 
 .card_hover:hover{
-  opacity: 0.6
+  opacity: 0.7
 }
 .sub_card_tagline{
   font-size: 14px;
@@ -949,7 +951,7 @@ li:not(.project_brief_content){
 
 .project_separator {
   margin-top: 60px;
-  background-color: #f8f8f8;
+  background-color: #FFF7EF;
   width: 100%;
   position: relative;
   z-index: 998;
@@ -971,6 +973,13 @@ li:not(.project_brief_content){
   margin: 0 auto 0;
   padding: 60px 60px;
 } 
+.project_separator_title{
+  color: #9D2721;
+  font-size: 21px;
+  line-height: 1.58;
+  font-weight: 600;
+  font-family: proxima-nova, sans-serif;
+}
 
 .project_quote {
   margin: 100px 0 100px;
@@ -1170,13 +1179,31 @@ li:not(.project_brief_content){
 
 /* hidden contetn */
 .hiden_content_switch_container{
-  padding: 60px 0 60px
+  padding: 32px 0 32px
 }
 
 .uk-button{
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 400;
+}
+
+.btn_light{
+  background-color: #FFFCF6;
+}
+
+.circle_number{
+  background-color: #9D2721;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 28px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  margin-right: 8px;
 }
 
 

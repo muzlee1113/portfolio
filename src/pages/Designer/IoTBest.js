@@ -130,8 +130,8 @@ class IoTBest extends React.Component {
             <div className="project_head_container">
 
                 <section className="project_head">
-                    <h1>The street lighting control system of a smart city infrastructure management tool</h1>
-                    <h3>A case study of how I designed a tool that helps lighting infrastructure administrators to control smart street lights energy-efficiently, accurately and easily on different occasions.</h3>
+                    <h1>Smart City Street Light Management Tool</h1>
+                    <h3>A tool that helps lighting infrastructure administrators to control smart street lights energy-efficiently, accurately and easily on different occasions.</h3>
                     <div className="project_info">Work project. The full project lasted more than 3 months (May - July 2019) and shipped in September</div>
                 </section>
 
@@ -145,27 +145,30 @@ class IoTBest extends React.Component {
             <div className="project_overview_container" id="overview">
                 {/* <Container> */}
                 <Row>
-                    <Col sm={12} md={6}>
+                    <Col sm={12} md={5}>
                         <div className="project_overview_title">Background</div>
                         <div className="project_overview_content">The team that I interned on was commissioned by a smart device manufacturer to redesign a web-based smart city infrastructure management tool. This is a case study of one of the features that I designed specifically for lighting infrastructure administrators to control various smart street lights.</div>
 
                     </Col>
-                    <Col></Col>
-                    <Col sm={4} md={2}>
-
-                        <div className="project_overview_title">My Role</div>
-                        <div className="project_overview_content">User Research</div>
+                    {/* <Col></Col> */}
+                    <Col sm={4} md={5}>
+                        
+                        <div className="project_overview_title">My Contributions</div>
+                        <div className="project_overview_content">· Planed and conducted <b>quick user research</b> and turned insights into <b>user scenarios</b> for design.</div>
+                        <div className="project_overview_content">· Defined <b>design goals</b> and specified <b>user flows</b> for each of the use cases.</div>
+                        <div className="project_overview_content">· Developed different <b>variations</b> of wireframes and interactive prototypes for <b>validation</b>.</div>                         
+                        {/* <div className="project_overview_content">User Research</div>
                         <div className="project_overview_content">Product Design</div>
                         <div className="project_overview_content">Interaction Design</div>
                         <div className="project_overview_content">Prototyping</div>
-                        <div className="project_overview_content">Usability Testing</div>
+                        <div className="project_overview_content">Usability Testing</div> */}
                     </Col>
-                    <Col sm={4} md={3}>
+                    <Col sm={4} md={2}>
 
-                        <div className="project_overview_title">Team</div>
-                        <div className="project_overview_content">One Product Manager</div>
-                        <div className="project_overview_content">Two Visual Designers</div>
-                        <div className="project_overview_content">Four Developers</div>
+                        <div className="project_overview_title">Teammates</div>
+                        <div className="project_overview_content">1 × Product Manager</div>
+                        <div className="project_overview_content">2 × Visual Designers</div>
+                        <div className="project_overview_content">4 × Developers</div>
                     </Col>
 
                 </Row>
@@ -413,10 +416,9 @@ class IoTBest extends React.Component {
                                 <h5>Design Goals</h5>
                                 <div className="project_quote">
                                     <div className="project_separator_inner_wrapper_small">
-
-                                        <li className="project_quote_text">Automate default plan configuration</li>
-                                        <li className="project_quote_text">Preset special plan for special occasions</li>
-                                        <li className="project_quote_text">Quickly locate and control of light in emergency</li>
+                                        <div className="project_quote_text">1. Automate default plan configuration</div>
+                                        <div className="project_quote_text">2. Preset special plan for special occasions</div>
+                                        <div className="project_quote_text">3. Quickly locate and control of light in emergency</div>
                                     </div>
 
                                 </div>
@@ -444,7 +446,7 @@ class IoTBest extends React.Component {
                                 <h5>User flows and wireframes</h5>
 
                                 {/* <p>So I started with mapping the user flows of each scenario and how the new system was going to support each of the steps. I then wireframed the possible interfaces of the system.</p> */}
-                                <h6>1. Default plan setup</h6>
+                                <h6>1. Default plan setup: display automations and give controls</h6>
                                 <p>Since the most laborious part of the job was going to be done by the IoT system, the management tool only needs to expose enough information and give enough controls to the users so that they can <b>trust</b> the new system.</p>
                                 <ImageZoom
                                     image={{
@@ -454,7 +456,7 @@ class IoTBest extends React.Component {
                                     }}
 
                                 />
-                                <h6>2. Special plan setup</h6>
+                                <h6>2. Special plan setup: streamline the workflow and improve visualizations</h6>
                                 <p>To set up a special work plan the users need to put in applied dates, areas and define the special working hours.</p>
                                 <ImageZoom
                                     image={{
@@ -464,32 +466,51 @@ class IoTBest extends React.Component {
                                     }}
 
                                 />
-                                <p>A specific challenge I faced in wireframing the setting interface is how to make the work plan setting interface more intuitive and provide users with more visual hints.</p>
-                                <ImageZoom
-                                    image={{
-                                        src: '/images/IoT/workplan.png',
-                                        alt: '',
-                                        className: 'project_illustration'
-                                    }}
+                                 <div className="project_separator">
+                                    
+                                    <div className="project_separator_inner_wrapper" >
+                                        <div className="project_separator_title">Challenge: how to make work-hour setting more intuitive?</div>
+                                        <p>A challenge I faced in wireframing the setting interface is how to make the work plan setting interface more intuitive and provide users with more visual hints.</p>
+                                    <ImageZoom
+                                        image={{
+                                            src: '/images/IoT/workplan.png',
+                                            alt: '',
+                                            className: 'project_illustration'
+                                        }}
 
 
-                                />
+                                    />
 
                                 <p>Finally, I decided to first combine these two ways of settings and test the features in usability testing later.</p>
+                                    </div>
+                                </div>
+                               
+                                
                                 <h6>3. Emergency Control</h6>
                                 <p>To improve information navigation, my design allows users to look for and control device(s) on a map and from an alert.</p>
                                 <ImageZoom
                                     image={{
-                                        src: '/images/IoT/bulkcontrol/bulkcontrol_userflow.png',
+                                        src: '/images/IoT/emergency_userflow.png',
                                         alt: '',
                                         className: 'project_illustration'
                                     }}
 
                                 />
-                                <p>One challenge I encountered was how to allow users to control a group of lights quickly and easily. I leverage rapid prototyping to create variations of the interfaces for each step of bulk control including selecting groups of devices, retrieving and checking selected devices, and getting control feedback.</p>
+                                <ImageZoom
+                                    image={{
+                                        src: '/images/IoT/emergency_control.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                    }}
 
-
-                                {this.state.hide4 ? (<>
+                                />
+                                <div className="project_separator">
+                                    
+                                    <div className="project_separator_inner_wrapper" >
+                                        <div className="project_separator_title">Challenge: how to simplify bulk control?
+                                        </div>  
+                                        <p>One challenge I encountered was how to allow users to control a group of lights quickly and easily. I introduced the "selected list" and created variations of the interfaces for multi-selection and multi-control feedback.</p>
+                                        {this.state.hide4 ? (<>
                                     <div className="hiden_content_switch_container text-center">
                                         <button class="uk-button uk-button-secondary uk-width-1-1" onClick={() => this.toggleHiddenContent("hide4")}><span uk-icon="icon: search"></span> Click to See Detailed Exploration of Bulk Control</button>
                                     </div></>) : (<>
@@ -498,9 +519,15 @@ class IoTBest extends React.Component {
                                         </div>
                                         {/* ----------------hidden 👇---------------------- */}
 
-
-                                        <h6>*Bulk control</h6>
-                                        <li className="p-list">Select Devices</li>
+                                       
+                                        <ImageZoom
+                                            image={{
+                                                src: '/images/IoT/bulkcontrol/bulk_workflow.png',
+                                                alt: '',
+                                                className: 'project_illustration'
+                                            }}
+                                         />
+                                        <div className="p-list"><div className="circle_number">1</div>Select Devices</div>
                                         <p className="project_info">I ideated four ways to select multiple devices.</p>
                                         <ImageZoom
                                             image={{
@@ -523,11 +550,11 @@ class IoTBest extends React.Component {
                                         image={{
                                             src: '/images/IoT/bulkcontrol/select3.png',
                                             alt: '',
-                                            className: 'project_illustration'
+                                            className: 'project_illustration_medium'
                                         }}
                                         />
 
-                                        <li className="p-list">Retrieve Selected Device</li>
+                                        <div className="p-list"><div className="circle_number">2</div>Retrieve Selected Device</div>
                                         <p className="project_info">One thing that needed to be considered was where the "selected device" button should be located. I wireframed four locations of the button and finally decided to put the button at top since it was the most straightforward version and produced no ambiguity of its scope.</p>
                                         <ImageZoom
                                             image={{
@@ -545,7 +572,7 @@ class IoTBest extends React.Component {
                                             }}
 
                                         />
-                                        <li className="p-list">Check Selected Device</li>
+                                        <div className="p-list"><div className="circle_number">3</div>Check Selected Device</div>
                                         <p className="project_info">As for how to display selected devices, I created the following wireframes.</p>
                                         <ImageZoom
                                             image={{
@@ -583,7 +610,7 @@ class IoTBest extends React.Component {
                                         }}
                                         />
 
-                                        <li className="p-list">Control Response</li>
+                                        <div className="p-list"><div className="circle_number">4</div>Control Response</div>
                                         <p className="project_info">The administrators should be careful about adjusting city infrastructure settings. They need to know whether they have changed the setting successfully or not.</p>
                                        
                                         <ImageZoom
@@ -598,7 +625,9 @@ class IoTBest extends React.Component {
                                         <li className="project_info">Firstly, an alert will pop up once once a control was applied, asking for confirmation.</li >
                                         <li className="project_info">After confirmation, a notification will show up showing the process and the action button will gray out to avoid errors. </li>
                                         <li className="project_info">After applying the setting, a clear alert will show the number of successful settings and the indicators of error and success will show up on the selected device list to support trouble shooting. The button will then changes into 'redo' that allow users to rerun the action again to the devices that returned errors.</li>
- */}
+                                        */}
+                                         
+                                       
 
 
                                         {/* ----------------hidden 👆---------------------- */}
@@ -606,7 +635,7 @@ class IoTBest extends React.Component {
                                             <button class="uk-button uk-button-secondary uk-width-1-1" onClick={() => this.toggleHiddenContent("hide4")}>Hide Detailed Exploration</button>
                                         </div>
                                     </>)}
-                                <p>Finally, I developed the wireframes for emergency control after the brainstorming and critique:</p>
+                                <p>Finally, I developed the wireframes:</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/temporary.png',
@@ -615,6 +644,13 @@ class IoTBest extends React.Component {
                                     }}
 
                                 />
+                                    </div>
+                                </div>
+
+                               
+
+
+                                
                                 <p>After all these, I created high-fidelity interactive prototypes for the usability testing with users.</p>
                             </section>
                             <section className="project_body" id="evaluate">
@@ -670,7 +706,7 @@ class IoTBest extends React.Component {
                                     image={{
                                         src: '/images/IoT/light_control_final3.png',
                                         alt: '',
-                                        className: ''
+                                        className: 'project_illustration'
                                     }}
 
                                 />
@@ -735,11 +771,11 @@ class IoTBest extends React.Component {
                                 </section>
                                 <section id="take" className="project_body">
                                     <h2>TAKEAWAYS</h2>
-                                    <h6>Ask Questions and Learn from Everyone</h6>
+                                    <h6>Ask questions and learn from everyone</h6>
                                     <p>IoT system is complex and daunting. I spent a lot of time talking with engineers and developers, asking "silly questions" to understand the purposes, functionalities, and limitations of the devices. By frequently raising questions, I not only learned every part of the system but also formed a reciprocal and supportive relationship with them, which was beneficial in cross-functional collaboration.</p>
-                                    <h6>Design with Limitations</h6>
+                                    <h6>Design with limitations</h6>
                                     <p>The biggest lesson I learned from this project is to understand and get used to limitations in my design. Just like painting, an important thing to do is to understand your tools and materials. We should also understand the machine and data so that we won't subject our design to the whim of our naive mind.</p>
-                                    <h6>Make Intentional Decisions</h6>
+                                    <h6>Make intentional decisions</h6>
                                     <p>Design specification is always about decision making and there should always be a reason behind every decision. When facing a tough choice, limitations, design requirements and insights from user research are always great references.</p>
                                     <h6>Work with ambiguity but always look for chances to check my assumptions</h6>
                                     <p>There are many assumptions I made during the ideation and design process. I kept a list of questions I had and looked for opportunities to get them answered by consulting or formal and informal usability studies.</p>
