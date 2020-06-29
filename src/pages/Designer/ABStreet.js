@@ -127,7 +127,7 @@ function ABStreet() {
                                 <div id="scrollstart"></div>
                                 <h2>Intro</h2>
                                 <h5>Game for changes</h5>
-                                <p>In November 2019, I was looking for chances to test my interaction design skills in some real-world projects. When I was browsing <a href="https://democracylab.org">DemocracyLab</a>, A/B Street caught my eyes. I’ve long been interested in persuasive design and gamification. “Game for changes” plus design for complex game UI sounded so fascinated that I sent a message to Dustin as long as I read through the project intro. Since then, I’ve been working as a UX designer for the game. </p>
+                                <p>In November 2019, I was looking for chances to test my interaction design skills in some real-world projects. When I was browsing <a href="https://democracylab.org">DemocracyLab</a>, A/B Street caught my eyes. I’ve long been interested in persuasive design and gamification. “Game for changes” plus design for complex game UI sounded so fascinated that I sent a message to Dustin, the founder & developer of the game, as long as I read through the project intro. Since then, I’ve been working as a UX designer for the game. </p>
                        
                                 <p>At the point when I joined the project, Dustin has already built up a complex game with complete simulations of traffic in Seattle where players can make changes to roads and intersections or take various challenges for traffic improvement.</p>
                                 <ImageZoom
