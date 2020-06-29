@@ -1,9 +1,13 @@
+html{
+  height: 100%;
+}
 body{
   line-height: 1;
   font-size: 21px;
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   background-color: #FFFCF6;
+  /* height: 100vh */
 }
 /* header */
 header {
@@ -49,10 +53,10 @@ main{
 
 footer{
   max-width: 1260px;
-  height: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 8rem;
+  min-height: 80px;
+  margin: 0 auto;
+  padding: 8rem 0 4rem;
+  background-color: #FFFCF6;
 }
 
 

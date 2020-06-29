@@ -53,8 +53,8 @@ const contents=[
 ]
 
 const prev = {
-    url: "/work/sw",
-    name: "Seattle Works"
+    url: "/work/abstreet",
+    name: "A/B Street"
 }
 
 const next = {

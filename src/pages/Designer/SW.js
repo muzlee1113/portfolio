@@ -65,8 +65,8 @@ const prev = {
 }
 
 const next = {
-    url: "/work/photome",
-    name: "PhotoMe"
+    url: "/work/abstreet",
+    name: "A/B Street"
 }
 
 function MaterialBank() {
