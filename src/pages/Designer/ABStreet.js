@@ -387,7 +387,7 @@ function ABStreet() {
                                     }}
 
                                 />
-                                <div className="project_caption">Use preview mode to quickly validate some edits. Here I found that the two intersections' traffic signals were not synced after preview so I adjusted my edits and validated that reordering the phases improve the traffic.</div>
+                                <div className="project_caption">Use preview mode to quickly validate some edits. Here I found that the two intersections' traffic signals were not synced after preview so I adjusted my edits and validated that reordering the phases would improve the traffic.</div>
                                 <p>For longer-term feedback, they can observe agents and see how their scores and other meters change after resume the simulation. Players are able to easily resume from the time when they pause for the editing or from the very start to get a real accurate 24-hour simulation.</p>
                                 <ImageZoom
                                     image={{
