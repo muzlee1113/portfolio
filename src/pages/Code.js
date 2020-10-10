@@ -15,7 +15,7 @@ class Code extends Component {
             <main>
             <section className="leading">
           
-                <h1>Coding is fun<span style={{"color": "#9D2721"}}>.</span></h1>
+                <h1>Coding is fun<span style={{"color": "#9D2721"}}>. 🤖</span></h1>
                 <h3>It brought me pure pleasure of making.</h3>
             </section>
                 <div className="divider"></div>

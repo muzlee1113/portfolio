@@ -42,7 +42,7 @@ class BackToTopBtn extends Component {
         
         
         <div className="content">
-        <ul data-uk-scrollspy-nav="closest: li; scroll: true;">
+        <ul data-uk-scrollspy-nav="closest: li; scroll: true; offset:60">
         <p className="project_brief_title">Table of Contents</p>
         {this.props.contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
         

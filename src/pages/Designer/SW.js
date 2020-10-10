@@ -113,7 +113,7 @@ function MaterialBank() {
                         <Col sm={4} md={2}>
                         
                             <div className="project_overview_title">Teammate</div>
-                            <div className="project_overview_content"><a className="text_link" href="https://www.aliceyyoh.com">Alice Oh</a></div>
+                            <div className="project_overview_content"><a className="text_link" target="_blank" href="https://www.aliceyyoh.com">Alice Oh</a></div>
                         </Col>
 
                     </Row>
@@ -178,7 +178,7 @@ function MaterialBank() {
                         <div className="scrollby left_bar_wrapper">
                               
                               <ul  
-                              data-uk-scrollspy-nav="closest: li; scroll: true;">
+                              data-uk-scrollspy-nav="closest: li; scroll: true; offset:60">
                                   <div><a href={prev['url']?(prev['url']):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('home')}</a></div>
                                   <br/>
                                   
@@ -254,7 +254,7 @@ function MaterialBank() {
                             <div className="scrollby left_bar_wrapper">
                                 
                                 <ul  
-                                data-uk-scrollspy-nav="closest: li; scroll: true;">
+                                data-uk-scrollspy-nav="closest: li; scroll: true; offset:60">
                                     <div><a href={prev['url']?(prev['url']):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('home')}</a></div>
                                     <br/>
                                     

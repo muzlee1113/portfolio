@@ -744,6 +744,15 @@ p, .p{
 
 }
 
+.p_small{
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54);
+  font-family: proxima-nova, sans-serif;
+  line-height: 18px;
+  margin-top: 4px;
+}
+
 
 
 li, ol{
@@ -803,7 +812,6 @@ li:not(.project_brief_content){
   font-weight: 400;
   color: rgba(0, 0, 0, 0.54);
   font-family: proxima-nova, sans-serif;
-
 }
 
 

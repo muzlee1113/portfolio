@@ -92,7 +92,7 @@ class Play extends React.Component {
             <ScrollToTopOnMount />
             <main>
             <section className="leading">
-                <h1>Other things I do for fun<span style={{"color": "#9D2721"}}>.</span></h1>
+                <h1>Other things I do for fun<span style={{"color": "#9D2721"}}>. 🤡</span></h1>
                 <h3>All these little pieces made up of me.</h3>
             </section>
                 <div className="divider"></div>

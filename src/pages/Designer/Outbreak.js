@@ -115,7 +115,7 @@ function Outbreak() {
                         <div className="scrollby left_bar_wrapper">
                               
                               <ul  
-                              data-uk-scrollspy-nav="closest: li; scroll: true;">
+                              data-uk-scrollspy-nav="closest: li; scroll: true; offset:60">
                                   <div><a href={prev['url']?(prev['url']):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('home')}</a></div>
                                   <br/>
                                   

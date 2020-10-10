@@ -11,7 +11,7 @@ function About() {
     <ScrollToTopOnMount />
         <main className="leading">
             <section className="about_wrapper">
-                <h1 className="leading-bigtext">Something more about me<span className="leading-bigtext" style={{ "color": "#9D2721" }}>.</span></h1>
+                <h1 className="leading-bigtext">Something more about me<span className="leading-bigtext" style={{ "color": "#9D2721" }}>.</span> 😃</h1>
                 <h3 className="leading-text">Nice to meet you.</h3>
                 <img id="me" src={process.env.PUBLIC_URL+"/images/me.png"} alt=" "/>
                 <div className="textcontainer">

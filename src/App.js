@@ -43,12 +43,13 @@ import Specs from './pages/Designer/Specs'
 import Cor from './pages/Designer/Coronavirus'
 import Outbreak from './pages/Designer/Outbreak'
 import ABStreet from './pages/Designer/ABStreet';
-
+import TableauPrep from './pages/Designer/TableauPrep';
 
 import WIS from "./pages/Developer/WIS"
 
 
 import DesignSystem from "./pages/DesignSystem"
+
 
 
 
@@ -118,7 +119,7 @@ class App extends Component {
 
           <Route exact path="/work/outbreak" component={Outbreak}/>
           <Route exact path="/work/abstreet" component={ABStreet}/>
-
+          <Route exact path="/work/tableauprep" component={TableauPrep}/>
           
           {/* code */}
           <Route exact path="/work/WIS" component={WIS} />
