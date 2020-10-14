@@ -6,7 +6,7 @@ import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import BackToTopBtn from "../../components/BackToTopBtn"
 import ProjectPagination from '../../components/ProjectPagination'
 import ImageZoom from 'react-medium-image-zoom'
-import unknown from "react-reveal/wrap";
+import ProjectContentNav from '../../components/ProjectContentNav'
 
 const contents = [
     {
@@ -50,18 +50,8 @@ const contents = [
     }
 ]
 
-const prev = {
-    url: "/work/photome",
-    name: "PhotoMe"
-}
-
-const next = {
-    url: "/work/specs",
-    name: "Specs"
-}
-
-
-function Outbreak() {
+function Outbreak(props) {
+    const pagination = props.pagination
 
     return (<>
         <ScrollToTopOnMount />
@@ -112,20 +102,7 @@ function Outbreak() {
             <div className="project_overall_container">
                 <Row>
                     <Col md={12} lg={3}>
-                        <div className="scrollby left_bar_wrapper">
-                              
-                              <ul  
-                              data-uk-scrollspy-nav="closest: li; scroll: true; offset:60">
-                                  <div><a href={prev['url']?(prev['url']):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('home')}</a></div>
-                                  <br/>
-                                  
-                                  {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
-                                  <br/>
-                                  <div><a href={next['url']?(next['url']):('/')} className="project_brief_content">{next['url']?('next project'):('home')}<span uk-icon="icon:triangle-right"></span></a></div>
-                              </ul>                             
-                              
-                          
-                          </div>  
+                        <ProjectContentNav contents={contents} pagination={pagination}/>
                     </Col>
                     <Col md={12} lg={9}>
                         <div className="project_container">
@@ -365,8 +342,8 @@ function Outbreak() {
 
 
             </div>
-            <ProjectPagination prev={prev} next={next} />
-            <BackToTopBtn contents={contents} prev={prev} next={next} />
+            <ProjectPagination pagination={pagination} />
+            <BackToTopBtn contents={contents} pagination={pagination} /> 
         </>)
 }
 

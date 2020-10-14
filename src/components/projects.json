@@ -1,0 +1,90 @@
+[{
+    "url":"/work/tableauprep",
+    "imgUrl":"/images/tableau/tableau.png",
+    "name":"First 5 minutes in Tableau Prep", 
+    "tagline":"Improve the onboarding experience for new users.",
+    "description":"For new users",
+    "labels":["work project", "desktop","interaction design", "onboarding", "growth UX", "design strategy","Data Prep Tool"],
+    "bgColor":"#FFF7EF", 
+    "tColor":"#0f0f0f",
+    "component":"TableauPrep"
+},
+{
+    "url":"/work/IoT",
+    "imgUrl":"/images/IoT/mockup_multiscreens.png",
+    "name":"Smart City Street Light Management Tool",
+    "tagline":"A tool that helps lighting infrastructure administrators to control smart street lights energy-efficiently, accurately and easily on different occasions.",
+    "description":"For city managers",
+    "labels":["Shipped","work project", "product thinking 0-1", "Web", "interaction design","IoT","Management Tool"],
+    "bgColor":"#FFF7EF",
+    "tColor":"#0f0f0f",
+    "component":"IoT"
+},
+{
+    "url":"/work/sw", 
+    "imgUrl":"/images/sw_mockup_big.png",
+    "name":"Seattle Works", 
+    "tagline":"A web redesign practice for clearer information hierarchy and better visual communication.",
+    "description":"For non-profits",
+    "labels":["school project","Web", "redesign","visual design", "Visual Communication", "IA"],
+    "bgColor":"#FFF7EF",
+    "tColor":"#0f0f0f",
+    "component":"SW"
+
+},
+{
+    "url":"/work/abstreet",
+    "imgUrl":"/images/mockup_abstreet.png",
+    "name":"A/B Street",
+    "tagline":"A traffic simulation game exploring how small changes to roads affect cyclists, transit users, pedestrians, and drivers.",
+    "description":"For citizens",
+    "labels":["passion project","desktop game", "game ui", "interaction design"],"bgColor":"#FFF7EF",
+    "tColor":"#0f0f0f",
+    "component":"ABStreet"
+
+},
+{
+    "url":"/work/photome",
+    "imgUrl":"/images/mockup_photome_sm.png",
+    "name":"PhotoMe", 
+    "tagline":"A mobile app that helps others to capture a better you.",
+    "description":"For portrait-lovers",
+    "labels":["individual project","mobile", "interaction design", "visual design"],
+    "bgColor":"#FFF4F5", 
+    "tColor":"rgba(0,0,0,0.8)",
+    "component":"PhotoMe"
+},
+{
+    "url":"/work/outbreak",
+    "imgUrl":"/images/outbreak.png",
+    "name":"Data Viz of National Enteric Outbreaks",
+    "tagline":"A website that guide people explore and learn the patterns of enteric disease outbreaks in the US.", 
+    "description":"For general public", 
+    "labels":["school project","data visualization", "web design & dev"],
+    "bgColor":"#F0F8FC",
+    "tColor":"rgba(0,0,0,0.8)",
+    "component":"Outbreak"
+},
+{
+    "url":"/work/specs", 
+    "imgUrl":"/images/mockup_specs.png", 
+    "name":"Specs", 
+    "tagline":"A Figma plugin that helps designers specify their designs and translate them into engineering language.", 
+    "description":"For designers",
+    "labels":["individual project", "design sprint", "prototyping with code","interaction design"],
+    "bgColor":"#F0EDF6",
+    "tColor":"rgba(0,0,0,0.8)",
+    "component":"Specs"
+
+},
+{
+    "url":"/work/nightkick", 
+    "imgUrl":"/images/nightkick.png", 
+    "name":"Nightkick", 
+    "tagline":"A mobile app and modular wearable to help people feel safer when walking alone after dark.", 
+    "description":"For Seattle citizens", 
+    "labels":["school project","Mobile", "Wearable", "Crowd-sourced"], 
+    "bgColor":"#CFDBFF",
+    "tColor":"rgba(0,0,0,0.8)",
+    "component":"Nightkick"
+}]

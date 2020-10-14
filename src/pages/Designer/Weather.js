@@ -3,6 +3,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import BackToTopBtn from "../../components/BackToTopBtn"
 import ProjectPagination from '../../components/ProjectPagination'
+import ProjectContentNav from '../../components/ProjectContentNav'
 
 
 
@@ -34,15 +35,7 @@ const contents=[
     },
 ]
 
-const prev = {
-    url: "/work/nightkick",
-    name: "Nightkick"
-}
-
-const next = {
-    url: "",
-    name: ""
-}
+const pagination = 8
 
 
 function Weather() {
@@ -122,21 +115,9 @@ function Weather() {
             <div className="project_overall_container">
 
                 <Row>
-                <Col md={12} lg={3}>
-                        <div className="left_bar_wrapper">
+                    <Col md={12} lg={3}>
+                        <ProjectContentNav contents={contents} pagination={pagination}/>
 
-                           
-                            <div className="scrollby" style={{ "zIndex": "980" }} uk-sticky="offset:100;">
-                            <ul className="unset-Sticky" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
-                                <div><a href={prev['url']?(prev['url']):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('home')}</a></div>
-                                <br/>
-                                
-                                {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
-                                <br/>
-                                <div><a href={next['url']?(next['url']):('/')} className="project_brief_content">{next['url']?('next project'):('home')}<span uk-icon="icon:triangle-right"></span></a></div>
-                                </ul> 
-                            </div>
-                        </div>
                     </Col>
                     <Col md={12} lg={9}>
                     <div className="project_container">  
@@ -281,8 +262,8 @@ function Weather() {
                     </Col>
                 </Row>
             </div>
-            <ProjectPagination prev={prev} next={next}/>
-            <BackToTopBtn contents={contents} prev={prev} next={next}/>
+             <ProjectPagination pagination={pagination} />
+            <BackToTopBtn contents={contents} pagination={pagination} />
         </>)
 }
 

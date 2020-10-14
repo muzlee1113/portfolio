@@ -13,8 +13,8 @@ export default function WorkCard (props) {
     
     return (<>
            
-            <Link className="card_link" to={props.url}>
-            <div className="work_wrapper" style={{backgroundColor: props.bgColor, color: props.tColor}}>
+            <Link className="card_link" to={props.project.url}>
+            <div className="work_wrapper" style={{backgroundColor: props.project.bgColor, color: props.project.tColor}}>
             <div className="workCards_wrapper">
             <Fade bottom>
 
@@ -22,17 +22,17 @@ export default function WorkCard (props) {
                     <Row className="align-items-center card_hover">
                         <Col xs={12} md={6} >
                             <div class="workCard_text_container">
-                                <div className="card_description">{props.description}</div>
-                                <div className="card_name">{props.name}</div>
-                                <div className="card_tagline">{props.tagline}</div>
-                                <div>{props.labels.map(label=>{
+                                <div className="card_description">{props.project.description}</div>
+                                <div className="card_name">{props.project.name}</div>
+                                <div className="card_tagline">{props.project.tagline}</div>
+                                <div>{props.project.labels.map(label=>{
                                         return <span class="uk-label mr-2 my-1">{label}</span>
                                     })}
                                 </div>
                             </div>
                         </Col>
                         <Col xs={12} md={6}>
-                        <img src={process.env.PUBLIC_URL + props.imgUrl} alt="" className='card-img'/>
+                        <img src={process.env.PUBLIC_URL + props.project.imgUrl} alt="" className='card-img'/>
                         </Col>
                     </Row>
                 </div>

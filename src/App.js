@@ -28,13 +28,6 @@ import BoardingPass from "./pages/Designer/BoardingPass"
 import IoT from "./pages/Designer/IoTBest"
 import IoTDashboard from "./pages/Designer/IoTDashboard"
 import IoTNotification from "./pages/Designer/IoTNotification"
-
-
-import IoTZero from "./pages/Designer/IoTZero"
-import IoTOne from "./pages/Designer/IoTOne"
-import IoTTwo from "./pages/Designer/IoTTwo"
-import IoTThree from "./pages/Designer/IoTThree"
-
 import MaterialBank from './pages/Designer/MaterialBank';
 import Nightkick from './pages/Designer/Nightkick'
 import SW from './pages/Designer/SW'
@@ -50,10 +43,19 @@ import WIS from "./pages/Developer/WIS"
 
 import DesignSystem from "./pages/DesignSystem"
 
+import projects from "./components/projects.json"
 
 
-
-
+const projectComponents= {
+  IoT,
+  IoTDashboard,
+  IoTNotification,
+  Nightkick,
+  SW,
+  Specs,
+  Outbreak,
+  ABStreet
+}
 
 let nav = true
 let footer = true
@@ -70,56 +72,29 @@ class App extends Component {
           <Nav display={nav}/>
         </div>
         <Switch>
-          <Route exact path="/"
-            render={props => <Design {...props} />}
-          />
+          <Route exact path="/" render={props => <Design {...props} />} />
 
-          <Route exact path="/design"
-            render={props => <Design {...props} />}
-          />
+          <Route exact path="/design" render={props => <Design {...props} />} />
 
-          <Route exact path="/code"
-            render={props => <Code {...props} />}
-          />
+          <Route exact path="/code" render={props => <Code {...props} />}/>
 
           <Route exact path="/play" render={props => <Play {...props} />} />
 
-          <Route exact path="/journalist" render={props => <Journalist {...props} />} />
-
-          <Route exact path="/researcher" render={props => <Researcher {...props} />} />
-
-          <Route exact path="/teacher" render={props => <Teacher {...props} />} />
-          {/* <Route exact path="/others"
-            render={props => <Others {...props} />} /> */}
-
-          <Route exact path="/about"
-            render={props => <About {...props} />}
-          />
+          <Route exact path="/about" render={props => <About {...props} />} />
           {/* design */}
+        
+          <Route exact path="/work/photome" render={(props)=><PhotoMe pagination={projects.findIndex(project=>project.component==="PhotoMe")} {...props} />} />
 
-          <Route exact path="/work/readwithme" component={ReadwithMe} />
-          <Route exact path="/work/photome" component={PhotoMe} />
-          <Route exact path="/work/weather" component={Weather} />
-          <Route exact path="/work/lightup" component={LightUp} />
-          <Route exact path="/work/boardingpass" component={BoardingPass} />
-          <Route exact path="/work/IoT" component={IoT}/>
-          {/* <Route exact path="/work/IoT/research" component={IoTZero}/>
-          <Route exact path="/work/IoT/datavis" component={IoTOne}/>
-          <Route exact path="/work/IoT/infonav" component={IoTTwo}/>
-          <Route exact path="/work/IoT/sysimg" component={IoTThree}/> */}
-          <Route exact path="/work/IoT/infonav" component={IoTTwo}/>
-           <Route exact path="/work/IoTDashboard" component={IoTDashboard}/>
-           <Route exact path="/work/IoTNotification" component={IoTNotification}/>
+          <Route exact path="/work/IoT" render={(props)=><IoT pagination={projects.findIndex(project=>project.component==="IoT")} {...props} />}/>
 
-          <Route exact path="/work/materialbank" component={MaterialBank} />
-          <Route exact path="/work/nightkick" component={Nightkick}/>
-          <Route exact path="/work/sw" component={SW}/>
-          <Route exact path="/work/quickhire" component={QuickHire}/>
-          <Route exact path="/work/specs" component={Specs}/>
-
-          <Route exact path="/work/outbreak" component={Outbreak}/>
-          <Route exact path="/work/abstreet" component={ABStreet}/>
-          <Route exact path="/work/tableauprep" component={TableauPrep}/>
+          <Route exact path="/work/IoTDashboard" render={(props)=><IoTDashboard pagination={projects.findIndex(project=>project.component==="IoT")} {...props} />}/>
+    <Route exact path="/work/IoTNotification" render={(props)=><IoTNotification pagination={projects.findIndex(project=>project.component==="IoT")} {...props} />}/>
+          <Route exact path="/work/nightkick" render={(props)=><Nightkick pagination={projects.findIndex(project=>project.component==="Nightkick")}  {...props} />} />
+          <Route exact path="/work/sw" render={(props)=><SW pagination={projects.findIndex(project=>project.component==="SW")} {...props} />} />
+          <Route exact path="/work/specs" render={(props)=><Specs pagination={projects.findIndex(project=>project.component==="Specs")} {...props} />}/>
+          <Route exact path="/work/outbreak" render={(props)=><Outbreak pagination={projects.findIndex(project=>project.component==="Outbreak")} {...props} />}/>
+          <Route exact path="/work/abstreet" render={(props)=><ABStreet pagination={projects.findIndex(project=>project.component==="ABStreet")} {...props} />} />
+          <Route exact path="/work/tableauprep" render={(props)=><TableauPrep pagination={projects.findIndex(project=>project.component==="TableauPrep")} {...props} />}/>
           
           {/* code */}
           <Route exact path="/work/WIS" component={WIS} />

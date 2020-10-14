@@ -3,6 +3,7 @@ import { ButtonToolbar, OverlayTrigger, Tooltip, Row, Col } from 'react-bootstra
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import BackToTopBtn from "../../components/BackToTopBtn"
 import ProjectPagination from '../../components/ProjectPagination'
+import ProjectContentNav from '../../components/ProjectContentNav'
 
 
 

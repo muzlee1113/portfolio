@@ -12,6 +12,7 @@ import BackToTopBtn from "../../components/BackToTopBtn"
 import ScrollToTopOnMount from "../../components/ScrollToTopOnMount"
 import ProjectPagination from '../../components/ProjectPagination'
 import ImageZoom from 'react-medium-image-zoom'
+import ProjectContentNav from '../../components/ProjectContentNav'
 
 const contents=[
 
@@ -31,15 +32,6 @@ const contents=[
     }
 ]
 
-const prev = {
-    url: "/work/IoT",
-    name: "Back to the Smart Street Lighting Management Tool"
-}
-
-const next = {
-    url: "/work/sw",
-    name: "Seattle Works"
-}
 
 export default class IoTDashboard extends React.Component {
     state = {
@@ -71,6 +63,8 @@ export default class IoTDashboard extends React.Component {
     }
 
     render() {
+        const pagination = this.props.pagination
+
         return (<>
             <ScrollToTopOnMount />
              <div className="project_head_container">
@@ -85,20 +79,7 @@ export default class IoTDashboard extends React.Component {
             <div className="project_overall_container">
                 <Row>
                     <Col md={12} lg={3}>
-                        <div className="scrollby left_bar_wrapper">
-                              
-                              <ul  
-                              data-uk-scrollspy-nav="closest: li; scroll: true; offset:60">
-                                  <div><a href={prev['url']?(prev['url']):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev['url']?('prev project'):('home')}</a></div>
-                                  <br/>
-                                  
-                                  {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
-                                  <br/>
-                                  <div><a href={next['url']?(next['url']):('/')} className="project_brief_content">{next['url']?('next project'):('home')}<span uk-icon="icon:triangle-right"></span></a></div>
-                              </ul>                             
-                              
-                          
-                          </div>  
+                        <ProjectContentNav contents={contents} pagination={pagination}/>
                     </Col>
 
                     <Col md={12} lg={9}>
@@ -215,8 +196,8 @@ export default class IoTDashboard extends React.Component {
 
                     </Col>
                 </Row>
-                <ProjectPagination prev={prev} next={next}/>
-                <BackToTopBtn contents={contents} prev={prev} next={next}/>
+                <ProjectPagination pagination={pagination} />
+                <BackToTopBtn contents={contents} pagination={pagination} />
                 <ImageModal
                     show={this.state.modalShow}
                     onHide={() => this.setState({ modalShow: false })}
