@@ -364,7 +364,7 @@ class IoTBest extends React.Component {
                             <section className="project_body" id="syn">
                                 <h2>Synthesize</h2>
                                 <h5>Three Scenarios, Three Problems</h5>
-                                {/* <h6></h6> */}
+                                <p>Administrators decide when the lights should turn on and off and how bright they should be based on time, days and areas. These settings are called work plan. There are three scenarios when administrators need to set or change the work plans.</p>
 
                                 <ImageZoom
                                     image={{
@@ -374,27 +374,34 @@ class IoTBest extends React.Component {
                                     }}
 
                                 />
-                                <br />
                                 
                             </section>
 
 
                             <section className="project_body" id="ideate">
                                 <h2>Ideate</h2>
-
-                                <h5>Design Goals</h5>
-                                <div className="project_quote">
-                                    <div className="project_separator_inner_wrapper_small">
-                                        <div className="project_quote_text">1. Automate default plan configuration</div>
-                                        <div className="project_quote_text">2. Preset special plan for special occasions</div>
-                                        <div className="project_quote_text">3. Quickly locate and control of light in emergency</div>
-                                    </div>
-
-                                </div>
-
-                                {/* <ImageZoom
+                                <h5>How might we help administrators work efficiently with the new Smart Street Lights?</h5>
+                                <p>After brainstorming with the engineering team, we decided to focus on these three ideas.</p>
+                                <ImageZoom
                                     image={{
-                                        src: '/images/IoT/problemsolution_lightcontrol.png',
+                                        src: '/images/IoT/features.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                    }}
+
+                                />
+
+                         
+
+                            </section>
+                            <section className="project_body" id="design">
+                                <h2>Design</h2>
+                                <h5>User flows and wireframes</h5>
+
+                                <p>So I started with mapping the user flows of each scenario and how the new system is going to support each of the steps. I then wireframed the possible interfaces of the system.</p>
+                                <ImageZoom
+                                    image={{
+                                        src: '/images/IoT/user_flow.png',
                                         alt: '',
                                         className: 'project_illustration'
                                     }}
@@ -402,21 +409,13 @@ class IoTBest extends React.Component {
                                 />
                                 <ImageZoom
                                     image={{
-                                        src: '/images/IoT/idea.png',
+                                        src: '/images/IoT/wireframe.png',
                                         alt: '',
-                                        className: 'project_illustration_medium'
+                                        className: 'project_illustration'
                                     }}
-
-                                /> */}
-
-                            </section>
-                            <section className="project_body" id="design">
-                                <h2>Design</h2>
-                                <h5>User flows and wireframes</h5>
-
-                                {/* <p>So I started with mapping the user flows of each scenario and how the new system was going to support each of the steps. I then wireframed the possible interfaces of the system.</p> */}
-                                <h6>1. Default plan setup: display automations and give controls</h6>
-                                <p>Since the most laborious part of the job was going to be done by the IoT system, the management tool only needs to expose enough information and give enough controls to the users so that they can <b>trust</b> the new system.</p>
+                                />
+                                {/* <h6>1. Smart Default Plan</h6>
+                                <p>Since the most laborious part, the automation, is going to be done by the IoT system, the management tool only needs to show system status and give enough controls to the users so that they can <b>trust</b> the new system.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/daytoday.png',
@@ -434,11 +433,11 @@ class IoTBest extends React.Component {
                                         className: 'project_illustration'
                                     }}
 
-                                />
+                                /> */}
                                  <div className="project_separator">
                                     
                                     <div className="project_separator_inner_wrapper" >
-                                        <div className="project_separator_title">Challenge: how to make work-hour setting more intuitive?</div>
+                                        <div className="project_separator_title">Challenge #1 How to make work-hour setting more intuitive?</div>
                                         <p>A challenge I faced in wireframing the setting interface is how to make the work plan setting interface more intuitive and provide users with more visual hints.</p>
                                     <ImageZoom
                                         image={{
@@ -453,7 +452,7 @@ class IoTBest extends React.Component {
                                 <p>Finally, I decided to first combine these two ways of settings and test the features in usability testing later.</p>
                                     </div>
                                 </div>
-                               
+{/*                                
                                 
                                 <h6>3. Emergency Control</h6>
                                 <p>To improve information navigation, my design allows users to look for and control device(s) on a map and from an alert.</p>
@@ -472,23 +471,13 @@ class IoTBest extends React.Component {
                                         className: 'project_illustration'
                                     }}
 
-                                />
+                                /> */}
                                 <div className="project_separator">
                                     
                                     <div className="project_separator_inner_wrapper" >
-                                        <div className="project_separator_title">Challenge: how to simplify bulk control?
+                                        <div className="project_separator_title">Challenge #2 How to simplify bulk control?
                                         </div>  
-                                        <p>One challenge I encountered was how to allow users to control a group of lights quickly and easily. I introduced the "selected list" and created variations of the interfaces for multi-selection and multi-control feedback.</p>
-                                        {this.state.hide4 ? (<>
-                                    <div className="hiden_content_switch_container text-center">
-                                        <button class="uk-button uk-button-secondary uk-width-1-1" onClick={() => this.toggleHiddenContent("hide4")}><span uk-icon="icon: search"></span> Click to See Detailed Exploration of Bulk Control</button>
-                                    </div></>) : (<>
-                                        <div className="hiden_content_switch_container text-center">
-                                            <button class="uk-button uk-button-secondary uk-width-1-1" onClick={() => this.toggleHiddenContent("hide4")}>Hide Detailed Exploration</button>
-                                        </div>
-                                        {/* ----------------hidden 👇---------------------- */}
-
-                                       
+                                        <p>One challenge I encountered was how to allow users to control a group of lights quickly and easily. I introduced the "selected list" and mapped the user flow.</p>
                                         <ImageZoom
                                             image={{
                                                 src: '/images/IoT/bulkcontrol/bulk_workflow.png',
@@ -500,83 +489,84 @@ class IoTBest extends React.Component {
                                         <p className="project_info">I ideated four ways to select multiple devices.</p>
                                         <ImageZoom
                                             image={{
-                                                src: '/images/IoT/bulkcontrol/select1.png',
+                                                src: '/images/IoT/bulkcontrol/select.gif',
                                                 alt: '',
                                                 className: 'project_illustration'
                                             }}
 
-                                        /><ImageZoom
-                                        image={{
-                                            src: '/images/IoT/bulkcontrol/select2.png',
-                                            alt: '',
-                                            className: 'project_illustration'
-                                        }}
+                                        />
+                                        <p className="project_info">Since administrators usually control lights by defined areas (administrative divisions), the 'selet-an-area' button is more useful for them. Moreover, multi-selection on map is the ideal way to select devices by undefined areas such as all lights at an intersection. So I decided to <b>combine these two (2 & 3)</b>.</p>
 
-                                    />
-                                        <p className="project_info">Since administrators usually control lights by defined areas (administrative divisions), the 'selet-an-area' button is more useful for them. Moreover, multi-selection on map is the ideal way to select devices by undefined areas such as all lights at an intersection. So I decided to <b>combine these two (3 & 4)</b>.</p>
+                                       
+                                        <div className="p-list"><div className="circle_number">2</div>Retrieve Selected Device</div>
+                                        <p className="project_info">Another thing that need to be considered was where the "selected device" button should be located. I wireframed four locations of the button and finally decided to put the button at top since it was the most straightforward version and produced no ambiguity of its scope.</p>
+                                        <Row>
+                                            <Col>
+                                                <ImageZoom
+                                                image={{
+                                                    src: '/images/IoT/bulkcontrol/retrieve_button1.png',
+                                                    alt: '',
+                                                    className: 'project_illustration'
+                                                }}
 
+                                                    />
+                                            </Col>
+                                            <Col>
+                                                <ImageZoom
+                                                        image={{
+                                                            src: '/images/IoT/bulkcontrol/retrieve_button2.png',
+                                                            alt: '',
+                                                            className: 'project_illustration'
+                                                        }}
+
+                                                    />
+                                            </Col>
+                                        </Row>
+                                        
+                                       
+                                        <div className="p-list"><div className="circle_number">3</div>Check Selected Device</div>
+                                        <p className="project_info">As for how to display selected devices, I created the following wireframes.</p>
+                                        <Row>
+                                            <Col>
+                                                <ImageZoom
+                                                    image={{
+                                                        src: '/images/IoT/bulkcontrol/retrieve_display1.png',
+                                                        alt: '',
+                                                        className: 'project_illustration'
+                                                    }}
+
+                                                />
+                                            </Col>
+                                            <Col>
+                                                <ImageZoom
+                                                    image={{
+                                                        src: '/images/IoT/bulkcontrol/retrieve_display2.png',
+                                                        alt: '',
+                                                        className: 'project_illustration'
+                                                    }}
+
+                                                />
+                                            </Col>
+                                        </Row>
+                                       
+                                        
+                                       
+                                       
+                                         <p className="project_info">I eventually decided to show the selected devices on a new page in a grouped table. In addition, Users can also apply advanced filters such as types, luminance so that they can further narrow down the lights they want to control.</p>
                                         <ImageZoom
                                         image={{
-                                            src: '/images/IoT/bulkcontrol/select3.png',
+                                            src: '/images/IoT/bulkcontrol/retrieve_final.png',
                                             alt: '',
                                             className: 'project_illustration_medium'
                                         }}
                                         />
-
-                                        <div className="p-list"><div className="circle_number">2</div>Retrieve Selected Device</div>
-                                        <p className="project_info">One thing that needed to be considered was where the "selected device" button should be located. I wireframed four locations of the button and finally decided to put the button at top since it was the most straightforward version and produced no ambiguity of its scope.</p>
-                                        <ImageZoom
-                                            image={{
-                                                src: '/images/IoT/bulkcontrol/retrieve_button1.png',
-                                                alt: '',
-                                                className: 'project_illustration'
-                                            }}
-
-                                        />
-                                        <ImageZoom
-                                            image={{
-                                                src: '/images/IoT/bulkcontrol/retrieve_button2.png',
-                                                alt: '',
-                                                className: 'project_illustration'
-                                            }}
-
-                                        />
-                                        <div className="p-list"><div className="circle_number">3</div>Check Selected Device</div>
-                                        <p className="project_info">As for how to display selected devices, I created the following wireframes.</p>
-                                        <ImageZoom
-                                            image={{
-                                                src: '/images/IoT/bulkcontrol/retrieve_display1.png',
-                                                alt: '',
-                                                className: 'project_illustration'
-                                            }}
-
-                                        />
-                                        <ImageZoom
-                                            image={{
-                                                src: '/images/IoT/bulkcontrol/retrieve_display2.png',
-                                                alt: '',
-                                                className: 'project_illustration'
-                                            }}
-
-                                        />
-                                        <p className="project_info">I eventually decided to send users to a new page once user click 'view selected device' button on top to give more space for information display so that users can clearly check what are selected. A grouped table was proved to be the most efficient and clear way to display the selected devices.  </p>
-                                        
-                                        <p className="project_info">In addition, Users can also apply advanced filters such as types, luminance or other attributes of the lights so that they can further narrow down the lights they want to control. The challenge is how to display various options and, at the same time, make sure that administrators know what are selected.</p>
-                                        <ImageZoom
+                                         <ImageZoom
                                             image={{
                                                 src: '/images/IoT/bulkcontrol/advancedFilters.png',
                                                 alt: '',
                                                 className: 'project_illustration'
                                             }}
 
-                                        />
-                                        <p className="project_info">The final version the selected device page combines all these features:</p>
-                                        <ImageZoom
-                                        image={{
-                                            src: '/images/IoT/bulkcontrol/retrieve_final.png',
-                                            alt: '',
-                                            className: 'project_illustration'
-                                        }}
                                         />
 
                                         <div className="p-list"><div className="circle_number">4</div>Control Response</div>
@@ -586,7 +576,7 @@ class IoTBest extends React.Component {
                                             image={{
                                                 src: '/images/IoT/bulkcontrol/response.png',
                                                 alt: '',
-                                                className: 'project_illustration'
+                                                className: 'project_illustration_medium'
                                             }}
 
                                         />
@@ -597,13 +587,8 @@ class IoTBest extends React.Component {
                                         */}
                                          
                                        
+{/* 
 
-
-                                        {/* ----------------hidden 👆---------------------- */}
-                                        <div className="hiden_content_switch_container text-center">
-                                            <button class="uk-button uk-button-secondary uk-width-1-1" onClick={() => this.toggleHiddenContent("hide4")}>Hide Detailed Exploration</button>
-                                        </div>
-                                    </>)}
                                 <p>Finally, I developed the wireframes:</p>
                                 <ImageZoom
                                     image={{
@@ -612,15 +597,9 @@ class IoTBest extends React.Component {
                                         className: 'project_illustration'
                                     }}
 
-                                />
+                                /> */}
                                     </div>
                                 </div>
-
-                               
-
-
-                                
-                                <p>After all these, I created high-fidelity interactive prototypes for the usability testing with users.</p>
                             </section>
                             <section className="project_body" id="evaluate">
                                 <h2>Evaluate</h2>
@@ -688,7 +667,7 @@ class IoTBest extends React.Component {
 
                                 />
                                 <div className="image_model_link_container"><Button className="text_link" variant="link" onClick={() => this.triggerModel("/images/IoT/final_special_plan.gif")}>click here to watch the interaction (gif of hi-fi prototypes).</Button></div>
-                                <h6>Emergency Control</h6>
+                                <h6>Map Navigation & Emergency Control</h6>
                                 <p></p>
                                 <li>Quickly locate devices with map and filters</li>
                                 <li>More flexible bulk controls</li>
