@@ -28,7 +28,12 @@ const contents = [
     },
     {
         id: "#design",
-        name: "Design"
+        name: "Interaction Design"
+
+    },
+    {
+        id: "#viz",
+        name: "Visual Design"
 
     },
     {
@@ -83,6 +88,7 @@ function ABStreet(props) {
                     <div className="project_overview_title">My Contributions</div>
                     <div className="project_overview_content">· Organized usability testings and cognitive walkthroughs to identify usability problems</div>
                     <div className="project_overview_content">· Iteratively improved game UIs and interactions via rapid protyping and testing</div>
+                    <div className="project_overview_content">· Offered consultancy on design strategies</div>
                 </Col>
                 <Col sm={4} md={2}>
 
@@ -109,9 +115,9 @@ function ABStreet(props) {
                                 <div id="scrollstart"></div>
                                 <h2>Intro</h2>
                                 <h5>Game for changes</h5>
-                                <p>In November 2019, I was looking for chances to test my interaction design skills in some real-world projects. When I was browsing <a href="https://democracylab.org">DemocracyLab</a>, A/B Street caught my eyes. I’ve long been interested in persuasive design and gamification. “Game for changes” plus design for complex game UI sounded so fascinated that I sent a message to Dustin, the founder & developer of the game, as long as I read through the project brief. Since then, I’ve been working as a UX designer for the game. </p>
+                                <p>In November 2019, I was looking for chances to practice my interaction design skills in some real-world projects. When I was browsing <a href="https://democracylab.org">DemocracyLab</a>, A/B Street caught my eyes. I’ve long been interested in persuasive design and gamification. “Game for changes” plus design for complex game UI sounded so fascinated that I sent a message to Dustin, the founder & developer of the game, as long as I finished reading the project brief. Since then, I’ve been working as a UX designer for the game. </p>
                        
-                                <p>At the point when I joined the project, Dustin has already built up a complex game with complete simulations of traffic in Seattle where players can make changes to roads and intersections or take various challenges for traffic improvement.</p>
+                                <p>At the point when I joined the project, Dustin has already built up a complex game with complete simulations of traffic in Seattle where players can make changes to roads and intersections or take various challenges about traffic improvements.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/abstreet/problem.png',
@@ -120,7 +126,7 @@ function ABStreet(props) {
                                     }}
 
                                 />
-                                <p>However, the interactions of the game highly were depended on hotkeys and the interface was clustered with information and data visualization. To attract not only civil engineering and GIS enthusiasts but the general public, a clearer and more intuitive game interface was needed.</p>
+                                <p>However, the interactions of the game were highly depended on hotkeys and the interface was clustered with information and data visualization. To attract not only civil engineering and GIS enthusiasts but the general public as well, <b>a clearer and more intuitive game interface</b> was needed.</p>
                             </section>
 
 
@@ -141,7 +147,7 @@ function ABStreet(props) {
                                 <h2>Research & Ideate</h2>
                                 <h5>Game Design & Player Flow</h5>
                                 <p>Game UI design is different from normal UI since the goals of players’ actions are devised by game mechanisms and the tasks and flows are defined by rules. However, similar to normal UI design, a good UI makes it fast and easy for the players to learn what is available, perform the tasks, and pick up the flows.</p>
-                                <p>Here is the key player flow we mapped out for the game, the problems players have when completing each task and the proposed solutions for the problems:</p>
+                                <p>Here is the key player flow we mapped out for the game, the problems players have when completing each task, and the proposed solutions for the problems:</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/abstreet/brainstorm.png',
@@ -160,40 +166,49 @@ function ABStreet(props) {
                     <h2>Solution</h2>
                     <Row>
                         <Col xs={3}>
-                            
-                                <ImageZoom
-                                    image={{
-                                        src: '/images/abstreet/locate.gif',
-                                        alt: '',
-                                        className: 'project_illustration'
-                                    }}
-
-                                />
-                            
-
-
                             <div className="project_caption text-center">Locate and zoom in to a problem</div>
-                            <div className="project_caption text-center">"Oh! There is a huge delay at this intersection"</div>
+                            <ImageZoom
+                                image={{
+                                    src: '/images/abstreet/locate.gif',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                }}
+
+                            />
+                            
+                            <div className="project_quote_sm">
+                                <div className="project_quote_sm_wrapper">
+                                    <div className="project_quote_sm_text">Oh! There is a huge delay at this intersection."</div>
+                                </div>
+                            </div>
+
+                           
+                            
                         </Col>
 
 
                         <Col xs={3}>
-                            
-                                <ImageZoom
-                                    image={{
-                                        src: '/images/abstreet/analyze.gif',
-                                        alt: '',
-                                        className: 'project_illustration'
-                                    }}
-
-                                />
-
-                            
                             <div className="project_caption text-center">Analyze the causes</div>
-                            <div className="project_caption text-center">"Emmm, seems like a lot of cars are rushing into the intersection from this direction"</div>
+
+                            <ImageZoom
+                                image={{
+                                    src: '/images/abstreet/analyze.gif',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                }}
+
+                            />
+
+                            <div className="project_quote_sm">
+                                <div className="project_quote_sm_wrapper">
+                                    <div className="project_quote_sm_text">"Emmm, seems like a lot of cars are rushing into the intersection from this direction."</div>
+                                </div>
+                            </div>
+                           
                         </Col>
                         <Col xs={3}>
-                            
+                            <div className="project_caption text-center">Edit the map to fix the problem</div>
+
                                 <ImageZoom
                                     image={{
                                         src: '/images/abstreet/edit.gif',
@@ -203,24 +218,31 @@ function ABStreet(props) {
 
                                 />
 
-                            
-                            <div className="project_caption text-center">Edit the map to fix the problem</div>
-                            <div className="project_caption text-center">"Let's change the traffic signal to increase the time for this direction"</div>
+                            <div className="project_quote_sm">
+                                <div className="project_quote_sm_wrapper">
+                                    <div className="project_quote_sm_text">"Let's change the traffic signal to increase the time for this direction."</div>
+                                </div>
+                            </div>
+                           
                         </Col>
                         <Col xs={3}>
-                            
-                                <ImageZoom
-                                    image={{
-                                        src: '/images/abstreet/validate.gif',
-                                        alt: '',
-                                        className: 'project_illustration'
-                                    }}
-
-                                />
-
-                            
                             <div className="project_caption text-center">Test the solution in simulation</div>
-                            <div className="project_caption text-center">"Things seem to get little better. What else should I do?"</div>
+
+                            <ImageZoom
+                                image={{
+                                    src: '/images/abstreet/validate.gif',
+                                    alt: '',
+                                    className: 'project_illustration'
+                                }}
+
+                            />
+
+                            <div className="project_quote_sm">
+                                <div className="project_quote_sm_wrapper">
+                                    <div className="project_quote_sm_text">"Things seem to get little better. What else should I do?"</div>
+                                </div>
+                            </div>
+                            
                         </Col>
 
 
@@ -237,9 +259,9 @@ function ABStreet(props) {
                             <section className="project_body" id="design">
                                 <h2>Design</h2>                   
                                 <h5>How to support player flow with better Game UIs</h5>
-                                <h6>Locate and zoom in to a problem</h6>
+                                <h6>1. Locate and zoom in to a problem</h6>
                                 <p>On the one hand, players need to locate problematic areas on the map. On the other hand, they need to locate problematic periods of time in certain areas. Therefore, a better way to navigate on map and time is important. Also, players focus on different problems in different challenges. A better way to display game goals and check current performance against the goals is also very helpful for players to discover problems.</p>
-                                <p className="p-list">1. Map Navigation</p>
+                                <p className="p-list">#1 Map Navigation</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/abstreet/minimap.png',
@@ -248,6 +270,7 @@ function ABStreet(props) {
                                     }}
 
                                 />
+                             
                                 <ImageZoom
                                     image={{
                                         src: '/images/abstreet/overlays.png',
@@ -256,8 +279,15 @@ function ABStreet(props) {
                                     }}
 
                                 />
+                                <div className="project_separator">
+                                    
+                                    <div className="project_separator_inner_wrapper" >
+                                        <div className="project_separator_title">💡 Reflection</div>
+                                        <p>Some of the colors apply here are not accessible to people with visual impairment. More work need to be done to improve the accessibility</p>
+                                    </div>
+                                </div>
                                 
-                                <p className="p-list">2. Time Navigation</p>
+                                <p className="p-list">#2 Time Navigation</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/abstreet/timedisplay.png',
@@ -267,7 +297,7 @@ function ABStreet(props) {
 
                                 />
 
-                                <p className="p-list">3. Goals and Current Status</p>
+                                <p className="p-list">#3 Goals and Current Status</p>
 
                                 <ImageZoom
                                     image={{
@@ -278,9 +308,37 @@ function ABStreet(props) {
 
                                 />
 
+
+                                <p className="p-list">#4 Data Dashboard</p>
+
+                                <ImageZoom
+                                    image={{
+                                        src: '/images/abstreet/datadashboard_1.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                    }}
+
+                                />
+                                <ImageZoom
+                                    image={{
+                                        src: '/images/abstreet/datadashboard_1_1.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                    }}
+
+                                />
+                                 <ImageZoom
+                                    image={{
+                                        src: '/images/abstreet/datadashboard_2.png',
+                                        alt: '',
+                                        className: 'project_illustration'
+                                    }}
+
+                                />
+
                                 
-                                <h6>Analyze the causes</h6>
-                                <p>When analyzing the cause of the problem, for example, a traffic jam at an intersection, the players want data related to the intersection and areas around and also data of the people and vehicles around. They can click down to see details of the intersection and other infrastructure, or follow and look into a pedestrian or a car.</p>
+                                <h6>2. Analyze the causes</h6>
+                                <p>When analyzing the cause of a problem, for example, a traffic jam at an intersection, the players want data related to the intersection and areas around, and also data of the people and vehicles around. They can click down to see details of the intersection and other infrastructure, or follow a pedestrian or a car.</p>
 
                                 <ImageZoom
                                     image={{
@@ -309,8 +367,8 @@ function ABStreet(props) {
                                
                                 
 
-                                <h6>Edit the map to fix the problem</h6>
-                                <p>Once players figure out how to solve the problems, they can start editing the lanes or the intersections to fix the problems. Sometimes, multiple lanes get involved, so an easier way to do bold editing is needed, too.</p>
+                                <h6>4. Edit the map to fix the problem</h6>
+                                <p>Once players figure out how to solve the problems, they can start editing the lanes or the intersections to fix the problems. </p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/abstreet/edit_1.png',
@@ -327,27 +385,36 @@ function ABStreet(props) {
                                     }}
 
                                 />
-                                <ImageZoom
-                                    image={{
-                                        src: '/images/abstreet/edit_3.png',
-                                        alt: '',
-                                        className: 'project_illustration'
-                                    }}
+                             
+                                <div style={{margin: "0 auto 0", display: "flex", flexDirection:"row", alignItems: "flex-end"}}>
+                                    <div>
+                                        <ImageZoom
+                                            image={{
+                                                src: '/images/abstreet/edit_3.png',
+                                                alt: '',
+                                                className: 'project_illustration'
+                                            }}
 
-                                />
-                                <h6>Test the solution in simulation</h6>
-                                <p>After players editing something, they want to know what was changes, how the changes are going to affect the areas, and how they are going to affect the score. Also by knowing this they can learn and form their own strategy. Short-term feedback and long-term feedback are both important for these purposes. For short-term feedback, the best solution is to show the estimated effect while they are editing. However, since the whole simulation is based on day, so there are technical limitations to give instant feedback like this</p>
+                                        />
+                                    </div>
+                                    <div>
+                                        
+                                    <ImageZoom
+                                        image={{
+                                            src: '/images/abstreet/edit_3.gif',
+                                            alt: '',
+                                            className: 'project_illustration_medium'
+                                        }}
 
-                                <ImageZoom
-                                    image={{
-                                        src: '/images/abstreet/instant.png',
-                                        alt: '',
-                                        className: 'project_illustration_small'
-                                    }}
+                                    />
+                                     </div>
+                                </div>
+                                
+                                
 
-                                />
-
-                                <p>Therefore, for short-term feedback, a preview mode for intersection editing is provided. Players can add random agents to the map or run similar scenarios as the time they paused to test the concept without applying the edits to the real map and time.</p>
+                                <h6>5. Test the solution in simulation</h6>
+                                <p>After players editing something, how the edits are going to affect the areas, and how they are going to affect the score. Also, by knowing this they can learn and form their own strategy. Short-term feedback and long-term feedback are both important for these purposes.</p>
+                                <p>For short-term feedback, a preview mode for intersection editing is provided. Players can add random agents to the map or run similar scenarios as the time they paused to test the concept without applying the edits to the real map and time.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/abstreet/preview.gif',
@@ -368,8 +435,8 @@ function ABStreet(props) {
                                 />
                                 
 
-                                <h6>Version Control & Resume</h6>
-                                <p>After edits, players want to quickly  Since the ultimate goal of the game is to promote changes in traffic infrastructure. We encourage to players to test on various assumptions and propose different edits. Therefore, it is important to help them do trial and error and manage different versions of the edits.</p>
+                                <h6>6. Version Control & Resume</h6>
+                                <p>After edits, players want to quickly  Since the ultimate goal of the game is to promote changes in traffic infrastructure. We encourage to players to test on various assumptions and propose different edits. Therefore, it is important to help them learn from trial and error and manage different versions of the edits.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/abstreet/version.png',
@@ -378,7 +445,9 @@ function ABStreet(props) {
                                     }}
 
                                 />
-                                <h6>Visual Explorations</h6>
+                            <section className="project_body" id="viz">
+                                <h2>Visual Design</h2>
+                                <h5>Explore the Style of the Game</h5>
                                 <p>To improve the storytelling and make the game more appealing, I also explored the visual design of game starting screen and game script characters.</p>
                                 <ImageZoom
                                     image={{
@@ -396,6 +465,8 @@ function ABStreet(props) {
                                     }}
 
                                 />
+                            </section>
+                                
 
 
 
@@ -408,7 +479,7 @@ function ABStreet(props) {
                                     <li className="p">Improve the learnability of the game with better help document and contextual hints & guidances</li>
                                     <li className="p">Experiment with bringing in sounds to improve experience</li>
                                     <li className="p">Work with game designers to improve game mechanisms, rules and storytelling.</li>
-                                    <li className="p">Focus more on improving accessibility of the game in terms of visual design</li>
+                                    <li className="p">Focus more on improving and visual of the game</li>
                                 </ul>
                         </section>
                     </Col>

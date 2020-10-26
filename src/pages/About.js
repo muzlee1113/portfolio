@@ -1,4 +1,5 @@
 import React from "react";
+import {Row, Col } from 'react-bootstrap';
 import '../index.css';
 import { NavLink } from "react-router-dom";
 import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
@@ -13,8 +14,12 @@ function About() {
             <section className="about_wrapper">
                 <h1 className="leading-bigtext">Something more about me<span className="leading-bigtext" style={{ "color": "#9D2721" }}>.</span> 😃</h1>
                 <h3 className="leading-text">Nice to meet you.</h3>
-                <img id="me" src={process.env.PUBLIC_URL+"/images/me.png"} alt=" "/>
-                <div className="textcontainer">
+                <Row>
+                    <Col md={3} sm={12}>
+                        <img className="project_illustration" src={process.env.PUBLIC_URL+"/images/me.png"} alt=" "/>
+                    </Col>
+                    <Col md={9} sm={12}>
+                    <div className="textcontainer">
                     <p><b>Hi, I'm Yuwen.</b> If you found your tongue twisted, just say ‘you win’. It’s pretty close 😝. </p>
                     <p>I’m now a student at the University of Washington (Go Dawgs 🐾 !), </p>
                     <p>studying human-centered design and engineering 🎨 📐 💻 📱.</p>
@@ -29,6 +34,10 @@ function About() {
                     <p>Feel free to drop me a message on <a href="https://www.linkedin.com/in/yuwen-li-176a43105/">LinkedIn</a> or by <a href="mailto:liyuwen@uw.edu"></a><a href="mailto:liyuwen@uw.edu">Email</a> ✉️.</p>
                     <p>And let's grab coffee ☕️ !</p>
                 </div>
+                    </Col>
+                </Row>
+               
+                
             </section>
         </main>
     </>)
