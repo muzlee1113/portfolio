@@ -235,13 +235,13 @@ class IoTBest extends React.Component {
                             <p>Here is the existing management tool for the administrators to control the highway lighting system. The problems of the tool are obvious:</p>
                             <ImageZoom
                                 image={{
-                                    src: '/images/IoT/existingtool.png',
+                                    src: '/images/IoT/existingtool.gif',
                                     alt: '',
                                     className: 'project_illustration'
                                 }}
 
                             />
-                            <div className="project_caption  text-center">Here is a <a className="text_link" href="https://www.figma.com/proto/31wTxeoPe74AqBg83CWTB3/Highway-Light-Management-Tool?node-id=4%3A25&scaling=min-zoom">Interactive interface</a> I recreated with figma using the screenshots I took.</div>
+                            <div className="project_caption  text-center">Here is a <a className="text_link" href="https://www.figma.com/proto/31wTxeoPe74AqBg83CWTB3/Highway-Light-Management-Tool?node-id=4%3A25&scaling=min-zoom">Interactive interface</a> I recreated with the screenshots. It took 7 clicks to get to a light!</div>
                             <br />
                             <p>So the initial design question I raised was simple:</p>
                             <div className="project_quote">
@@ -262,7 +262,21 @@ class IoTBest extends React.Component {
                     <h2>Solution</h2>
                     <h5>Final Design</h5>
                             <Row>
+                                <Col xs={4}>
+                                        
+                                        <ImageZoom
+                                            image={{
+                                                src: '/images/IoT/final_default_plan.gif',
+                                                alt: '',
+                                                className: 'project_illustration'
+                                            }}
 
+                                        />
+                                
+
+
+                                    <div className="project_caption text-center">Smart Default Lighting Plan</div>
+                                </Col>
                                 <Col xs={4}>
                                     
                                         <ImageZoom
@@ -276,7 +290,7 @@ class IoTBest extends React.Component {
                                   
 
 
-                                    <div className="project_caption text-center">Special lighting plan setting</div>
+                                    <div className="project_caption text-center">Preset Special Lighting Plan</div>
                                 </Col>
 
 
@@ -284,7 +298,7 @@ class IoTBest extends React.Component {
                                    
                                         <ImageZoom
                                             image={{
-                                                src: '/images/IoT/final_single_control.gif',
+                                                src: '/images/IoT/final_emergency_control.gif',
                                                 alt: '',
                                                 className: 'project_illustration'
                                             }}
@@ -292,22 +306,9 @@ class IoTBest extends React.Component {
                                         />
 
                                     
-                                    <div className="project_caption text-center">Emergency control of single device</div>
+                                    <div className="project_caption text-center">Emergency Control of Devices</div>
                                 </Col>
-                                <Col xs={4}>
-                                  
-                                        <ImageZoom
-                                            image={{
-                                                src: '/images/IoT/final_bulk_control.gif',
-                                                alt: '',
-                                                className: 'project_illustration'
-                                            }}
-
-                                        />
-
-                                   
-                                    <div className="project_caption text-center">Emergency bulk control</div>
-                                </Col>
+                               
 
 
 
@@ -364,7 +365,7 @@ class IoTBest extends React.Component {
                             <section className="project_body" id="syn">
                                 <h2>Synthesize</h2>
                                 <h5>Three Scenarios, Three Problems</h5>
-                                <p>Administrators decide when the lights should turn on and off and how bright they should be based on time, days and areas. These settings are called work plan. There are three scenarios when administrators need to set or change the work plans.</p>
+                                <p>Administrators decide when the lights should turn on and off and how bright they should be based on time, days and areas. These settings are called lighting plan. There are three scenarios when administrators need to set or change the lighting plans.</p>
 
                                 <ImageZoom
                                     image={{
@@ -396,9 +397,9 @@ class IoTBest extends React.Component {
                             </section>
                             <section className="project_body" id="design">
                                 <h2>Design</h2>
-                                <h5>User flows and wireframes</h5>
+                                <h5>Site Map, User Flows & Wireframes</h5>
 
-                                <p>So I started with mapping the user flows of each scenario and how the new system is going to support each of the steps. I then wireframed the possible interfaces of the system.</p>
+                                <p>The new light control tool was going to be incorporated with the city infrastructure management system. So I started with mapping the user flow of each scenario to see how it should talk to the bigger system and how the system can support each of the flows. I then wireframed the possible interfaces.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/user_flow.png',
@@ -438,7 +439,7 @@ class IoTBest extends React.Component {
                                     
                                     <div className="project_separator_inner_wrapper" >
                                         <div className="project_separator_title">Challenge #1 How to make work-hour setting more intuitive?</div>
-                                        <p>A challenge I faced in wireframing the setting interface is how to make the work plan setting interface more intuitive and provide users with more visual hints.</p>
+                                        <p>A challenge I faced in wireframing the setting interface is how to make the lighting plan setting interface more intuitive and provide users with more visual feedback.</p>
                                     <ImageZoom
                                         image={{
                                             src: '/images/IoT/workplan.png',
@@ -612,8 +613,8 @@ class IoTBest extends React.Component {
                                 <li>Do users feel comfortable and confident when using the new tool?</li>
                                 <h6>Key Findings & Iterations</h6>
 
-                                <p><b>1. Users can't distinguish the default plan from the special plans.</b></p>
-                                <p>Therefore, I enhanced the difference by separating them into two sections. Also, the visualizations and briefs of the special plans on the table needed to be improved to help users distinguish different plans when scanning through.</p>
+                                <p><b>1. Users could not distinguish the default plan from the special plans.</b></p>
+                                <p>Therefore, I enhanced the difference by separating them into two sections. Also, the visualizations and briefs of the special plans were added to help users distinguish different plans when skimming through.</p>
                                 <ImageZoom
                                     image={{
                                         src: '/images/IoT/iterate_lighting_plan_dashboard.png',
@@ -623,8 +624,8 @@ class IoTBest extends React.Component {
 
                                 />
                                 <p></p>
-                                <p><b>2. Administrators prefer typing in time</b></p>
-                                <p>We found that setting by clicking the graph actually took a longer time and more clicks. Therefore, I got rid of this feature and used the bar chart only for displaying work-plan settings.</p>
+                                <p><b>2. Administrators preferred typing in time</b></p>
+                                <p>We found that setting by clicking the graph actually took a longer time and more clicks. Therefore, I got rid of this feature and used the bar chart only as feedback.</p>
                                 {/* <p>Also, administrators would like to first set the time to turn on the lights (first day afternoon) and then the time to turn them off (next morning), so I changed the order of the inputs. </p> */}
                                 <ImageZoom
                                     image={{
@@ -722,11 +723,11 @@ class IoTBest extends React.Component {
                                     <h6>Ask questions and learn from everyone</h6>
                                     <p>IoT system is complex and daunting. I spent a lot of time talking with engineers and developers, asking "silly questions" to understand the purposes, functionalities, and limitations of the devices. By frequently raising questions, I not only learned every part of the system but also formed a reciprocal and supportive relationship with them, which was beneficial in cross-functional collaboration.</p>
                                     <h6>Design with limitations</h6>
-                                    <p>The biggest lesson I learned from this project is to understand and get used to limitations in my design. Just like painting, an important thing to do is to understand your tools and materials. We should also understand the machine and data so that we won't subject our design to the whim of our naive mind.</p>
+                                    <p>The biggest lesson I learned from this project is to understand and get used to limitations. Just like painting, an important thing is to understand the tools at hand, the canvas, and the materials. Likewise, we should understand the system, the machine and the data so that we won't subject our design to the whim of our naive mind.</p>
                                     <h6>Make intentional decisions</h6>
-                                    <p>Design specification is always about decision making and there should always be a reason behind every decision. When facing a tough choice, limitations, design requirements and insights from user research are always great references.</p>
-                                    <h6>Work with ambiguity but always look for chances to check my assumptions</h6>
-                                    <p>There are many assumptions I made during the ideation and design process. I kept a list of questions I had and looked for opportunities to get them answered by consulting or formal and informal usability studies.</p>
+                                    <p>Design specification is always about decision making and there should always be a reason behind every decision. When facing a tough choice, the limitations, design requirements, and insights from user research are always great references.</p>
+                                    <h6>Work with ambiguity but always look for chances to check the assumptions</h6>
+                                    <p>I made many assumptions during the ideation and design process. I kept a list of questions I had and looked for opportunities to get them answered by consulting and formal and informal usability studies.</p>
                                 </section>
                                 <section id="relate" className="project_body">
                                     <h2>Related Work</h2>
