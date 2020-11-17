@@ -605,6 +605,10 @@ article {
   background-color: #2E100B;
 }
 
+#imgUplift{
+  background-color: #92A9FF;
+}
+
 .cardcontainer:hover .overlay{
   opacity: 1;
 }

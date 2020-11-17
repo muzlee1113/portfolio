@@ -50,6 +50,25 @@ function DeveloperPanel(){
             </article> */}
             <Fade bottom>
                 <article>
+                    <a href="https://upliftlocally.com/">
+                        <div className="cardcontainer">
+                            <img alt='' className="article-img" src={process.env.PUBLIC_URL+"/images/upliftlocally.png"} alt=" "/>
+                            <div className="overlay" id="imgUplift">
+                                <div className="article-title">
+                                    <div>Uplift Locally</div>
+                                    <div className="article-subtitle">A website that supports local black-owned businesses.</div>
+                                    <div className="article-subtitle">React</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a className="code_link" href="https://github.com/devinajimine/uplift">
+                        <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
+                    </a>
+                </article>
+            </Fade>
+            <Fade bottom>
+                <article>
                 <Link to="/work/WIS">
                     {/* <a href="http://www.whats-in-store.net/"> */}
                         <div className="cardcontainer">
