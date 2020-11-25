@@ -19,8 +19,15 @@ class ProjectPagination extends Component {
         const {pagination} = this.props
         return <div className="project_pagination_wrapper">
             <div className="project_pagination">
-                <a href={(pagination-1)>-1?(projects[(pagination-1)].url):('/')} className="left-pagination"><span className="align-middle mr-2" href="" uk-icon="triangle-left"></span>{(pagination-1)>-1?(projects[(pagination-1)].name):('Back To Home')}</a>
-                <a href={(pagination+1)<projects.length?(projects[(pagination+1)].url):("/")} className="right-pagination">{(pagination+1)<projects.length?(projects[(pagination+1)].name):('Back To Home')}<span className="align-middle ml-2" href="" uk-icon="triangle-right"></span></a>
+                <div href={(pagination-1)>-1?(projects[(pagination-1)].url):('/')} className="project_pagination_item">
+                    <div className="align-middle mr-2" href="" uk-icon="triangle-left"></div>
+                    <div className="project_pagination_text">{(pagination-1)>-1?(projects[(pagination-1)].name):('Back To Home')}
+                    </div>
+                </div>
+                <div href={(pagination+1)<projects.length?(projects[(pagination+1)].url):("/")} className="project_pagination_item">
+                    <div className="project_pagination_text">{(pagination+1)<projects.length?(projects[(pagination+1)].name):('Back To Home')}</div>
+                    <div className="align-middle ml-2" href="" uk-icon="triangle-right"></div>
+                </div>
             </div>
         </div>
     }
