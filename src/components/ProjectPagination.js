@@ -19,15 +19,15 @@ class ProjectPagination extends Component {
         const {pagination} = this.props
         return <div className="project_pagination_wrapper">
             <div className="project_pagination">
-                <div href={(pagination-1)>-1?(projects[(pagination-1)].url):('/')} className="project_pagination_item">
+                <a href={(pagination-1)>-1?(projects[(pagination-1)].url):('/')} className="project_pagination_item">
                     <div className="align-middle mr-2" href="" uk-icon="triangle-left"></div>
-                    <div className="project_pagination_text">{(pagination-1)>-1?(projects[(pagination-1)].name):('Back To Home')}
+                    <div className="project_pagination_link">{(pagination-1)>-1?(projects[(pagination-1)].name):('Back To Home')}
                     </div>
-                </div>
-                <div href={(pagination+1)<projects.length?(projects[(pagination+1)].url):("/")} className="project_pagination_item">
-                    <div className="project_pagination_text">{(pagination+1)<projects.length?(projects[(pagination+1)].name):('Back To Home')}</div>
+                </a>
+                <a href={(pagination+1)<projects.length?(projects[(pagination+1)].url):("/")} className="project_pagination_item">
+                    <div className="project_pagination_link">{(pagination+1)<projects.length?(projects[(pagination+1)].name):('Back To Home')}</div>
                     <div className="align-middle ml-2" href="" uk-icon="triangle-right"></div>
-                </div>
+                </a>
             </div>
         </div>
     }

@@ -12,12 +12,20 @@ class ProjectContentNav extends Component {
                               
         <ul  
         data-uk-scrollspy-nav="closest: li; scroll: true; offset:60">
-            <div><a href={(pagination-1)>-1?(projects[(pagination-1)].url):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{(pagination-1)>-1?('prev project'):('home')}</a></div>
+            <div>
+                <a href={(pagination-1)>-1?(projects[(pagination-1)].url):('/')} className="project_brief_content contentnav_link">
+                    <span uk-icon="icon:triangle-left"></span>{(pagination-1)>-1?('prev project'):('home')}
+                </a>
+            </div>
             <br/>
             
-            {contents.map((item)=><li className="uk-l project_brief_content"><a href={item.id}>{item.name}</a></li>)}
+            {contents.map((item)=><li className="uk-l project_brief_content"><a className="contentnav_link" href={item.id}>{item.name}</a></li>)}
             <br/>
-            <div><a href={(pagination+1)<projects.length?(projects[(pagination+1)].url):('/')} className="project_brief_content">{(pagination+1)<projects.length?('next project'):('home')}<span uk-icon="icon:triangle-right"></span></a></div>
+            <div>
+                <a href={(pagination+1)<projects.length?(projects[(pagination+1)].url):('/')} className="project_brief_content contentnav_link">{(pagination+1)<projects.length?('next project'):('home')}
+                    <span uk-icon="icon:triangle-right"></span>
+                </a>
+            </div>
         </ul>                             
         
     
