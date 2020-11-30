@@ -27,8 +27,8 @@
     "tagline":"A mobile app that helps others to capture a better you.",
     "description":"For portrait-lovers",
     "labels":["individual project","mobile", "interaction design", "visual design"],
-    "bgColor":"#FFF7EF", 
-    "tColor":"0f0f0f",
+    "bgColor":"#FFF7EF",
+    "tColor":"#0f0f0f",
     "component":"PhotoMe"
 },
 {

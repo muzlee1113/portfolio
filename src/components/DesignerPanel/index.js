@@ -19,10 +19,6 @@ function DesignerPanel (props) {
 
                     })
                 }
-               
-
-
-    
        
                 <Fade bottom>
         <div className="work_wrapper">
