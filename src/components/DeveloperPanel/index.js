@@ -48,7 +48,7 @@ function DeveloperPanel(){
                         <img className="code invert" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                     </a>
             </article> */}
-            <Fade bottom>
+            {/* <Fade bottom>
                 <article>
                     <a href="https://upliftlocally.com/">
                         <div className="cardcontainer">
@@ -66,7 +66,7 @@ function DeveloperPanel(){
                         <img alt='' className="code" src={process.env.PUBLIC_URL+"/images/code.png"} alt=" "/>
                     </a>
                 </article>
-            </Fade>
+            </Fade> */}
             <Fade bottom>
                 <article>
                 <Link to="/work/WIS">
