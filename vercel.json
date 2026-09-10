@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/aireadiness/*.js": {
+      "includeFiles": "server-content/aireadiness/**"
+    }
+  }
+}

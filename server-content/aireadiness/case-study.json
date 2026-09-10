@@ -1,0 +1,130 @@
+{
+  "solution": {
+    "items": [
+      {
+        "title": "Entry from Anywhere",
+        "desc": "Overseeing whole site or Authoring single content",
+        "image": "solution-multiple-entries.png"
+      },
+      {
+        "title": "Knowledge Editor",
+        "desc": "All Layered Knowledge in One Place, One Asset or Many",
+        "image": "solution-knowledge-editor.png"
+      },
+      {
+        "title": "AI-Assisted Optimization",
+        "desc": "Run now or Schedule, Co-review with team",
+        "image": "solution-ai-optimization.png"
+      }
+    ]
+  },
+  "background": "Even with full access to data in dashboards, Tableau Agent still failed to find the right fields, decipher business jargons, and deliver accurate & consistent answers. This project explores how to help teams build and maintain knowledge for AI so that it can provide more accurate and relevant answers.",
+  "intro": {
+    "lead": "When you ask an analyst what they'd teach someone else to understand a dashboard, the answer runs for twenty minutes:",
+    "list": [
+      "Frontline agents type \"PYMT\" when they mean payment.",
+      "Year-over-year is hidden on this dashboard because the campaign didn't exist last year.",
+      "Medicare rules require 20% of cases to be reviewed by a doctor, so the review-rate metric can never be read as a performance score."
+    ],
+    "paragraphs": [
+      "**None of this is in the data. It lives in people.** And it moves between them in onboarding calls and Slack threads. When we handed the same data and dashboard to an AI agent and asked it to answer business questions, the agent could read every number but understand none of the business."
+    ]
+  },
+  "research": {
+    "before": "In the research, we didn't ask analysts to define \"knowledge\" in the abstract. We asked them: ",
+    "italic": "what do you need to teach a junior analyst? And what do you need to teach a business user?",
+    "after": " Here are the common types of \"knowledge\" participants mentioned need to teach analysts versus business users, and some overlap.",
+    "image": "what-is-knowledge.png",
+    "imageCaption": "What analysts vs. business users need to know, and where the two overlap."
+  },
+  "insight": {
+    "paragraph1": "We also found that the institutional knowledge that needs to be shared is hierarchical and highly mutable. It currently lives in various systems as unstructured data. It needs various roles involved to build and maintain the corpus.",
+    "cards": [
+      {
+        "title": "Hierarchical",
+        "desc": "It isn't one body of knowledge. It's layered, applying to various scopes of users.",
+        "image": "hierarchical.png",
+        "imageCaption": "Five scopes of knowledge."
+      },
+      {
+        "title": "Mutable",
+        "desc": "Most of knowledge has a shelf life, and nothing announces when it expires.",
+        "image": "mutable.png",
+        "imageCaption": "Business, data, and tool changes drive knowledge changes."
+      },
+      {
+        "title": "Unstructured",
+        "desc": "Knowledge is scattered in documentation, dashboards, messages, and meeting transcripts.",
+        "image": "unstructured.png",
+        "imageCaption": "Where knowledge actually lives today."
+      },
+      {
+        "title": "Collaborative",
+        "desc": "Various roles contribute to the knowledge from admin, steward, analysts to business users.",
+        "image": "collaborative.png",
+        "imageCaption": "The roles who each hold a piece of the knowledge."
+      }
+    ],
+    "paragraph2": "What knowledge AI needs and the workflow to shape it are **undefined**: there's no list of what the agent still doesn't know, what need to be improved, and no way to tell whether last update to the knowledge has improved the accuracy of the answer.",
+    "paragraph3": "So the question isn't whether analysts can give the AI the knowledge. It is whether we can design a tool that **various roles can use to bootstrap, collaborate, iterate and maintain the knowledge.**"
+  },
+  "design": {
+    "personasIntro": "Knowledge building and maintenance are **teamwork**. Three personas contribute from three different entry points, each with its own workflow.",
+    "personas": [
+      {
+        "role": "Admin",
+        "desc": "Set & bulk edit knowledge from top down using existing Explore page.",
+        "image": "admin-entry.gif",
+        "imageCaption": "Admins can manage knowledge top-down across the site."
+      },
+      {
+        "role": "Analyst",
+        "desc": "Create & maintain knowledge for assets they own in authoring mode or in their projects.",
+        "image": "analyst-entry.gif",
+        "imageCaption": "Analysts can edit knowledge when creating dashboard."
+      },
+      {
+        "role": "Business SME",
+        "desc": "Contribute to knowledge in Tableau or outside when prompted.",
+        "image": "bu-entry.png",
+        "imageCaption": "Business SME can review suggested knowledge in their workspace."
+      }
+    ],
+    "layer": {
+      "desc": "Knowledge cascades from site to project to data source to workbook. Selecting an asset also surfaces the knowledge inherited from its related assets, so every layer in effect is visible in **one view**.",
+      "image": "design-layer.png",
+      "imageCaption": "Opening a workbook's knowledge panel also surfaces the related knowledge that also apply."
+    },
+    "bootstrap": {
+      "desc": "Beyond ingesting metadata from databases and external catalogs like Alation, the editor accepts **uploaded** business preferences and skill files, and **generates** draft metadata and preferences from the data and existing workbook encodings.",
+      "images": [
+        "design-bootstrap-upload.gif",
+        "design-bootstrap-suggestion.gif"
+      ],
+      "imageCaptions": [
+        "Users can upload business preferences and skills as files.",
+        "Users can bootstrap knowledge straight from the asset's data and workbook encodings."
+      ]
+    },
+    "share": {
+      "desc": "Business-critical knowledge needs an subject matter expert's eyes. Admin and analysts can **share** suggestions directly to reviewers for approval, and reviewers can pick up the work from **anywhere**.",
+      "image": "design-share.gif",
+      "imageCaption": "Reviewing AI-drafted suggestions and sharing them to a reviewer, without leaving the editor."
+    },
+    "maintain": {
+      "desc": "Knowledge describes data sources and dashboards that change daily — without maintenance it's wrong within weeks. Publishing a workbook or data source **nudges** the owner to refresh its knowledge, and refreshes can be **scheduled** to repeat or run alongside data refresh.",
+      "images": ["design-maintenance-nudge.gif", "design-schedule.gif"],
+      "imageCaptions": [
+        "Publishing a workbook nudges its owner to check whether the knowledge still holds up.",
+        "Knowledge refreshes can be scheduled to run on a recurring cadence."
+      ]
+    }
+  },
+  "impact": {
+    "paragraphs": [
+      "This work illustrates multiple **milestones** of building a complete knowledge base for AI usage and clarifies the **jobs to be done** of various personas, keeping the project phased so each step paves the way to the desired user experience.",
+      "It also **aligns** multiple efforts across Tableau and Tableau Next toward a shared Tableau Knowledge experience — when a parallel effort built a separate surface to view and edit knowledge as a knowledge graph, this work shed light on a **desired experience** meeting admins and analysts where they are, with support for collaboration and long-term maintenance.",
+      "The knowledge editor widget is **reusable** across multiple surfaces. For its first version, the business preference editor, I **contributed my code** directly to the dev branch."
+    ]
+  }
+}

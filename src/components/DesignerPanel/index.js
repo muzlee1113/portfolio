@@ -8,14 +8,15 @@ import projects from '../projects.json'
 
 
 function DesignerPanel (props) {
-    
+    const visibleProjects = projects.filter(project => !project.hidden);
+
     return (<div className="featureWorkerContainer">
                 {/* <div className="divider"></div> */}
                 {
-                    projects.map((project,i)=>{
+                    visibleProjects.map((project,i)=>{
                         if (i<4){
                             return <WorkCard project={project} />
-                        } 
+                        }
 
                     })
                 }
@@ -28,10 +29,10 @@ function DesignerPanel (props) {
             
             <div className="cards show">
                 {
-                    projects.map((project,i)=>{
+                    visibleProjects.map((project,i)=>{
                         if (i>=4){
                             return <WorkSmallCard project={project} />
-                        } 
+                        }
 
                     })
                 }

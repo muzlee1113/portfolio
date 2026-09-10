@@ -761,12 +761,21 @@ p, .p{
 }
 
 .p_small{
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.54);
   font-family: proxima-nova, sans-serif;
-  line-height: 18px;
+  line-height: 1.58;
   margin-top: 4px;
+}
+
+.p_caption{
+  font-size: 16px;
+  line-height: 1.58;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.54);
+  text-align: center;
+  margin-top: 20px;
 }
 
 
@@ -1042,8 +1051,8 @@ li:not(.project_brief_content){
 
 
 .project_quote_sm_text{
-  font-size: 16px;
-  line-height: 120%;
+  font-size: 18px;
+  line-height: 1.58;
   font-style: italic;
   color: rgba(0,0,0,0.54);
 }
@@ -1436,5 +1445,35 @@ li:not(.project_brief_content){
   #logo{
     left: 16px
   }
-  
+
+}
+
+/* Reusable password/auth gate (src/components/PasswordGate.js) */
+.auth-gate .auth-gate-button{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  background-color: rgb(157, 39, 33);
+  border-color: rgb(157, 39, 33);
+}
+
+.auth-gate .auth-gate-button:hover:not(:disabled),
+.auth-gate .auth-gate-button:focus:not(:disabled){
+  color: #fff;
+  background-color: rgb(130, 30, 25);
+  border-color: rgb(130, 30, 25);
+}
+
+.auth-gate .auth-gate-button:disabled{
+  color: #fff;
+  background-color: rgb(157, 39, 33);
+  border-color: rgb(157, 39, 33);
+  opacity: 0.6;
+}
+
+.auth-gate-button-icon{
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
 }

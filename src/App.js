@@ -37,6 +37,7 @@ import Cor from './pages/Designer/Coronavirus'
 import Outbreak from './pages/Designer/Outbreak'
 import ABStreet from './pages/Designer/ABStreet';
 import TableauPrep from './pages/Designer/TableauPrep';
+import AIReadiness from './pages/Designer/AIReadiness';
 
 import WIS from "./pages/Developer/WIS"
 
@@ -95,7 +96,8 @@ class App extends Component {
           <Route exact path="/work/outbreak" render={(props)=><Outbreak pagination={projects.findIndex(project=>project.component==="Outbreak")} {...props} />}/>
           <Route exact path="/work/abstreet" render={(props)=><ABStreet pagination={projects.findIndex(project=>project.component==="ABStreet")} {...props} />} />
           <Route exact path="/work/tableauprep" render={(props)=><TableauPrep pagination={projects.findIndex(project=>project.component==="TableauPrep")} {...props} />}/>
-          
+          <Route exact path="/work/aireadiness" render={(props)=><AIReadiness pagination={projects.findIndex(project=>project.component==="AIReadiness")} {...props} />}/>
+
           {/* code */}
           <Route exact path="/work/WIS" component={WIS} />
           <Route exact path="/designsystem" component={DesignSystem}/>

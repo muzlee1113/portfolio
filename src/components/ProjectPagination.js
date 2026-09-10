@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button } from 'react-bootstrap';
-import projects from './projects.json'
+import { getPrevNextProject } from './projectNav'
 /** React components for scrolling back to the top of the page **/
 
 
@@ -17,15 +17,16 @@ class ProjectPagination extends Component {
     // }
     render() {
         const {pagination} = this.props
+        const {prev, next} = getPrevNextProject(pagination)
         return <div className="project_pagination_wrapper">
             <div className="project_pagination">
-                <a href={(pagination-1)>-1?(projects[(pagination-1)].url):('/')} className="project_pagination_item">
+                <a href={prev?prev.url:('/')} className="project_pagination_item">
                     <div className="align-middle mr-2" href="" uk-icon="triangle-left"></div>
-                    <div className="project_pagination_link">{(pagination-1)>-1?(projects[(pagination-1)].name):('Back To Home')}
+                    <div className="project_pagination_link">{prev?prev.name:('Back To Home')}
                     </div>
                 </a>
-                <a href={(pagination+1)<projects.length?(projects[(pagination+1)].url):("/")} className="project_pagination_item">
-                    <div className="project_pagination_link">{(pagination+1)<projects.length?(projects[(pagination+1)].name):('Back To Home')}</div>
+                <a href={next?next.url:("/")} className="project_pagination_item">
+                    <div className="project_pagination_link">{next?next.name:('Back To Home')}</div>
                     <div className="align-middle ml-2" href="" uk-icon="triangle-right"></div>
                 </a>
             </div>

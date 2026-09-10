@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './style.css'
 import { Button } from 'react-bootstrap';
-import projects from '../projects.json'
+import { getPrevNextProject } from '../projectNav'
 
 /** React components for scrolling back to the top of the page **/
 
@@ -39,6 +39,7 @@ class BackToTopBtn extends Component {
 
     render() {
         const {pagination, contents} = this.props
+        const {prev, next} = getPrevNextProject(pagination)
         return (<>
         {this.state.content?(<>
         
@@ -53,8 +54,8 @@ class BackToTopBtn extends Component {
 
         <hr/>
         <div className="pagination">
-        <a href={(pagination-1)>-1?(projects[(pagination-1)].url):('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{(pagination-1)>-1?('prev project'):('home')}</a>
-            <a href={(pagination+1)<projects.length?(projects[(pagination+1)].url):("/")} className="project_brief_content">{(pagination+1)<projects.length?('next project'):('home')}<span uk-icon="icon:triangle-right"></span></a>
+        <a href={prev?prev.url:('/')} className="project_brief_content"><span uk-icon="icon:triangle-left"></span>{prev?('prev project'):('home')}</a>
+            <a href={next?next.url:("/")} className="project_brief_content">{next?('next project'):('home')}<span uk-icon="icon:triangle-right"></span></a>
         </div>
        
         
