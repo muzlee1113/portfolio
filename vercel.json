@@ -2,6 +2,9 @@
   "functions": {
     "api/aireadiness/*.js": {
       "includeFiles": "server-content/aireadiness/**"
+    },
+    "api/dashboardagent/*.js": {
+      "includeFiles": "server-content/dashboardagent/**"
     }
   }
 }

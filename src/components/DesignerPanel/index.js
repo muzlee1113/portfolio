@@ -14,7 +14,7 @@ function DesignerPanel (props) {
                 {/* <div className="divider"></div> */}
                 {
                     visibleProjects.map((project,i)=>{
-                        if (i<4){
+                        if (i<3){
                             return <WorkCard project={project} />
                         }
 
@@ -30,7 +30,7 @@ function DesignerPanel (props) {
             <div className="cards show">
                 {
                     visibleProjects.map((project,i)=>{
-                        if (i>=4){
+                        if (i>=3){
                             return <WorkSmallCard project={project} />
                         }
 

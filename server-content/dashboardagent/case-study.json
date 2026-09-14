@@ -1,0 +1,213 @@
+{
+  "background": "This project helps business users (BUs) get quick answers to data questions that pre-built dashboards don't readily answer. The premise is simple: a user types a question in natural language, and Agent responds with a succinct, multi-modal answer.",
+  "timeline": [
+    "Design started in Nov. 2025",
+    "Usability study in Feb. 2026",
+    "Beta in July 2026",
+    "GA in Oct. 2026"
+  ],
+  "teammates": "I was the sole designer on the project, partnering with a product manager and a technical writer on the prototype. I also led the planning, execution, and synthesis of the usability study, in consultation with a user researcher.",
+  "solution": {
+    "items": [
+      {
+        "title": "Deliver Insights",
+        "desc": "Succinct & actionable answers.",
+        "image": "solution-deliver-insights.png"
+      },
+      {
+        "title": "Win Trust",
+        "desc": "Make every answer and number verifiable.",
+        "image": "solution-win-trust.png"
+      },
+      {
+        "title": "Enablement & Enhancement",
+        "desc": "Make rollout safe & easy.",
+        "image": "solution-enablement-enhancement.png"
+      }
+    ]
+  },
+  "problem": {
+    "paragraph": "**Business users** open a dashboard looking for one clear answer or number. Instead, they find a wall of metrics and charts built to answer many related questions. They don't know how to filter it, can't edit it, and frankly don't want to learn how — so the question goes unanswered, and a message lands in a data analyst's inbox instead. However, the **Analysts**' inboxes are already full of a dozen such requests, each small on its own but impossible to clear at the pace of the traditional dashboard-build cycle. **So the business users waits, the decision stalls, and the next question in line does the same.**",
+    "image": "storyboard.png",
+    "imageCaption": "Storyboard. Created with ArtificialStudio."
+  },
+  "personas": {
+    "intro": "Two personas anchor the design: **business users (BUs)** who need fast, accurate, and interpretable answers they can trust, and **data professionals** who need this solution to save their time -- guardrail and enablement should take least effort.",
+    "image": "persona-design-principles.png",
+    "imageCaption": "Two personas, two different sets of needs: business user and data professional."
+  },
+  "designForBU": {
+    "researchFindings": {
+      "intro": "In the user testing we found that participants' behaviors fell along a **spectrum**: at one extreme end, one paid zero attention to additional information and **just want the numbers**; at the other end, one **drilled down to details** and expected even more. When ask the reasons, various trust levels to AI, various types of tasks, and various points in the adoption journey drive the differences.",
+      "image": "two-behaviors.png",
+      "imageCaption": "Grab & Go vs. Probe & Check — two ends of spectrum.",
+      "question": "How might we support both behaviors?"
+    },
+    "graspInsights": {
+      "heading": "Grasp the Insights",
+      "image": "answer-anatomy.png",
+      "imageCaption": "Anatomy of an answer and an example.",
+      "paragraphs": [
+        "In user testing, every participant identified the written **answer** as **absolutely essential**. Although **graphs and tables** were rarely chosen as the primary information, when comparing showing the data artifact right away versus on demand, most people preferred the former: it takes fewer clicks to reach the real data, and it makes cross-referencing the data against the answer — and sharing both — easier.",
+        "Besides, other information are considered as additional and should only **disclose on demand**."
+      ]
+    },
+    "buildTrust": {
+      "heading": "Build Trust",
+      "intro": "Validating and trusting an answer takes effort.",
+      "image": "level-of-validation.png",
+      "imageCaption": "Levels of validation people apply.",
+      "moments": [
+        {
+          "title": "Streaming process",
+          "leftImage": "streaming-process-anatomy.png",
+          "rightLabel": "Example",
+          "rightImage": "streaming-process.gif",
+          "imageCaption": "The Streaming Process's Anatomy and Live Example.",
+          "paragraphs": [
+            "The research showed that a **streaming process**, compared with a spinner, provides clarity, depth, and confidence. Even for people who ignored most of it, it read as deep thinking and increased trust.",
+            "Some people did used it to validate Agent's thought process and troubleshoot afterward. Although most participants chose not to expand the details while waiting, several appreciated having the opportunity to **interrupt and correct Agent midway**.",
+            "The usability study also led us to expose **fuller query-result details**, so that people who dig in get the complete picture."
+          ]
+        },
+        {
+          "title": "Data details",
+          "imageCaption": "Data details annotated next to the answer.",
+          "paragraphs": [
+            "The streaming process is exhaustive, and it isn't for everyone. **Data details**, therefore, are designed to call out the scope and method succinctly. They sit close to the data artifact as an annotation that explains what it is and why it matters, and surface the details most important for interpreting the numbers — filters, timeframe, sorting, row limits, and sources."
+          ],
+          "leftImage": "data-detail-anatomy.png",
+          "rightLabel": "Draft Prompt",
+          "rightCode": "# Analysis + Reasoning Explanation Spec\n\n## Goal\nExplain what was analyzed, what it shows, filters, sorting, and row limits to support trust — without repeating table values or implementation details.\n\n---\n\n## Required Structure\n\n### Analysis + Reasoning (2 short sentences)\n\n**Sentence 1 — \"I analyzed…\"**\n`I analyzed {metric(s)} by {measure(s)}`\n\n- Use field names in queries for metrics and measures, and **bold field names**\n- Mention the aggregation type for each metric (total, average, count, etc.)\n\n**Sentence 2 — \"It shows…\"**\n\n- State the key analytical takeaway or driver in concise, short language\n\n**Rules**\n\n- Do not mention queries or tools\n- Do not restate numbers visible in the table\n\n---\n\n### **Filtered to:** *(required)*\n\n- List filters applied in queries as bullet points\n- Use `{field: value, value}` format\n- If there are too many values, show \"and n more values\" (n = count of remaining values)\n- Bold \"Filtered to:\"\n\n---\n\n### **Sorted by:** *(optional)*\n\n- Include sort order applied, as bullet points\n- Only show if sort order matters for interpreting the results\n- Specify field and direction, e.g. `Profit (lowest first)`\n- Bold \"Sorted by:\"\n\n---\n\n### **Limited to:** *(optional)*\n\n- Include result row limit as bullet points\n- Only show if results are truncated\n- Explain what subset is kept, including count and description, e.g. `Bottom 10 products by profit`\n- Bold \"Limited to:\"\n\n---\n\n### Sources:\n\n- Show data source(s) used to generate the answer and the table\n\n---\n\n## Style Rules\n\n- Use consistent verbs: **analyzed, shows, filtered, sorted, limited**\n- Use field names in queries\n- Omit any section that does not apply\n\n---\n\n## Canonical Template\n\n```\nI analyzed <measure(s)> by <dimension(s)>. It shows <key pattern or driver>.\n\nFiltered to:\n<filter>: <value>\n<filter>: <value>\n\nSorted by:\n<metric> (<direction>)\n\nLimited to:\n<count and what>\n\nSources:\n<datasource name>\n```"
+        },
+        {
+          "title": "View Data",
+          "paragraphs": [
+            "Even this isn't enough: participants called out the need to **trace the source** and **reproduce the result** in order to validate it."
+          ],
+          "quote": {
+            "text": "I would have loved to be able to just click and then have it take me to a data dump where I could just look at all the transaction like where I could just look at the transaction details and see what I could determine.",
+            "attribution": "A fund manager"
+          },
+          "image": "view-data-diagram.png",
+          "imageCaption": "The raw summary table behind the answer.",
+          "paragraphs2": [
+            "To meet this need, every agent-generated chart and table includes a \"**View Data**\" option. It shows the query result / summary data behind the answer, and from there users can drill down to the underlying raw data through the same lens as the chart or table. They can also show more fields in the raw data to drill across, and use the selection tool to run quick calculations such as sum and average, so they can validate the numbers the agent provided against the data itself."
+          ],
+          "gif": "view-data-example.gif",
+          "gifCaption": "Drilling from the answer into the underlying data."
+        },
+        {
+          "title": "Share & copy",
+          "paragraphs": [
+            "In addition, some mentioned the need to **share the results with others** to help validate, especially if the numbers will be used for mission critical tasks. User can choose to share the whole thread in email or by link to provide more context or share only the Agent's answer; or they can easily copy the answer, a specific visualization or a output table to share with others."
+          ],
+          "quote": {
+            "text": "Here's the analysis expanded and take that and go and paste that to the BI team and go like, \"Guys, this is a problem. Can you just double check what the Tableau agent came up with?\"",
+            "attribution": "A VP of Product Management"
+          },
+          "columns": [
+            {
+              "gif": "share-feature.gif",
+              "gifCaption": "Sharing the conversation or answer with a teammate."
+            },
+            {
+              "gif": "copy-feature.gif",
+              "gifCaption": "Copying the answer or outputs to share."
+            }
+          ]
+        }
+      ]
+    },
+    "otherExplorations": {
+      "heading": "Other Explorations",
+      "points": [
+        {
+          "title": "When Attention Drifts Away: Pop in & out the panel",
+          "paragraph1": "Another challenge of this project is the limited visual space and to support the user's attention to **shifts between the dashboard and the conversation**.",
+          "image": "attention-drift-away.png",
+          "imageCaption": "Example: Attention drift away from the dashboard to the conversation.",
+          "paragraph2": "To make switching between the two modes of data exploration seamless, the conversation can easily pop out to full screen and just as easily snap back to the side.",
+          "gif": "resize.gif",
+          "gifCaption": "Make it easy to goes back and forth between the dashboard and chat."
+        },
+        {
+          "title": "Show Conversation Context",
+          "layout": "twoColumn",
+          "paragraph1": "In the usability testing we also found that most participants are not sure if the agent is aware of the **dashboard context** (filter, selection, etc). The majority think it should be aware but they can't easily tell. In the iteration, context is shown as chips in the prompt builder and sent together with the user utterance. User can view more details by clicking the chips.",
+          "image": "dashboard-filter.gif"
+        },
+        {
+          "title": "Subscribe & Watch",
+          "paragraphs": [
+            "Q&A shouldn't be the end of self-service analysis. Once a business user gets an answer, they often want to come back to it — to see whether that number, table, or chart has changed since last time.",
+            "Tableau already solves this for dashboards and vizzes through two mechanisms: **subscriptions**, which deliver an image or PDF of a view on a schedule, and **data-driven alerts**, which notify you by email when a value crosses a threshold. We extended both to agent-generated queries, so any table and chart the agent produces can be subscribed to or watched, just like a published viz."
+          ],
+          "columns": [
+            {
+              "gif": "subscribe-feature.gif",
+              "gifCaption": "Scheduling a recurring email of the answer."
+            },
+            {
+              "gif": "watch-feature.gif",
+              "gifCaption": "Setting a data-driven alert on the answer."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "designForDataPro": {
+    "intro": "Early customer conversations surfaced three distinct needs across admins and analysts — the people responsible for rolling out AI safely and keeping it trustworthy.",
+    "sections": [
+      {
+        "paragraphs": [
+          "**Admins need to control who can use AI at all.** Access often has to follow organizational policy rather than individual preference: employees in certain regions may be prohibited from using AI, or usage may be limited to those who have completed AI training."
+        ],
+        "gif": "admin-enable-feature.gif",
+        "gifCaption": "Admins enable AI feature for a specific user group."
+      },
+      {
+        "blocks": [
+          {
+            "paragraph": "**Analysts need to control which dashboards AI can touch, and for whom.** Not every dashboard is a good candidate. Some contain sensitive data, some are launch-pad dashboards with no data behind them, and some simply aren't AI-ready yet. Analysts also want to roll out gradually — letting a smaller group of data-savvy users test the Agent on a few flagship dashboards before expanding to more users and more content. The beta also showed that selective enablement left business users confused and stuck when the Agent appeared on some dashboards but not others, so end users need a clear way to request access and get unblocked.",
+            "columns": [
+              {
+                "label": "Grant Permissions",
+                "gif": "analyst-permission.gif",
+                "gifCaption": "Analysts allow certain users to use AI with specific dashboards.",
+                "flex": 2
+              },
+              {
+                "label": "Request Access",
+                "image": "bu-request-access.png",
+                "imgCaption": "Business users can send permission request to content owners.",
+                "noBorder": true,
+                "flex": 1
+              }
+            ]
+          },
+          {
+            "paragraph": "**Analysts need help improving accuracy and monitoring usage.** Most analysts we spoke with wanted to continuously improve the Agent's answers and keep an eye on usage and feedback, but few knew what they actually needed to do to make answers more accurate.",
+            "label": "Configure Settings",
+            "gif": "analyst-setting.png",
+            "gifCaption": "Anlysts can test the Agent just like their end users, while adjusting business preferences. (Image shows the MVP version)",
+            "noBorder": true
+          }
+        ],
+        "outroBefore": "For guiding analysts to improve accuracy and monitoring adoption, please check out the ",
+        "outroLinkText": "Knowledge for Tableau Agent",
+        "outroLinkUrl": "/work/aireadiness",
+        "outroAfter": " project for more details."
+      }
+    ]
+  },
+  "impact": {
+    "paragraphs": [
+      "I developed a **live prototype**, connected to Tableau MCP and the OpenAI Agent SDK. It served as a proof of concept for the product and dev teams to better define **project scope** and **feasibility**.",
+      "It was also used in **customer calls** to build **early traction** and **prevent attrition**, before the team committed to the project.",
+      "The streaming process and data details were tested and later adopted as **patterns** across other agentic experiences.",
+      "I helped deliver demo of the project at **Tableau Conference 2026** Devs-on-Stage keynote to approximately 6,000 in-person attendees and more online."
+    ]
+  }
+}

@@ -118,7 +118,7 @@ class AIReadiness extends React.Component {
             <h1>Knowledge for Tableau Agent</h1>
             <h3>Help teams to build and maintain knowledge for AI/BI Agent.</h3>
             <div className='project_info'>
-              March 2026 - Present, Work Project
+              Work Project, March 2026 - Present
             </div>
           </section>
         </div>

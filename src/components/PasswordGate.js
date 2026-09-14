@@ -62,29 +62,48 @@ function PasswordGate({
           />
         </Form.Group>
         {error && <Alert variant="danger">{error}</Alert>}
-        <Button
-          type="submit"
-          className="auth-gate-button"
-          disabled={submitting || !password}
-          onMouseDown={() => setPressed(true)}
-          onMouseUp={releasePress}
-          onMouseLeave={releasePress}
-          onTouchStart={() => setPressed(true)}
-          onTouchEnd={releasePress}
-          onTouchCancel={releasePress}
-        >
-          <img
-            className="auth-gate-button-icon"
-            src={
-              process.env.PUBLIC_URL +
-              (pressed || submitting
-                ? "/icons/lock_open_right.svg"
-                : "/icons/lock_open.svg")
-            }
-            alt=""
-          />
-          {submitting ? "Checking..." : buttonLabel}
-        </Button>
+        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <Button
+            type="submit"
+            className="auth-gate-button"
+            disabled={submitting || !password}
+            onMouseDown={() => setPressed(true)}
+            onMouseUp={releasePress}
+            onMouseLeave={releasePress}
+            onTouchStart={() => setPressed(true)}
+            onTouchEnd={releasePress}
+            onTouchCancel={releasePress}
+          >
+            <img
+              className="auth-gate-button-icon"
+              src={
+                process.env.PUBLIC_URL +
+                (pressed || submitting
+                  ? "/icons/lock_open_right.svg"
+                  : "/icons/lock_open.svg")
+              }
+              alt=""
+            />
+            {submitting ? "Checking..." : buttonLabel}
+          </Button>
+          <a
+            className="request-access-button"
+            href={`mailto:muzlee1113@gmail.com?subject=${encodeURIComponent(
+              "[Request case study password]"
+            )}`}
+          >
+            <svg
+              className="request-access-button-icon"
+              viewBox="0 -960 960 960"
+              width="18"
+              height="18"
+              fill="currentColor"
+            >
+              <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z" />
+            </svg>
+            Request Access
+          </a>
+        </div>
       </Form>
     </div>
   );

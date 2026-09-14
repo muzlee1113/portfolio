@@ -1,10 +1,30 @@
 [
   {
+    "url": "/work/dashboardagent",
+    "imgUrl": "/images/DashboardAgent/thumbnail_dashboardagent.png",
+    "name": "Conversational Analytics: Tableau Agent in Dashboards",
+    "tagline": "Start a conversation with your dashboard: conversational analytics that deliver insights & win trust.",
+    "description": "For business users",
+    "gated": true,
+    "labels": [
+      "In progress",
+      "work project",
+      "Agentic UX",
+      "Usability Study",
+      "Live Prototype",
+      "AI/BI"
+    ],
+    "bgColor": "#FFF7EF",
+    "tColor": "#0f0f0f",
+    "component": "DashboardAgent"
+  },
+  {
     "url": "/work/aireadiness",
     "imgUrl": "/images/AIReadiness/thumbnail_aireadiness.png",
     "name": "Knowledge for Tableau Agent",
     "tagline": "Help teams to build and maintain knowledge for AI/BI Agent.",
     "description": "For AI/data teams",
+    "gated": true,
     "labels": [
       "In progress",
       "work project",
@@ -21,6 +41,7 @@
     "url": "/work/tableauprep",
     "imgUrl": "/images/tableau/tableau.png",
     "name": "First 5 minutes in Tableau Prep",
+    "hidden": true,
     "tagline": "Improve the onboarding experience for new users.",
     "description": "For new users",
     "labels": [
@@ -59,6 +80,7 @@
     "url": "/work/photome",
     "imgUrl": "/images/mockup_photome.png",
     "name": "PhotoMe",
+    "hidden": true,
     "tagline": "A mobile app that helps others to capture a better you.",
     "description": "For portrait-lovers",
     "labels": [
